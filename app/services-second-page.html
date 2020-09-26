@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Сибирский научно-исследовательский институт</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+      <div class="modal__title">
+        Заказать услугу
+      </div>
+      <p class="modal__body-text_first">
+        Обработка и интерпретация данных электроразведки
+      </p>
+      <p class="modal__body-text_second">
+        Оставьте свои данные и мы свяжемся с вами в ближайшее время для обсуждения деталей
+      </p>
+
+
+        <form class="form-main" onsubmit="return false;">
+
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Site Name">
+          <input type="hidden" name="admin_email" value="admin@mail.com">
+          <input type="hidden" name="form_subject" value="Form Subject">
+          <!-- END Hidden Required Fields -->
+
+          <div class="form__information">
+            <input type="text" placeholder="Имя" name="Name" class="form__name" id="form_name" required pattern="[A-Za-zА-Яа-яЁё]">
+            <input type="tel" placeholder="Телефон" name="Phone" class="form__tel" id="form_phone" required>
+          </div>
+          <div class="form__confidence">
+          <div class="checkbox">
+          <input type="checkbox" id="checkbox_1" class="form__check">
+          <label for="checkbox_1" class="form__check-text">
+            Соглашаюсь с политикой конфиденциальности
+          </label>
+          </div>  
+          </div>
+            <input type="submit" class="form__submit" value="Перезвонить мне" onclick="drawShelves(); return false;">
+        </form>
+          <img src="img/form_bg.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12 ">
+      <div class="popup" id="popup">
+        <a href="" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="" class="popup__close close" data-dismiss="modal" aria-label="Close">
+            x
+          </a>
+          <div class="popup__title">
+            Спасибо за заявку 
+          </div>
+          <p class="popup__text_first">
+            Обработка и интерпретация данных электроразведки
+          </p>
+          <div class="popup__text_second">
+            Ожидайте звонок нашего специалиста для <br> обсуждения деталей заказа
+          </div>
+          <img src="img/form_bg.jpg" alt="" class="popup__img">
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-container">
+
+        <div class="row">
+
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Основное</li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">СНИИГГиМС сегодня</a></li>
+              <li><a href="policy_behavior.html">Корпоративная политика</a></li>
+              <li><a href="#">Опыт работ</a></li>
+              <li><a href="#">Руководство</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Патенты, лицензии, допуски</a></li>
+              <li><a href="#">Закупки</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Услуги</li>
+              <li><a href="services-first-page.html">Обработка и интерпретация геофизических данных</a></li>
+              <li><a href="#">Геологическое моделирование</a></li>
+              <li><a href="#">Обоснование перспективных объектов</a></li>
+              <li><a href="services-second-page.html">Полевые геологоразведочные работы</a></li>
+              <li><a href="#">Лабораторные исследования</a></li>
+              <li><a href="#">Поиски и оценка ТПИ</a></li>
+              <li><a href="#">Геоинформационное обеспечение</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Преимущества</li>
+              <li><a href="advantages_approach.html">Комплексный подход</a></li>
+              <li><a href="advantages_bank.html">Банк геолого-геофизических данных</a></li>
+              <li><a href="advantages_mega-project.html">Сейсмический мегапроект</a></li>
+              <li><a href="#">Кернохранилище</a></li>
+              <li><a href="advantages_laboratory.html">Аккредитованные лаборатории</a></li>
+              <li><a href="advantages_geoprofi.html">Геолого-экономический симулятор GeoProfi</a></li>
+              <li><a href="advantages_monitoring.html">Система мониторинга недропользования</a></li>
+              <li><a href="advantages_registrators.html">Сейсмические регистраторы РОСА</a></li>
+              <li><a href="#">Ежегодные полевые партии</a></li>
+              <li><a href="advantages_soft.html">Программное обеспечение</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Наука</li>
+              <li><a href="#">Учёный совет</a></li>
+              <li><a href="#">Аспирантура</a></li>
+              <li><a href="#">Журнал «Геология и минерально-сырьевые ресурсы Сибири»</a></li>
+              <li><a href="#">Публикации сотрудников</a></li>
+            </ul>
+          </div>
+
+
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="nav__lists">
+            <li class="nav__title">Медиатека</li>
+            <li><a href="#">Рекламные презентационные материалы</a></li>
+            <li><a href="#">Презентации докладов</a></li>
+            <li><a href="#">Видеоматериалы</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="nav__lists">
+            <li class="nav__title">Геоданные</li>
+            <li><a href="#">Геоинформационная система</a></li>
+            <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Словарь</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+    <header class="header">
+      <div class="container header-container">
+       <div class="menu">
+         <div class="menu__button">
+           <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <line y1="1" x2="23" y2="1" stroke="black" stroke-width="2"/>
+             <line y1="7" x2="23" y2="7" stroke="black" stroke-width="2"/>
+             <line class="menu-svg--animation" y1="13" x2="11.129" y2="13" stroke="black" stroke-width="2"/>
+           </svg>
+
+           Меню
+         </div>
+       </div>
+        <div class="main__title">Сибирский научно-исследовательский институт Геологии, Геофизики и Минерального сырья</div>
+        <div class="main__search">
+          <form action="search.html" class="form-search">
+            <input type="search" placeholder="Поиск по сайту">
+            <button><img src="img/svg/search.svg" alt="icon-search" width="16"></button>
+          </form>
+        </div>
+        <div class="main__lang">
+          <span href="#" class="main__lang-link"><i class="triangle"></i> Ru</span><img src="img/svg/global.svg" alt="" width="16">
+          <ul class="main__lang-list">
+            <li><a href="#">Chi</a></li>
+            <li><a href="#">Eng</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="treatment">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="treatment__pic">
+              <img src="img/services/serv-1img.jpg" alt="" class="treatment__pic_img im-fluid">
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col">
+          <h1 class="treatment__title" data-aos="fade-right">
+            Полевые геологоразведочные работы
+          </h1>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col d-flex justify-content-between flex-direction-column">
+          <div class="treatment__text">
+            Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
+          </div>
+          <button class="treatment__button btn" data-aos="fade-left" data-toggle="modal" data-target="#exampleModalCenter">
+            Заказать услугу
+            <img src="img/services/arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+              <ul class="main-block__menu info__fullscreen main-block__menu_width" data-aos="fade-right">
+                <li>
+                  <a href="#">
+                    Проектирование ГРР
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                   Сейсморазведочные работы МОГТ 2D и 3D
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Электроразведка
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Гравиразведка
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Магниторазведка
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Геохимия, гидрогеология
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Геологическая съемка
+                  </a>
+                </li>
+                <li>
+                  <a href="services-second-page.html" class="main-block__menu_item-active">
+                    Геологические маршруты
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Геологическое сопровождение горных работ
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-9 col-sm-12 col-12">
+            <div class="main-block__info main-block__info_first">
+              <div class="main-block__info-content info__margin" data-aos="fade-right">
+                <h2 class="main-block__info-title">
+                   Геологические маршруты
+                </h2>
+                <div class="main-block__info-text">
+                  СНИИГГиМС выполняет полевые геологические работы, включающие геологические маршруты
+                </div>
+              </div>
+            <ul class="main-block__info-content info__margin" data-aos="fade-right">
+                <h2 class="main-block__info-title">
+                   Описание выполняемых задач
+                </h2>
+                <li class="square_gold">
+                  Послойное детальное литолого-седиментологическое описание разрезов
+                </li>
+                <li class="square_gold">
+                  Определение критериев формирования карбонатных и терригенных коллекторов
+                </li>
+                 <li class="square_gold">
+                  Изучение влияния первичных (седиментационных) и вторичных процессов на формирование пустотного пространства и фильтрационных свойств
+                </li>
+                 <li class="square_gold">
+                  Отбор образцов для комплекса лабораторных исследований
+                </li>
+                 <li class="square_gold">
+                  Реконструкция условий осадконакопления отложений
+                </li>
+              </ul>
+               <ul class="main-block__info-content info__margin" data-aos="fade-right">
+                <h2 class="main-block__info-title">
+                   Результаты работ
+                </h2>
+                <li class="square_gold">
+                  Литологические карты литотипов, цементов, терригенно-минералогических комплексов
+                </li>
+                <li class="square_gold">
+                  Литологические колонки
+                </li>
+                 <li class="square_gold">
+                  Стратиграфические схемы
+                </li>
+                 <li class="square_gold">
+                  Абрисы с точками выходов естественных обнажений
+                </li>
+                 <li class="square_gold">
+                  Седиментационные модели
+                </li>
+                <li class="square_gold">
+                  Геологические модели нефтегазоперспективных отложений
+                </li>
+                <li class="info-content__item-button">
+                  <button class="info-content__button treatment__button" data-aos="fade-left">
+                    Примеры выполненных работ
+                  </button>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12">
+          <div class="info-content__block-imgs" data-aos="fade-left">
+            <img src="img/services/serv2page-img1.jpg" alt="" class="img-fluid">
+            <img src="img/services/serv2page-img2.jpg" alt="" class="img-fluid">
+            <img src="img/services/serv2page-img3.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="offset-xl-3 offset-lg-0 col-xl-9 col-md-12 col-lg-12">
+          <div class="main-block__info main-block__info_first block-center info__margin">
+              <div class="main-block__info-content info__margin" data-aos="fade-right">
+                <h2 class="main-block__info-title">
+                   Квалификация, технические возможности
+                </h2>
+                <div class="main-block__info-text">
+                  Более чем 60-летний опыт изучения естественных обнажений Сибирской платформы и прилегающих территорий, а также высокая квалификация специалистов различного профиля позволяют решать широкий спектр геологических задач.
+                </div>
+              </div>
+        </div>
+        <ul class="main-block__info-content" data-aos="fade-right">
+                <h2 class="main-block__info-title">
+                   Завершенные проекты
+                </h2>
+                <li class="square_gold">
+                  Выявление крупных нефтегазопоисковых объектов на западных склонах Непско-Ботуобинской антеклизы, Присаяно-Енисейской синеклизы, Сюгджерской седловины и прилегающих территорий по комплексу геологических, геофизических и гидрогазогеохимических методов.
+                </li>
+                <li class="square_gold">
+                  Выявление крупных объектов нефтегазопоисковых работ на северных склонах Байкитской анетеклизы, Бахтинского мегавыступа и южной части Курейской синеклизы на основе построения геологической модели по комплексу геологических, геофизических и геохимических методов
+                </li>
+                 <li class="square_gold">
+                  Изучение зон развития трещин различных типов рифейских пород 
+                </li>
+              </ul>
+              <ul class="main-block__info-content_docs_pdf-and-doc info-content_docs_fourth padding" data-aos="fade-left">
+                <h3 class="main-block__info-title">
+                  Презентации и публикации
+                </h3>
+                <li class="info__item_pdf">
+                  <a href="#">
+                    Предпосылки нефтегазоносности рифея Туруханского района по результатам изучения естественных обнажений
+                  </a>
+                </li>
+                <li class="info__item_pdf">
+                  <a href="#">
+                    Особенности геологического строения карбонатных отложений рифея  – потенциальных резервуаров нефти и газа Сибирской платформы (на примере свиты буровой Туруханского района)
+                  </a>
+                </li>
+              </ul>
+              <div class="info-content__key-word">
+                Ключевые слова: Полевые работы, литологическое описание, седиментологическое описание
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bottom-menu">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Основное</li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">СНИИГГиМС сегодня</a></li>
+            <li><a href="policy_behavior.html">Корпоративная политика</a></li>
+            <li><a href="#">Опыт работ</a></li>
+            <li><a href="#">Руководство</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Патенты, лицензии, допуски</a></li>
+            <li><a href="#">Закупки</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Услуги</li>
+           <li><a href="services-first-page.html">Обработка и интерпретация геофизических данных</a></li>
+            <li><a href="#">Геологическое моделирование</a></li>
+            <li><a href="#">Обоснование перспективных объектов</a></li>
+            <li><a href="services-second-page.html">Полевые геологоразведочные работы</a></li>
+            <li><a href="#">Лабораторные исследования</a></li>
+            <li><a href="#">Поиски и оценка ТПИ</a></li>
+            <li><a href="#">Геоинформационное обеспечение</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Преимущества</li>
+            <li><a href="advantages_approach.html">Комплексный подход</a></li>
+              <li><a href="advantages_bank.html">Банк геолого-геофизических данных</a></li>
+              <li><a href="advantages_mega-project.html">Сейсмический мегапроект</a></li>
+              <li><a href="#">Кернохранилище</a></li>
+              <li><a href="advantages_laboratory.html">Аккредитованные лаборатории</a></li>
+              <li><a href="advantages_geoprofi.html">Геолого-экономический симулятор GeoProfi</a></li>
+              <li><a href="advantages_monitoring.html">Система мониторинга недропользования</a></li>
+              <li><a href="advantages_registrators.html">Сейсмические регистраторы РОСА</a></li>
+              <li><a href="#">Ежегодные полевые партии</a></li>
+              <li><a href="advantages_soft.html">Программное обеспечение</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-between">
+
+        <div class="col-xl-3 col-md-4 colsm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Наука</li>
+            <li><a href="#">Учёный совет</a></li>
+            <li><a href="#">Аспирантура</a></li>
+            <li><a href="#">Журнал «Геология и минерально-сырьевые ресурсы Сибири»</a></li>
+            <li><a href="#">Публикации сотрудников</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Медиатека</li>
+            <li><a href="#">Рекламные презентационные материалы</a></li>
+            <li><a href="#">Презентации докладов</a></li>
+            <li><a href="#">Видеоматериалы</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Геоданные</li>
+            <li><a href="#">Геоинформационная система</a></li>
+            <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Словарь</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-lg-auto">
+          <div class="footer__title">Сибирский научно-исследовательский институт<br> Геологии, Геофизики и Минерального сырья</div>
+          <div class="footer__copy">© СНИИГГиМС, 2007-2020.<br>Все права зарегистрированы. </div>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/phone.svg" alt="" width="18">
+          <a href="tel:3832214947">(383) 221-49-47</a>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/phone.svg" alt="" width="18">
+          <a href="tel:3832214980">(383) 221-49-80</a>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/gps.svg" alt="" width="18">
+          <span class="address">630091, Новосибирск,<br> ул. Красный пр., 67</span>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  
+  
+ 
+</body>
+
+</html>

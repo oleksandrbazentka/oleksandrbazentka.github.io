@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Сибирский научно-исследовательский институт</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+ <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+      <div class="modal__title">
+        Заказать услугу
+      </div>
+      <p class="modal__body-text_first">
+        Обработка и интерпретация данных электроразведки
+      </p>
+      <p class="modal__body-text_second">
+        Оставьте свои данные и мы свяжемся с вами в ближайшее время для обсуждения деталей
+      </p>
+
+
+        <form class="form-main" onsubmit="return false;">
+
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Site Name">
+          <input type="hidden" name="admin_email" value="admin@mail.com">
+          <input type="hidden" name="form_subject" value="Form Subject">
+          <!-- END Hidden Required Fields -->
+
+          <div class="form__information">
+            <input type="text" placeholder="Имя" name="Name" class="form__name" id="form_name" required pattern="[A-Za-zА-Яа-яЁё]">
+            <input type="tel" placeholder="Телефон" name="Phone" class="form__tel" id="form_phone" required>
+          </div>
+          <div class="form__confidence">
+          <div class="checkbox">
+          <input type="checkbox" id="checkbox_1" class="form__check">
+          <label for="checkbox_1" class="form__check-text">
+            Соглашаюсь с политикой конфиденциальности
+          </label>
+          </div>  
+          </div>
+            <input type="submit" class="form__submit" value="Перезвонить мне" onclick="drawShelves(); return false;">
+        </form>
+          <img src="img/form_bg.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12 ">
+      <div class="popup" id="popup">
+        <a href="" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="" class="popup__close close" data-dismiss="modal" aria-label="Close">
+            x
+          </a>
+          <div class="popup__title">
+            Спасибо за заявку 
+          </div>
+          <p class="popup__text_first">
+            Обработка и интерпретация данных электроразведки
+          </p>
+          <div class="popup__text_second">
+            Ожидайте звонок нашего специалиста для <br> обсуждения деталей заказа
+          </div>
+          <img src="img/form_bg.jpg" alt="" class="popup__img">
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-container">
+
+        <div class="row">
+
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Основное</li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">СНИИГГиМС сегодня</a></li>
+              <li><a href="policy_behavior.html">Корпоративная политика</a></li>
+              <li><a href="#">Опыт работ</a></li>
+              <li><a href="#">Руководство</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Патенты, лицензии, допуски</a></li>
+              <li><a href="#">Закупки</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Услуги</li>
+              <li><a href="services-first-page.html">Обработка и интерпретация геофизических данных</a></li>
+              <li><a href="#">Геологическое моделирование</a></li>
+              <li><a href="#">Обоснование перспективных объектов</a></li>
+              <li><a href="services-second-page.html">Полевые геологоразведочные работы</a></li>
+              <li><a href="#">Лабораторные исследования</a></li>
+              <li><a href="#">Поиски и оценка ТПИ</a></li>
+              <li><a href="#">Геоинформационное обеспечение</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Преимущества</li>
+              <li><a href="advantages_approach.html">Комплексный подход</a></li>
+              <li><a href="advantages_bank.html">Банк геолого-геофизических данных</a></li>
+              <li><a href="advantages_mega-project.html">Сейсмический мегапроект</a></li>
+              <li><a href="#">Кернохранилище</a></li>
+              <li><a href="advantages_laboratory.html">Аккредитованные лаборатории</a></li>
+              <li><a href="advantages_geoprofi.html">Геолого-экономический симулятор GeoProfi</a></li>
+              <li><a href="advantages_monitoring.html">Система мониторинга недропользования</a></li>
+              <li><a href="advantages_registrators.html">Сейсмические регистраторы РОСА</a></li>
+              <li><a href="#">Ежегодные полевые партии</a></li>
+              <li><a href="advantages_soft.html">Программное обеспечение</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Наука</li>
+              <li><a href="#">Учёный совет</a></li>
+              <li><a href="#">Аспирантура</a></li>
+              <li><a href="#">Журнал «Геология и минерально-сырьевые ресурсы Сибири»</a></li>
+              <li><a href="#">Публикации сотрудников</a></li>
+            </ul>
+          </div>
+
+
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="nav__lists">
+            <li class="nav__title">Медиатека</li>
+            <li><a href="#">Рекламные презентационные материалы</a></li>
+            <li><a href="#">Презентации докладов</a></li>
+            <li><a href="#">Видеоматериалы</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="nav__lists">
+            <li class="nav__title">Геоданные</li>
+            <li><a href="#">Геоинформационная система</a></li>
+            <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Словарь</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+    <header class="header">
+      <div class="container header-container">
+       <div class="menu">
+         <div class="menu__button">
+           <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <line y1="1" x2="23" y2="1" stroke="black" stroke-width="2"/>
+             <line y1="7" x2="23" y2="7" stroke="black" stroke-width="2"/>
+             <line class="menu-svg--animation" y1="13" x2="11.129" y2="13" stroke="black" stroke-width="2"/>
+           </svg>
+
+           Меню
+         </div>
+       </div>
+        <div class="main__title">Сибирский научно-исследовательский институт Геологии, Геофизики и Минерального сырья</div>
+        <div class="main__search">
+          <form action="search.html" class="form-search">
+            <input type="search" placeholder="Поиск по сайту">
+            <button><img src="img/svg/search.svg" alt="icon-search" width="16"></button>
+          </form>
+        </div>
+        <div class="main__lang">
+          <span href="#" class="main__lang-link"><i class="triangle"></i> Ru</span><img src="img/svg/global.svg" alt="" width="16">
+          <ul class="main__lang-list">
+            <li><a href="#">Chi</a></li>
+            <li><a href="#">Eng</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="treatment treatment-soft">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="treatment__pic" data-aos="zoom-in">
+              <img src="img/advantages/bank-1block.jpg" alt="" class="treatment__pic_img img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="data-processing">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="data-processing__block" data-aos="zoom-in-left">
+                <h1 class="data-processing__title">
+                   Программное обеспечение
+                </h1>
+                <div class="data-processing__text">
+                  В АО «СНИИГГиМС» используется современное программное обеспечение ведущих мировых производителей, позволяющее выполнять весь комплекс камеральных геолого-геофизических работ, что позволяет выполнять работы и представлять их результаты с учетом новейших требований индустрии.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="data-processing__title" data-aos="fade-right">
+                  Обработка сейсморазведочных данных
+                </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img" data-aos="fade-up">
+                    <img src="img/advantages/paradigm.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      Geodepth (Paradigm)
+                    </h3>
+                    Система GeoDepth предназначена для построения 2D/3D глубинно-скоростных моделей среды любой сложности, включая отрицательные наклоны границ, шероховатые границы, взбросы, надвиги и другие сложные структурные формы.
+                  </div>
+                </div>
+                <div class="data-processing-geodepth__block_second" data-aos="fade-left">
+                  <div class="data-processing-geodepth_desc data-processing_desc">
+                    В основе построения модели лежат всестороннее изучение и анализ скоростей суммирования, эффективных скоростей и интервальных (пластовых) скоростей миграции как по вертикальным функциям, так и вдоль горизонтов методом когерентной инверсии с учетом преломления на промежуточных границах.
+                  </div>
+                  <div class="data-processing-geodepth_desc data-processing_desc">
+                    Глубинные границы получают путем лучевой миграции горизонтов. Построение модели может вестись с учетом анизотропии скоростей, что значительно повышает ее качество и точность.
+                  </div>
+                  <div class="data-processing-geodepth_desc data-processing_desc">
+                   Достоинством технологии построения глубинно-скоростной модели в системе GeoDepth является объединение технологии миграции с процессом построения модели, что позволяет с помощью последовательных итераций контролировать и уточнять глубинно-скоростную модель, делая ее максимально эффективной для получения высококачественного изображения среды.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img data-processing-geovation__img" data-aos="fade-up">
+                    <img src="img/advantages/paradigm.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      Geovation 2.0 /Geocluster (CGG)
+                    </h3>
+                    Комплекс Geocluster/Geovation предназначен для обработки и построения изображений сейсмических данных. Данный пакет выпущен в 2019 г. и представляет собой платформу комплексной обработки данных, 
+                    <span>
+                      включающую новейшие технологии в области обработки и построения изображений широкого спектра данных:
+                    </span>
+                    <ul class="data-processing__list" data-aos="fade-left">
+                    <li class="square_gold">
+                      Около 500 расчетных модулей по обработке данных
+                    </li>
+                    <li class="square_gold">
+                      Возможности обработки 2D, 3D, многокомпонентных данных наземных и морских съемок
+                    </li>
+                    <li class="square_gold">
+                      Полный диапазон прикладных программ расширенной архитектуры для обработки и контроля качества в интерактивном режиме
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img data-processing-geotomo__img" data-aos="fade-up">
+                    <img src="img/advantages/geotomo.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      TomoPlus (GeoTomo)
+                    </h3>
+                    Tomoplus представляет собой комплексный продукт, предназначенный для получения точной глубинно-скоростной модели (ГСМ) приповерхностного слоя методом томографии и расчета длинно- и короткопериодных статических поправок, позволяющих компенсировать влияние верхней части разреза.
+                  </div>
+                </div>
+                <div class="data-processing-geodepth__block_second" data-aos="fade-left">
+                  <div class="data-processing-geodepth_desc data-processing_desc">
+                    Пакет предлагает как традиционные решения для построения ГСМ с последующим многоитерационным уточнением, так и передовые технологии получения высокоразрешающего глубинно-скоростного изображения среды (FWIтомография, привлечение данных грави- и электроразведочных работ).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img data-processing-promax__img" data-aos="fade-up">
+                    <img src="img/advantages/promax.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      ProMAXSeisSpace (Hulliburton/Landmark)
+                    </h3>
+                    Система обработки SeisSpaceProMAX с интуитивно понятными инструментам анализа, современными геофизическими алгоритмами представляет геофизику возможность выполнить весь перечень процедур по обработке сейсмических данных начиная с присвоения геометрии исходному полевому материалу, расчета и применения статических поправок за неоднородности ВЧР, интерактивному скоростному анализу и заканчивая миграцией Кирхгофа до суммирования и постобработкой временного разреза.  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col d-flex flex-direction-column">
+              <button class="treatment__button application__button soft__button btn" data-aos="fade-left" data-toggle="modal" data-target="#exampleModalCenter">
+                  Заказать услугу
+                <img src="img/services/arrow.svg" alt="">
+              </button>
+            <div class="treatment__text application__text soft__text" data-aos="fade-left">
+              Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="interpretation">
+      <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="data-processing__title" data-aos="fade-right">
+                  Интерпретация сейсморазведочных данных
+                </h2>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img data-processing-petrol__img" data-aos="fade-up">
+                    <img src="img/advantages/petrel.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      SchlumbergerPetrel
+                    </h3>
+                    Интегрированный комплекс Petrel позволяет интерпретировать сейсмические данные, коррелировать скважины, калибровать акустический каротаж и сейсмокаротаж, моделировать петрофизические характеристики, выполнять подсчет запасов.
+                    Простой и эффективный процесс привязки сейсмической и скважинной информации: калибровка акустического каротажа и сейсмокаротажа, построение синтетического сейсмического импульса, извлечения сейсмического импульса с помощью детерминистического алгоритма и редакция синтетических сейсмограмм.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img data-processing-ihs__img" data-aos="fade-up">
+                    <img src="img/advantages/ihs.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      TheKingdomSuite (IHS)
+                    </h3>
+                   Программныйпакет «TheKingdomSuite» (IHS) ‒ это интегрированный пакет для интерпретации геолого-геофизических данных. Представляет собой эффективное и исчерпывающее решение для интерпретации геолого-геофизических данных и одномерного и двумерного сейсмического моделирования и 
+                   <span>
+                     включает в себя следующие приложения: 
+                   </span>
+                    <ul class="data-processing__list" data-aos="fade-left">
+                    <li class="square_gold">
+                      2d/3dPAK – визуализация сейсмических данных, корреляция отражающих горизонтов и тектонических нарушений в двумерном варианте, структурные картопостроения
+                    </li>
+                    <li class="square_gold">
+                      EarthPAK – работа с данными ГИС по скважинам
+                    </li>
+                    <li class="square_gold">
+                      SynPAK – одномерное моделирование на основе скважинных данных
+                    </li>
+                    <li class="square_gold">
+                      ModPAK – двумерное моделирование на основе созданных одномерных моделей
+                    </li>
+                    <li class="square_gold">
+                      VuPAK – визуализация сейсмических данных, корреляции отражающих горизонтов и тектонических нарушений в трехмерном варианте
+                    </li>
+                    <li class="square_gold">
+                      TracePAK –дообработка сейсмического материала, фильтрация и расчет динамических характеристик сейсмической записи
+                    </li>
+                    <li class="square_gold">
+                      RockSolidAttributes – атрибутный анализ данных
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col d-flex flex-direction-column">
+              <button class="treatment__button application__button soft__button btn" data-aos="fade-left" data-toggle="modal" data-target="#exampleModalCenter">
+                  Заказать услугу
+                <img src="img/services/arrow.svg" alt="">
+              </button>
+            <div class="treatment__text application__text soft__text" data-aos="fade-left">
+              Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="data-processing__title" data-aos="fade-right">
+                  Интерпретация данных ГИС
+                </h2>
+            </div>
+          </div>
+
+
+        <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth">
+                <div class="data-processing-geodepth__block_first">
+                  <div class="data-processing-geodepth__img data-processing-search__img" data-aos="fade-up">
+                    <img src="img/advantages/geosearch.jpg" alt="">
+                  </div> 
+                  <div class="data-processing-geodepth__text" data-aos="fade-left">
+                    <h3 class="data-processing__cont-title">
+                      ГеоПоиск
+                    </h3>
+                   ГеоПоиск представляет собой систему обработки и интерпретации промысловой геофизической и смежной геологической, петрофизической и сейсмической информации. 
+                   <span>
+                     Основные задачи и возможности:
+                   </span>
+                    <ul class="data-processing__list" data-aos="fade-left">
+                    <li class="square_gold">
+                      Оперативные заключения по бурящимся скважинам в терригенных и карбонатных отложениях
+                    </li>
+                    <li class="square_gold">
+                      Обработка закрытого ствола
+                    </li>
+                    <li class="square_gold">
+                      Построение корреляционных схем и разрезов
+                    </li>
+                    <li class="square_gold">
+                      Статистический анализ петрофизических параметров
+                    </li>
+                    <li class="square_gold">
+                      Картопостроение, подсчет запасов
+                    </li>
+                    <li class="square_gold">
+                      Визуализация геофизических данных
+                    </li>
+                    <li class="square_gold">
+                      Контроль за разработкой
+                    </li>
+                    <li class="square_gold">
+                      Оцифровка карт, каротажных диаграмм
+                    </li>
+                    <li class="square_gold">
+                      Обработка АКШ, АКЦ, СГДТ, ИННК, АВПД, ЯМК, наклонометрии, профилеметрии, термометрии и др.
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col d-flex flex-direction-column">
+              <button class="treatment__button application__button soft__button btn" data-aos="fade-left" data-toggle="modal" data-target="#exampleModalCenter">
+                  Заказать услугу
+                <img src="img/services/arrow.svg" alt="">
+              </button>
+            <div class="treatment__text application__text soft__text" data-aos="fade-left">
+              Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="modeling">
+      <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="data-processing__title modeling__title" data-aos="fade-right">
+                  Бассейновое моделирование
+                </h2>
+            </div>
+
+
+       <div class="row">
+            <div class="col-xl-12">
+              <div class="data-processing-geodepth modeling-block">
+                <div class="data-processing-geodepth__block_first modeling__block_first">
+                  <ul class="data-processing__list modeling__list" data-aos="fade-left">
+                    <li class="square_gold">
+                      TRINITY (Zetaware) (включая Genesis и Kinex)
+                    </li>
+                    <li class="square_gold">
+                      GENESIS – это простое в использовании программное обеспечение для 1D моделирования погружения и зрелости с последующей трансляцией значений температурного градиента в 2D и 3D модели в Trinity. В модуле рассчитываются кинетические свойства керогена, двухкомпонентная (нефть+газ) или четырехкомпонентная (метан, жирный газ, легкая нефть, тяжелая нефть) схема
+                    </li>
+                    <li class="square_gold">
+                      KINEX – инструмент для быстрого моделирования созревания горных пород, расчета генерации и эмиграции, состава (включая газовый фактор) и количества генерируемых УВ с дальнейшим использованием для расчетов миграции в Trinity. 
+                    </li>
+                    <li class="square_gold">
+                      TRINITY – инструмент на основе карты, предназначенный для интерактивной трехмерной миграции, отслеживания объемов и состава углеводородов в 3D и во времени. В Тринити интегрирована оценка рисков и чувствительности модели методом Монте-Карло.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col d-flex flex-direction-column">
+              <button class="treatment__button application__button soft__button btn" data-aos="fade-left" data-toggle="modal" data-target="#exampleModalCenter">
+                  Заказать услугу
+                <img src="img/services/arrow.svg" alt="">
+              </button>
+            <div class="treatment__text application__text soft__text" data-aos="fade-left">
+              Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="section bottom-menu">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Основное</li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">СНИИГГиМС сегодня</a></li>
+            <li><a href="policy_behavior.html">Корпоративная политика</a></li>
+            <li><a href="#">Опыт работ</a></li>
+            <li><a href="#">Руководство</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Патенты, лицензии, допуски</a></li>
+            <li><a href="#">Закупки</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Услуги</li>
+            <li><a href="services-first-page.html">Обработка и интерпретация геофизических данных</a></li>
+            <li><a href="#">Геологическое моделирование</a></li>
+            <li><a href="#">Обоснование перспективных объектов</a></li>
+            <li><a href="services-second-page.html">Полевые геологоразведочные работы</a></li>
+            <li><a href="#">Лабораторные исследования</a></li>
+            <li><a href="#">Поиски и оценка ТПИ</a></li>
+            <li><a href="#">Геоинформационное обеспечение</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Преимущества</li>
+            <li><a href="advantages_approach.html">Комплексный подход</a></li>
+              <li><a href="advantages_bank.html">Банк геолого-геофизических данных</a></li>
+              <li><a href="advantages_mega-project.html">Сейсмический мегапроект</a></li>
+              <li><a href="#">Кернохранилище</a></li>
+              <li><a href="advantages_laboratory.html">Аккредитованные лаборатории</a></li>
+              <li><a href="advantages_geoprofi.html">Геолого-экономический симулятор GeoProfi</a></li>
+              <li><a href="advantages_monitoring.html">Система мониторинга недропользования</a></li>
+              <li><a href="advantages_registrators.html">Сейсмические регистраторы РОСА</a></li>
+              <li><a href="#">Ежегодные полевые партии</a></li>
+              <li><a href="advantages_soft.html">Программное обеспечение</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-between">
+
+        <div class="col-xl-3 col-md-4 colsm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Наука</li>
+            <li><a href="#">Учёный совет</a></li>
+            <li><a href="#">Аспирантура</a></li>
+            <li><a href="#">Журнал «Геология и минерально-сырьевые ресурсы Сибири»</a></li>
+            <li><a href="#">Публикации сотрудников</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Медиатека</li>
+            <li><a href="#">Рекламные презентационные материалы</a></li>
+            <li><a href="#">Презентации докладов</a></li>
+            <li><a href="#">Видеоматериалы</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Геоданные</li>
+            <li><a href="#">Геоинформационная система</a></li>
+            <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Словарь</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-lg-auto">
+          <div class="footer__title">Сибирский научно-исследовательский институт<br> Геологии, Геофизики и Минерального сырья</div>
+          <div class="footer__copy">© СНИИГГиМС, 2007-2020.<br>Все права зарегистрированы. </div>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/phone.svg" alt="" width="18">
+          <a href="tel:3832214947">(383) 221-49-47</a>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/phone.svg" alt="" width="18">
+          <a href="tel:3832214980">(383) 221-49-80</a>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/gps.svg" alt="" width="18">
+          <span class="address">630091, Новосибирск,<br> ул. Красный пр., 67</span>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>

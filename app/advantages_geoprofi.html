@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Сибирский научно-исследовательский институт</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+      <div class="modal__title">
+        Заказать услугу
+      </div>
+      <p class="modal__body-text_first">
+        Обработка и интерпретация данных электроразведки
+      </p>
+      <p class="modal__body-text_second">
+        Оставьте свои данные и мы свяжемся с вами в ближайшее время для обсуждения деталей
+      </p>
+
+
+        <form class="form-main" onsubmit="return false;">
+
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Site Name">
+          <input type="hidden" name="admin_email" value="admin@mail.com">
+          <input type="hidden" name="form_subject" value="Form Subject">
+          <!-- END Hidden Required Fields -->
+
+          <div class="form__information">
+            <input type="text" placeholder="Имя" name="Name" class="form__name" id="form_name" required pattern="[A-Za-zА-Яа-яЁё]">
+            <input type="tel" placeholder="Телефон" name="Phone" class="form__tel" id="form_phone" required>
+          </div>
+          <div class="form__confidence">
+          <div class="checkbox">
+          <input type="checkbox" id="checkbox_1" class="form__check">
+          <label for="checkbox_1" class="form__check-text">
+            Соглашаюсь с политикой конфиденциальности
+          </label>
+          </div>  
+          </div>
+            <input type="submit" class="form__submit" value="Перезвонить мне" onclick="drawShelves(); return false;">
+        </form>
+          <img src="img/form_bg.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12 ">
+      <div class="popup" id="popup">
+        <a href="" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="" class="popup__close close" data-dismiss="modal" aria-label="Close">
+            x
+          </a>
+          <div class="popup__title">
+            Спасибо за заявку 
+          </div>
+          <p class="popup__text_first">
+            Обработка и интерпретация данных электроразведки
+          </p>
+          <div class="popup__text_second">
+            Ожидайте звонок нашего специалиста для <br> обсуждения деталей заказа
+          </div>
+          <img src="img/form_bg.jpg" alt="" class="popup__img">
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-container">
+
+        <div class="row">
+
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Основное</li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">СНИИГГиМС сегодня</a></li>
+              <li><a href="policy_behavior.html">Корпоративная политика</a></li>
+              <li><a href="#">Опыт работ</a></li>
+              <li><a href="#">Руководство</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Патенты, лицензии, допуски</a></li>
+              <li><a href="#">Закупки</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Услуги</li>
+              <li><a href="services-first-page.html">Обработка и интерпретация геофизических данных</a></li>
+              <li><a href="#">Геологическое моделирование</a></li>
+              <li><a href="#">Обоснование перспективных объектов</a></li>
+              <li><a href="services-second-page.html">Полевые геологоразведочные работы</a></li>
+              <li><a href="#">Лабораторные исследования</a></li>
+              <li><a href="#">Поиски и оценка ТПИ</a></li>
+              <li><a href="#">Геоинформационное обеспечение</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Преимущества</li>
+              <li><a href="advantages_approach.html">Комплексный подход</a></li>
+              <li><a href="advantages_bank.html">Банк геолого-геофизических данных</a></li>
+              <li><a href="advantages_mega-project.html">Сейсмический мегапроект</a></li>
+              <li><a href="#">Кернохранилище</a></li>
+              <li><a href="advantages_laboratory.html">Аккредитованные лаборатории</a></li>
+              <li><a href="advantages_geoprofi.html">Геолого-экономический симулятор GeoProfi</a></li>
+              <li><a href="advantages_monitoring.html">Система мониторинга недропользования</a></li>
+              <li><a href="advantages_registrators.html">Сейсмические регистраторы РОСА</a></li>
+              <li><a href="#">Ежегодные полевые партии</a></li>
+              <li><a href="advantages_soft.html">Программное обеспечение</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+            <ul class="nav__lists">
+              <li class="nav__title">Наука</li>
+              <li><a href="#">Учёный совет</a></li>
+              <li><a href="#">Аспирантура</a></li>
+              <li><a href="#">Журнал «Геология и минерально-сырьевые ресурсы Сибири»</a></li>
+              <li><a href="#">Публикации сотрудников</a></li>
+            </ul>
+          </div>
+
+
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="nav__lists">
+            <li class="nav__title">Медиатека</li>
+            <li><a href="#">Рекламные презентационные материалы</a></li>
+            <li><a href="#">Презентации докладов</a></li>
+            <li><a href="#">Видеоматериалы</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="nav__lists">
+            <li class="nav__title">Геоданные</li>
+            <li><a href="#">Геоинформационная система</a></li>
+            <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Словарь</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+    <header class="header">
+      <div class="container header-container">
+       <div class="menu">
+         <div class="menu__button">
+           <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <line y1="1" x2="23" y2="1" stroke="black" stroke-width="2"/>
+             <line y1="7" x2="23" y2="7" stroke="black" stroke-width="2"/>
+             <line class="menu-svg--animation" y1="13" x2="11.129" y2="13" stroke="black" stroke-width="2"/>
+           </svg>
+
+           Меню
+         </div>
+       </div>
+        <div class="main__title">Сибирский научно-исследовательский институт Геологии, Геофизики и Минерального сырья</div>
+        <div class="main__search">
+          <form action="search.html" class="form-search">
+            <input type="search" placeholder="Поиск по сайту">
+            <button><img src="img/svg/search.svg" alt="icon-search" width="16"></button>
+          </form>
+        </div>
+        <div class="main__lang">
+          <span href="#" class="main__lang-link"><i class="triangle"></i> Ru</span><img src="img/svg/global.svg" alt="" width="16">
+          <ul class="main__lang-list">
+            <li><a href="#">Chi</a></li>
+            <li><a href="#">Eng</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="treatment">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="treatment__pic advantages__pic">
+              <img src="img/advantages/bank-1block.jpg" alt="" class="treatment__pic_img im-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+    <section class="advantages-main laboratory-main geoprofi-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h1 class="laboratory__main-title geoprofi__main-title" data-aos="fade-right">
+              Геолого-экономический симулятор GeoProfi
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="advantages__mega-project advantages__laboratory advantages__geoprofi">
+              <ul class="geoprofi__list">
+                <li class="geoprofi__item geoprofi__item-none-square" data-aos="fade-right">
+                  Инструмент «GeoProfi» предназначен для геолого-экономического анализа нефтяных и газовых объектов на этапе геолого-разведочных работ, а также для обоснования стратегии геолого-разведочных работ и разработки объектов углеводородного сырья на основе их геолого-экономической оценки. 
+                </li>
+                <li class="geoprofi__item geoprofi__item-none-square" data-aos="fade-right">
+                  Функционал программы включает в себя моделирование процесса подготовки запасов; вероятностный подсчет прогнозных запасов; статистическое прогнозирование геолого-промысловых характеристик; гидродинамическое моделирование процесса разработки с учетом возможной многозалежности структур и пересечения проекции залежей в плане; расчет затрат на разведку, разработку углеводородных залежей и транспортировку продукции; экономическую оценку нефтегазоносных структур и лицензионных участков в условиях действующей системы налогообложения. 
+                </li>
+                <li class="geoprofi__item geoprofi__item-none-square" data-aos="fade-right">
+                  Программа также предоставляет пользователю возможности решения следующих аналитических задач: оценку влияния исходных параметров на результирующие показатели; вероятностный анализ ключевых промысловых характеристик и показателей экономической эффективности проектов; определение условий рентабельного освоения; подбор оптимальной технологической схемы разработки месторождений. 
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="geoprofi__img geoprofi__img_first" data-aos="fade-left">
+              <img src="img/advantages/geoprofi1.jpg" alt="">
+            </div> 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="geoprofi__result square_gold" data-aos="fade-right">
+              По результатам работы программы генерируются экспресс-отчеты с основными результатами и выводами. 
+            </div>
+          </div>  
+        </div>
+
+    </div>
+  </section>
+
+  <section class="baze">
+    <div class="container">
+      <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="advantages__mega-project advantages__laboratory advantages__geoprofi">
+              <ul class="geoprofi__list">
+                <li class="geoprofi__title" data-aos="fade-right">
+                  Программа «GeoProfi» интегрирована с базами данных, которые сами по себе в отдельности представляют неоспоримую ценность:
+                </li>
+                <li class="geoprofi__item square_gold" data-aos="fade-right">
+                 Характеристики пластов всех месторождений Восточной Сибири и Якутии (Республика Саха): тип коллектора, флюид, ресурсы, глубина залегания, площадь, нефтенасыщенная толщина, коэффициент нефтенасыщенности, вязкость, проницаемость, пористость, пластовая температура и др.
+                </li>
+                <li class="geoprofi__item square_gold" data-aos="fade-right">
+                  Стоимости полевых работ и затраты на обустройство нефтегазового промысла в различных регионах РФ. 
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="geoprofi__img geoprofi__img_second" data-aos="fade-left">
+              <img src="img/advantages/geoprofi2.jpg" alt="">
+            </div> 
+          </div>
+        </div>
+
+         <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="geoprofi__info_first geoprofi__info_second" data-aos="fade-right">
+              Показатели из баз данных могут приниматься в расчет напрямую по выбору пользователя либо предварительно обрабатываться в вычислительном модуле статистической обработки данных с помощью алгоритмов вероятностно-статистического анализа или многопараметрической регрессии.
+            </div>
+            <div class="geoprofi__info_first" data-aos="fade-right">
+              Программа «GeoProfi» прошла успешную апробацию в процессе оказания услуг, оказываемым отечественным и зарубежным недропользователям, и в работах по государственным контрактам.
+            </div>
+          </div>  
+        </div>
+
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col d-flex flex-direction-column">
+          <button class="treatment__button appliance__button btn" data-aos="fade-left" data-toggle="modal" data-target="#exampleModalCenter">
+            Заказать услугу
+            <img src="img/services/arrow.svg" alt="">
+          </button>
+          <div class="treatment__text application__text appliance__text" data-aos="fade-right">
+            Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  
+
+
+
+
+    <section class="section bottom-menu">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Основное</li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">СНИИГГиМС сегодня</a></li>
+            <li><a href="policy_behavior.html">Корпоративная политика</a></li>
+            <li><a href="#">Опыт работ</a></li>
+            <li><a href="#">Руководство</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Патенты, лицензии, допуски</a></li>
+            <li><a href="#">Закупки</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Услуги</li>
+            <li><a href="services-first-page.html">Обработка и интерпретация геофизических данных</a></li>
+            <li><a href="#">Геологическое моделирование</a></li>
+            <li><a href="#">Обоснование перспективных объектов</a></li>
+            <li><a href="services-second-page.html">Полевые геологоразведочные работы</a></li>
+            <li><a href="#">Лабораторные исследования</a></li>
+            <li><a href="#">Поиски и оценка ТПИ</a></li>
+            <li><a href="#">Геоинформационное обеспечение</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Преимущества</li>
+            <li><a href="advantages_approach.html">Комплексный подход</a></li>
+              <li><a href="advantages_bank.html">Банк геолого-геофизических данных</a></li>
+              <li><a href="advantages_mega-project.html">Сейсмический мегапроект</a></li>
+              <li><a href="#">Кернохранилище</a></li>
+              <li><a href="advantages_laboratory.html">Аккредитованные лаборатории</a></li>
+              <li><a href="advantages_geoprofi.html">Геолого-экономический симулятор GeoProfi</a></li>
+              <li><a href="advantages_monitoring.html">Система мониторинга недропользования</a></li>
+              <li><a href="advantages_registrators.html">Сейсмические регистраторы РОСА</a></li>
+              <li><a href="#">Ежегодные полевые партии</a></li>
+              <li><a href="advantages_soft.html">Программное обеспечение</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-between">
+
+        <div class="col-xl-3 col-md-4 colsm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Наука</li>
+            <li><a href="#">Учёный совет</a></li>
+            <li><a href="#">Аспирантура</a></li>
+            <li><a href="#">Журнал «Геология и минерально-сырьевые ресурсы Сибири»</a></li>
+            <li><a href="#">Публикации сотрудников</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Медиатека</li>
+            <li><a href="#">Рекламные презентационные материалы</a></li>
+            <li><a href="#">Презентации докладов</a></li>
+            <li><a href="#">Видеоматериалы</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+          <ul class="bottom-menu__lists">
+            <li class="bottom-menu__title">Геоданные</li>
+            <li><a href="#">Геоинформационная система</a></li>
+            <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Словарь</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-lg-auto">
+          <div class="footer__title">Сибирский научно-исследовательский институт<br> Геологии, Геофизики и Минерального сырья</div>
+          <div class="footer__copy">© СНИИГГиМС, 2007-2020.<br>Все права зарегистрированы. </div>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/phone.svg" alt="" width="18">
+          <a href="tel:3832214947">(383) 221-49-47</a>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/phone.svg" alt="" width="18">
+          <a href="tel:3832214980">(383) 221-49-80</a>
+        </div>
+        <div class="col-12 col-lg-auto d-flex align-items-center">
+          <img src="img/svg/gps.svg" alt="" width="18">
+          <span class="address">630091, Новосибирск,<br> ул. Красный пр., 67</span>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+<script src="js/scripts.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>
+
+
+
+
