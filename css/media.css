@@ -17,33 +17,42 @@
 	}
 
 	.procedure__circle {
-	    bottom: 73px;
-	    width: 482px;
-	    right: 6px;
-	    height: 535px;
+	    bottom: 57px;
+    	width: 80%;
+    	right: 51px;
+    	height: 384px;
+	}
+
+	.procedure__woman {
+	    margin: 25px auto;
+	    width: 48%;
+	}
+
+	.procedure__images {
+	    padding-top: 200px;
 	}
 }
 
 @media screen and (max-width: 992px) {
+	.procedure__img_wave {
+    	width: 18%;
+	}
+
 	.procedure-wrap {
-	    padding-top: 247px;
 	    margin-left: 30px;
 	}
 
 	.procedure__img_stick-second {
-    	z-index: -3;
-    	height: 1234px;
+    	z-index: -3;	
 	}
 
 	.procedure__img_stick-third {
-    	z-index: -2;
-    	height: 1234px;
+    	z-index: -2;	
 	}
 
 	.procedure__img_stick {
 	    z-index: -1;
-	    left: 20px;
-	    height: 1234px;
+	  	left: 20px;    
 	}
 
 	.procedure__text {
@@ -54,20 +63,19 @@
 	.procedure__title {
 	    padding-top: 3px;
 	    padding-left: 12px;
-	    font-size: 28px;
+	    font-size: 25px;
 	    width: auto;
-	    margin-bottom: 70px;
+	    margin-bottom: 25px;  
 	}
 
 	.procedure__text {
 	    margin-left: 0px;
-	    font-size: 16px;
-	    margin-bottom: 100px;
+	    font-size: 16px;   
 	}
 
 	.procedure__link {
 	    font-size: 21px;
-	    padding: 20px 30px;
+	    padding: 15px 0px;
 	    margin-left: 5px;
 	}
 
@@ -87,37 +95,38 @@
 
 	.procedure__woman {
 	    margin: 0px auto;
-	    width: 295px;
+	    width: 215px;
 	    display: block;
 	}
 
 	.procedure__circle {
 	    bottom: 73px;
-	    width: 100%;
-	    right: 3px;
-	    height: 367px;
+	    width: 86%;
+	    right: 6%;
+	    height: 82%;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.procedure__circle {
+	    bottom: 73px;
+	    width: 99%;
+	    right: 2%;
+	    height: 77%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.procedure__img_stick,
-	.procedure__img_stick-second,
 	.procedure__img_stick-third {
-	    height: 1568px;
+		right: 20px;
 	}
 
 	.procedure__img_stick-second {
 		display: none;
 	}
 
-	.procedure__img_stick-third {
-		right: 20px;
-	}
-
-
-
 	.procedure-wrap {
-	    padding-top: 180px;
+	    padding-top: 20px;
 	    margin-left: 0px;
 	    display: flex;
 	    justify-content: center;
@@ -130,27 +139,27 @@
 	.procedure__text {
 	    margin-left: 0px;
 	    font-size: 16px;
-	    margin-bottom: 40px;
+	    margin-bottom: 15px;
 	    text-align: center;
 	}
 
 	.procedure__text_second {
-		margin: 0px auto 40px;
+		margin: 0px auto 15px;
 		display: block;
 		width: 470px;
 	}
 
 	.procedure__title {
 	    padding-top: 3px;
+	    margin-top: 0px;
 	    padding-left: 12px;
 	    font-size: 26px;
 	    width: auto;
-	    margin-bottom: 70px;
 	    text-align: center;
 	    background:
 	    url(../img/small-circ.png)
 	    no-repeat top left;
-	    margin-bottom: 40px;
+	    margin-bottom: 15px;
 	}
 
 	.procedure__link {
@@ -158,31 +167,38 @@
 	    text-align: center;
 	    margin: 0px auto;
 	    width: 260px;
+	    padding: 15px 30px;
+	    font-size: 26px;
 	}
 
 
 	.procedure__content_img {
 	    width: 528px;
-	    margin-top: 100px;
+	    margin-top: 30px;
 	}
 
 	.procedure__circle {
 	    bottom: 68px;
-	    width: 100%;
-	    right: 3px;
-	    height: 73%;
+	    width: 68%;
+	    right: 14%;
+	    height: 76%;
 	}
+
+	.procedure__woman {
+	    width: 170px;  
+	}
+
 	.procedure__name {
 	    width: 141px;
-	    bottom: 12px;
+	    bottom: 150px;
 	    font-size: 16px;
-	    right: 153px;
+	    right: 173px;
 	}
 
 	.procedure__specialist {
 	    width: 260px;
-	    bottom: -34px;
-	    right: 99px;
+	    bottom: 105px;
+	    right: 115px;
 	    font-size: 16px;
 	}
 
@@ -190,21 +206,24 @@
 	    position: absolute;
 	    bottom: 0px;
 	    right: 0px;
-	    width: 40%;
-	    height: 22%;
+	    width: 34%;
+	    height: 62%;
 	    z-index: 10000;
 	}
 
 	.procedure__images svg {
-	    width: 200px;
+	    width: 140px;
 	    position: absolute;
-	    bottom: 50px;
+	    bottom: 7px;
 	    left: 0px;
 	}
 
 	.procedure__images {
-	    position: relative;
-	    padding-top: 300px;
+	    padding-top: 80px;
+	}
+
+	.procedure__content {
+	    margin-top: 40px;
 	}
 }
 
@@ -214,23 +233,84 @@
 		padding-right: 20px;
 	}
 
-	.procedure__img_stick,
-	.procedure__img_stick-third {
-    	height: 1533px;
+	.procedure__link {
+	    width: 240px;
+	    padding: 15px 50px;
 	}
 
 	.procedure__woman {
-	    margin: 0px auto;
-	    width: 230px;
-	    display: block;
-	}
+    	width: 135px;
+    }
 
 	.procedure__content_img {
 	    width: 100%;
-	    margin-top: 100px;
+	    margin-top: 20px;
+	}
+
+	.procedure__circle {
+	    bottom: 67px;
+	    width: 50%;
+	    right: 24%;
+	    height: 73%;
+	    display: block;
+	    margin: 0px auto;
+	    text-align: center;
+	}
+
+	.procedure__title {
+	    padding-top: 3px;
+	    padding-left: 0px;
+	    font-size: 24px;
+	    width: 100%;
+	    text-align: center;
+	    background: none;
+	}
+
+	.procedure__text_second {
+	    display: block;
+	    width: 80%;
+	}
+
+	.procedure__name {
+		padding: 5px;
+	    width: 150px;
+	    font-size: 15px;
+	    position: static;
+	    margin: -145px auto;
+	}
+
+	.procedure__specialist {
+		font-size: 15px;
+		padding: 5px;
+	    width: 260px;
+	    bottom: -34px;
+	    right: 99px;
+	    font-size: 16px;
+	    position: static;
+	    margin: 153px auto;
 	}
 
 
+	.procedure__images {
+	    padding-top: 15px;
+	}
+	
+	.procedure__images svg {
+	    width: 125px;
+	    bottom: 9px;
+	}
+
+	.procedure__img_wave-down {
+	    position: absolute;
+	    bottom: 0px;
+	    right: 0px;
+	    width: 29%;
+	    height: 70px;
+	    z-index: 10000;
+	}
+}
+
+@media screen and (max-width: 430) {
 	.procedure__circle {
 	    bottom: 68px;
 	    width: 90%;
@@ -238,99 +318,38 @@
 	    height: 73%;   
 	}
 
-	.procedure__title {
-	    padding-top: 3px;
-	    padding-left: 0px;
-	    font-size: 25px;
-	    width: 100%;
-	    margin-bottom: 70px;
-	    text-align: center;
-	    background: none;
-	    margin-bottom: 40px;
-	}
-
-	.procedure__text_second {
-	    margin: 0px auto 40px;
-	    display: block;
-	    width: 80%;
-	}
-
-	.procedure__name {
-	    width: 162px;
-	    font-size: 16px;
-	    position: static;
-	    margin: 0px auto;
-	}
-
-	.procedure__specialist {
-	    width: 260px;
-	    bottom: -34px;
-	    right: 99px;
-	    font-size: 16px;
-	    position: static;
-	    margin: 6px auto;
-	}
-}
-
-
-@media screen and (max-width: 530.9px) {
-	.procedure__img_stick,
-	.procedure__img_stick-third {
-	    height: 1563px;
-	}
 }
 
 @media screen and (max-width: 420px) {
-	.procedure__img_stick {
-	    z-index: -1;
-	    left: 10px;
-	    height: 1578px;
-	}
-
-	.procedure__img_stick-third {
-	    right: 10px;
-	    height: 1578px;
-	}
-
-		.procedure__text span {
+	.procedure__text span {
 	    display: block;
 	    margin: 0px auto;
 	    width: 190px;
 	}
 
-	.procedure__circle {
-	    bottom: 68px;
-	    width: 98%;
-	    right: 3px;
-	    height: 73%;
+	.procedure__content {
+    	margin-top: 20px;
 	}
 
 	.procedure__link {
-	    display: block;
-	    text-align: center;
-	    margin: 0px auto;
-	    width: 234px;
-	    padding: 13px 12px;
+	    padding: 10px 10px;
+	    font-size: 23px;
 	}
-}
 
-@media screen and (max-width: 412px) {
-	.procedure__img_stick,
-	.procedure__img_stick-third {
-    	height: 1597px;
+	.procedure__text { 
+	    font-size: 15px;
 	}
-}
 
-@media screen and (max-width: 332px) {
-	.procedure__img_stick,
-	.procedure__img_stick-third {
-    	height: 1617px;
+	.procedure__title {
+	    font-size: 20px;
 	}
-}
 
-@media screen and (max-width: 320px) {
-	.procedure__img_stick,
-	.procedure__img_stick-third {
-	    height: 1648px;
+	.procedure__circle {
+	    width: 75%;
+	    right: 11%;
+	}
+	.procedure__images svg {
+	    width: 90px;
+	    bottom: 9px;
 	}
 }
