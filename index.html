@@ -1,67 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
-
-    <title>Отправка формы на почту </title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-    	form {
-    		background-color: #f9f9f9;
-    		padding: 20px;
-    		margin: 20px;
-    	}
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-
-      <div class="row">
-      	<div class="col-sm-4">
-      		<form action="mail.php" method="POST">
-      			<legend>Заголовок формы</legend>
-
-      			<div class="form-group">
-      				<label for="">Введите ваше имя</label>
-      				<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
-      			</div>
-      		
-      			<div class="form-group">
-      				<label for="">Введите номер телефона</label>
-      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
-      			</div>
-      		
-      			<div class="form-group">
-      				<label for="">Введите email</label>
-      				<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
-      			</div>
-      		
-      			<button type="submit" class="btn btn-primary">Отправить форму</button>
-      		</form>
-      	</div><!-- .col-sm-4 -->
-      </div> <!-- .row -->
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		title
+	</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section class="procedure">
+			<img src="img/wave-top.png" alt="" class="procedure__img_wave">
+			<img src="img/stick.jpg" alt="" class="procedure__img_stick">
+			<img src="img/stick.jpg" alt="" class="procedure__img_stick-second">
+			<img src="img/stick.jpg" alt="" class="procedure__img_stick-third">
+		<div class="procedure-wrap">
+			<div class="procedure__content">
+				<div class="procedure__text">
+					Процедура проводится на  
+					<span>
+						SMAS - LIFTING 4D HIFU
+					</span> 
+				</div>
+				<h1 class="procedure__title">
+					запишись на 3 зоны 
+					по цене одной
+				</h1>
+				<div class="procedure__text procedure__text_second">
+					Оставь заявку на SMAS - Лифтинг лица <br>
+					и получи еще SMAS - Лифтинг подчелюстной лицевой области <br>
+					и подбородка в подарок!
+				</div>
+				<a href="#" class="procedure__link">
+					написать в whatsap
+				</a>
+			</div>
+			<div class="procedure__content_img">
+				<div class="procedure__back-img">
+					<div class="procedure__circle"></div>
+					<img src="img/woman1.png" alt="" class="procedure__woman">
+				</div>
+				<div class="procedure__human">
+					<div class="procedure__name">
+						Сыздыкова Зинара
+					</div>
+					<div class="procedure__specialist">
+						Врач дерматокосметолог | терапевт
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="procedure__images">
+			<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  			<path fill="#FF0066" d="M51.7,-26.4C62.9,-10.3,65.2,14.3,55.1,35C45,55.6,22.5,72.1,3.2,70.3C-16.1,68.4,-32.2,48.1,-43.1,27.1C-54,6,-59.7,-15.9,-51.7,-30.1C-43.6,-44.4,-21.8,-51,-0.8,-50.5C20.2,-50.1,40.4,-42.5,51.7,-26.4Z" transform="translate(100 100)" />
+			</svg>
+			<img src="img/wave-down.png" alt="" class="procedure__img_wave-down">
+			<canvas class="wave-xp"></canvas>
+		</div>
+	</section>
+	<script src="js/main.js"></script>
+</body>
 </html>
-	
