@@ -24,6 +24,10 @@ a {
 	font-family: 'Bitter';
 }
 
+.transparent-block {
+	display: none;
+}
+
 .procedure {
 	position: relative;
 	width: 100%;
