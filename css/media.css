@@ -1448,13 +1448,13 @@
 	.header__soc-media_insta {
 	    background-size: 13%;
 	    font-size: 13px;
-	    padding: 4px 0px 0px 25px;
+	    padding: 5px 0px 0px 25px;
 	    letter-spacing: 0px;
 	}
 
 	.header__soc-media_tel {
 	    font-size: 13px;
-	    padding: 4px 0px 6px 25px;
+	    padding: 5px 0px 6px 25px;
 	    background-size: 19%;
 	    letter-spacing: 0px;
 	}
@@ -1560,7 +1560,7 @@
 	    width: 170px;
 	    background-size: 11% 32%;
 	}
-	
+
 	.header__img_gift {
 	    margin-left: -157px;
 	    bottom: 0px;
