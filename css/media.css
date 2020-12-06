@@ -1560,6 +1560,13 @@
 	    width: 170px;
 	    background-size: 11% 32%;
 	}
+	
+	.header__img_gift {
+	    margin-left: -157px;
+	    bottom: 0px;
+	    width: 16px;
+	    height: 17px;
+	}
 
 	.cloud__first {
 	    left: 62%;
@@ -1602,7 +1609,7 @@
 	}
 
 	.header__title {
-	    font-size: 20px;
+	    font-size: 19px;
 	    margin-top: -10px;
 	}
 
