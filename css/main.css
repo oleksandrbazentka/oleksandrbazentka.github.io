@@ -285,13 +285,13 @@ ul, li {
 }
 
 .header__img_gift {
-	position: absolute;
-	margin: auto;
-	left: 10%;
-	bottom: -30px;
-	margin-left: -5px;
-	width: 100px;
-	height: 101px;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    bottom: -30px;
+    margin-left: -584px;
+    width: 100px;
+    height: 101px;
 }
 
 .header__title {
