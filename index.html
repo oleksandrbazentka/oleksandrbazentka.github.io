@@ -1,97 +1,478 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		Smas lifting
-	</title>
+	<title>Drone</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="header" id="header">
+		<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Видео</li></a>
+      <a href="#"><li>Управление</li></a>
+      <a href="#"><li>Возможности</li></a>
+      <a href="#"><li>Сфера применения</li></a>
+      <a href="#"><li>Отзывы</li></a>
+      <a href="#"><li>Скидка</li></a>
+      <a href="#"><li><img src="img/lg.png" alt=""></li></a>
+    </ul>
+  </div>
+</nav>
 		<div class="header__wrapper">
-			<div class="header__block">
-				<a href="#" class="header__soc-media header__soc-media_insta">
-					smas_lifting_karaganda
-				</a>
-				<a href="tel:+77786543909" class="header__soc-media header__soc-media_tel">
-					+7778 - 6543 - 909
-				</a>
-			</div>
-		</div>
-		<div class="header__advantages">
-			<h1 class="header__title">
-				SMAS – LIFTING <span>4D в Караганде</span>
-			</h1>
-			<div class="header__back">	
-				<div class="header__ellipse_border">
-				</div>		
-				<div class="header__ellipse">
-				</div>
-				<picture>
-					<source srcset="img/woman.webp" type="image/webp">
-					<img src="img/woman.png" alt="" class="header__img_woman">
-				</picture>
-			</div>
-			<div class="header__block-list">
-				<ul class="header__list header__list_first">
-					<li class="header__item header__item_first">
-						1 процедура – <br>
-						минус 10 лет!
-					</li>
-					<li class="header__item header__item_second">
-						устраним <br>
-						второй подбородок
-					</li>
-					<li class="header__item header__item_third">
-						Процедуру <br> проводит 
-						врач
-					</li>
-					<li class="header__item_for-img">
-						<picture>
-							<source srcset="img/img1.webp" type="image/webp">
-							<img src="img/img1.png" alt="">
-						</picture>
-					</li>
-				</ul>
-				<ul class="header__list header__list_second">
-					<li class="header__item-for-second-list header__item_fivth">
-						станет четкий <br>
-						овал лица
-					</li>
-					<li class="header__item-for-second-list header__item_sixth">
-						аппарат последнего <br> 
-						поколения 4D - HIFU korea
-					</li>
-					<li class="header__item-for-second-list header__item_seventh">
-						разгладим <br>
-						носогубные складки
-					</li>
-				</ul>
-			</div>	
-		</div>
-		<div class="header__details">
-			<div class="details__block">
-				<picture>
-					<source srcset="img/app.webp" type="image/webp">
-					<img src="img/app.png" alt="" class="app">	
-				</picture>
-			</div>
-			<img src="img/cloud.png" alt="" class='cloud__first'>
-		</div>
-	</header>
-	<section class="consultation">
-		<div class="consultation__stock">
-			<div class="stock__text_first">
-				получи бесплатную консультацию врача
-			</div>
-			<a href="" class="stock__button">
-				Жмите сюда
+			<a href="" class="logo__small-width">
+				<img src="img/logo.png" alt="">
 			</a>
+			<nav class="header__menu">
+				<ul class="menu__block">
+					<li class="menu__item item__logo">
+						<a href="">
+							<img src="img/logo.png" alt="">
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							Видео
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							Управление
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							Возможности
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							Сфера применения
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							Отзывы
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="">
+							Скидка
+						</a>
+					</li>
+					<li class="menu__item item__lg">
+						<a href="">
+							<img src="img/lg.png" alt="">
+						</a>	
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="wrapper">
+			<div class="header__cont">
+				<h1 class="header__title">
+					Научитесь управлять дроном, как профессионал за 5 минут!
+				</h1>
+				<div class="header__subtitle">
+					<span class="subtitle__main-text">
+						DroneX PRO СОЗДАН ДЛЯ НОВИЧКОВ!
+					</span>
+					<span class="subtitle__text">
+						Лучший дрон для начинающих - аналог профессиональных квадрокоптеров, но в 4 раза дешевле!
+					</span>
+				</div>
+				<div class="header__price">
+					<div class="price__block_first">
+						Старая цена:
+						<span class="price__figure_first">
+							198$
+						</span>
+					</div>
+					<div class="price__block_second">
+						Новая цена:
+						<span class="price__figure_second">
+							99$
+						</span>
+					</div>
+				</div>
+				<button class="header__button">
+					Получить скидку
+				</button>
+			</div>
+		</div>	
+	</header>
+	<section class="video" id="video">
+		<div class="wrapper">
+			<h2 class="video__title">
+				DroneX PRO - ЛЕГКИЙ В УПРАВЛЕНИИ И МАНЕВРЕННЫЙ!
+			</h2>
+			<div class="video__cont">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/MX4JDNoVFn0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
+	<section class="control" id="control">
+		<div class="wrapper">
+			<h2 class="control__title">
+				Забудьте о сложностях управления
+			</h2>
+			<div class="control__block">
+				<div class="control__cont control__cont_first">
+					<img src="img/img-1.svg" alt="">
+					<div class="cont__title">
+						Всегда возвращается
+					</div>
+					DroneX PRO всегда вернётся к Вам
+					по нажатию всего 1 кнопки на пульте. Благодаря функции автоматического возврата он не пропадёт без вести
+					и не застрянет на дереве. Опция HEADLESS упрощает полёт к месту назначения.
+				</div>
+				<div class="control__cont">
+					<img src="img/img-2.svg" alt="">
+					<div class="cont__title">
+						Без столкновений
+					</div>
+					В DroneX PRO предусмотрена функция аварийной посадки, которая защищает дрон от столкновения с посторонними предметами. Это позволяет обеспечить оборудовани сохранность, даже если
+					вы управляете им впервые.
+				</div>
+				<div class="control__cont">
+					<img src="img/img-3.svg" alt="">
+					<div class="cont__title">
+						Стабильный полёт
+					</div>
+					Встроенный стабилизатор защищает дрон от качания. Зафиксировав высоту
+					и местоположение, DroneX PR сможет снимать фото и видео под любым углом,
+					что важно, когда квадрокоптером управляет новичок.
+				</div>
+				<div class="control__cont">
+					<img src="img/img-4.svg" alt="">
+					<div class="cont__title">
+						Защита от поломки
+					</div>
+					Чтобы не повредить пропеллеры дрона, разработчики DroneX PRO оснастили его специальными ограждениями. Но даже если вышел из строя какой-то элемент, все составляющие дрона легко заменяемы.
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="capabilities" id="capabilities">
+		<div class="wrapper">
+			<h2 class="capabilities__title">
+				Потрясающие возможности 
+				<span>DroneX PRO</span>
+			</h2>
+			<div class="capabilities__block-right">
+				<div class="capabilities__cont">
+					<div class="capabilities__cont-title">
+						Сборка за 10 минут
+					</div>
+					Вам не придётся тратить время на то, чтобы понять, как собрать дрон или читать инструкцию
+					к нему. Всё предельно понятно и просто. Сборка займёт не более 10 минут вашего времени.
+				</div>
+				<div class="capabilities__cont capabilities__cont-img">
+					<img src="img/big-1.svg" alt="">
+				</div>
+			</div>
+			<div class="capabilities__block-left">
+				<div class="capabilities__cont capabilities__cont-img">
+					<img src="img/big-2.svg" alt="">
+				</div>
+				<div class="capabilities__cont capabilities__cont-left">
+					<div class="capabilities__cont-title">
+						Простота управления
+					</div>
+					Взлёт и посадка дрона осуществляется при помощи одной кнопки на пульте управления. Больше никаких сложных комбинаций клавиш, всего 5 минут и вы поймёте как запустить
+					и посадить квадрокоптер. 
+				</div>
+			</div>
+			<div class="capabilities__block-right">
+				<div class="capabilities__cont">
+					<div class="capabilities__cont-title">
+						25 минут полёта
+					</div>
+					Благодаря ёмким аккумуляторам объемом 500 мА/час дрон способен пролететь 25 минут
+					на одном заряде. В комплект входит 
+					3 аккумуляторных литий-ионных батареи.
+				</div>
+				<div class="capabilities__cont capabilities__cont-img">
+					<img src="img/big-3.svg" alt="">
+				</div>
+			</div>
+			<div class="capabilities__block-left">
+				<div class="capabilities__cont capabilities__cont-img">
+					<img src="img/big-4.svg" alt="">
+				</div>
+				<div class="capabilities__cont capabilities__cont-left">
+					<div class="capabilities__cont-title">
+						Съёмка в HD качестве
+					</div>
+					Широкоугольная камера с разрешением 720 рx 
+					и углом обзора 120 градусов позволит делать чёткие аэрофотоснимки  и видео без шумов 
+					и помех в HD-качестве для дальнейшей обработки или печати.
+				</div>
+			</div>
+			<div class="capabilities__block-right">
+				<div class="capabilities__cont">
+					<div class="capabilities__cont-title">
+						Эффект присутствия
+					</div>
+					Подключите DroneX PRO к своему смартфону при помощи Wi-Fi и благодаря системе FPV получайте изображение на экран в режиме реального времени. Используйте дополнительно VR-очки, чтобы создать эффект 3D-визуализации.
+				</div>
+				<div class="capabilities__cont capabilities__cont-img">
+					<img src="img/big-5.svg" alt="">
+				</div>
+			</div>
+			<div class="capabilities__block-left">
+				<div class="capabilities__cont capabilities__cont-img">
+					<img src="img/big-6.svg" alt="">
+				</div>
+				<div class="capabilities__cont capabilities__cont-left">
+					<div class="capabilities__cont-title">
+						Наклоняй и управляй
+					</div>
+					Включите на своём смартфоне функцию гироскоп
+					и управляйте дроном без использования пульта. Наклоняйте гаджет в нужную сторону и дрон будет следовать вашим командам. Начертите траекторию полета на экране и квадрокоптер последует по ней. 
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="goals" id="goals">
+		<div class="wrapper">
+			<h2 class="goals__title">
+				Для каких целей подойдёт
+			</h2>
+			<div class="goals__text">
+				Компактные размеры, складная конструкция, ручка для переноски -
+				с дроном для начинающих DroneX PRO удобно путешествовать.
+			</div>
+			<ul class="goals__list">
+				<li class="goals__item">
+					<img src="img/ic-1.svg" alt="">
+					Селфи с друзьями
+				</li>
+				<li class="goals__item">
+					<img src="img/ic-2.svg" alt="" class="goals__img_second">
+					Рабочие съёмки дизайнеров, видеографов и фрилансеров
+				</li>
+				<li class="goals__item">
+					<img src="img/ic-3.svg" alt="">
+					Спорт, туризм, путешествия
+				</li>				
+				<li class="goals__item">
+					<img src="img/ic-4.svg" alt="">
+					Охрана частных объектов
+				</li>
+				<li class="goals__item">
+					<img src="img/ic-5.svg" alt="">
+					Любительская аэрофотосъёмка и видеосъёмка
+				</li>
+				<li class="goals__item">
+					<img src="img/ic-6.svg" alt="">
+					Исследование местности
+					во время походов
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slider">
+		<div class="wrapper">
+			<div class="owl-carousel owl-theme">
+    			<div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+    			<div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+			    <div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+			    <div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+			    <div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+			    <div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+			    <div class="slider__item">
+    				<div class="slider__text">
+    					Купил дрон всего 2 недели назад, но уже успел провести тест-драйв
+						за городом. Качеством видеосъёмки и фотоснимков доволен на 100%.
+						Со стабилизацией проблем не было, дрон сам определяет оптимальные углы и расстояния для съемки. Пульт управления удобный. После запуска сразу разобрался что к чему.
+						Спасибо за качественный товар, буду советовать друзьям.
+    				</div>
+    				<div class="slider__cont">
+    					<span>Преимущества:</span>
+    					Фото и видео супер!
+    				</div>
+    				<div class="slider__cont">
+    					<span>Недостатки:</span>
+    					Не обнаружил
+    				</div>
+    				<div class="slider__user">
+    						Джон
+    						<span>Штат Филадельфия</span>
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="footer__block">
+			<h2 class="footer__title">
+				СКИДКА ДЛЯ ВАС!
+			</h2>
+			<div class="footer__text">
+				При покупке дрона для начинающих DroneX PRO сегодня
+				<span class="footer__action">
+					ПОЛУЧИТЕ СКИДКУ <span class="footer__det">50%</span>
+				</span>
+				<p>
+					Платите <span class="blue">99$</span>
+					<span class="grey">
+						вместо <span>198$</span>
+					</span>
+				</p>
+					<span class="footer__free">
+						+ бесплатная доставка в любую точку мира
+					</span>
+				
+				<button class="header__button footer__button">
+					Перейти к покупке
+				</button>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
