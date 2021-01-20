@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-	background: url('../img/bg.png') no-repeat top left;
+	background: url('../img/bg.jpg') no-repeat top left;
 }
 
 .wrapper {
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .materials__main-block {
-	background: url('../img/puh.png') no-repeat top center;
+	background: url('../img/puh-bg.jpg') no-repeat top center;
 }
 
 .materials__cont {
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .materials__main-block_second {
-	background: url('../img/bg-hidro.png') no-repeat top center;
+	background: url('../img/hidro-bg.jpg') no-repeat top center;
 	padding-bottom: 40px;
 }
 
@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .materials__main-block_third {
-	background: url('../img/mem-bg.png') no-repeat top center;
+	background: url('../img/mem-bg.jpg') no-repeat top center;
 	padding-bottom: 150px;
 }
 
