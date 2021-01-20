@@ -1229,13 +1229,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.header__logo img {
-	    top: -19px;
+	    top: -16px;
 	    left: 10px;
 	    width: 49px;
 	}
 
 	.big-text {
 	    font-size: 35px;
+	    margin-top: 5px;
 	}
 
 	.little-text {
