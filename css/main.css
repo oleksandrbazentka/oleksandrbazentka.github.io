@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 1200px) {
 	.header {
-	    background: url(../img/bg.png) no-repeat top left / cover;
+	    background: url(../img/bg.jpg) no-repeat top left / cover;
 	}
 
 	.wrapper {
@@ -1117,11 +1117,11 @@ h1, h2, h3, h4, h5, h6 {
 
 	.materials__main-block_first {
 	    padding-bottom: 40px;
-	    background: url(../img/puh.png) no-repeat top center / cover;
+	    background: url(../img/puh-bg.jpg) no-repeat top center / cover;
 	}
 
 	.materials__main-block_second {
-	    background: url(../img/bg-hidro.png) no-repeat top center / cover;
+	    background: url(../img/hidro-bg.jpg) no-repeat top center / cover;
 	    padding-bottom: 40px;
 	}
 
