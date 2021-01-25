@@ -638,6 +638,38 @@
 	    padding-left: 0px;
 	}
 
+	.swiper-button-prev {
+		transition: none;
+		outline: none;
+	}
+
+	.swiper-button-prev:hover {
+		background: url('../img/prev.svg') no-repeat top center;
+	}
+
+	.swiper-button-next {
+		transition: none;
+		outline: none;
+	}
+
+	.swiper-button-next:hover {
+		background: url('../img/next.svg') no-repeat top center;
+	}
+
+	.footer__discord:hover {
+		background: url('../img/bl-disc.svg') no-repeat top center;
+	}
+
+	.footer__discord:focus {
+		background: url('../img/bl-disc.svg') no-repeat top center;
+	}
+
+	.footer__discord:active {
+		background: url('../img/bl-disc.svg') no-repeat top center;
+	}
+
+
+
 	/* Home Page End */
 
 	/* Profile Page Start */
