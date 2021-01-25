@@ -644,7 +644,7 @@
 	}
 
 	.swiper-button-prev:hover {
-		background: url('../img/prev.svg') no-repeat top center;
+		background: url('../img/prev-def.svg') no-repeat top center;
 	}
 
 	.swiper-button-next {
@@ -653,7 +653,7 @@
 	}
 
 	.swiper-button-next:hover {
-		background: url('../img/next.svg') no-repeat top center;
+		background: url('../img/next-def.svg') no-repeat top center;
 	}
 
 	.footer__discord {
