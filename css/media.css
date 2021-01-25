@@ -707,6 +707,24 @@
 	    padding-bottom: 20px;
 	    max-width: 768px;
 	}
+
+	.my-life-button-prev:{
+		transition: none;
+		outline: none;
+	}
+
+	.my-life-button-prev:hover {
+		background: url('../img/sm-prev.svg') no-repeat;
+	}
+
+	.my-life-button-next:{
+		transition: none;
+		outline: none;
+	}
+
+	.my-life-button-next:hover {
+		background: url('../img/sm-next.svg') no-repeat;
+	}	
 	/* Profile Page End */
 
 	/* Donate Page Start */
