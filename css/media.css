@@ -266,6 +266,25 @@
 		font-size: 15px;
 	}
 	/* Profile Page End */
+
+	/* Donate Page Start */
+	.donate__block {
+	    margin-right: 20px;
+	    max-width: 465px;
+	    width: 100%;
+	}
+
+	.donate__image-wrapper {
+	    width: 100%;
+	}
+
+	.donate__car {
+	    background: url('../img/car.jpg') no-repeat top left;
+	    max-width: 426px;
+	    background-size: 100% 100%;
+	    width: 94%;
+	}
+	/* Donate Page End */
 }
 
 @media screen and (max-width: 992px) {
@@ -427,6 +446,54 @@
 	}
 
 	/* Profile Page End */
+
+	/* Donate Page Start */
+
+	.donate__block {
+	    max-width: 465px;
+	    margin-right: 20px;
+	}
+
+	.donate__block_second {
+		margin-right: 0px;
+	}
+
+	.donate__title {
+	    font-size: 24px;
+	}
+
+	.donate__subtitle {
+	    font-size: 15px;
+	}
+
+	.donate__form {
+	    padding: 28px 36px;
+	}
+
+	.donate__form input {
+	    font-size: 16px;
+	}
+
+	.donate__button {
+	    font-size: 16px;
+	}
+
+	.donate__agreement {
+	    font-size: 12px;
+	}
+
+	.donate__img-text {
+	    font-size: 20px;
+	    bottom: 26px;
+	    left: 32px;
+	}
+
+	.donate__img {
+	    max-width: 410px;
+	    height: 202px;
+	}
+
+	/* Donate Page ENd */
 }
 
 @media screen and (max-width: 786px) {
@@ -452,7 +519,6 @@
 	    flex-direction: column;
 	}
 
-
 	.header__images {
 	    max-width: 400px;
 	    margin: 0px auto;
@@ -474,6 +540,15 @@
 
 	.images__map {
 	   	display: none;
+	}
+
+	.images__back {
+	    background: linear-gradient(359.88deg, #FCFCFC 1.93%, rgba(252, 252, 252, 0) 30.81%);
+	}
+
+	.donate__map {
+		display: block;
+		height: 100%;
 	}
 
 	.play__title {
@@ -501,7 +576,12 @@
 
 	.play__card .card__button {
 	    max-width: 300px;
-	    width: auto;
+	    width: 100%;
+	}
+
+	.card__button-ip {
+		height: auto !important;
+		display: block;
 	}
 
 	.about__block {
@@ -559,6 +639,78 @@
 	}
 
 	/* Home Page End */
+
+	/* Profile Page Start */
+
+	.profile {
+    	padding-bottom: 500px;
+	}
+
+	.stat__cont {
+	    margin-right: 5px;
+	    font-size: 12px;
+	    width: 170px;
+	}
+
+	.my-life__wrapper {
+	    justify-content: center;
+	    flex-wrap: wrap;
+	}
+
+	.my-life__cont-slider {
+	    padding-bottom: 0px;
+	    flex-basis: 100%;
+	    order: -1;
+	    max-width: 768px;
+	    margin-bottom: 40px;
+	}
+
+	.my-life__slide-cont_second {
+	    padding-bottom: 20px;
+	    max-width: 768px;
+	}
+	/* Profile Page End */
+
+	/* Donate Page Start */
+	.donate {
+	    padding-bottom: 150px;
+	}
+
+	.donate__wrapper {
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+
+	.donate__block {
+	    text-align: center;
+	    margin-right: 0px;
+	    margin-bottom: 40px;
+	}
+
+	.donate__title {
+	    font-size: 26px;
+	}
+
+	.donate__subtitle {
+	    font-size: 16px;
+	}
+
+	.donate__form input {
+	    font-size: 17px;
+	}
+
+	.donate__button {
+	    font-size: 17px;
+	}
+
+	.donate__agreement {
+	    font-size: 14px;
+	}
+
+	.donate__img-text {
+	    font-size: 22px;
+	}
+	/* Donate Page End */
 }
 
 @media screen and (max-width: 576px) {
@@ -740,8 +892,13 @@
 		background: #FCFCFC
 	}
 
+	.footer__wrapper {
+	    align-items: normal;
+	}
+
 	.footer__list_first {
-		flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    align-items: baseline;
 	}
 
 	.footer__item:nth-child(2) {
@@ -753,6 +910,101 @@
 	}
 
 	/* Home Page End */
+
+	/* Profile Page Start */
+
+	.profile-stat__block {
+	    height: 570px;
+	}
+
+	.profile-stat__wrap {
+	    justify-content: center;
+	   	flex-wrap: wrap;
+	    align-items: center;
+	    flex-direction: row;
+	}
+
+	.stat__cont {
+	    margin-right: 5px;
+	    font-size: 16px;
+	    max-width: 570px;
+	    width: 100%;
+	}
+
+	.my-life__cont-slider {
+	    padding-bottom: 0px;
+	    flex-basis: 100%;
+	    order: -1;
+	    max-width: 768px;
+	    margin-bottom: 40px;
+	}
+
+	.my-life__cont {
+	    height: auto;
+	    width: 100%;
+	    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+	    border-radius: 16px;
+	    padding: 16px 10px 0px 10px;
+	    max-width: 211px;
+	}
+
+	.my-life__comf {
+	    width: 100%;
+	    max-width: 160px;
+	}
+	/* Profile Page End */
+
+
+	/* Registration Page Start */
+	.form {
+	    padding: 35px;
+	}
+
+	.form input {
+	    font-size: 17px;
+	}
+
+	.form__button {
+	    font-size: 17px;
+	}
+	/* Registration Page End */
+
+
+	/* Donate Page Start */
+
+	.donate {
+	    padding-top: 100px;
+	    padding-bottom: 100px;
+	}
+
+	.donate__title {
+	    font-size: 24px;
+	}
+
+	.donate__subtitle {
+	    font-size: 15px;
+	}
+
+	.donate__form {
+	    padding: 24px 30px;
+	}
+
+	.donate__form input {
+	    font-size: 15px;
+	}
+
+	.donate__button {
+	    font-size: 16px;
+	}
+
+	.donate__agreement {
+	    font-size: 12px;
+	}
+
+	.donate__img-text {
+		font-size: 18px;
+	}
+	/* Donate Page End */
 }
 
 @media screen and (max-width: 510px ) {
@@ -760,7 +1012,6 @@
 
 	.form input {
 	    font-size: 18px;
-	    width: 94%;
 	    padding: 8px 0px 8px 20px;
 	    margin-bottom: 28px;
 	    border-radius: 5px;
@@ -770,6 +1021,15 @@
 	}
 
 	/* Registration Page End */
+
+	/* Profile Page Start */
+
+	.my-life__cont {
+	    width: 100%;
+	    max-width: 175px;
+	}
+
+	/* Profile Page End */
 }
 
 @media screen and (max-width: 460px ) {
@@ -777,7 +1037,6 @@
 
 	.form input {
 	    font-size: 18px;
-	    width: 93%;
 	    padding: 8px 0px 8px 20px;
 	    margin-bottom: 28px;
 	    border-radius: 5px;
@@ -897,6 +1156,98 @@
 	}
 
 	/* Home Page End */
+
+	/* Profile Page Start */
+
+	.my-life__cont-slider {
+	    padding-bottom: 0px;
+	    flex-basis: 100%;
+	    order: -1;
+	    max-width: 768px;
+	    margin-bottom: 40px;
+	    margin-right: 0px;
+	}
+
+	.my-life__cont-slider {
+	    padding-bottom: 0px;
+	}
+
+	.my-life-button-prev {
+	    top: 40px;
+	    right: 30px;
+	    left: auto;
+	}
+
+	.my-life-button-next {
+	    right: 0px;
+	    top: 40px;
+	    left: auto;
+	}
+
+	.my-life__cont {
+	    width: 100%;
+	    max-width: 151px;
+	}
+
+	.my-life__title {
+	    font-weight: 500;
+	    width: 100%;
+	    font-size: 16px;
+	    line-height: 24px;
+	    background: url(../img/home.svg) no-repeat left center;
+	    padding-left: 30px;
+	    margin-bottom: 16px;
+	    max-width: 130px;
+	}
+
+	.my-life__slide-title_third {
+	    font-size: 15px;
+	}
+
+	.cont-business__item {
+	    font-size: 13px;
+	}
+
+	.cont-unit__item {
+	    margin-right: 20px;
+	    color: #8F8F8F;
+	    font-size: 12px;
+	}
+
+	.my-life__comf {
+    width: 100%;
+    max-width: 160px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #EAEAEA;
+}
+	.params__cont {
+	    color: #8F8F8F;
+	    font-size: 12px;
+	    margin-top: 12px;
+	    margin-right: 24px;
+	}
+
+	.params__cont span {
+	    font-size: 12px;
+	}
+
+
+	/* Profile Page End */
+}
+
+@media screen and (max-width: 420px) {
+	/* Donate Page Start */
+
+	.donate__img {
+	    max-width: 320px;
+	    height: 158px;
+	    width: 100%;
+	}
+
+	/* Donate Page End */
 }
 
 @media screen and (max-width: 400px ) {
@@ -904,7 +1255,6 @@
 
 	.form input {
 	    font-size: 18px;
-	    width: 91%;
 	    padding: 8px 0px 8px 20px;
 	    margin-bottom: 28px;
 	    border-radius: 5px;
@@ -929,12 +1279,60 @@
 	/* Home Page End */
 }
 
+@media screen and (max-width: 386px) {
+	.profile {
+	    padding-bottom: 785px;
+	}
+	
+	.my-life__cont {
+	    margin-right: 0px;
+	    max-width: 385px;
+	    margin-bottom: 40px;
+	    padding: 16px 16px 16px 16px;
+	}
+
+	.my-life__comf {
+	    width: 100%;
+	    max-width: 386px;
+	    font-size: 20px;
+	}
+
+	.my-life__params {
+	    justify-content: space-between;
+	}
+
+	.params__cont {
+	    font-size: 15px;
+	    margin-right: 0px;
+	}
+
+	.params__cont span {
+	    font-size: 15px;
+	}
+
+	.my-life__slide-title_third {
+	    font-size: 16px;
+	}
+
+	.cont-unit__wrap {
+	    justify-content: space-between;
+	}
+
+	.cont-business__item {
+	    font-size: 15px;
+	}
+
+	.cont-unit__item {
+	    margin-right: 0px;
+	    font-size: 15px;
+	}
+}
+
 @media screen and (max-width: 370px ) {
 	/* Registration Page Start */
 
 	.form input {
 	    font-size: 18px;
-	    width: 89%;
 	    padding: 8px 0px 8px 20px;
 	    margin-bottom: 28px;
 	    border-radius: 5px;
@@ -942,8 +1340,18 @@
 	    outline-color: #0456D0;
 	    outline: 2px;
 	}
-	
+
 	/* Registration Page End */
+
+	/* Donate Page Start */
+
+	.donate__img {
+	    max-width: 270px;
+	    height: 132px;
+	    width: 100%;
+	}
+
+	/* Donate Page End */
 }
 
 @media screen and (max-width: 360px) {
@@ -954,6 +1362,19 @@
 	    margin-right: -141px;
 	    width: 220px;
 	    bottom: 175px;
+	}
+
+	.my-life__cont-slider {
+	    padding-bottom: 0px;
+	    flex-basis: 100%;
+	    order: -1;
+	    max-width: 768px;
+	    margin-bottom: 40px;
+	}
+
+	.my-life__slide-cont,
+	.my-life__slide-cont_second {
+	    font-size: 12px;
 	}
 
 	/* Home Page End */
@@ -974,8 +1395,7 @@
 	/* Registration Page Start */
 
 	.form input {
-	    font-size: 18px;
-	    width: 87%;
+	    font-size: 18px;;
 	    padding: 8px 0px 8px 20px;
 	    margin-bottom: 28px;
 	    border-radius: 5px;

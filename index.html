@@ -20,14 +20,14 @@
 			<div class="wrapper">
 				<div class="header__wrapper">
 					<div class="header__logo">
-						<a href="">
+						<a href="index.html">
 							<img src="img/logo.svg" alt="">
 						</a>
 					</div>
 					<nav class="header__menu">
 						<ul class="menu__list">
 							<li class="header__item">
-								<a href="" class="active">
+								<a href="index.html" class="active">
 									Главная
 								</a>
 							</li>
@@ -47,7 +47,7 @@
 								</a>	
 							</li>
 							<li class="header__item header__item-donate">
-								<a href="">
+								<a href="donate.html">
 									Донат
 									<span>
 										×2
@@ -55,7 +55,7 @@
 								</a>	
 							</li>
 							<li class="header__item">
-								<a href="">
+								<a href="my-profile.html">
 									<img src="img/profile.svg" alt="">
 								</a>
 							</li>
@@ -65,7 +65,7 @@
 						</div>
 						<ul class="menu__list-ham">
 							<li class="header__ham-item">
-								<a href="" class="active">
+								<a href="index.html" class="active">
 									Главная
 								</a>
 							</li>
@@ -85,7 +85,7 @@
 								</a>	
 							</li>
 							<li class="header__ham-item header__ham-item-donate">
-								<a href="">
+								<a href="donate.html">
 									Донат
 									<span>
 										×2
@@ -93,7 +93,7 @@
 								</a>	
 							</li>
 							<li class="header__ham-item">
-								<a href="">
+								<a href="my-profile.html">
 									<img src="img/profile.svg" alt="">
 								</a>
 							</li>
@@ -133,12 +133,24 @@
 					</div>
 					<div class="header__images">
 						<div class="image__wrap">
-							<img src="img/man.png" alt="">
+							<picture>
+								<source srcset="img/man.webp" type="image/webp">
+								<img src="img/man.png" alt="">
+							</picture>
 						</div>
-						<img src="img/money-left.png" alt="" class="image__money_left">
-						<img src="img/money-right.png" alt="" class="image__money_right">
+						<picture>
+							<source srcset="img/money-left.webp" type="image/webp">
+							<img src="img/money-left.png" alt="" class="image__money_left">
+						</picture>
+						<picture>
+							<source srcset="img/money-right.webp" type="image/webp">
+							<img src="img/money-right.png" alt="" class="image__money_right">
+						</picture>
 					</div>
-					<img src="img/map.png" alt="" class="images__map">
+					<picture>
+						<source srcset="img/map.webp" type="image/webp">
+						<img src="img/map.png" alt="" class="images__map">
+					</picture>	
 				</div>
 			</div>
 			<div class="images__back"></div>
@@ -151,7 +163,10 @@
 			<div class="play__cards">	
 				<div class="play__card">
 					<div class="card-img__wrap">
-						<img src="img/img1.jpg" alt="" class="play__img">
+						<picture>
+							<source srcset="img/img1.webp" type="image/webp">
+							<img src="img/img1.jpg" alt="" class="play__img">
+						</picture>
 					<div class="card__back"></div>
 					</div>
 					<div class="card__title">
@@ -167,7 +182,10 @@
 				</div>
 				<div class="play__card">
 					<div class="card-img__wrap">
-						<img src="img/img2.jpg" alt="" class="play__img">
+						<picture>
+							<source srcset="img/img2.webp" type="image/webp">
+							<img src="img/img2.jpg" alt="" class="play__img">
+						</picture>
 					<div class="card__back"></div>
 					</div>
 					<div class="card__title">
@@ -182,7 +200,10 @@
 				</div>
 				<div class="play__card">
 					<div class="card-img__wrap">
-						<img src="img/img3.jpg" alt="" class="play__img">
+						<picture>
+							<source srcset="img/img3.webp" type="image/webp">
+							<img src="img/img3.jpg" alt="" class="play__img">
+						</picture>
 					<div class="card__back"></div>
 					</div>
 					<div class="card__title">
@@ -190,11 +211,11 @@
 					</div>
 					<div class="card__text">
 						Найдите в поиске GTA5UP RolePlay
-						или подключитесь 185.71.65.7:22005
-					</div>
-					<a href="" class="card__button header__button-play">
-						Скопировать IP
-					</a>
+						или подключитесь <span id="card__ip">185.71.65.7:22005</span>
+					</div>	
+					<button class="btn card__button header__button-play card__button-ip" data-clipboard-target="#card__ip" aria-label="Sasi Huy">
+					    Скопировать IP
+					</button>
 				</div>	
 			</div>	
 		</div>
@@ -202,67 +223,70 @@
 	<section class="about" id="about">
 		<div class="wrapper about__wrapper">
 			<div class="about__block">
-				<img src="img/dust1.png" alt="" class="about__dust_first">
-				<img src="img/dust2.png" alt="" class="about__dust_second">
+				<picture>
+					<source srcset="img/dust1.webp" type="image/webp">
+					<img src="img/dust1.png" alt="" class="about__dust_first">
+				</picture>
+				<picture>
+					<source srcset="img/dust2.webp" type="image/webp">
+					<img src="img/dust2.png" alt="" class="about__dust_second">
+				</picture>
 				<div class="about__images">
-					<img src="img/kvadrocycle.png" alt="">
+					<picture>
+						<source srcset="img/kvadrocycle.webp" type="image/webp">
+						<img src="img/kvadrocycle.png" alt="">
+					</picture>
 					<div class="images__back-kvadro">
 					</div>
 				</div>
 				<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-        	<h2 class="about__title">
-				О проекте
-			</h2>
-			<div class="about__text about__text_first">
-				<span class="about__text-bold">GTA5UP RolePlay</span> - это сервер ролевого жанра Role Play в игре GTA 5. Мы предоставляем комфортные условия игры. Поиграйте, реализуйте в персонаже собственные качества.
-			</div>
-			<div class="about__text">
-				Станьте полицейским или бандитом, мафиози или политиком, медиком или военным в мире
-				GTA5 Role Play. Вариантов для развития бесконечное множество, потому что мы сделали системы, позволяющие очень тонко настроить вашу игру.
-			</div>
-        </div>
-        <div class="swiper-slide">
-        	<h2 class="about__title">
-				О проекте
-			</h2>
-			<div class="about__text about__text_first">
-				Мы вкладываем много труда в наш проект. Зайдите на сервер, оцените качество нашего маппинга, уверяю, он не оставит вас без эмоций. Чтобы вам было спокойно играть, мы используем мощнейший сервер, без устали оптимизируем мод и работаем над строгим античитом.
-			</div>
-			<div class="about__text">
-				Системы сервера распределены по мере развития вашего персонажа. Это облегчит вашу игру, позволит Вам расслабиться.
-			</div>
-        </div>
-        <div class="swiper-slide">
-        	<h2 class="about__title">
-				О проекте
-			</h2>
-			<div class="about__text about__text_first">
-				Наша администрация - это команда помощников, радеющих за ваш комфорт. Они настроены максимально дружелюбно к игроку, стараясь помочь ему ответами на вопросы и жалобы с самого начала. 
-			</div>
-			<div class="about__text">
-				Мы ведём серьёзный контроль за действиями сотрудников, но и поддерживаем их, обучаем, поэтому профессионализм обеспечен!
-			</div>
-        </div>
-        <div class="swiper-slide">
-        	<h2 class="about__title">
-				О проекте
-			</h2>
-			<div class="about__text">
-				Нас любят многие блоггеры. Ведь мы стабильны, у нас можно снять много контента, развлечься и позвать подписчиков, не беспокоясь за них. Регулярно нас посещают как крупные медиа-гиганты, так и новички в этом занятии.
-			</div>
-        </div>
-    </div>
-    <div class="swiper-button-prev">
-    	
-    </div>
-    <div class="swiper-button-next">
-    	
-    </div>
-</div>
+    				<div class="swiper-wrapper">
+        				<div class="swiper-slide">
+        					<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text about__text_first">
+								<span class="about__text-bold">GTA5UP RolePlay</span> - это сервер ролевого жанра Role Play в игре GTA 5. Мы предоставляем комфортные условия игры. Поиграйте, реализуйте в персонаже собственные качества.
+							</div>
+							<div class="about__text">
+								Станьте полицейским или бандитом, мафиози или политиком, медиком или военным в мире
+								GTA5 Role Play. Вариантов для развития бесконечное множество, потому что мы сделали системы, позволяющие очень тонко настроить вашу игру.
+							</div>
+        				</div>
+				        <div class="swiper-slide">
+				        	<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text about__text_first">
+								Мы вкладываем много труда в наш проект. Зайдите на сервер, оцените качество нашего маппинга, уверяю, он не оставит вас без эмоций. Чтобы вам было спокойно играть, мы используем мощнейший сервер, без устали оптимизируем мод и работаем над строгим античитом.
+							</div>
+							<div class="about__text">
+								Системы сервера распределены по мере развития вашего персонажа. Это облегчит вашу игру, позволит Вам расслабиться.
+							</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text about__text_first">
+								Наша администрация - это команда помощников, радеющих за ваш комфорт. Они настроены максимально дружелюбно к игроку, стараясь помочь ему ответами на вопросы и жалобы с самого начала. 
+							</div>
+							<div class="about__text">
+								Мы ведём серьёзный контроль за действиями сотрудников, но и поддерживаем их, обучаем, поэтому профессионализм обеспечен!
+							</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text">
+								Нас любят многие блоггеры. Ведь мы стабильны, у нас можно снять много контента, развлечься и позвать подписчиков, не беспокоясь за них. Регулярно нас посещают как крупные медиа-гиганты, так и новички в этом занятии.
+							</div>
+				        </div>
+    				</div>
+    				<div class="swiper-button-prev"></div>
+    				<div class="swiper-button-next"></div>
+				</div>
 			</div>
 		</div>
 		<div class="about__back"></div>
@@ -272,7 +296,7 @@
 			<ul class="footer__list footer__list_first">
 				<li class="footer__item">
 					© 2020 
-					<a href="">FiveUp RolePlay</a> | Все права защищены
+					<a href="index.html">FiveUp RolePlay</a> | Все права защищены
 				</li>
 				<li class="footer__item">
 					Designed by Mayorov Design
@@ -290,12 +314,11 @@
 			</ul>
 		</div>
 	</footer>
-	<!-- <script src="js/jquery.min.js"></script> -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/swiper.js"></script>
 	<script src="js/all.js"></script>
 	<script src="js/hamburger.js"></script>
-	<script src="js/swiper.js"></script>
-
+	<script src="js/copy.js"></script>
 </body>
 </html>

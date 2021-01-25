@@ -4,11 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		GTA5 RP
+		Пополнить баланс
 	</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -99,31 +98,54 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="form__wrapper">
-					<h1 class="form__title">
-						Авторизация
-					</h1>
-					<div class="form__subtitle">
-						Войдите в свой аккаунт, чтобы получить доступ к личному кабинету и донат-системе
+				<div class="donate">
+					<div class="donate__wrapper">
+						<div class="donate__block">
+							<h2 class="donate__title">
+								Пополнить счет
+							</h2>
+							<div class="donate__subtitle">
+								Пополните свой счет, чтобы приобрести специальные услуги в магагизне услуг
+							</div>
+							<form action="#" class="donate__form">
+								<input type="number" class="donate__input" placeholder="Введите сумму в руб.">
+								<button type="submit" class="donate__button">
+									Оплатить
+								</button>
+							</form>
+							<div class="donate__agreement">
+								Нажимая на кнопку вы автоматически принимаете условия
+								<a href="">
+									пользовательского соглашения
+								</a> 
+							</div>	
+						</div>
+						<div class="donate__block donate__block_second">
+							<h2 class="donate__title">
+								Машина недели
+							</h2>
+							<div class="donate__subtitle">
+								Каждую среду, тот кто пополнил баланс больше всех UP валютой, получает в подарок указанный транспорт
+							</div>	
+							<div class="donate__image-wrapper">
+								<div class="donate__car">
+									<img src="img/grad.png" alt="" class="donate__gradient">
+								</div>
+								<div class="donate__img-text">
+									Brabus G700 Widestar
+								</div>	
+							</div>	
+						</div>
 					</div>
-					<form action="#" class="form">
-						<input type="text" class="form__login" id="login" placeholder="Логин" required>	
-						<input type="password" class="form__password" id="password" placeholder="Пароль" required>
-						<button type="submit" class="form__button" id="check">
-							Войти
-						</button>
-					</form>
-					<div class="form__error">
-						Неверный логин или пароль!
-					</div>
-					<a href="#" class="form__restore">
-						Восстановить пароль?
-					</a>
 				</div>
-				<img src="img/map.png" alt="" class="images__map registr__map">
+				<picture>
+					<source srcset="img/map.webp" type="image/webp">
+					<img src="img/map.png" alt="" class="images__map donate__map">
+				</picture>
 			</div>
-			<div class="images__back"></div>
+		<div class="images__back"></div>
 	</header>
+	</section>
 	<footer class="footer" id="footer">
 		<div class="footer__wrapper">
 			<ul class="footer__list footer__list_first">
@@ -147,7 +169,6 @@
 			</ul>
 		</div>
 	</footer>
-	<script src="js/hamburger.js"></script>
-	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
