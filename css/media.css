@@ -663,6 +663,7 @@
 	    order: -1;
 	    max-width: 768px;
 	    margin-bottom: 40px;
+	    margin-top: 40px;
 	}
 
 	.my-life__slide-cont_second {
@@ -937,6 +938,8 @@
 	    order: -1;
 	    max-width: 768px;
 	    margin-bottom: 40px;
+	    margin-right: 0px;
+	    margin-top: 10px;
 	}
 
 	.my-life__cont {
