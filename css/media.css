@@ -644,7 +644,7 @@
 	}
 
 	.swiper-button-prev:hover {
-		background: url('../img/prev-def.svg') no-repeat top center;
+		background: url('../img/prev.svg') no-repeat top center;
 	}
 
 	.swiper-button-next {
@@ -653,7 +653,7 @@
 	}
 
 	.swiper-button-next:hover {
-		background: url('../img/next-def.svg') no-repeat top center;
+		background: url('../img/next.svg') no-repeat top center;
 	}
 
 	.footer__discord {
@@ -661,15 +661,15 @@
 	}
 
 	.footer__discord:hover {
-		background: url('../img/bdisc.svg') no-repeat top center;
+		background: url('../img/bl-disc.svg') no-repeat top center;
 	}
 
 	.footer__discord:focus {
-		background: url('../img/disc.svg') no-repeat top center;
+		background: url('../img/bl-disc.svg') no-repeat top center;
 	}
 
 	.footer__discord:active {
-		background: url('../img/disc.svg') no-repeat top center;
+		background: url('../img/bl-disc.svg') no-repeat top center;
 	}
 
 
