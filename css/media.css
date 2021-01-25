@@ -658,6 +658,7 @@
 
 	.footer__discord {
 		transition: none;
+		outline: none;
 	}
 
 	.footer__discord:hover {
