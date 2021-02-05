@@ -1079,7 +1079,7 @@ input:checked + .slider:before {
 	}
 
 	.drimmy {
-	    z-index: 16;
+	    z-index: 0;
 	    display: block;
 	    position: absolute;
 	    top: 150px;
@@ -1088,7 +1088,7 @@ input:checked + .slider:before {
 	}
 
 	.drimmy__second {
-	    z-index: 17;
+	    z-index: 0;
 	    display: block;
 	    position: absolute;
 	    top: 130px;
@@ -1126,7 +1126,7 @@ input:checked + .slider:before {
 	    margin-bottom: 15px;
 	    max-width: 250px;
 	     position: relative;
-    	z-index: 1000;
+    	z-index: 0;
 	}
 
 	.header__date {
@@ -1342,7 +1342,7 @@ input:checked + .slider:before {
 	}
 
 	.drimmy {
-	    z-index: 16;
+	    z-index: 0;
 	    display: block;
 	    position: absolute;
 	    top: 237px;
@@ -1351,7 +1351,7 @@ input:checked + .slider:before {
 	}
 
 	.drimmy__second {
-	    z-index: 17;
+	    z-index: 0;
 	    display: block;
 	    position: absolute;
 	    top: 217px;
