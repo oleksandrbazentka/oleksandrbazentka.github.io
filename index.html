@@ -99,9 +99,25 @@
 		</div>
 	</header>
 	<section class="images" id="images">
-		<div class="images__img_first">
-			<img src="img/img1.jpg" alt="" class="img_fun">
-		</div>
+		<!-- Slider main container -->
+		<div class="swiper-container swiper-container-big">
+  			<!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide swiper-slide-big">
+    	<img src="img/img1.jpg" alt="" class="img_fun">
+    </div>
+    <div class="swiper-slide swiper-slide-big">
+    	<img src="img/img2.jpg" alt="" class="img_fun">
+    </div>
+    <div class="swiper-slide swiper-slide-big">
+    	<img src="img/img3.jpg" alt="" class="img_fun">
+   	</div>
+   	<div class="swiper-slide swiper-slide-big">
+    	<img src="img/img4.jpg" alt="" class="img_fun img_fun-four">
+   		</div>
+  		</div>
+	</div>
 	</section>
 	<section class="about" id="about">
 		<img src="img/purp-2.png" alt="	" class='images__purp'>
@@ -191,18 +207,28 @@
 			ПОКУПКА БИЛЕТА В ПАРК
 		</h2>
 		<div class="buy__block">
-			<img src="img/map-2.jpg" alt="" class="buy__block_map">
+			<iframe id="eticket-bb305bca8a91" name="mriya-etickets-embeded" allowtransparency="true" frameborder="0" scrolling="no"
+        tabindex="0" target="_parent" title="Mriya e-Tickets Embed"
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation" width="100%"
+        src="https://booking.mriyaresort.com/etickets/3">
+			</iframe>
+    <script>window.onmessage = e => { e.data.hasOwnProperty("frameHeight") && (document.getElementById("eticket-bb305bca8a91").style.height = `${e.data.frameHeight + 30}px`) }</script>
 		</div>
 		<div class="buy__map">
 			<div class="buy__cont">
+				<label class="switch">
+			  <input type="checkbox" class="check">
+			  <span class="slider round"></span>
+			</label>
 			<div class="buy__text">
 				КАК ДОБРАТЬСЯ
-				<span>
+				<span class="buy__text-second">
 					КАРТА
 				</span>
 			</div>
 			</div>	
-			<img src="img/map.png" alt="" class="map">
+			<img src="img/map.png" alt="" class="map" id="map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7556b1852d7f382ac74f5ad32877181e827b051d3fdc1cfb56b79d281b6240b1&amp;source=constructor" width="1127" height="268" frameborder="0" class="map__second dis-none" id=mapSecond></iframe>
 		</div>
 		<img src="img/last-img.png" alt="" class="buy__img_coral">
 	</section>
