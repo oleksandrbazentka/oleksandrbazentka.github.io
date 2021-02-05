@@ -29,9 +29,9 @@ $(document).ready(function($) {
 });
 
 const swiperBig = new Swiper('.swiper-container-big', {
-  autoplay: {
+	loop: true,
+  	autoplay: {
         delay: 2000,
-        disableOnInteraction: false,
       },
 });
 
@@ -40,7 +40,6 @@ const swiper = new Swiper('.swiper-contaner-second', {
 	loop: true,
   	autoplay: {
 	   delay: 4000,
-	   disableOnInteraction: false,
 	 },
 
  	// If we need pagination
