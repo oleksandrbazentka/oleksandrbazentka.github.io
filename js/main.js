@@ -9,14 +9,14 @@ careBtn.onclick = function() {
 
 $(document).ready(function($) {
 	$('.header__btn_care').click(function() {
-		$('.popup-fade').fadeIn();
+		$('.popup-fade').show();
 		return false;
 	});	
 	
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
 			e.stopPropagation();
-			$('.popup-fade').fadeOut();
+			$('.popup-fade').hode();
 		}
 	});
 	
