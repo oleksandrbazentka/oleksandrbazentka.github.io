@@ -16,13 +16,13 @@ $(document).ready(function($) {
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
 			e.stopPropagation();
-			$('.popup-fade').hode();
+			$('.popup-fade').hide();
 		}
 	});
 	
 	$('.popup-fade').click(function(e) {
 		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();
+			$(this).hide();
 			$('body').removeClass('none-scroll');					
 		}
 	});
