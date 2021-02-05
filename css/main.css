@@ -66,10 +66,6 @@ ul, li, ul, nav {
 	max-width: 1084px;
 }
 
-/*.header__logo {
-	display: block;
-}
-*/
 .header__logo-wrap {
 	display: block;
 	width: 84px;
@@ -191,6 +187,7 @@ ul, li, ul, nav {
     right: 50%;
     top: 20%;
     overflow: scroll;
+    overflow-x: hidden;
     margin-right: -563px;
     max-width: 1080px;
     height: 56%;
