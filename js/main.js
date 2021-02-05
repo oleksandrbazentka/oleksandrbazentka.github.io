@@ -28,15 +28,20 @@ $(document).ready(function($) {
 	});
 });
 
-const swiperBig = new Swiper('.swiper-container', {
-  speed: 500,
-  loop: true,
+const swiperBig = new Swiper('.swiper-container-big', {
+  autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
 });
 
 
-const swiper = new Swiper('.swiper-container', {
-	speed: 550,
-  	loop: true,
+const swiper = new Swiper('.swiper-contaner-second', {
+	loop: true,
+  	autoplay: {
+	   delay: 4000,
+	   disableOnInteraction: false,
+	 },
 
  	// If we need pagination
   	pagination: {
