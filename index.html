@@ -1,276 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		Ленд
+		Form
 	</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="header" id="header">
-		<div class="wrap__block_first">
-			<div class="header__block_first">
-				<a href="#" class="header__logo-wrap">
-					<img src="img/logo.svg" alt="" class="header__logo">
-				</a>
-			</div>
-		</div>
-		<div class="header__blocks-wrap">
-			<div class="header__block_second">
-				<div class="drimmy-wrap">
-					<picture>
-						<source srcset="img/drim-1.webp" type="image/webp">
-						<img src="img/drim-1.png" alt="" class="drimmy drimmy__first">
-					</picture>
-				</div>
-				<div class="header__cont">
-					<div class="header__logo_second">
-						<img src="img/logo-2.svg" alt="">
+	<div class="form-wrap">
+		<form action="" class="form" id="form">
+			<div class="form__block_first">
+				<div class="form__date">
+					<div class="date__title">
+						ВЫБЕРИТЕ ДАТУ
 					</div>
-					<h1 class="header__title">
-						ОТКРЫТИЕ
-						2021
-					</h1>
-					<a href="#" class="header__btn">
-						ПОСЕТИТЬ
-					</a>
-					<div class="header__date">
-						6, 13, 21 И 27 ФЕВРАЛЯ: 10.00 - 18.00
+					<input required class="date__choose" id="date" data-provide="datepicker">
+				</div>
+				<div class="form__quantity">
+					<div class="quantity__title">
+						ВЫБЕРИТЕ КОЛИЧЕСТВО БИЛЕТОВ
 					</div>
-					<button class="header__btn_care">
-						КАК МЫ ЗАБОТИМСЯ О ВАС
-					</button>
-				</div>
-				<div class="drimmy-wrap_second">
-					<picture>
-						<source srcset="img/drim-2.webp" type="image/webp">
-						<img src="img/drim-2.png" alt="" class="drimmy__second">
-					</picture>
-				</div>	
-			</div>
-			<a href="#" class="header__call">
-				<img src="img/phone.svg" alt="" class="call__img">
-			</a>	
-		</div>
-		<img src="img/purple-1-1.png" alt="" class="header__purp">
-		<div class="popup-fade">
-			<ul class="popup">
-				<h3 class="popup__title">
-					Путешественники!
-				</h3>
-				<p>
-					Для комфортного нахождения в парке мы просим Вас соблюдать следующие правила:
-				</p>
-				<li>
-					* измерить температуру вашего тела на парковке, перед тем как сесть на трансфер в парк ДРИМВУД
-				</li>
-				<li>
-					* пройти через дезинфицирующий портал на кассах парка
-				</li>
-				<li>
-					* Дезинфицировать руки перед каждым прокатом на аттракционе
-				</li>
-				<li>
-					* Соблюдать правило социальной дистанции (не менее 1,5 м)
-				</li>
-				<li>
-					* Носить маску и перчатки в крытых помещениях парка
-				</li>
-				<li>
-					* Использовать бесконтактный способ оплаты услуг
-				</li>
-				<p>
-					Для соблюдения эпидемиологических норм, мы проводим мероприятия:
-				</p>
-				<li>
-					* ограничиваем количество посетителей парка
-				</li>
-				<li>
-					* Ограничиваем количество гостей в крытых помещениях
-				</li>
-				<li>
-					* дезинфицируем аттракционы после каждого проката
-				</li>
-				<li>
-					* Носим маски и перчатки во время вашего пребывания на аттракционе
-				</li>
-				<li>
-					* Работаем по расписанию на некоторых активностях	
-				</li>	
-				<p>
-					ВАЖНО:
-				</p>
-				<li>
-					* если температура Вашего тела выше 36.9 градусов или у вас присутствуют симптомы простуды - мы предложим перенести ваш визит в парк в целях соблюдения эпидемиологических норм.
-				</li>
-			</ul>		
-		</div>
-	</header>
-	<section class="images" id="images">
-		<div class="swiper-container swiper-container-big">
-	  		<div class="swiper-wrapper">
-			    <div class="swiper-slide swiper-slide-big">
-			    	<picture>
-						<source srcset="img/img1.webp" type="image/webp">
-						<img src="img/img1.jpg" alt="" class="img_fun">
-					</picture>
-			    </div>
-			    <div class="swiper-slide swiper-slide-big">
-			    	<picture>
-						<source srcset="img/img2.webp" type="image/webp">
-			    		<img src="img/img2.png" alt="" class="img_fun">
-					</picture>
-			    </div>
-			    <div class="swiper-slide swiper-slide-big">
-			    	<picture>
-						<source srcset="img/img3.webp" type="image/webp">
-			    		<img src="img/img3.png" alt="" class="img_fun img_fun-third">
-					</picture>
-			   	</div>
-			   	<div class="swiper-slide swiper-slide-big">
-			   		<picture>
-						<source srcset="img/img4.webp" type="image/webp">
-			    		<img src="img/img4.png" alt="" class="img_fun img_fun-four">
-					</picture>
-			   	</div>
-	  		</div>
-		</div>
-	</section>
-	<section class="about" id="about">
-		<img src="img/purp-2.png" alt="" class='images__purp'>
-		<img src="img/green-1.png" alt="" class='images__green'>
-		<div class="about__wrap">
-			<div class="about__block">
-				<div class="about__img-block">
-					<picture>
-						<source srcset="img/img2-1.webp" type="image/webp">
-						<img src="img/img2-1.jpg" alt="">
-					</picture>					
-				</div>
-				<div class="about__text">
-					<h2 class="about__title">
-						О ПАРКЕ
-					</h2>
-					<div class="about__subtitle">
-						Парк ДРИМВУД – это семейный тематический Парк с элементами познания. Создатели Парка были вдохновлены главными стихиями Крыма, которые составили четыре ареала: Лес, Горы, Вода и Ветер, в каждом из которых мечтателей ждут аттракционы, тематические анимационные программы и увлекательная анимация. 
-						Парк чудес и приключений ДРИМВУД никого не оставит равнодушным.
+					<div class="wrap-quantity__number">
+						<div class="quantity-number__minus">
+							<img src="img/left.svg" alt="">
+						</div>
+						<input type="number" class="quantity__number" id="number" min="0">
+						<div class="quantity-number__plus">
+							<img src="img/right.svg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="swiper-container swiper-contaner-second">
-				<h2 class="swiper__title">
-					НОВЫЕ АКТИВНОСТИ
-				</h2>
-				  <div class="swiper-wrapper">
-				    <div class="swiper-slide">
-				    	<div class="swiper__text">
-				    		Пока парк чудес и приключений Дримвуд был закрыт для путешественников, в нем появились новые места, о которых вам еще предстоит узнать! Пиратский галеон Полундра, лучный тир для самых метких путешественников, увлекательные мастер-классы и еще много всего захватывающего и интересного! 
-				    	</div>
-				    	<div class="swiper__img">
-				    		<picture>
-								<source srcset="img/img2-2.webp" type="image/webp">
-				    			<img src="img/img2-2.jpg" alt="">
-							</picture>
-				    	</div>
-				    </div>
-				    <div class="swiper-slide">
-				    	<div class="swiper__text">
-				    		<div class="slider__title">
-				    			ЛУЧНЫЙ ТИР
-				    		</div>
-				    		Представьте себя в роди индейца в уникальной атмосфере волшебного, полного открытий леса. Можно всей семьей проверить свою меткость и получить знание самого отважного путешественника!
-				    	</div>
-				    	<div class="swiper__img">
-				    		<picture>
-								<source srcset="img/img-2-3.webp" type="image/webp">
-				    			<img src="img/img-2-3.png" alt="">
-							</picture>
-				    	</div>
-				    </div>
-				    <div class="swiper-slide">
-				    	<div class="swiper__text swiper__text_third">
-				    		<div class="slider__title">
-				    			МАСТЕР - КЛАССЫ
-				    		</div>
-				    		Список увлекательных активностей для юных искателей приключений стал значительно шире: изготовление открытки своими руками к праздникам, ручная лепка, гончарное искусство, digital-квест «Спасение дерева приключений», beauty-бар для маленьких принцесс. 
-							Эти и многие другие приключения, подготовленные для вас жителями ДРИМВУД, надолго останутся в вашей памяти.
-				    	</div>
-				    	<div class="swiper__img">
-				    		<picture>
-								<source srcset="img/img-2-4.webp" type="image/webp">
-								<img src="img/img-2-4.jpg" alt="">
-							</picture>
-				    	</div>
-				    </div>
-				  </div>
-				  <div class="swiper-pagination"></div>
-				  <div class="swiper-button-prev">
-				  	<img src="img/prev.svg" alt="">
-				  </div>
-				  <div class="swiper-button-next">
-				  	<img src="img/next.svg" alt="">
-				  </div>
-			</div>
-		</div>
-		<div class="about__more">
-			<img src="img/wave-top.png" alt="" class="wave-top">
-			<img src="img/wave-bottom.png" alt="" class="wave-bottom">
-			<div class="more__wrap">
-				<div class="more__img">
-					<picture>
-						<source srcset="img/img-3-1.webp" type="image/webp">
-						<img src="img/img-3-1.jpg" alt="">
-					</picture>
-				</div>
-				<div class="more__text">
-					Чтобы вы могли быть спокойны за свою безопасность, мы всё сделали за вас и внесли маленькие, но важные особенности в работу Парка. Каждый из наших заботливых сотрудников прошел специальный инструктаж и точно знает, как предотвратить распространение вируса, вызывающего COVID-19. 
-					Чтобы узнать больше о том, как мы заботимся о вас, 
-					<a href="#" class="more__link">
-						нажмите здесь.
-					</a>
-				</div>
-			</div>
-			<img src="img/wave-top-2.png" alt="" class="wave-top_second">
-			<img src="img/wave-bottom-2.png" alt="" class="wave-bottom_second">
-		</div>
-	</section>
-	<section class="buy" id="buy">
-		<h2 class="buy__title">
-			ПОКУПКА БИЛЕТА В ПАРК
-		</h2>
-		<div class="buy__block">
-			<iframe id="eticket-bb305bca8a91" name="mriya-etickets-embeded" allowtransparency="true" frameborder="0" scrolling="no"
-        tabindex="0" target="_parent" title="Mriya e-Tickets Embed"
-        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation" width="100%"
-        src="https://booking.mriyaresort.com/etickets/3">
-			</iframe>
-    <script>window.onmessage = e => { e.data.hasOwnProperty("frameHeight") && (document.getElementById("eticket-bb305bca8a91").style.height = `${e.data.frameHeight + 30}px`) }</script>
-		</div>
-		<div class="buy__map">
-			<div class="buy__cont">
-				<label class="switch">
-			  <input type="checkbox" class="check">
-			  <span class="slider round"></span>
-			</label>
-			<div class="buy__text">
-				КАК ДОБРАТЬСЯ
-				<span class="buy__text-second">
-					КАРТА
-				</span>
-			</div>
+			<div class="form__data-title">
+				ВАШИ ДАННЫЕ
 			</div>	
-			<img src="img/map.png" alt="" class="map" id="map">
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7556b1852d7f382ac74f5ad32877181e827b051d3fdc1cfb56b79d281b6240b1&amp;source=constructor" width="1127" height="268" frameborder="0" class="map__second dis-none" id=mapSecond></iframe>
-		</div>
-		<img src="img/last-img.png" alt="" class="buy__img_coral">
-	</section>
+			<div class="form__block_second">
+				<div class="form__name">
+					<div class="name__title">
+						Имя
+					</div>
+					<input required class="name__input" id="name" type="text">
+				</div>
+				<div class="form__tel">
+					<div class="tel__title">
+						Номер телефона
+					</div>
+					<input type="tel" class="tel__input" id="tel" name="tel" required placeholder="+7(000)000-00-00">
+				</div>
+				<div class="form__email">
+					<div class="email__title">
+						E - mail
+					</div>
+					<input type="email" class="email__input" id="email" required>
+				</div>
+			</div>
+			<button type="submit" id="submit" class="form__btn">
+				ОПЛАТИТЬ
+			</button>		
+			</form>
+	</div>
+
+	
 	<script src="js/jquery.min.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="https://unpkg.com/imask"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

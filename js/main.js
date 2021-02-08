@@ -1,66 +1,39 @@
-var popup = document.querySelector('.popup-fade');
-var careBtn = document.querySelector('.header__btn_care');
-var noneSc = document.querySelector('.none-scroll');
-var body = document.querySelector('body');
-
-careBtn.onclick = function() {
-	body.classList.add('none-scroll');
-}
-
-$(document).ready(function($) {
-	$('.header__btn_care').click(function() {
-		$('.popup-fade').show();
-		return false;
-	});	
-	
-	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade').hide();
-		}
-	});
-	
-	$('.popup-fade').click(function(e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).hide();
-			$('body').removeClass('none-scroll');					
-		}
-	});
+//DATE START
+$('.datepicker').datepicker({
+    format: 'mm/dd/yyyy',
+    startDate: '-3d'
 });
+//DATE END
 
-const swiperBig = new Swiper('.swiper-container-big', {
-  loop: true,
-  	autoplay: {
-	   delay: 2000,
-	   disableOnInteraction: false,
-	 },
+
+// INPUT TYPE NUMBER START
+jQuery(($) => {
+    // input type number 
+    // Уменьшаем на 1 
+    $(document).on('click', '.quantity-number__minus', function () {
+        let total = $(this).next();
+        if (total.val() > 0) {
+            total.val(+total.val() - 1);
+        }
+    });
+    // Увеличиваем на 1 
+    $(document).on('click', '.quantity-number__plus', function () {
+        let total = $(this).prev();
+        total.val(+total.val() + 1);
+    });
+    // Запрещаем ввод текста 
+    document.querySelectorAll('.quantity__number').forEach(function (el) {
+        el.addEventListener('input', function () {
+            this.value = this.value.replace(/[^\d]/g, '');
+        });
+    });
 });
+//INPUT TYPE NUMBER END
 
-
-const swiper = new Swiper('.swiper-contaner-second', {
-	loop: true,
-  	autoplay: {
-	   delay: 4000,
-	   disableOnInteraction: false,
-	 },
-
-  	pagination: {
-   		el: '.swiper-pagination',
-  	},
-
-  	navigation: {
-    	nextEl: '.swiper-button-next',
-    	prevEl: '.swiper-button-prev',
-  	}
-});
-
-var switchBtn = document.querySelector('.check');
-var map = document.querySelector('.map');
-var mapSecond = document.querySelector('.map__second');
-
-switchBtn.onclick = function() {
-	document.getElementById('map').classList.toggle('dis-none');
-	document.getElementById('mapSecond').classList.toggle('dis-block');
-	document.querySelector('.buy__text').classList.toggle('grey-size');
-	document.querySelector('.buy__text-second').classList.toggle('white-size');
-}
+// VALIDATE START
+var element = document.getElementById('tel');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(element, maskOptions); 
+//VALIDATE END
