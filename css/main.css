@@ -432,24 +432,15 @@ svg:not(:root).svg-inline--fa {
 	height: 40px;
     top: auto;
     bottom: 77px;
-    transition: all 0.7s ease;
 }
 
 .swiper-button-prev {
 	background: url('../img/prev-def.svg') no-repeat top center;
 }
 
-.swiper-button-prev:hover {
-	background: url('../img/prev.svg') no-repeat top center;
-}
-
 .swiper-button-next {
 	left: 75px;
 	background: url('../img/next-def.svg') no-repeat top center;
-}
-
-.swiper-button-next:hover {
-	background: url('../img/next.svg') no-repeat top center;
 }
 
 .images__back-kvadro {
