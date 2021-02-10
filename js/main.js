@@ -1,39 +1,19 @@
-//DATE START
-$('.datepicker').datepicker({
-    format: 'mm/dd/yyyy',
-    startDate: '-3d'
-});
-//DATE END
+var ham = document.querySelector('.menu__list-ham');
+var btnHam = document.querySelector('.header__hamburger');
+var choose = document.querySelector('.main-profile__choose');
+var btnExit = document.querySelector('.main-profile__exit');
+var btnNo = document.querySelector('.choose__button_second');
 
+btnHam.onclick = function() {
+    ham.classList.toggle('dis-flex');
+} 
 
-// INPUT TYPE NUMBER START
-jQuery(($) => {
-    // input type number 
-    // Уменьшаем на 1 
-    $(document).on('click', '.quantity-number__minus', function () {
-        let total = $(this).next();
-        if (total.val() > 0) {
-            total.val(+total.val() - 1);
-        }
-    });
-    // Увеличиваем на 1 
-    $(document).on('click', '.quantity-number__plus', function () {
-        let total = $(this).prev();
-        total.val(+total.val() + 1);
-    });
-    // Запрещаем ввод текста 
-    document.querySelectorAll('.quantity__number').forEach(function (el) {
-        el.addEventListener('input', function () {
-            this.value = this.value.replace(/[^\d]/g, '');
-        });
-    });
-});
-//INPUT TYPE NUMBER END
+btnExit.onclick = function() {
+	btnExit.style.display = "none";
+	choose.style.display = "flex";
+}
 
-// VALIDATE START
-var element = document.getElementById('tel');
-var maskOptions = {
-  mask: '+{7}(000)000-00-00'
-};
-var mask = IMask(element, maskOptions); 
-//VALIDATE END
+btnNo.onclick = function() {
+	btnExit.style.display = "block";
+	choose.style.display = "none";
+}

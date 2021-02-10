@@ -4,71 +4,319 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		Form
+		GTA5 RP
 	</title>
-	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
-	<link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<div class="form-wrap">
-		<form action="#" class="form" id="form">
-			<div class="form__block_first">
-				<div class="form__date">
-					<div class="date__title">
-						ВЫБЕРИТЕ ДАТУ
+	<header class="header" id="header">
+		<div class="header__background">
+		</div>
+			<div class="wrapper">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a href="index.html">
+							<img src="img/logo.svg" alt="">
+						</a>
 					</div>
-					<input required class="date__choose" id="date" data-provide="datepicker">
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li class="header__item">
+								<a href="index.html" class="active">
+									Главная
+								</a>
+							</li>
+							<li class="header__item">
+								<a href="">
+									О проекте	
+								</a>	
+							</li>
+							<li class="header__item">
+								<a href="">
+									Форум
+								</a>
+							</li>
+							<li class="header__item">
+								<a href="">
+									О нас
+								</a>	
+							</li>
+							<li class="header__item header__item-donate">
+								<a href="donate.html">
+									Донат
+									<span>
+										×2
+									</span>
+								</a>	
+							</li>
+							<li class="header__item">
+								<a href="my-profile.html">
+									<img src="img/profile.svg" alt="">
+								</a>
+							</li>
+						</ul>
+						<div class="header__hamburger">
+							<span></span>
+						</div>
+						<ul class="menu__list-ham">
+							<li class="header__ham-item">
+								<a href="index.html" class="active">
+									Главная
+								</a>
+							</li>
+							<li class="header__ham-item">
+								<a href="">
+									О проекте	
+								</a>	
+							</li>
+							<li class="header__ham-item">
+								<a href="">
+									Форум
+								</a>
+							</li>
+							<li class="header__ham-item">
+								<a href="">
+									О нас
+								</a>	
+							</li>
+							<li class="header__ham-item header__ham-item-donate">
+								<a href="donate.html">
+									Донат
+									<span>
+										×2
+									</span>
+								</a>	
+							</li>
+							<li class="header__ham-item">
+								<a href="my-profile.html">
+									<img src="img/profile.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<div class="form__quantity">
-					<div class="quantity__title">
-						ВЫБЕРИТЕ КОЛИЧЕСТВО БИЛЕТОВ
-					</div>
-					<div class="wrap-quantity__number">
-						<div class="quantity-number__minus">
-							<img src="img/left.svg" alt="">
+				<div class="header__cont">
+					<div class="header__text">
+						<h1 class="header__title">
+							Новый мир в GTA 5 с режимом Role Play
+						</h1>
+						<div class="header__subtitle">
+							Современный проект в GTA 5, на котором Вы можете насладиться безграничными возможностями RAGE мультиплеера!
 						</div>
-						<input type="number" class="quantity__number" id="number" min="0">
-						<div class="quantity-number__plus">
-							<img src="img/right.svg" alt="">
+						<a href="" class="header__button-play">
+							Начать играть
+							<i class="fas fa-chevron-right arrow-left"></i><i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="header__info">
+							<div class="info__block info__block_first">
+									<img src="img/user.svg" alt="" class="info__img">
+								<div class="info__cont">
+									Игроков онлайн:
+								<br>
+								<span>190</span>/900
+								</div>
+							</div>
+							<div class="info__block">
+								<img src="img/globe.svg" alt="" class="info__img">
+								<div class="info__cont">
+									IP Сервера:
+								<br>
+								<span>185.71.65.7:22005</span>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="header__images">
+						<div class="image__wrap">
+							<picture>
+								<source srcset="img/man.webp" type="image/webp">
+								<img src="img/man.png" alt="">
+							</picture>
+						</div>
+						<picture>
+							<source srcset="img/money-left.webp" type="image/webp">
+							<img src="img/money-left.png" alt="" class="image__money_left">
+						</picture>
+						<picture>
+							<source srcset="img/money-right.webp" type="image/webp">
+							<img src="img/money-right.png" alt="" class="image__money_right">
+						</picture>
+					</div>
+					<picture>
+						<source srcset="img/map.webp" type="image/webp">
+						<img src="img/map.png" alt="" class="images__map">
+					</picture>	
 				</div>
 			</div>
-			<div class="form__data-title">
-				ВАШИ ДАННЫЕ
+			<div class="images__back"></div>
+	</header>
+	<section class="play" id="play">
+		<div class="wrapper">
+			<h2 class="play__title">
+				Как начать играть?
+			</h2>
+			<div class="play__cards">	
+				<div class="play__card">
+					<div class="card-img__wrap">
+						<picture>
+							<source srcset="img/img1.webp" type="image/webp">
+							<img src="img/img1.jpg" alt="" class="play__img">
+						</picture>
+					<div class="card__back"></div>
+					</div>
+					<div class="card__title">
+						Скачайте лицензию GTA 5
+					</div>
+					<div class="card__text">
+						Для игры на сервере подойдет любая
+						версия GTA 5 (Steam/Social Club/EPIC)
+					</div>
+					<a href="" class="card__button header__button-play">
+						Купить GTA 5
+					</a>
+				</div>
+				<div class="play__card">
+					<div class="card-img__wrap">
+						<picture>
+							<source srcset="img/img2.webp" type="image/webp">
+							<img src="img/img2.jpg" alt="" class="play__img">
+						</picture>
+					<div class="card__back"></div>
+					</div>
+					<div class="card__title">
+						Установите лаунчер RAGE
+					</div>
+					<div class="card__text">
+						Далее вам потребуется скачать и установить лаунчер RAGE:MP
+					</div>
+					<a href="" class="card__button header__button-play">
+						Скачать RAGE
+					</a>
+				</div>
+				<div class="play__card">
+					<div class="card-img__wrap">
+						<picture>
+							<source srcset="img/img3.webp" type="image/webp">
+							<img src="img/img3.jpg" alt="" class="play__img">
+						</picture>
+					<div class="card__back"></div>
+					</div>
+					<div class="card__title">
+						Подключитесь к нам
+					</div>
+					<div class="card__text">
+						Найдите в поиске GTA5UP RolePlay
+						или подключитесь <span id="card__ip">185.71.65.7:22005</span>
+					</div>	
+					<button class="btn card__button header__button-play card__button-ip" data-clipboard-target="#card__ip" aria-label="Sasi Huy">
+					    Скопировать IP
+					</button>
+				</div>	
 			</div>	
-			<div class="form__block_second">
-				<div class="form__name">
-					<div class="name__title">
-						Имя
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="wrapper about__wrapper">
+			<div class="about__block">
+				<picture>
+					<source srcset="img/dust1.webp" type="image/webp">
+					<img src="img/dust1.png" alt="" class="about__dust_first">
+				</picture>
+				<picture>
+					<source srcset="img/dust2.webp" type="image/webp">
+					<img src="img/dust2.png" alt="" class="about__dust_second">
+				</picture>
+				<div class="about__images">
+					<picture>
+						<source srcset="img/kvadrocycle.webp" type="image/webp">
+						<img src="img/kvadrocycle.png" alt="">
+					</picture>
+					<div class="images__back-kvadro">
 					</div>
-					<input required class="name__input" id="name" type="text">
 				</div>
-				<div class="form__tel">
-					<div class="tel__title">
-						Номер телефона
-					</div>
-					<input type="tel" class="tel__input" id="tel" name="tel" required>
-				</div>
-				<div class="form__email">
-					<div class="email__title">
-						E - mail
-					</div>
-					<input type="email" class="email__input" id="email" required>
+				<div class="swiper-container">
+    				<div class="swiper-wrapper">
+        				<div class="swiper-slide">
+        					<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text about__text_first">
+								<span class="about__text-bold">GTA5UP RolePlay</span> - это сервер ролевого жанра Role Play в игре GTA 5. Мы предоставляем комфортные условия игры. Поиграйте, реализуйте в персонаже собственные качества.
+							</div>
+							<div class="about__text">
+								Станьте полицейским или бандитом, мафиози или политиком, медиком или военным в мире
+								GTA5 Role Play. Вариантов для развития бесконечное множество, потому что мы сделали системы, позволяющие очень тонко настроить вашу игру.
+							</div>
+        				</div>
+				        <div class="swiper-slide">
+				        	<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text about__text_first">
+								Мы вкладываем много труда в наш проект. Зайдите на сервер, оцените качество нашего маппинга, уверяю, он не оставит вас без эмоций. Чтобы вам было спокойно играть, мы используем мощнейший сервер, без устали оптимизируем мод и работаем над строгим античитом.
+							</div>
+							<div class="about__text">
+								Системы сервера распределены по мере развития вашего персонажа. Это облегчит вашу игру, позволит Вам расслабиться.
+							</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text about__text_first">
+								Наша администрация - это команда помощников, радеющих за ваш комфорт. Они настроены максимально дружелюбно к игроку, стараясь помочь ему ответами на вопросы и жалобы с самого начала. 
+							</div>
+							<div class="about__text">
+								Мы ведём серьёзный контроль за действиями сотрудников, но и поддерживаем их, обучаем, поэтому профессионализм обеспечен!
+							</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<h2 class="about__title">
+								О проекте
+							</h2>
+							<div class="about__text">
+								Нас любят многие блоггеры. Ведь мы стабильны, у нас можно снять много контента, развлечься и позвать подписчиков, не беспокоясь за них. Регулярно нас посещают как крупные медиа-гиганты, так и новички в этом занятии.
+							</div>
+				        </div>
+    				</div>
+    				<div class="swiper-button-prev"></div>
+    				<div class="swiper-button-next"></div>
 				</div>
 			</div>
-			<button type="submit" id="submit" class="form__btn">
-				ОПЛАТИТЬ
-			</button>		
-			</form>
-	</div>
-
-	
-	<script src="js/jquery.min.js"></script>
-
-	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script src="https://unpkg.com/imask"></script>
-	<script src="js/main.js"></script>
+		</div>
+		<div class="about__back"></div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="footer__wrapper">
+			<ul class="footer__list footer__list_first">
+				<li class="footer__item">
+					© 2020 
+					<a href="index.html">FiveUp RolePlay</a> | Все права защищены
+				</li>
+				<li class="footer__item">
+					Designed by Mayorov Design
+				</li>
+			</ul>
+			<ul class="footer__list footer__list_second">
+				<li class="footer__item">
+					<a href="">
+						<img src="img/vk.svg" alt="" class="footer__vk">
+					</a>
+				</li>
+				<li class="footer__item footer__item-disc">
+					<a href="" class="footer__discord"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/hamburger.js"></script>
+	<script src="js/copy.js"></script>
 </body>
 </html>
