@@ -135,7 +135,6 @@ a {
 	background: #ede1d5;
 	padding: 10px 15px;
 	border-bottom: 4px solid #d9cdc6;
-
 }
 
 .header__block_first {
@@ -1076,11 +1075,35 @@ a {
 	.icon-wrap_first {
 	    line-height: 38px;
 	    margin-right: 10px;
+	    position: relative;
+	}
+
+	.icon-wrap_first .header__icon {
+		position: absolute;	
+    	top: 18%;
+    	left: 17%;
 	}
 
 	.icon-wrap_second {
 	    line-height: 36px;
 	    margin-right: 10px;
+	    position: relative;
+	}
+
+	.icon-wrap_second .header__icon_second {
+		position: absolute;
+	    top: 21%;
+	    left: 20%;
+	}
+
+	.icon-wrap_third {
+		position: relative;
+	}
+
+	.icon-wrap_third .header__icon_third {
+		position: absolute;
+	    top: 15%;
+	    left: 20%;
 	}
 
 	.header__item_third {
@@ -1365,11 +1388,11 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-	.icon-wrap {
+	/*.icon-wrap {
 	    width: 35px;
 	    height: 35px;
 	    margin-right: 6px;
-	}
+	}*/
 
 	.stick {
 	    display: none;
@@ -1385,11 +1408,11 @@ a {
 		margin-right: 0px;
 	}
 
-	.icon-wrap_first {
+	/*.icon-wrap_first {
 	    line-height: 37px;
-	}
+	}*/
 
-	.icon-wrap_second {
+	/*.icon-wrap_second {
 	    line-height: 34px;
 	}
 
@@ -1399,6 +1422,18 @@ a {
 
 	.icon-wrap_third {
 	    line-height: 35px;
+	}*/
+
+	.icon-wrap_first .header__icon {
+		position: absolute;
+    	top: 18%;
+    	left: 23%;
+	}
+
+	.icon-wrap_third .header__icon_third {
+	    position: absolute;
+	    top: 15%;
+	    left: 22%;
 	}
 
 	.header__logo-block img {
