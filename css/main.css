@@ -261,11 +261,10 @@ a {
 .header__container_third {
 	width: 100%;
 	height: 860px;
-   	background: url('../img/bg-head.jpg') no-repeat top center;
-   	background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 
-/*.no-js .header__container_third {
+.no-js .header__container_third {
    	background: url('../img/bg-head.jpg') no-repeat top center;
    	background-size: 100% 100%;
 }
@@ -278,7 +277,7 @@ a {
 .webp .header__container_third {
 	background: url('../img/bg-head.webp') no-repeat top center;
 	background-size: 100% 100%;
-}*/
+}
 
 .header__block_third {
 	padding-top: 70px;
@@ -645,11 +644,9 @@ a {
 .plan {
     background-size: cover;
     padding: 110px 15px 55px 15px;
-    background: url(../img/bg-2.jpg) no-repeat top center;
-    background-size: cover;
 }
 
-/*.no-js .plan {
+.no-js .plan {
    	background: url(../img/bg-2.jpg) no-repeat top center;
     background-size: cover;
 }
@@ -662,7 +659,7 @@ a {
 .webp .plan {
 	background: url('../img/bg-2.webp') no-repeat top center;
     background-size: cover;	
-}*/
+}
 
 .plan__block {
 	display: flex;
