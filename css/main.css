@@ -1718,7 +1718,7 @@ a {
 	}
 
 	.header__container_third {
-	    height: 210px;
+	    height: 250px;
 	}
 
 	.card {
@@ -1922,6 +1922,6 @@ a {
 
 @media screen and (max-width: 450px) {
 	.header__container_third {
-	    height: 170px;
+	    height: 200px;
 	}
 }
