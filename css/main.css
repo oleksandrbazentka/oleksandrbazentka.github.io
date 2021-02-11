@@ -1098,6 +1098,7 @@ a {
 
 	.icon-wrap_third {
 		position: relative;
+		margin-right: 10px;
 	}
 
 	.icon-wrap_third .header__icon_third {
