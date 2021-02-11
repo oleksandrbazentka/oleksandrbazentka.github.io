@@ -647,12 +647,12 @@ a {
    	background: url(../img/bg-2.jpg) no-repeat top center;
 }
 
-.no-webp .header__container_third {
+.no-webp .plan {
 	background: url(../img/bg-2.jpg) no-repeat top center;
 }
 
 .webp .plan {
-	background: url('../img/bg-head.webp') no-repeat top center;
+	background: url('../img/bg-2.webp') no-repeat top center;
 }
 
 .plan__block {
