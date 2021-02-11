@@ -1,3 +1,5 @@
+document.documentElement.classList.remove('no-js');
+
 var hamBtn = document.querySelector('.hamburger-btn');
 
 hamBtn.onclick = function() {
