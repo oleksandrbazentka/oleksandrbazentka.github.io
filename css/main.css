@@ -266,14 +266,17 @@ a {
 
 .no-js .header__container_third {
    	background: url('../img/bg-head.jpg') no-repeat top center;
+   	background-size: 100% 100%;
 }
 
 .no-webp .header__container_third {
 	background: url('../img/bg-head.jpg') no-repeat top center;
+	background-size: 100% 100%;
 }
 
 .webp .header__container_third {
 	background: url('../img/bg-head.webp') no-repeat top center;
+	background-size: 100% 100%;
 }
 
 .header__block_third {
@@ -645,14 +648,17 @@ a {
 
 .no-js .plan {
    	background: url(../img/bg-2.jpg) no-repeat top center;
+    background-size: cover;
 }
 
 .no-webp .plan {
 	background: url(../img/bg-2.jpg) no-repeat top center;
+    background-size: cover;	
 }
 
 .webp .plan {
 	background: url('../img/bg-2.webp') no-repeat top center;
+    background-size: cover;	
 }
 
 .plan__block {
