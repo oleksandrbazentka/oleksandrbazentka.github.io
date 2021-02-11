@@ -1,19 +1,9 @@
-var ham = document.querySelector('.menu__list-ham');
-var btnHam = document.querySelector('.header__hamburger');
-var choose = document.querySelector('.main-profile__choose');
-var btnExit = document.querySelector('.main-profile__exit');
-var btnNo = document.querySelector('.choose__button_second');
+var hamBtn = document.querySelector('.hamburger-btn');
 
-btnHam.onclick = function() {
-    ham.classList.toggle('dis-flex');
-} 
-
-btnExit.onclick = function() {
-	btnExit.style.display = "none";
-	choose.style.display = "flex";
+hamBtn.onclick = function() {
+	document.querySelector('.hamburger-menu').classList.toggle('dis-none');
 }
 
-btnNo.onclick = function() {
-	btnExit.style.display = "block";
-	choose.style.display = "none";
-}
+$(document).ready(function() {
+	$("#phone").mask("(999) 999-9999");
+})
