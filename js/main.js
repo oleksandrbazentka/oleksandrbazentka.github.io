@@ -1,4 +1,4 @@
-$(document).ready(function() {
+	
 	AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -22,11 +22,38 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
 	$('#pagepiling').pagepiling({	
-	 menu: null,
-	  anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'fivePage', 'sixthPage', 'seventhPage', 'eighthPage']
+	menu: null,
+	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'fivePage', 'sixthPage', 'seventhPage', 'eighthPage'],
+	css3: true,
+		afterLoad: function(anchorLink, index){
+			if(anchorLink == 'firstPage'){
+				AOS.init();
+			}
+			if(anchorLink == 'secondPage'){
+				AOS.init();
+			}
+			if(anchorLink == 'thirdPage'){
+				AOS.init();
+			}
+			if(anchorLink == 'fourPage'){
+				AOS.init();
+			}
+			if(anchorLink == 'fivePage'){
+				AOS.init();
+			}
+			if(anchorLink == 'sixthPage'){
+				AOS.init();
+			}
+			if(anchorLink == 'seventhPage'){
+				AOS.init();
+			}
+			if(anchorLink == 'eighthPage'){
+				AOS.init();
+			}
+		}
 });
-
 	 $('.company__slider').slick({
 	 	dots: false,
   infinite: false,
