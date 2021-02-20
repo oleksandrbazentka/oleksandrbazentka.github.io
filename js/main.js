@@ -7,8 +7,8 @@
   animatedClassName: 'aos-animate', // class applied on animation
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 0, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 0, // the delay on throttle used while scrolling the page (advanced)
+  debounceDelay: 99, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 70, // the delay on throttle used while scrolling the page (advanced)
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
@@ -26,33 +26,12 @@ $(document).ready(function() {
 	$('#pagepiling').pagepiling({	
 	menu: null,
 	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'fivePage', 'sixthPage', 'seventhPage', 'eighthPage'],
-	css3: true,
-		afterLoad: function(anchorLink, index){
-			if(anchorLink == 'firstPage'){
-				AOS.init();
-			}
-			if(anchorLink == 'secondPage'){
-				AOS.init();
-			}
-			if(anchorLink == 'thirdPage'){
-				AOS.init();
-			}
-			if(anchorLink == 'fourPage'){
-				AOS.init();
-			}
-			if(anchorLink == 'fivePage'){
-				AOS.init();
-			}
-			if(anchorLink == 'sixthPage'){
-				AOS.init();
-			}
-			if(anchorLink == 'seventhPage'){
-				AOS.init();
-			}
-			if(anchorLink == 'eighthPage'){
-				AOS.init();
-			}
-		}
+		onLeave: function(){
+        jQuery('.section [data-aos]').removeClass("aos-animate");
+    },
+    afterLoad: function(){
+        jQuery('.section.active [data-aos]').addClass("aos-animate");
+    }
 });
 	 $('.company__slider').slick({
 	 	dots: false,
