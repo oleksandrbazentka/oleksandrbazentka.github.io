@@ -12,7 +12,7 @@
   	font-style: normal;
   	font-weight: 400;
   	src: local('Rubik'),
-       url("../fonts/Rubik-Regular.ttf") format("truetype");
+    url("../fonts/Rubik-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   	font-style: normal;
   	font-weight: 500;
   	src: local('Rubik'),
-       url("../fonts/Rubik-Medium.ttf") format("truetype");
+    url("../fonts/Rubik-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -559,15 +559,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 46px;
 }
 
-.plan__video {
-    max-width: 525px;
-    width: 100%;
-    height: 325px;
-    margin: 0px auto 60px;
-    display: block;
-    border-radius: 10px;
-}
-
 .plan__list {
 	display: flex;
 	justify-content: space-between;
@@ -646,6 +637,51 @@ h1, h2, h3, h4, h5, h6 {
 
 .plan__arrow-down {
 	margin: 45px auto;
+}
+
+.plan__video {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    text-align: center;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    max-width: 525px;
+    width: 100%;
+    height: 325px;
+    margin: 0px auto 60px;
+    display: block;
+    border-radius: 10px;
+}
+.plan__video .play {
+    background: url('../img/youtube-play-btn.png') no-repeat;
+    background-position: 0 -50px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 69px;
+    transition: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+iframe {
+	max-width: 525px;
+    width: 100%;
+    height: 325px;
+    margin: 0px auto 60px;
+    display: block;
+    border-radius: 10px;
+}
+
+.plan__video:hover .play {
+    background-position: 0 0;
 }
 
 /* Plan End */
@@ -1809,6 +1845,12 @@ h1, h2, h3, h4, h5, h6 {
 	    margin: 0px auto 40px;
 	}
 
+	iframe {
+	    max-width: 450px;
+	    height: 250px;
+	    margin: 0px auto 40px;
+	}
+
 	.plan__text {
 	    font-size: 12px;
 	}
@@ -2256,6 +2298,12 @@ h1, h2, h3, h4, h5, h6 {
 	    max-width: 400px;
 	    height: 220px;
 	    margin: 0px auto 35px;
+	}
+
+	iframe {
+		max-width: 400px;
+	    height: 220px;
+	    margin: 0px auto 35px;		
 	}
 
 	.plan__list {
@@ -2897,6 +2945,10 @@ h1, h2, h3, h4, h5, h6 {
 
 	.plan__video {
 	    margin: 0px auto 43px;
+	}
+
+	iframe {
+		margin: 0px auto 43px;
 	}
 
 	.plan__text {
