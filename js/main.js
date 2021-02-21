@@ -33,7 +33,7 @@ $(document).ready(function() {
     afterLoad: function(){
       $(function(){
   $('.features__num').rCounter({
-    duration: 60,
+    duration: 20,
     easing: 'swing'
   });
 });
