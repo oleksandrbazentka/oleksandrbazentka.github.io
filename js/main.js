@@ -28,12 +28,18 @@ $(document).ready(function() {
 	verticalCentered: true,
 	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'fivePage', 'sixthPage', 'seventhPage'],
 		onLeave: function(){
+       $(function(){
+  $('.features__num').rCounter({
+    duration: 19,
+    easing: 'swing'
+  });
+});
         jQuery('.section [data-aos]').removeClass("aos-animate");
     },
     afterLoad: function(){
       $(function(){
   $('.features__num').rCounter({
-    duration: 20,
+    duration: 19,
     easing: 'swing'
   });
 });
