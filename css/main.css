@@ -418,6 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin: 0px auto;
     z-index: 3;
+    display: block;
 }
 
 .features__arrow-down {
@@ -661,7 +662,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0px;
 }
 
-.company__bg img {
+.company__bg picture img {
     width: 100%;
     height: 400px;
 }
@@ -705,7 +706,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: inset 0px -14px 10px 17px rgb(2 20 34);
 }
 
-.company__img img {
+.company__img picture img {
     width: 100%;
     height: 100%;
     position: relative;
@@ -724,21 +725,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Company End */
 
 /* Cooperation Start */
-.cooperation__bg {
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    width: 100%;
-}
-
-.cooperation__bg img {
-	height: 100%;
-}
-
 .cooperation__block {
     position: relative;
     width: 100%;
+    background: url('../img/bg-2-1.png') no-repeat top left;
 }
 
 .cooperation__wrap {
@@ -1419,7 +1409,7 @@ h1, h2, h3, h4, h5, h6 {
 	    margin: 0px auto;
 	}
 
-	.company__bg img {
+	.company__bg picture img {
 	    width: 100%;
 	    height: 300px;
 	}
@@ -1432,6 +1422,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Company End */
 
 /* Cooperation Start */
+	.cooperation__block {
+		height: 100%:;
+	}
 
 	.cooperation__wrap {
 	    padding: 50px 15px 0px 15px;
@@ -1671,7 +1664,7 @@ h1, h2, h3, h4, h5, h6 {
 	    margin-left: -12.5px;
 	}
 
-	.det__arrow img{
+	.det__arrow picture img{
 		width: 25px;
 	}
 
@@ -1722,7 +1715,7 @@ h1, h2, h3, h4, h5, h6 {
 	    top: 173px;
 	}
 
-	.section__arrow-down img {
+	.section__arrow-down picture img {
 		width: 25px;
 	}
 
@@ -1884,13 +1877,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Company End */
 
 /* Cooperation Start */
-	.cooperation__bg img {
-	    height: 100%;
-	    width: 110px;
-	}
-
 	.form {
 	    max-width: 439px;
+	}
+
+	.cooperation__block {
+		height: 100%;
 	}
 
 	.cooperation__wrap {
@@ -1946,12 +1938,23 @@ h1, h2, h3, h4, h5, h6 {
 
 	.cooperation__imgs {
 	    max-width: 409px;
-	    height: 63%;
+	    height: 349px;
+	}
+
+	.cooperation__arrow-down {
+	    margin: 25px auto 0px;
+	    padding-bottom: 0px;
+	    display: block;
+	    position: static;
+	    margin-bottom: 0px;
+	}
+
+	.section__arrow-down img {
+		width: 25px;
 	}
 /* Cooperation End */
 
 /* Connect Start */
-
 	.connect__title {
 	    line-height: 36px;
 	}
@@ -1997,6 +2000,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.connect__logos img {
+		width: 100px;
+	}
+
+	.connect__logos picture img {
 		width: 100px;
 	}
 
@@ -2318,7 +2325,7 @@ h1, h2, h3, h4, h5, h6 {
 	    width: 100%;
 	}
 
-	.company__bg img {
+	.company__bg picture img {
 	    width: 100%;
 	    height: 190px;
 	}
@@ -2379,11 +2386,6 @@ h1, h2, h3, h4, h5, h6 {
 	    margin-top: 10px;
 	}
 
-	.cooperation__bg img {
-	    height: 100%;
-	    width: 100px;
-	}
-
 	.form__btns {
 	    max-width: 270px;
 	}
@@ -2397,7 +2399,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	.cooperation__imgs {
 	    max-width: 386px;
-	    height: 67%;
+	    height: 350px;
 	}
 /* Cooperation End */
 
@@ -2471,7 +2473,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 680px) {
 	.cooperation__imgs {
 	    max-width: 355px;
-	    height: 67%;
+	    height: 311px;
 	}
 }
 
@@ -2499,14 +2501,7 @@ h1, h2, h3, h4, h5, h6 {
 	    position: relative;
 	    display: flex;
 	    flex-direction: column;
-	}
-
-	.cooperation__bg {
-		display: none;
-	}
-
-	.cooperation__bg img {
-		display: none;
+	    background: none;
 	}
 
 	.cooperation__wrap {
@@ -2580,8 +2575,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.cooperation__arrow-down {
-	    margin: 30px auto 0px;
-	    padding-bottom: 40px;
+	    position: relative;
+	    padding-bottom: 0px;
+	    bottom: -319px;
+	    display: block;
+	    margin: 0px auto;
 	}
 }
 /* Cooperation End */
@@ -2835,7 +2833,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Features End */
 
 /* Secrets Start */
-
 	.secrets__wrap {
 		padding: 15px 15px;
 	}
@@ -2956,7 +2953,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Company End */
 
 /* Cooperation Start */
-
 	.cooperation__imgs {
 	    height: 320px;
 	}
@@ -3060,7 +3056,7 @@ h1, h2, h3, h4, h5, h6 {
 	    max-width: 270px;
 	}
 
-	.connect__logos img {
+	.connect__logos picture img {
 	    width: 114px;
 	}
 /* Connect End */
