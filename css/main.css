@@ -2203,6 +2203,11 @@ h1, h2, h3, h4, h5, h6 {
 	.section__title-h-second {
 	    font-size: 24px;
 	}
+
+	.features__arrow-down {
+	    margin: 0px auto;
+	    bottom: 10px;
+	}
 /* Features End */
 
 /* Secrets Start */
@@ -2809,8 +2814,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.features__item:nth-child(1) {
-	    margin-left: 145px;
-	    margin-top: -77px;
+	    margin-left: 130px;
+	    margin-top: -35px;
 	}
 
 	.features__item:nth-child(2) {
@@ -3463,5 +3468,9 @@ h1, h2, h3, h4, h5, h6 {
 	    left: 50%;
 	    margin-bottom: -64px;
 	    margin-left: -29px;
+	}
+
+	.features__title-wrap {
+	    padding: 0px 15px 15px 15px;
 	}
 }

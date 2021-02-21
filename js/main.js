@@ -31,6 +31,12 @@ $(document).ready(function() {
         jQuery('.section [data-aos]').removeClass("aos-animate");
     },
     afterLoad: function(){
+      $(function(){
+  $('.features__num').rCounter({
+    duration: 35,
+    easing: 'swing'
+  });
+});
         jQuery('.section.active [data-aos]').addClass("aos-animate");
     }
 });
@@ -68,17 +74,5 @@ $(document).ready(function() {
     // settings: "unslick"
     // instead of a settings object
   ]
-});
-
-	 $('.features__num').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4500,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
 });
 });
