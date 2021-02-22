@@ -2947,6 +2947,10 @@ iframe {
 	    margin-left: -32px;
 	    top: 106px;
 	}
+
+	.features__img-map img {
+		-webkit-margin-top: 400px;
+	}
 /* Features End */
 
 /* Secrets Start */
@@ -3313,6 +3317,12 @@ iframe {
 		margin-top: 95px;
 		position: static;
 	}
+
+	.features__img-map img {
+		-webkit-margin-top: 400px;
+	}
+
+
 
 /* Features End */
 
