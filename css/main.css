@@ -2894,6 +2894,7 @@ iframe {
 	.features__img-map {
 		margin-top: 95px !important;
 		-webkit-margin-top: 175px;
+		position: static;
 	}
 
 	.features__title-wrap {
@@ -3308,8 +3309,9 @@ iframe {
 	}
 
 	.features__img-map {
-		margin-top: 95px !important;
 		-webkit-margin-top: 175px;
+		margin-top: 95px !important;
+		position: static;
 	}
 
 /* Features End */
