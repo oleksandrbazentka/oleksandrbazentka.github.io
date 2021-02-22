@@ -1,4 +1,52 @@
 /* FOR ALL START */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
 @font-face {
   	font-family: "Rubik";
   	font-style: normal;
@@ -2892,8 +2940,7 @@ iframe {
 	}
 
 	.features__img-map {
-		margin-top: 95px;
-		-webkit-margin-top: 400px;
+		margin-top: 225px;
 		position: static;
 	}
 
@@ -2946,11 +2993,6 @@ iframe {
 	.features__item:nth-child(4) {
 	    margin-left: -32px;
 	    top: 106px;
-	}
-
-	.features__img-map img {
-		margin-top: 0px !important;
-		-webkit-margin-before: 400px;
 	}
 /* Features End */
 
@@ -3314,14 +3356,8 @@ iframe {
 	}
 
 	.features__img-map {
-		-webkit-margin-top: 400px;
-		margin-top: 95px;
+		margin-top: 225px;
 		position: static;
-	}
-
-	.features__img-map img {
-		margin-top: 0px !important;
-		-webkit-margin-before: 400px;
 	}
 /* Features End */
 
