@@ -2949,7 +2949,8 @@ iframe {
 	}
 
 	.features__img-map img {
-		-webkit-margin-top: 400px;
+		margin-top: 0px !important;
+		-webkit-margin-before: 400px;
 	}
 /* Features End */
 
@@ -3319,11 +3320,9 @@ iframe {
 	}
 
 	.features__img-map img {
-		-webkit-margin-top: 400px;
+		margin-top: 0px !important;
+		-webkit-margin-before: 400px;
 	}
-
-
-
 /* Features End */
 
 /* Secrets Start */
