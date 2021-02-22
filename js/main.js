@@ -30,8 +30,7 @@ $(document).ready(function() {
 		onLeave: function(){
        $(function(){
   $('.features__num').rCounter({
-    duration: 19,
-    easing: 'swing'
+    duration: 50
   });
 });
         jQuery('.section [data-aos]').removeClass("aos-animate");
@@ -39,8 +38,7 @@ $(document).ready(function() {
     afterLoad: function(){
       $(function(){
   $('.features__num').rCounter({
-    duration: 19,
-    easing: 'swing'
+    duration: 50
   });
 });
         jQuery('.section.active [data-aos]').addClass("aos-animate");
