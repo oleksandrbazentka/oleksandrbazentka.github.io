@@ -24,7 +24,6 @@ $mapLinks.forEach(el => {
 		let currentPath = self.querySelectorAll('path');
 		if (currentPolygon) currentPolygon.forEach(el => el.style.cssText = `fill: ${color}; stroke-width: 2px;`);
 		if (currentPath) currentPath.forEach(el => el.style.cssText = `fill: ${color}; stroke-width: 2px;`);
-		currentElement.classList.add('active');
 	});
 
 	el.addEventListener('mouseleave', (e) => {
@@ -34,7 +33,6 @@ $mapLinks.forEach(el => {
 		let currentPath = self.querySelectorAll('path');
 		if (currentPolygon) currentPolygon.forEach(el => el.style.cssText = ``);
 		if (currentPath) currentPath.forEach(el => el.style.cssText = ``);
-		currentElement.classList.remove('active');
 	});
 
 	el.addEventListener('click', (e) => {
