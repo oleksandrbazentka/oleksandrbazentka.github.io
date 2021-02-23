@@ -39,6 +39,7 @@ $mapLinks.forEach(el => {
 		e.preventDefault();
 		let self = e.currentTarget;
 		let selfClass = self.getAttribute('href');
+		let currentElement = document.querySelector(`.map-tab-link[href="${selfClass}"]`);
 		let id = parseInt(currentElement.dataset.id);
 		requestData(id);
 	});
