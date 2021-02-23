@@ -8,31 +8,13 @@
 .content {
 	display: flex;
 	align-items: center;
-	padding: 10px 100px;
-}
-
-.left-menu ul {
-	list-style-type: none;
-	border: 1px solid #bfbfbf;
-}
-
-.left-menu li:not(:last-child) {
-	border-bottom: 1px solid #bfbfbf;
-}
-
-.left-menu a {
-	display: block;
-	padding: 10px;
-	color: #333;
+	padding: 10px 20px;
 }
 
 a {
 	text-decoration: none;
 }
 
-.left-menu {
-	flex-shrink: 0;
-}
 
 .map {
 	width: 100%;
