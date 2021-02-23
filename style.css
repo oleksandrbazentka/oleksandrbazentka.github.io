@@ -30,6 +30,18 @@ a {
 
 .map a {
 	transition: all 0.15s;
+	color: white;
+}
+
+.map-tab-link {
+	position: relative;
+}
+
+.map-tab-link span {
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0px;
 }
 
 .active {
