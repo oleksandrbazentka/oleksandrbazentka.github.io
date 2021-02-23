@@ -37,7 +37,7 @@ a {
 	position: relative;
 }
 
-.map-tab-link span {
+.map-tab-link .map-city__title {
 	position: absolute;
 	display: block;
 	top: 0px;
