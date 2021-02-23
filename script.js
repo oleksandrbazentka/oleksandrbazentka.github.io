@@ -1,6 +1,5 @@
-const $leftLinks = document.querySelectorAll('.left-menu a'),
-			$mapLinks = document.querySelectorAll('.map a'),
-			$info = document.querySelector('.info');
+const $mapLinks = document.querySelectorAll('.map a'),
+	$info = document.querySelector('.info');
 
 const requestData = (id = 1) => {
 	fetch('data.json')
