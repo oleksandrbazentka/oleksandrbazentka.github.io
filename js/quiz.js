@@ -25,20 +25,39 @@ $(document).ready(function() {
 	$('#pagepiling').pagepiling({	
   	menu: null,
     direction: 'horizontal',
-    verticalCentered: true,
+    verticalCentered: false,
+    css3: false,
     scrollingSpeed: 700,
     easing: 'swing',
-    css3: true,
-	 verticalCentered: true,
+    // normalScrollElements: '#quizTen',
    navigation: {
             'position': 'bottom',
         },
 	 anchors: ['quizFirst', 'quizSecond', 'quizThird', 'quizFourth', 'quizFive', 'quizSixth', 'quizSeventh', 'quizEighth', 'quizNineth', 'quizTen'],
-	 onLeave: function(){
+	 onLeave: function(index, nextIndex, direction){
       jQuery('.section [data-aos]').removeClass("aos-animate");
     },
     afterLoad: function(){
       jQuery('.section.active [data-aos]').addClass("aos-animate");
     }
+
+    // onLeave: function(){
+    //   jQuery('.section [data-aos]').removeClass("aos-animate");
+    // },
+    // afterLoad: function(){
+    //   jQuery('.section.active [data-aos]').addClass("aos-animate");
+    // }
 });
 });
+
+// let nav = document.querySelector('#pp-nav');
+// let btnProblem = document.querySelector('.quiz-problem__button');
+// let checkProblem = document.querySelectorAll('.quiz-problem-check');
+
+// function checked() {
+//   if (checkProblem.hasAttribute('checked')) {
+//     return false;
+//   }
+// }
+
+// checked();
