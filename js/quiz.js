@@ -29,7 +29,7 @@ $(document).ready(function() {
     css3: false,
     scrollingSpeed: 700,
     easing: 'swing',
-    normalScrollElements: '#quizFirst, #quizSecond, #quizThird, #quizFourth, #quizFive, #quizSixth, #quizSeventh, #quizEighth, #quizNineth',
+    normalScrollElements:'.form-select, .turnintodropdown_demo2, #quizFirst, #quizSecond, #quizThird, #quizFourth, #quizFive, #quizSixth, #quizSeventh, #quizEighth, #quizNineth',
     // normalScrollElements: '#quizTen',
    navigation: {
             'position': 'bottom',
