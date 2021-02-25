@@ -8,7 +8,7 @@ const requestData = (id = 1) => {
 	})
 	.then((data) => {
 		$info.innerHTML = `
-			<h3>${data[id - 1].city}</h3>
+			<div>${data[id - 1].city}</div>
 		`;
 	});
 };
