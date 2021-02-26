@@ -43,8 +43,3 @@ $mapLinks.forEach(el => {
 		requestData(id);
 	});
 });
-
-$mapLinks.onclick = function() {
-	$mapLinks.style.background = '#ffffff';
-}
-
