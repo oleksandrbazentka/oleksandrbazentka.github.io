@@ -38,6 +38,11 @@ $mapLinks.forEach(el => {
 		e.preventDefault();
 		let self = e.currentTarget;
 		let selfClass = self.getAttribute('href');
+		let color = self.dataset.color;
+		let currentPolygon = self.querySelectorAll('polygon');
+		let currentPath = self.querySelectorAll('path');
+		if (currentPolygon) currentPolygon.forEach(el => el.style.cssText = `fill: ${color}; stroke-width: 2px;`);
+		if (currentPath) currentPath.forEach(el => el.style.cssText = `fill: ${color}; stroke-width: 2px;`);
 		let currentElement = document.querySelector(`.map-tab-link[href="${selfClass}"]`);
 		let id = parseInt(currentElement.dataset.id);
 		requestData(id);
