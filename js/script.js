@@ -36,7 +36,7 @@ $mapLinks.forEach(el => {
 
 	el.addEventListener('click', (e) => {
 		e.preventDefault();
-		e.style.color = '#FF7B00';
+		e.style.fill = '#FF7B00';
 		let self = e.currentTarget;
 		let selfClass = self.getAttribute('href');
 		let currentElement = document.querySelector(`.map-tab-link[href="${selfClass}"]`);
