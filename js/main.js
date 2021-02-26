@@ -28,19 +28,9 @@ $(document).ready(function() {
 	verticalCentered: true,
 	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'fivePage', 'sixthPage', 'seventhPage'],
 		onLeave: function(){
-       $(function(){
-  $('.features__num').rCounter({
-    duration: 50
-  });
-});
         jQuery('.section [data-aos]').removeClass("aos-animate");
     },
     afterLoad: function(){
-      $(function(){
-  $('.features__num').rCounter({
-    duration: 50
-  });
-});
         jQuery('.section.active [data-aos]').addClass("aos-animate");
     }
 });
