@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0px;
     width: 15%;
     z-index: 2;
-    height: 100%;
+    height: 110%;
 }
 
 .features-bg-one img {
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0px;
     width: 15%;
     z-index: 2;
-    height: 100%;
+    height: 110%;
 }
 
 .features-bg-two img {
@@ -758,7 +758,6 @@ iframe {
     padding-top: 100px;
 }
 
-
 /* Company End */
 
 /* Cooperation Start */
@@ -778,7 +777,7 @@ iframe {
 
 .cooperation-bg img {
 	width: 100%;
-    height: 100%;
+    height: 105%;
 }
 
 .cooperation__wrap {
@@ -927,20 +926,20 @@ iframe {
 .connect__wrap {
     padding-top: 0px;
     background: url(../img/question.png) no-repeat top right;
-    background-size: 86% 78%;
+    background-size: 64% 101%;
     background-position: 81% 41%;
     -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
     -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-    box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-}
-
-.connect__cont {
-    padding: 100px 0px 0px 0px;
+    box-shadow: inset 127px 29px 21px 3px rgb(2 20 34);
 }
 
 .connect__title {
-	margin-bottom: 10px;
-	line-height: 63px;
+    line-height: 63px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding-top: 100px;
 }
 
 .connect__subtitle {
@@ -1518,18 +1517,18 @@ iframe {
 /* Cooperation End */
 
 /* Connect Start */
-	.connect__wrap {
-	   	padding: 0px 15px 0px 15px;
-	    background-size: 81% 84%;
-	    background-position: 81% 26%;
-	    -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-	    -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-	    box-shadow: inset 154px 64px 21px 3px rgb(2 20 34);
-	}
+    .connect__wrap {
+        background-position: 378px -3px;
+        padding: 0px 15px 0px 15px;
+        -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
+        background-size: 57% 103%;
+        -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
+        box-shadow: inset 154px -14px 21px 3px rgb(2 20 34);
+    }
 
 	.connect__cont {
-	    padding: 90px 0px 0px 0px;
-	}
+        padding: 0px;
+    }
 
 	.connect__subtitle {
 	    font-size: 18px;
@@ -1539,6 +1538,8 @@ iframe {
 
 	.connect__title {
     	line-height: 46px;
+        padding-left: 15px;
+        padding-top: 90px;
 	}
 
 	.media__phone {
@@ -1577,6 +1578,10 @@ iframe {
 	    margin: 50px auto 0px;
 	    padding-bottom: 50px;
 	}
+
+    .cooperation__title {
+        padding-left: 15px;
+    }
 
 /* Cooperation End */
 
@@ -1932,6 +1937,7 @@ iframe {
 
 	.cooperation__title {
 	    line-height: 25px;
+        padding-left: 15px;
 	}	
 
 	.cooperation__subtitle {
@@ -1983,7 +1989,7 @@ iframe {
 	}
 
 	.cooperation__arrow-down {
-	    margin: 50px auto 0px;
+	    margin: 30px auto 0px;
 	    padding-bottom: 0px;
 	    display: block;
 	    position: static;
@@ -1996,12 +2002,18 @@ iframe {
 /* Cooperation End */
 
 /* Connect Start */
+    .connect__wrap {
+        background-position: 315px -3px;
+        padding: 0px 15px 0px 15px;
+        -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
+        background-size: 57% 103%;
+        -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
+        box-shadow: inset 154px -14px 21px 3px rgb(2 20 34);
+    }
+
 	.connect__title {
 	    line-height: 36px;
-	}
-
-	.connect__cont {
-	    padding: 45px 0px 0px 0px;
+        padding-top: 45px;
 	}
 
 	.connect__subtitle {
@@ -2046,10 +2058,6 @@ iframe {
 
 	.connect__logos picture img {
 		width: 100px;
-	}
-
-	.connect__wrap {
-	    background-size: 77% 77%;
 	}
 
 	.connect__arrow-down {
@@ -2385,14 +2393,15 @@ iframe {
 
 /* Cooperation Start */
 	.cooperation__wrap {
-	    padding: 30px 15px 0px 15px;
-	}
+        padding: 0px 15px 0px 15px;
+    }
 
 	.form {
 	    max-width: 320px;
 	}
 
 	.cooperation__title {
+        padding: 50px 0px 0px 15px;
 	    line-height: 22px;
 	    margin-bottom: 8px;
 	}
@@ -2452,20 +2461,17 @@ iframe {
 
 /* Connect Start */
 	.connect__wrap {
-	    padding: 0px 15px 0px 15px;
-	    background-size: 74% 75%;
-	    background-position: 81% 24%;
-	    -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-	    -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-	    box-shadow: inset 154px 64px 21px 3px rgb(2 20 34);
-	}
-
-	.connect__cont {
-	    padding: 60px 0px 0px 0px;
-	}
+        padding: 0px 15px 0px 15px;
+        background-size: 79% 102%;
+        background-position: 80% 94%;
+        -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
+        -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
+        box-shadow: inset 154px -5px 21px 3px rgb(2 20 34);
+    }
 
 	.connect__title {
 	    margin-bottom: 8px;
+        padding-top: 60px;
 	}
 
 	.connect__subtitle {
@@ -2586,10 +2592,15 @@ iframe {
 	}
 
 	.cooperation__title {
-	    line-height: 24px;
-	    margin-bottom: 0px;
+        line-height: 24px;
+        margin-bottom: 0px;
         text-align: center;
-	}
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+
+    }
 
 	.cooperation__subtitle {
 	    font-size: 13px;
@@ -3064,13 +3075,12 @@ iframe {
 	    background: none;
 	}
 
-	.connect__cont {
-	    padding: 20px 0px 0px 0px;
-	}
-
 	.connect__title {
-	    margin-bottom: 13px;
-	}
+        margin-bottom: 13px;
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
 
 	.connect__subtitle {
 	    margin-bottom: 25px;
@@ -3434,6 +3444,18 @@ iframe {
 	    padding: 0px 15px;
 	}
 
+   .cooperation__title {
+        max-width: 1140px;
+        width: 100%;
+        text-align: left;
+        padding: 50px 15px 0px 15px;
+        margin-top: 25px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: inherit;
+        align-content: flex-start;
+    }
+
 	.cooperation__subtitle {
 	    font-size: 15px;
 	    line-height: 22px;
@@ -3563,7 +3585,7 @@ iframe {
 	}
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1501px) {
 .cooperation__wrap {
     padding-top: 50px;
     display: flex;
@@ -3644,5 +3666,42 @@ iframe {
 
 .features-bg-one img, .features-bg-two img {
     height: 100%;
+}
+
+.connect__title {
+    padding-top: 100px;
+    width: 81%;
+    margin: 0px auto;
+    max-width: none;
+}
+
+.connect {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect__bg {
+    width: 100%;
+    height: 100%;
+}
+
+.connect__wrap {
+    padding-top: 0px;
+    max-width: none;
+    display: flex;
+    height: 65%;
+    width: 81%;
+    box-shadow: rgb(2, 20, 34) 127px 117px 21px 3px inset;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../img/question.png) 81% 41% / 67% 87% no-repeat;
+    background-position: 81% 41%;
+}
+
+.cooperation-bg img {
+    width: 100%;
+    height: 105%;
 }
 }
