@@ -25,14 +25,14 @@ $mapLinks.forEach(el => {
 		if (currentPath) currentPath.forEach(el => el.style.cssText = `fill: ${color}; stroke-width: 2px;`);
 	});
 
-	el.addEventListener('mouseleave', (e) => {
-		let self = e.currentTarget;
-		let selfClass = self.getAttribute('href');
-		let currentPolygon = self.querySelectorAll('polygon');
-		let currentPath = self.querySelectorAll('path');
-		if (currentPolygon) currentPolygon.forEach(el => el.style.cssText = ``);
-		if (currentPath) currentPath.forEach(el => el.style.cssText = ``);
-	});
+	// el.addEventListener('mouseleave', (e) => {
+	// 	let self = e.currentTarget;
+	// 	let selfClass = self.getAttribute('href');
+	// 	let currentPolygon = self.querySelectorAll('polygon');
+	// 	let currentPath = self.querySelectorAll('path');
+	// 	if (currentPolygon) currentPolygon.forEach(el => el.style.cssText = ``);
+	// 	if (currentPath) currentPath.forEach(el => el.style.cssText = ``);
+	// });
 
 	el.addEventListener('click', (e) => {
 		e.preventDefault();
