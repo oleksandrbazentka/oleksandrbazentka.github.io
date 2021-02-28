@@ -14,6 +14,7 @@ const requestData = (id = 1) => {
 };
 
 requestData();
+
 $mapLinks.forEach(el => {
 	el.addEventListener('mouseenter', (e) => {
 		let self = e.currentTarget;
@@ -39,7 +40,9 @@ $mapLinks.forEach(el => {
 		let self = e.currentTarget;
 		let selfClass = self.getAttribute('href');
 		let currentElement = document.querySelector(`.map-tab-link[href="${selfClass}"]`);
+	 	let currentPath = self.querySelectorAll('path');
 		let id = parseInt(currentElement.dataset.id);
 		requestData(id);
 	});
 });
+

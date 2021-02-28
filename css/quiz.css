@@ -947,6 +947,8 @@ button {
 
 .quiz-download__button {
   margin-bottom: 58px;
+  position: relative;
+  z-index: 50;
 }
 
 .footer {
@@ -2670,6 +2672,8 @@ button {
     max-width: 289px;
     height: 70px;
     line-height: 70px;
+    position: relative;
+    z-index: 50;
   }
 
   .footer__wrap {
