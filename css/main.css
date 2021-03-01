@@ -878,10 +878,12 @@ path:focus {
 	max-width: 197px;
 	height: 60px;
 	line-height: 60px;
+    font-size: 16px;
 	text-align: center;
 	font-weight: 700;
 	background: transparent;
 	cursor: pointer;
+    font-family: 'Rubik', sans-serif;
 }
 
 .form__btn:hover {
@@ -929,12 +931,9 @@ path:focus {
 
 .connect__wrap {
     padding-top: 0px;
-    background: url(../img/question.png) no-repeat top right;
-    background-size: 64% 101%;
-    background-position: 81% 41%;
-    -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-    -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-    box-shadow: inset 127px 29px 21px 3px rgb(2 20 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .connect__title {
@@ -944,6 +943,8 @@ path:focus {
     margin: 0px auto;
     margin-bottom: 10px;
     padding-top: 100px;
+    position: relative;
+    z-index: 10;
 }
 
 .connect__subtitle {
@@ -1035,6 +1036,29 @@ path:focus {
 .connect__arrow-down {
     margin: 50px auto 100px;
 }
+
+.connect__cont-img {
+    width: 600px;
+    height: 468px;
+    -webkit-box-shadow: inset 13px 13px 43px 8px rgba(2,20,34,1);
+    -moz-box-shadow: inset 13px 13px 43px 8px rgba(2,20,34,1);
+    box-shadow: inset 13px 13px 43px 8px rgba(2,20,34,1);
+}
+
+.connect__cont-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+.connect__cont  {
+    width: 100%;
+    max-width: 370px; 
+    position: relative;
+    z-index: 10;
+}
+
 
 /* Connect End */
 
@@ -1171,8 +1195,6 @@ path:focus {
 	.features-bg-two {
 	    height: 115%;
 	}
-
-
 	/* Features End */
 }
 
@@ -1522,12 +1544,7 @@ path:focus {
 
 /* Connect Start */
     .connect__wrap {
-        background-position: 378px -3px;
         padding: 0px 15px 0px 15px;
-        -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-        background-size: 57% 103%;
-        -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-        box-shadow: inset 154px -14px 21px 3px rgb(2 20 34);
     }
 
 	.connect__cont {
@@ -1540,11 +1557,12 @@ path:focus {
 	    margin-bottom: 20px;
 	}
 
-	.connect__title {
-    	line-height: 46px;
+    .connect__title {
+        line-height: 46px;
         padding-left: 15px;
         padding-top: 90px;
-	}
+        margin-bottom: -35px;
+    }
 
 	.media__phone {
 	    font-size: 22px;
@@ -2007,12 +2025,7 @@ path:focus {
 
 /* Connect Start */
     .connect__wrap {
-        background-position: 315px -3px;
         padding: 0px 15px 0px 15px;
-        -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-        background-size: 57% 103%;
-        -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-        box-shadow: inset 154px -14px 21px 3px rgb(2 20 34);
     }
 
 	.connect__title {
@@ -2067,6 +2080,16 @@ path:focus {
 	.connect__arrow-down {
 	    margin: 50px auto 45px;
 	}
+
+    .connect__cont {
+        width: 100%;
+        max-width: 325px;
+    }
+
+    .connect__cont-img {
+        width: 500px;
+        height: 378px;
+    }
 /* Connect End */
 
 /* Develop Start */
@@ -2466,11 +2489,6 @@ path:focus {
 /* Connect Start */
 	.connect__wrap {
         padding: 0px 15px 0px 15px;
-        background-size: 79% 102%;
-        background-position: 80% 94%;
-        -webkit-box-shadow: inset 127px 117px 21px 3px rgb(2 20 34);
-        -moz-box-shadow: inset 127px 117px 21px 3px rgba(2,20,34,1);
-        box-shadow: inset 154px -5px 21px 3px rgb(2 20 34);
     }
 
 	.connect__title {
@@ -2511,6 +2529,11 @@ path:focus {
 	.connect__arrow-down {
 	    margin: 30px auto 60px;
 	}
+
+    .connect__cont-img {
+        width: 500px;
+        height: 200px;
+    }
 /* Connect End */
 
 /* Develop Start */
@@ -3147,6 +3170,15 @@ path:focus {
 	.connect__logos picture img {
 	    width: 114px;
 	}
+
+    .connect__cont-img {
+        display: none;
+    }
+
+    .connect__cont {
+        width: 100%;
+        max-width: none;
+    }
 /* Connect End */
 
 /* Develop Start */
@@ -3674,11 +3706,9 @@ path:focus {
 
 .connect__title {
     padding-top: 100px;
-    width: 81%;
     margin: 0px auto;
-    max-width: none;
+    max-width: 1155px;
 }
-
 .connect {
     height: 100%;
     display: flex;
@@ -3692,16 +3722,7 @@ path:focus {
 }
 
 .connect__wrap {
-    padding-top: 0px;
-    max-width: none;
-    display: flex;
     height: 65%;
-    width: 81%;
-    box-shadow: rgb(2, 20, 34) 127px 117px 21px 3px inset;
-    justify-content: center;
-    flex-direction: column;
-    background: url(../img/question.png) 81% 41% / 67% 87% no-repeat;
-    background-position: 81% 41%;
 }
 
 .cooperation-bg img {
