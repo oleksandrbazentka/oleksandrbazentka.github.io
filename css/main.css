@@ -2593,6 +2593,7 @@ path:focus {
         flex-direction: column;
         background: none;
         height: auto;
+        padding-bottom: 25px;
     }
 
 	.cooperation__wrap {
@@ -3639,7 +3640,6 @@ path:focus {
     position: relative;
     width: 100%;
     max-width: none;
-
 }
 
 .cooperation__arrow-down {
@@ -3681,7 +3681,7 @@ path:focus {
 }
 
 .cooperation__title {
-        margin-bottom: 25px;
+    margin-bottom: 25px;
     /* height: 61px; */
     /* margin-left: 5%; */
     display: flex;
