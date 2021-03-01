@@ -3097,6 +3097,10 @@ path:focus {
 	    margin: 20px 0px;
 	    text-align: left;
 	}
+
+    .cooperation__imgs {
+        display: none;
+    }
 /* Cooperation End */
 
 /* Connect Start */
