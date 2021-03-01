@@ -26,6 +26,7 @@ $(document).ready(function() {
 	$('#pagepiling').pagepiling({	
 	menu: null,
 	verticalCentered: true,
+  touchSensitivity: 1,
 	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'fivePage', 'sixthPage', 'seventhPage'],
 		onLeave: function(){
         jQuery('.section [data-aos]').removeClass("aos-animate");
