@@ -49,6 +49,8 @@ function ticket(){
 		c.attr('class','').addClass('b5-b');
 		c.addClass('b5-b_2');
 		$('.b5-b').css('background-image','url(img/b5-1-'+n+'.jpg');
+		$('.b5-h').css('background', 'rgba(255, 255, 255, 0.4)');
+		$('.b5-b3').css('text-shadow', '0 0 8px black');
 	});
 }
 
@@ -184,17 +186,33 @@ function cdn(){
 }
 
 // M E N U - T O P
-function menuT(){
-	$('.hr-bn1').click(function(){
-		$('.hr-ul').toggleClass('act');
-		$(this).toggleClass('act');
-	});
-}
+// function menuT(){
+// 	$('.hr-bn1').click(function(){
+// 		$('.hr-ul').toggleClass('act');
+// 		$(this).toggleClass('act');
+// 	});
+// }
 
 //--F U N C T I O N S
 
+(function () {
+	const burgerItem = document.querySelector('.burger');
+	const menu = document.querySelector('.hr-b2');
+	const menuCloseItem = document.querySelector('.header-menu__close');
+	burgerItem.addEventListener('click', () => {
+		menu.classList.add('header-menu__active');
+		burgerItem.style.visibility = 'hidden';
+
+	})
+	menuCloseItem.addEventListener('click', () => {
+		menu.classList.remove('header-menu__active');
+		burgerItem.style.visibility = 'visible';
+	})
+}());
+
+
 $(document).ready(function () {
-	menuT();
+	// menuT();
 	cdn();
 	programs();
 	ticket();
@@ -244,30 +262,58 @@ $(document).ready(function () {
 	  ]
 	});
 
-	// if($('.crl').length){
-	// 	$('.crl1').owlCarousel({
-	// 		items:1,
-	// //        autoWidth: true,
-	// 		dots: true,
-	// 		arrows: true,
-	// 		nav: true,
-	// 		loop : true,
-	// 		autoplay:false,
-	// 		autoplayTimeout:5000,
-	// 		responsive : {
-	// 		0 : {
-	// 			items: 1
-	// 		}}
-	// 	});
+
+	$('.b4-b-c').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 3,
+	  slidesToScroll: 3,
+	  responsive: [
+	  	{
+	      breakpoint: 992,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 550,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
+
+	if($('.crl').length){
+		$('.crl1').owlCarousel({
+			items:1,
+	//        autoWidth: true,
+			dots: true,
+			arrows: true,
+			nav: true,
+			loop : true,
+			autoplay:false,
+			autoplayTimeout:5000,
+			responsive : {
+			0 : {
+				items: 1
+			}}
+		});
 		
-	// 	function sliderN(){
-	// 		var i = 1;
-	// 		$('.crl1.owl-theme .owl-dots .owl-dot').each(function(){
-	// 			$(this).html(i);
-	// 			i++;
-	// 		});
-	// 	}	
-	// 	sliderN();
+		function sliderN(){
+			var i = 1;
+			$('.crl1.owl-theme .owl-dots .owl-dot').each(function(){
+				$(this).html(i);
+				i++;
+			});
+		}	
+		sliderN();
 		
 	// 	$('.crl2').owlCarousel({
 	// 		items:4,
@@ -306,7 +352,7 @@ $(document).ready(function () {
 	// 		}
 	// 		}
 	// 	});
-	// }		
+	}		
 });
 
 $(window).on('load',function(){
