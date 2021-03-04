@@ -470,12 +470,48 @@ table {
 	display:inline-block;
 }
 
+.b4-img {
+    left: 50%;
+    top: 13px;
+    margin-left: -809px;
+}
+
 .b4 {
     margin-bottom: 128px;
+    position: relative;
+}
+
+.b4-arr {
+    position: absolute;
+    top: 106px;
+    margin-left: -743px;
+}
+
+.b4-oval {
+	position: absolute;
+	animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .b4-h-c {
-    background: url(../img/b4-1.svg) no-repeat;
     padding: 23px 0 45px 340px;
     color: black;
 }
@@ -547,8 +583,6 @@ table {
     left: 0;
     width: 100%;
     position: absolute;
-    background: url(../img/b5-0.png)no-repeat center top;
-    background-size: 97% 100%;
     z-index: -1;
 }
 .b5-b_1:before {
@@ -763,8 +797,6 @@ table {
 	color:#fff;
 }
 .b7-h-c {
-    background: url(../img/b7-1.png)no-repeat right center;
-    background-size: 100% 100%;
     background-color: #0C594B;
 }
 .b7-h-c1 {
@@ -783,7 +815,78 @@ table {
     left: -73px;
     width: 167px;
     height: 165px;
+	animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+
+/*@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}*/
+
 .b7-h3{
 	font-family:m3;
 	font-size: 88px;
@@ -1132,12 +1235,13 @@ table {
     margin-bottom: 315px;
 }
 .hr-b6 {
-    align-self: flex-start;
+    align-self: flex-end;
     max-width: 167px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 27px;
 }
 .hr-a1-c {
     display: flex;
@@ -1357,10 +1461,12 @@ table {
 	    color: black;
 	    padding-bottom: 100px;
 	    padding: 108px 15px 100px 15px;
-	    background: url(../img/b9-1.svg)no-repeat left 754px top 30px, url(../img/b9-6.svg)no-repeat left 788px top 400px;
+	    background: url(../img/b9-1.svg)no-repeat left 754px top 30px;
+	    position: relative;
 	}
 	.b9 {
 	    display: flex;
+	    position: relative;
 	    justify-content: space-between;
 	    max-width: 1740px;
 	    margin: 0px 0px 0px auto;
@@ -1369,6 +1475,32 @@ table {
 	    display: flex;
 	    align-items: flex-end;
 	    color: black;
+	}
+
+	.b9-6-img {
+	    position: absolute;
+	    left: 780px;
+    	top: 400px;
+	    animation-name: rotation;
+	    animation-duration: 5s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+	    -webkit-animation-name: rotation;
+	    -webkit-animation-duration: 5s;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	    -moz-animation-name: rotation;
+	    -moz-animation-duration: 5s;
+	    -moz-animation-iteration-count: infinite;
+	    -moz-animation-timing-function: linear;
+	    -o-animation-name: rotation;
+	    -o-animation-duration: 5s;
+	    -o-animation-iteration-count: infinite;
+	    -o-animation-timing-function: linear;
+	    animation-name: rotation;
+	    animation-duration: 5s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
 	}
 
 	.b8-h {
@@ -1687,7 +1819,7 @@ table {
 	}
 
 	.b9-b {
-	    background: url(../img/b9-1.svg)no-repeat left 804px top 30px, url(../img/b9-6.svg)no-repeat left 835px top 404px;
+	    background: url(../img/b9-1.svg)no-repeat left 804px top 30px;
 	}
 
 	.b8-h {
@@ -1721,8 +1853,6 @@ table {
 	}
 
 	.b4-h-c {
-	    background: url(../img/b4-1.svg) no-repeat;
-	    background-size: 16% 75%;
 	    padding: 23px 0 45px 240px;
 	}
 
@@ -1736,6 +1866,22 @@ table {
 
 	.b4-h1 {
 	    font-size: 26px;
+	}
+
+	.b4-img {
+	    left: 180px;
+	    top: 5px;
+	    margin-left: 0px;
+	}
+
+	.b4-arr {
+	    width: 80px;
+	    top: 78px;
+	    left: 230px;
+	}
+
+	.b4-oval {
+		width: 180px;
 	}
 
 	.c1-for-b3 {
@@ -1786,6 +1932,11 @@ table {
 	.b7-bn-c1-img-2 {
 	    right: 52px;
 	}
+
+/*	.b9-6-img {
+    	position: absolute;
+    	right: 223px;
+	}*/
 }
 
 @media (max-width: 1500px) {
@@ -1900,7 +2051,14 @@ table {
 	}
 
 	.b9-b {
-	    background: url(../img/b9-1.svg)no-repeat left 696px top 30px / 25% 36%, url(../img/b9-6.svg)no-repeat left 723px top 310px / 14% 14%;
+	    background: url(../img/b9-1.svg)no-repeat left 696px top 30px / 25% 36%;
+	}
+
+	.b9-6-img {
+	    position: absolute;
+	    left: 730px;
+	    top: 281px;
+	    width: 140px;
 	}
 
 	.b9-w-third {
@@ -2148,7 +2306,13 @@ table {
 	}
 
 	.b9-b {
-	    background: url(../img/b9-1.svg)no-repeat left 622px top 30px / 21% 36%, url(../img/b9-6.svg)no-repeat left 633px top 266px / 14% 14%;
+	    background: url(../img/b9-1.svg)no-repeat left 622px top 30px / 21% 36%;
+	}
+
+	.b9-6-img {
+	    left: 633px;
+	    top: 258px;
+	    width: 120px;
 	}
 
 	.b8-h {
@@ -2330,6 +2494,14 @@ table {
 	.b4-w {
 	    font-size: 18px;
 	    padding: 20px 40px 20px;
+	}
+
+	.b4-img {
+	    left: 133px;
+	}
+
+	.b4-arr {
+		left: 182px;
 	}
 	
 	.b3-h-2{
@@ -2557,7 +2729,13 @@ table {
 
 	.b9-b {
 	    padding: 54px 15px 54px 15px;
-	    background: url(../img/b9-1.svg)no-repeat left 358px top 38px / 18% 18%, url(../img/b9-6.svg)no-repeat left 396px top 114px / 11% 11%;
+	    background: url(../img/b9-1.svg)no-repeat left 358px top 38px / 18% 18%;
+	}
+
+	.b9-6-img {
+	    left: 390px;
+	    top: 135px;
+	    width: 80px;
 	}
 
 	.b9-b-second img {
@@ -2855,9 +3033,6 @@ table {
 	}
 
 	.b4-h-c {
-	    background: url(../img/b4-1.svg) no-repeat;
-	    background-size: 12% 54%;
-	    background-position: 5px 17px;
 	    padding: 23px 0 45px 120px;
 	}
 
@@ -2876,6 +3051,21 @@ table {
 	    margin: -130px 0 0;
 	    background: url(../img/b4-2.svg)no-repeat;
 	    background-size: 116px 189px;
+	}
+
+	.b4-oval {
+	    width: 120px;
+	}
+
+	.b4-img {
+	    left: 15px;
+	    top: 12px;
+	}
+
+	.b4-arr {
+	    left: 44px;
+	    top: 55px;
+	    width: 55px;
 	}
 
 	.crl1-item {
@@ -3091,6 +3281,10 @@ table {
 	    height: 26px;
 	}
 
+	.hr-b6 {
+	    margin-bottom: 17px;
+	}
+
 	.b9-w {
 	    font-size: 14px;
 	    margin-bottom: 8px;
@@ -3125,7 +3319,13 @@ table {
 
 	.b9-b {
 	    padding: 40px 15px 40px 15px;
-	    background: url(../img/b9-1.svg)no-repeat left 370px top 38px / 18% 18%, url(../img/b9-6.svg)no-repeat left 384px top 117px / 11% 11%;
+	    background: url(../img/b9-1.svg)no-repeat left 370px top 38px / 18% 18%;
+	}
+
+	.b9-6-img {
+	    left: 390px;
+	    top: 119px;
+	    width: 60px;
 	}
 
 	.b9-b-second img {
@@ -3464,6 +3664,10 @@ table {
 	.b9-w{
 		text-align:center;
 		max-width:100%;
+	}
+
+	.b9-6-img {
+    	display: none;
 	}
 
 	.hr {
@@ -3904,6 +4108,21 @@ table {
 	.b4-h-bg1 {
 		margin: 0px 0px -4px -52px;
 	}
+
+	.b4-img {
+	    left: 17px;
+	    top: 21px;
+	}
+
+	.b4-oval {
+	    width: 65px;
+	}	
+
+	.b4-arr {
+	    left: 35px;
+	    top: 48px;
+	    width: 30px;
+	}
 	
 	.b3 {
 		margin-bottom:71px;
@@ -4219,7 +4438,7 @@ table {
 	}
 
 	.c1-for-b6 {
-	    padding: 0px 5px;
+	    padding: 0px;
 	    border: 1px solid #0C594B;
 	    border-right: none;
 	    border-left: none;
@@ -4227,31 +4446,38 @@ table {
 
 	.b6-b0 {
 	    margin-bottom: 0px;
-	    padding: 20px 0 20px;
+	    padding: 0px 0 20px;
 	    border: none;
 	}
 
 	.b6-h1 {
-	    font-size: 21px;
+	    font-size: 24px;
 	}
 
 	.b6-w1 {
-	    font-size: 14px;
-	    margin-bottom: 10px;
+	    font-size: 16px;
+	    margin-bottom: 20px;
 	}
 
 	.b6-w2 {
-	    font-size: 15px;
+	    font-size: 18px;
 	    padding: 15px 10px 10px 10px;
+	    width: 50%;
 	}
 
 	.b6-w3 {
-	    font-size: 17px;
+	    font-size: 20px;
 	    padding: 15px 10px;
+	    width: 50%;
+	}
+
+	.b6-b2 {
+	    width: 100%;
 	}
 
 	.b6-b1 {
 	    margin-bottom: 40px;
+	    flex-direction: column;
 	}
 
 	.b6-h2 {
@@ -4260,7 +4486,8 @@ table {
 	}
 
 	.b6-h1-c {
-	    padding: 0px 5px;
+	   	padding: 0px;
+	    padding-top: 20px;
 	}
 
 	.b6-h {
@@ -4384,6 +4611,10 @@ table {
 	    padding: 0 15px 0px 0;
 	}
 
+	.b4-img {
+		display: none;
+	}
+
 	.b3 {
 	    margin-bottom: 40px;
 	}
@@ -4458,68 +4689,6 @@ table {
 @media (max-width: 490px) {
 	.b9-sep{
 		display:none;
-	}
-
-	.b6-h1-c {
-	    padding: 0px;
-	}
-
-	.b6-w1 {
-	    font-size: 10px;
-	    margin-bottom: 8px;
-	}
-
-	.b6-w2 {
-	    font-size: 9px;
-	    padding: 12px 10px 8px 10px;
-	}
-
-	.b6-w3 {
-	    font-size: 10px;
-	    padding: 12px 0px;
-	}
-
-	.b6-w3-1 {
-	    font-size: 10px;
-	}
-
-	.b6-h1 {
-	    font-size: 15px;
-	}
-
-	.b6-b1 {
-	    margin-bottom: 30px;
-	}
-
-	.b6-h2 {
-	    font-size: 15px;
-	    margin-bottom: 20px;
-	}
-
-	.b6-w4 {
-	    font-size: 9px;
-	    margin-bottom: 8px;
-	}	
-
-	.b6-bn {
-	    font-size: 10px;
-	    padding: 12px 28px;
-	}
-
-	.b6-b3 {
-	    padding-bottom: 30px;
-	    padding-top: 30px;
-	}
-		
-	.b6-h {
-	    font-size: 19px;
-	    margin-bottom: 15px;
-	    max-width: 301px;
-	}
-
-	.b6-w {
-	    font-size: 9px;
-	    max-width: 301px;
 	}
 
 	.b5-b_1:before {
