@@ -59,6 +59,14 @@ table {
   display: none !important; 
 }
 
+.hr-a {
+	transition: all 0.3s ease;
+}
+
+.hr-a:hover {
+	text-decoration: underline;
+}
+
 .hr-hover {
 	transition: all 0.5s ease;
 }
