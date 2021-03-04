@@ -63,8 +63,12 @@ table {
 	transition: all 0.5s ease;
 }
 
-.hr-hover:hover {
+.burger {
+	transition: all 0.6s ease;
+}
 
+.burger:hover {
+	box-shadow: 0px 0px 20px black;
 }
 
 .btn-hover-white {
@@ -1686,6 +1690,10 @@ table {
 	    padding: 125px 105px 0px 105px;
 	}
 
+	.b8-f {
+	    height: 390px;
+	}
+
 	.c1-for-b5 {
 	    padding: 0px 120px;
 	}
@@ -2151,6 +2159,10 @@ table {
 	    margin-bottom: 13px;
 	}
 
+	.b8-f {
+	    height: 410px;
+	}
+
 	.b7-h3 {
 	    font-size: 52px;
 	    margin-right: 20px;
@@ -2611,6 +2623,10 @@ table {
 	    height: 210px;
 	    right: 0%;
 	    top: 60px;
+	}
+
+	.b8-f {
+	    height: 380px;
 	}
 
 	

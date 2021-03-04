@@ -61,6 +61,11 @@ function programs(){
 		$(this).hide();
 	});
 }
+ // 	if()
+	// $('.burger').hover(function(){
+	// 	$('.burger__line').css('background', 'blue');
+	// })
+
 
 // C O U N T D O W N
 function cdn(){
@@ -226,7 +231,7 @@ $(document).ready(function () {
 	  slidesToScroll: 4,
 	  responsive: [
 	   	{
-	      breakpoint: 1400,
+	      breakpoint: 1600,
 	      settings: {
 	        slidesToShow: 3,
 	        slidesToScroll: 3,
