@@ -1,19 +1,77 @@
-var ham = document.querySelector('.menu__list-ham');
-var btnHam = document.querySelector('.header__hamburger');
-var choose = document.querySelector('.main-profile__choose');
-var btnExit = document.querySelector('.main-profile__exit');
-var btnNo = document.querySelector('.choose__button_second');
+$('.big-slider__items').slick({
+  dots: false,
+  appendArrows: false,
+  prevArrow: false,
+  nextArrow: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
+});
 
-btnHam.onclick = function() {
-    ham.classList.toggle('dis-flex');
-} 
+jQuery(function(f){
+	var element = f('#blfix');
+	f(window).scroll(function(){
+	    element['fade'+ (f(this).scrollTop() > 100 ? 'In': 'Out')](500);           
+	});
+}); 
 
-btnExit.onclick = function() {
-	btnExit.style.display = "none";
-	choose.style.display = "flex";
-}
 
-btnNo.onclick = function() {
-	btnExit.style.display = "block";
-	choose.style.display = "none";
-}
+$(function() {
+  $("#selectBackground ul li a").click(function(e) {
+    e.preventDefault();
+    $("#selectBackground ul li a").removeClass('active');
+    $(this).addClass('active');
+  })
+});
+
+$(function() {
+	$(".info__btn").click(function(e) {
+		$('.info__btn').removeClass('info__active');
+		$(this).addClass('info__active');
+	})
+
+	$("#info-1").click(function(e) {
+		$('.text-2').css('display', 'none');
+		$('.text-3').css('display', 'none');
+		$('.text-4').css('display', 'none');
+		$('.text-5').css('display', 'none');
+		$('.text-1').css('display', 'block');
+	})
+
+	$("#info-2").click(function(e) {
+		$('.text-1').css('display', 'none');
+		$('.text-3').css('display', 'none');
+		$('.text-4').css('display', 'none');
+		$('.text-5').css('display', 'none');
+		$('.text-2').css('display', 'block');
+	})
+
+	$("#info-3").click(function(e) {
+		$('.text-1').css('display', 'none');
+		$('.text-2').css('display', 'none');
+		$('.text-4').css('display', 'none');
+		$('.text-5').css('display', 'none');
+		$('.text-3').css('display', 'block');
+	})
+
+	$("#info-4").click(function(e) {
+		$('.text-1').css('display', 'none');
+		$('.text-2').css('display', 'none');
+		$('.text-3').css('display', 'none');
+		$('.text-5').css('display', 'none');
+		$('.text-4').css('display', 'block');
+	})
+
+	$("#info-5").click(function(e) {
+		$('.text-1').css('display', 'none');
+		$('.text-2').css('display', 'none');
+		$('.text-3').css('display', 'none');
+		$('.text-4').css('display', 'none');
+		$('.text-5').css('display', 'block');
+	})
+});
+
+
+
