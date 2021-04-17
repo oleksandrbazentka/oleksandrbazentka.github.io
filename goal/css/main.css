@@ -163,6 +163,7 @@ input, button {
 	font-size: 33px;
 	font-weight: 700;
 	padding: 7px 45px;
+	display: inline-block;
 	border: 4px solid #00A3FF;
 	background: transparent;
 	color: white;
@@ -274,6 +275,20 @@ input, button {
 	line-height: 120%;
 	padding: 25px 35px;
 	position: relative;
+	height: 210px;
+	overflow-y: scroll;
+}
+
+.stat__handbook::-webkit-scrollbar {
+    width: 10px; /* ширина для вертикального скролла */
+    height: 15px; /* высота для горизонтального скролла */
+    background: #7301AE;
+
+}
+
+/* ползунок скроллбара */
+.stat__handbook::-webkit-scrollbar-thumb {
+    background-color: white;
 }
 
 .handbook__button {
@@ -282,6 +297,7 @@ input, button {
 	border: none;
 	position: absolute;
 	background: transparent;
+	display: none
 }
 
 .handbook__none {
@@ -298,7 +314,7 @@ input, button {
 	color: white;
 	text-align: center;
 	max-width: 1110px;
-	margin: 150px auto 0px;
+	margin: 50px auto 0px;
 	line-height: 130%;
 }
 
@@ -1050,6 +1066,14 @@ input, button {
 	    margin-left: -50px;
 	}
 
+	.form__email {
+	    font-size: 18px;
+	}
+
+	.form__email::placeholder {
+	    font-size: 18px;
+	}
+
 	.form__title {
 	    font-size: 18px;
 	}
@@ -1086,6 +1110,7 @@ input, button {
 	    font-size: 12px;
 	    margin: 0px 20px 15px 0px;
 	}
+
 }
 
 @media screen and (max-width: 650px) {
@@ -1189,7 +1214,7 @@ input, button {
 	}
 
 	.parameters__wrap {
-		padding-top: 183px;
+	    padding-top: 161px;
 	}
 
 	.parameters__title {
@@ -1444,7 +1469,7 @@ input, button {
 
 	.parameters__wrap {
 	    background: url(../img/bg-gr.png) no-repeat top center;
-	    background-size: 730px;
+	    background-size: 795px;
 	    background-position: 0px 7px;
 	    padding-top: 140px;
 	}
