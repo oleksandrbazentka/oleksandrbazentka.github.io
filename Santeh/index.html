@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Сантех +
+	</title>
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrap">
+			<nav class="header__menu">
+				<ul class="menu">
+					<div class="menu__item-wrap">
+						<li class="menu__item item__logo">
+							<span class="logo">
+								<img src="img/logo.svg" alt="">
+							</span>
+							<span class="logo__text upper">
+								Cантех плюс
+							</span>
+						</li>
+						<li class="menu__item menu__item_second">
+							Монтаж систем отопления и водоснабжения в Казани 
+						</li>
+					</div>
+					<li class="menu__item menu__item-location">
+						<span class="item__city">
+							Казань:
+						</span>
+						<span class="item__street">
+							ул .Магистральная д. 18
+						</span>
+					</li>
+					<li class="menu__item menu__item-location">
+						<span class="item__city item__city_second">
+							Телефон:
+						</span>
+						<a href="tel:+78432538582" class="item__street">
+							+7 (843) 253-85-82
+						</a>
+					</li>
+					<button class="header__button btn">
+						Заказать обратный звонок
+					</button>
+				</ul>
+			</nav>
+			<div class="header__install">
+				<div class="install__block">
+					<h1 class="install__title title">
+						Установка системы отопления и водоснабжения под ключ
+					</h1>
+					<div class="install__where">
+						<div class="where__item where__item_first">
+							В квартирах
+						</div>
+						<div class="where__item where__item_second">
+							В домах
+						</div>
+						<div class="where__item where__item_third">
+							Для предприятий
+						</div>
+					</div>
+					<div class="install__text">
+						Правильный монтаж, может сохранить ваш кошелек и нервы, поэтому наши клиенты уже сэкономили на 72% с помощью энергоэффективного отопления
+					</div>
+					<div class="install__btns">
+						<a href="#" class="install__link btn">
+							Расчитать стоимость монтажа
+						</a>
+						<button class="install__btn btn">
+							Вызвать специалиста бесплатно
+						</button>
+					</div>
+				</div>
+				<div class="install__block install__block_second">
+					<img src="img/head-img.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="popup__call-bg">
+			<div class="popup__call">
+				<button class="popup__close">
+					<img src="img/close.svg" alt="">
+				</button>
+				<div class="popup__title">
+					Заказать обратный звонок
+				</div>
+				<div class="popup__text">
+					Оставьте заявку и наш менеджер свяжется в ближайшее время и проконсультрует
+				</div>
+				<form action="#" class="form">
+					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
+					<div class="popup__confidence">
+						<label class="switch">
+					  		<input type="checkbox" checked class="popup__checkbox" required>
+					  		<span class="slider round"></span>
+						</label>
+						<div class="confidence__text">
+							Соглашаюсь на условия конфиденциальности данных и соглашаюсь с условиями
+							<a href="#">
+								политики конфиденциальности
+							</a>
+						</div>
+					</div>
+					<button type="submit" class="form__submit btn">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup__spec-bg">
+			<div class="popup__spec">
+				<button class="close__spec">
+					<img src="img/close.svg" alt="">
+				</button>
+				<div class="popup__title">
+					Вызвать специалиста
+				</div>
+				<div class="popup__text">
+					Оставьте заявку и наш менеджер запишет вас, на бесплатный замер специалистом
+				</div>
+				<form action="#" class="form">
+					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
+					<div class="popup__confidence">
+						<label class="switch switch-spec">
+					  		<input type="checkbox" checked class="popup__checkbox popup__checkbox-spec" required>
+					  		<span class="slider round"></span>
+						</label>
+						<div class="confidence__text">
+							Соглашаюсь на условия конфиденциальности данных и соглашаюсь с условиями
+							<a href="#">
+								политики конфиденциальности
+							</a>
+						</div>
+					</div>
+					<button type="submit" class="form__submit btn submit-spec">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<section class="services">
+		<div class="wrap">
+			<h2 class="services__title title">
+				Услуги по монтажу
+			</h2>
+			<div class="services__price">
+				<div class="price__item">
+					<img src="img/serv-1.jpg" alt="" class="price__img">
+					<div class="price__title">
+						Монтаж трубопроводов до точки РАДИАТОРА
+					</div>
+					<div class="price__text">
+						Прокладка трубопровода от коллекторного шкафа или от начала ветки до точки подключения радиатора трубопроводом
+					</div>
+					<div class="price__money">
+						от 80 ₽ 
+						<span>
+							погонный метр
+						</span>
+					</div>
+				</div>
+				<div class="price__item">
+					<img src="img/serv-2.jpg" alt="" class="price__img">
+					<div class="price__title">
+						Монтаж подключения РАДИАТОРА 
+					</div>
+					<div class="price__text">
+						Отопления типа стального панельного/ алюминиевого. Выставления трубок или выводов для подключение радиатора
+					</div>
+					<div class="price__money">
+						от 1 500 ₽ 
+						<span>
+							шт.
+						</span>
+					</div>
+				</div>
+				<div class="price__item">
+					<img src="img/serv-3.jpg" alt="" class="price__img">
+					<div class="price__title">
+						Монтаж подключения КОНВЕКТОРА отопления
+					</div>
+					<div class="price__text">
+						Установка конвектора отопления с естественной конвекцией
+					</div>
+					<div class="price__money">
+						от 4 500 ₽ 
+						<span>
+							шт.
+						</span>
+					</div>
+				</div>
+				<div class="price__item price__item_fourth">
+					<img src="img/serv-4.jpg" alt="" class="price__img">
+					<div class="price__title">
+						Монтаж теплого пола
+					</div>
+					<div class="price__text">
+						Укладка утеплителя экструдированного пенополистирола
+					</div>
+					<div class="price__money">
+						от 350 ₽ 
+						<span>
+							погонный метр
+						</span>
+					</div>
+				</div>
+				<div class="price__item">
+					<img src="img/serv-5.jpg" alt="" class="price__img">
+					<div class="price__title">
+						Монтаж КОТЕЛЬНОЙ
+					</div>
+					<div class="price__text">
+						Включает в себя установку навесного газового двухконтурного или одноконтурного котла с подключением газового шланга и гидравлической линии
+					</div>
+					<div class="price__money">
+						от 5 000 ₽ 
+						<span>
+							шт.
+						</span>
+					</div>
+				</div>
+				<div class="price__item">
+					<img src="img/serv-6.jpg" alt="" class="price__img">
+					<div class="price__title">
+						Монтаж коллекторного шкафа
+					</div>
+					<div class="price__text">
+						Установка наружного коллекторного шкафа для раздачи теплоносителя 
+						+ гидравлическое подключение коллектора 
+					</div>
+					<div class="price__money">
+						от 3 500 ₽ 
+						<span>
+							шт.
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="services__calculate">
+				<div class="calculate__block">
+					<div class="calculate__text_grey">
+					Почему такие цены на монтаж?
+					</div>
+					<div class="calculate__title">
+						Стоимость работ зависит от сложности и объема
+					</div>
+					<div class="calculate__text">
+						Поэтому Вы можете получить просчёт, или попробовать посчитать самим, с помощью прйс листа
+					</div>
+					<a href="#" class="btn calculate__btn">
+						Получить просчёт стоимости
+					</a>
+				</div>
+				<div class="calculate__block">
+					<img src="img/calc.png" alt="" class="calc__img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="treatment">
+		<div class="wrap">
+			<h2 class="treatment__title title">
+				Почему правильный подход важен
+			</h2>
+			<div class="treatment__wrap">
+				<div class="treatment__block">
+					<img src="img/tr.png" alt="" class="treatment__big-img">
+				</div>
+				<div class="treatment__block">
+					<div class="treatment__item">
+						<img src="img/true-ic-1.svg" alt="" class="treatment__img">
+						<div class="treatment__text">
+							<div class="treatment__text_bold">
+								При монтаже учитываем все параметры дома. Площадь дома, материал стен, высоту потолков,  размеры окон и дверей.
+							</div>
+							<div class="treatment__text_normal">
+								Так как мы подбираем энергоэффективное решение, важно понимать какой котел и какую систему нужно устанавливать при том или ином случае
+							</div>
+						</div>
+					</div>
+					<div class="treatment__item">
+						<img src="img/true-ic-2.svg" alt="" class="treatment__img">
+						<div class="treatment__text">
+							<div class="treatment__text_bold">
+								Подбираем правильную систему отопления
+							</div>
+							<div class="treatment__text_normal">
+								Если в доме нет газа и не предвидится, предлагаем оптимальное решение для дома. Начиная от электрического, заканчивая на твердотопливном, а возможно и комби.
+							</div>
+						</div>
+					</div>
+					<div class="treatment__item">
+						<img src="img/true-ic-3.svg" alt="" class="treatment__img">
+						<div class="treatment__text">
+							<div class="treatment__text_bold">
+								Устанавливаем правильный котел
+							</div>
+							<div class="treatment__text_normal">
+								Можно установить и самый мощный котел, но он будет стоить дорого и работать в четверть силы, или наоборот, в большом доме установить бюджетный, маломощный котел, который будет крутить счётчик, при этом дома будет холодно.
+							</div>
+						</div>
+					</div>
+					<div class="treatment__item">
+						<img src="img/true-ic-4.svg" alt="" class="treatment__img">
+						<div class="treatment__text">
+							<div class="treatment__text_bold">
+								Энергоэффективный теплый контур
+							</div>
+							<div class="treatment__text_normal">
+								Можно установить простые радиаторы, но если в доме полы не утеплены то зимой ноги будут мёрзнуть. А кто же хочет такого для себя и для своих близких.
+							</div>
+						</div>
+					</div>
+					<div class="treatment__item">
+						<img src="img/true-ic-5.svg" alt="" class="treatment__img">
+						<div class="treatment__text">
+							<div class="treatment__text_bold">
+								Вода и канализация и их расположение
+							</div>
+							<div class="treatment__text_normal">
+								Учитываем расстояние от канализации и скважины. При близком расположении скважины с септиком, вода будет менее пригодна к использованию. Так же нужно учитывать, что септик должен быть ближе к дороге, чтобы ассенизатор смог дотянуться до канализации.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="works">
+		<div class="wrap">
+			<h2 class="works__title title">
+				Наши работы
+			</h2>
+			<div class="fancybox__wrap">
+				<a class="fancybox" rel="gallery" href="img/works-1-big.jpg" title="">
+				<img src="img/works-1.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-2-big.jpg" title="">
+				<img src="img/works-2.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-3-big.jpg" title="">
+				<img src="img/works-3.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-4-big.jpg" title="">
+				<img src="img/works-4.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-5-big.jpg" title="">
+				<img src="img/works-5.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-6-big.jpg" title="">
+				<img src="img/works-6.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-7-big.jpg" title="">
+				<img src="img/works-7.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-8-big.jpg" title="">
+				<img src="img/works-8.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-9-big.jpg" title="">
+				<img src="img/works-9.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-10-big.jpg" title="">
+				<img src="img/works-10.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-11-big.jpg" title="">
+				<img src="img/works-11.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-12-big.jpg" title="">
+				<img src="img/works-12.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-13-big.jpg" title="">
+				<img src="img/works-13.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-14-big.jpg" title="">
+				<img src="img/works-14.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-15-big.jpg" title="">
+				<img src="img/works-15.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-16-big.jpg" title="">
+				<img src="img/works-16.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-17-big.jpg" title="">
+				<img src="img/works-17.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-18-big.jpg" title="">
+				<img src="img/works-18.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-19-big.jpg" title="">
+				<img src="img/works-19.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-20-big.jpg" title="">
+				<img src="img/works-20.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-21-big.jpg" title="">
+				<img src="img/works-21.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-22-big.jpg" title="">
+				<img src="img/works-22.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-23-big.jpg" title="">
+				<img src="img/works-23.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-24-big.jpg" title="">
+				<img src="img/works-24.jpg" alt="">
+			</a>
+			</div>
+			<button class="works__button-more btn">
+				Открыть больше
+			</button>
+			<div class="works__text">
+				Так-же наши работы можно посмотреть в социальных сетях:
+			</div>
+			<div class="works__soc-media">
+				<a href="#" class="soc-media__item soc-media__item_instagram">
+					<img src="img/insta.svg" alt="">
+					<span class="soc-media__text">
+						Наш инстаграм
+					</span>
+				</a>
+				<a href="#" class="soc-media__item soc-media__item_vk">
+					<img src="img/vk.svg" alt="">
+					<span class="soc-media__text">
+						Наша группа в вк
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="expirience">
+		<div class="wrap">
+			<h2 class="expirience__title title">
+				Несколько причин почему нас выбирают
+			</h2>
+			<div class="expirience__list">
+				<div class="expirience__item">
+					<img src="img/reas-1.jpg" alt="">
+					<div class="expirience__item-text">
+						Гарантия
+						<span>
+							Работаем по договору. Гарантия на монтаж отопления от 1 года.
+						</span>
+					</div>
+				</div>
+				<div class="expirience__item">
+					<img src="img/reas-2.jpg" alt="">
+					<div class="expirience__item-text">
+						Цена
+						<span>
+							Самая оптимальная цена на рынке. После расчёта стоимости монтажа цена не меняется.
+						</span>
+					</div>
+				</div>
+				<div class="expirience__item">
+					<img src="img/reas-3.jpg" alt="">
+					<div class="expirience__item-text">
+						Опыт
+						<span>
+							Работаем больше 15 лет на рынке Татарстана
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="expirience__stage">
+			<div class="wrap">
+				<h2 class="stage__title title">
+					Этапы работ
+				</h2>
+				<div class="stage__list">
+					<div class="stage__item">
+						<div class="stage__item-text_bold">
+							Заказываете звонок
+						</div>
+						<div class="stage__item-text_normal">
+							Или позвоните нам. Менеджер проконсультирует Вас по всем вопросам
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__item-text_bold">
+							Договариваемся о замере
+						</div>
+						<div class="stage__item-text_normal">
+							После того как менджер Вас проконсультирует, он предложит вызвать специалиста на замер, совершенно бесплатно.
+							Это позволит сделать точный просчёт стоимости.
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__item-text_bold">
+							Выезд специалиста на объект
+						</div>
+						<div class="stage__item-text_normal">
+							После чего производим расчёт и предлагаем оптимальное предложение, основываясь на Ваши предпочтения в выборе производителя оборудования, технологические возможности, степень автоматизации и т. д.
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__item-text_bold">
+							Заключение договора
+						</div>
+						<div class="stage__item-text_normal">
+							Если оптимальное решение подобрано, то заключаем договор и начинаем работать.
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__item-text_bold">
+							Закупка комплектющих
+						</div>
+						<div class="stage__item-text_normal">
+							Заключаем все комплектующие, и доставляем до объекта
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__item-text_bold">
+							Монтаж системы отопления
+						</div>
+						<div class="stage__item-text_normal">
+							После закупки комплектующих, специалисты приступают к монтажу
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="expirience__skills">
+			<div class="wrap">
+				<h2 class="skills__title title">
+					Что мы ещё умеем?
+				</h2>
+				<div class="skills__list">
+					<div class="skills__item">
+						<img src="img/can-1.png" alt="">
+						<div class="skills__item-text_bold">
+							Техническое обслуживание
+						</div>
+						<div class="skills__item-text_normal">
+							Заключаем  договора на техническое обслуживание домов, предприятий, кафе и ресторанов.
+						</div>
+					</div>
+					<div class="skills__item">
+						<img src="img/can-2.png" alt="">
+						<div class="skills__item-text_bold">
+							Установка и подключение элементов санузла
+						</div>
+						<div class="skills__item-text_normal">
+							Унитазы, ванные, душевые кабины, смесители, раковины и т.д.
+						</div>
+					</div>
+					<div class="skills__item">
+						<img src="img/can-3.png" alt="">
+						<div class="skills__item-text_bold">
+							Монтаж канализации
+						</div>
+						<div class="skills__item-text_normal">
+							Выкопаем яму под септик, установим кольца, сделаем подводку к дому, подключим дом к канализации.
+						</div>
+					</div>
+					<div class="skills__item">
+						<img src="img/can-4.png" alt="">
+						<div class="skills__item-text_bold">
+							Монтаж водопровода
+						</div>
+						<div class="skills__item-text_normal">
+							Подведем воду от центрального источника, выроем скважину, установим систему водоснабжения под ключ
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="wrap">
+			<h2 class="reviews__title title">
+				Отзывы наших клиентов
+			</h2>
+			<div class="owl-carousel owl-theme">
+			  <div class="owl-carousel__item">
+			  	<img src="img/sl-bg-1.jpg" alt="" class="owl-carousel__img">
+			  	<div class="owl-carousel__cont">
+			  		<div class="owl-carousel__person">
+			  			<img src="img/sl-p.jpg" alt="" class="person__img">
+			  			<div class="person__text">
+			  				Александр Каримов
+			  				<span>
+			  					Квартира 72 кв/м
+			  				</span>
+			  			</div>
+			  		</div>
+			  		<div class="owl-carousel__text">
+			  			Выражаю благодарность вашим сотрудникам за выполненную работу – претензий по итогу нет, оговоренные сроки были соблюдены, по финансовым условиям все также в полном порядке.
+			  		</div>
+			  	</div>
+			  </div>
+			   <div class="owl-carousel__item">
+			  	<img src="img/sl-bg-1.jpg" alt="" class="owl-carousel__img">
+			  	<div class="owl-carousel__cont">
+			  		<div class="owl-carousel__person">
+			  			<img src="img/sl-p.jpg" alt="" class="person__img">
+			  			<div class="person__text">
+			  				Александр Каримов
+			  				<span>
+			  					Квартира 72 кв/м
+			  				</span>
+			  			</div>
+			  		</div>
+			  		<div class="owl-carousel__text">
+			  			Выражаю благодарность вашим сотрудникам за выполненную работу – претензий по итогу нет, оговоренные сроки были соблюдены, по финансовым условиям все также в полном порядке.
+			  		</div>
+			  	</div>
+			  </div>
+			   <div class="owl-carousel__item">
+			  	<img src="img/sl-bg-1.jpg" alt="" class="owl-carousel__img">
+			  	<div class="owl-carousel__cont">
+			  		<div class="owl-carousel__person">
+			  			<img src="img/sl-p.jpg" alt="" class="person__img">
+			  			<div class="person__text">
+			  				Александр Каримов
+			  				<span>
+			  					Квартира 72 кв/м
+			  				</span>
+			  			</div>
+			  		</div>
+			  		<div class="owl-carousel__text">
+			  			Выражаю благодарность вашим сотрудникам за выполненную работу – претензий по итогу нет, оговоренные сроки были соблюдены, по финансовым условиям все также в полном порядке.
+			  		</div>
+			  	</div>
+			  </div>
+			   <div class="owl-carousel__item">
+			  	<img src="img/sl-bg-1.jpg" alt="" class="owl-carousel__img">
+			  	<div class="owl-carousel__cont">
+			  		<div class="owl-carousel__person">
+			  			<img src="img/sl-p.jpg" alt="" class="person__img">
+			  			<div class="person__text">
+			  				Александр Каримов
+			  				<span>
+			  					Квартира 72 кв/м
+			  				</span>
+			  			</div>
+			  		</div>
+			  		<div class="owl-carousel__text">
+			  			Выражаю благодарность вашим сотрудникам за выполненную работу – претензий по итогу нет, оговоренные сроки были соблюдены, по финансовым условиям все также в полном порядке.
+			  		</div>
+			  	</div>
+			  </div>
+			   <div class="owl-carousel__item">
+			  	<img src="img/sl-bg-1.jpg" alt="" class="owl-carousel__img">
+			  	<div class="owl-carousel__cont">
+			  		<div class="owl-carousel__person">
+			  			<img src="img/sl-p.jpg" alt="" class="person__img">
+			  			<div class="person__text">
+			  				Александр Каримов
+			  				<span>
+			  					Квартира 72 кв/м
+			  				</span>
+			  			</div>
+			  		</div>
+			  		<div class="owl-carousel__text">
+			  			Выражаю благодарность вашим сотрудникам за выполненную работу – претензий по итогу нет, оговоренные сроки были соблюдены, по финансовым условиям все также в полном порядке.
+			  		</div>
+			  	</div>
+			  </div>
+			</div>
+		</div>
+	</section>	
+	<section class="questions">
+		<div class="wrap questions__wrap">
+			<h3 class="questions__title title">
+				Часто задаваемы вопросы
+			</h3>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Как выбрать газовый котел?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Газовый котел - это один из самых дешевых вариантов отопления. Но для того, чтобы он функционировал в полную силу, необходимо правильно выбрать модель. Обратите внимание на следующие моменты:
+						<br>
+						1. Вам нужен исключительно отопительный котел или вы планируете использовать его и для нагрева воды? В первом случае берите одноконтурную модель, во втором - двухконтурную.
+						<br>
+						2 Где будет установлен агрегат: на полу или на стене? В зависимости от этого выбирайте модель с соответствующими креплениями. Не забывайте, что тяжелые котлы рекомендуется ставить на пол или на специальную площадку. 
+						<br>
+						3 Нужны ли вам дополнительные функции, требующие подключения электроэнергии? Иногда выгоднее поставить автономное устройство, не зависящее от наличия электричества.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Почему радиаторы располагаются под окнами и как их правильноподобрать?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Радиаторы располагаются под окнами для того, чтобы перекрыть инфильтрацию холодного воздуха, нисходящего от окна, тем самым создать тепловую завесу, мешая холодному воздуху распространятся по полу помещения.
+						<br>
+						Ширина радиатора должна быть не менее 70 процентов от ширины оконного проема. Мощность подбирают, исходя из теплопотерь данного помещения + 10 запас.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Что такое однотрубная и двухтрубная система отопления?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Однотрубная система отопления имеет одну магистральную трубу, теплоноситель проходит через отопительные приборы последовательно. Достоинство такой системы заключается в следующем: имеет минимальное количество труб и фитингов, простая система монтажа, подходит для небольших помещений, ангаров, цехов, автомоек.
+						<br> 
+						Недостатком считается то, что, попадая в каждый последующий радиатор, теплоноситель постепенно остывает, тем самым не всегда удается поддерживать комфортную температуру в каждой комнате.
+						Двухтрубная система отопления имеет две магистральные трубы. Подающий теплоноситель движется по отдельной трубе от обратного теплоносителя, тем самым все радиаторы нагреваются равномерно. В наше время является самой популярной и распространенной системой, применяемой в загородных домах. 
+						<br>
+						К недостаткам можно отнести большое количество труб и фитингов отличие от однотрубной системы.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Для чего нужен расширительный бак в системе отопления?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> При увеличении температуры теплоносителя (воды) он начинает расширяться и увеличиваться в объеме тем самым начинаются перепады давления в системе отопления.
+						<br> 
+						При правильном подборе расширительный бак позволяет компенсировать эти расширения и поддерживать давление в системе равномерно.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Для чего нужен сбросной клапан или группа безопасности в системе отопления?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> При превышении давления в системе отопления для защиты оборудования (отопительного котла, бойлера) применяют сбросной клапан или группу безопасности.
+						<br> 
+						Данные устройства являются обязательными в системе, пренебрегать этими устройствами запрещено.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Для чего применяют распределительный коллектор (гребенку) в системе отопления?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> В распределительном коллекторе в отличие от магистральных труб за счет большего диаметра снижается скорость теплоносителя, что позволяет равномерно распределять тепловые нагрузки по контурам.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Что такое насосная группа в котельной?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Насосная группа включает в себя запорную арматуру контура, термометры для отображения температур подающей и обратной магистрали, циркуляционный насос и обратный клапан.
+						<br> 
+						Чаще всего насосная группа бывает в заводском исполнении вместе с теплоизоляцией. Распространенный производитель насосных групп - фирма Meibes (производство Германии).
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Для чего нужна погодозависимая автоматика для системы отопления?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Погодозависимая система автоматики измеряет уличную температуру воздуха и автоматически задает температуру теплоносителя в системе отопления. 
+						<br>
+						Если на улице холодает, увеличивает температуру теплоносителя, теплее уменьшает температуру теплоносителя,
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Какой теплоноситель лучше использовать в системе отопления антифриз или воду?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Какой теплоноситель лучше использовать в системе отопления антифриз или воду? Самым лучшим теплоносителем является очищенная вода.
+						<br> 
+						Она обладает низкой вязкостью и высокой теплоемкостью. На сегодняшний день на нашем рынке можно встретить большое количество незамерзающих теплоносителей (антифризов), к их недостаткам в отличие от воды можно отнести следующие факторы: повышенная текучесть, теплоемкость ниже, чем у воды, вследствие этого нужно увеличивать мощность циркуляционных насосов, антифриз разъедает резиновые уплотнения, в отопительных котлах при вскипании выпадает осадок, который забивает теплообменники. 
+						Большинством производителей отопительного оборудования (Viessmann, Vaillant, Buderus) рекомендован теплоноситель марки Antifrogen, но и за ним нужно следить и раз в год замерят кислотность pH.
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<button class="panel__item">
+						Можно ли закрывать радиаторы декоративным экраном или прятать в ниши?
+					</button>
+				</div>
+				<div class="panel-collapse">
+					<div class="panel-body">
+						<strong>Ответ:</strong> Прятать и закрывать радиаторы не рекомендуется т. к. снижается теплоотдача приборов. Если по каким-то причинам нужно это сделать, то необходимо увеличивать мощность прибора минимум на 20 %.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="questions__application">
+			<div class="wrap application__wrap">
+				<div class="application__block">
+					<div class="application__cont">
+						<div class="application__title">
+							Проконсультируем и замерим
+						</div>
+						<div class="application__text">
+							Нужно всего лишь оставить заявку на звонок
+						</div>
+						<button class="application__btn btn">
+							Оставить заявку
+						</button>
+					</div>
+					<div class="application__block">
+						<img src="img/prok.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa455186c71dc407c040b691126ebd9627c257251c2d0a519b2dd5d1a3a9b8c39&amp;source=constructor" width="1193" height="440" frameborder="0"></iframe>
+		<div class="wrap map__wrap">
+			<div class="map__contacts">
+				<div class="contacts__title title">
+					Контакты
+				</div>
+				<div class="contacts__location">
+					<span class="item__city">
+						Казань:
+					</span>
+					<span class="item__street">
+						ул .Магистральная д. 18
+					</span>
+				</div>
+				<div class="contacts__location">
+					<span class="item__city item__city_second">
+						Телефон:
+					</span>
+					<a href="tel:+78432538582" class="item__street">
+						+7 (843) 253-85-82
+					</a>
+				</div>
+				<div class="contacts__init">
+					<div class="init__text">
+						ИП Новиков Андрей Викторович
+					</div>
+					<div class="init__text">
+						ИНН 120301294670
+					</div>
+					<div class="init__text">
+						ОГРН 319169000101870
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrap">
+			<nav class="header__menu footer__menu">
+				<ul class="menu menu-second">
+					<div class="menu__item-wrap">
+						<li class="menu__item item__logo">
+							<span class="logo">
+								<img src="img/logo.svg" alt="">
+							</span>
+							<span class="logo__text upper">
+								Cантех плюс
+							</span>
+						</li>
+						<li class="menu__item menu__item_second">
+							Монтаж систем отопления и водоснабжения в Казани 
+						</li>
+					</div>
+					<li class="menu__item menu__item-location">
+						<span class="item__city">
+							Казань:
+						</span>
+						<span class="item__street">
+							ул .Магистральная д. 18
+						</span>
+					</li>
+					<li class="menu__item menu__item-location">
+						<span class="item__city item__city_second">
+							Телефон:
+						</span>
+						<a href="tel:+78432538582" class="item__street">
+							+7 (843) 253-85-82
+						</a>
+					</li>
+					<button class="header__button btn">
+						Заказать обратный звонок
+					</button>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer__confidence-wrap">
+			<div class="footer__confidence-block">
+				<a href="" class="footer__confidence-link">
+					Политика конфинденциальности
+				</a>
+			</div>		
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
