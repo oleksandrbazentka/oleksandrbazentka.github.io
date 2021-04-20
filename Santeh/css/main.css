@@ -1732,7 +1732,7 @@ input:checked + .slider:before {
 	}
 
 	.price__item {
-	    margin: 0px 20px 41px 20px;
+	    margin: 0px 0px 41px 0px;
 	}
 
 	.services__calculate {

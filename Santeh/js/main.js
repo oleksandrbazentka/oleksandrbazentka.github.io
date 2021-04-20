@@ -85,7 +85,7 @@ submitPrice.onclick = function() {
 }
 
 jQuery(document).ready(function(){
-    $('#tel').mask('+0 (000) 000 00 00', {placeholder: "Телефон"});
+    $('#tel').mask('+(000) 000 00 00', {placeholder: "Телефон"});
 });
 
 $(document).ready(function() {
@@ -126,15 +126,8 @@ $('.owl-carousel').owlCarousel({
 });
 
 $(document).ready(function () {
-
-		$('.panel-heading').click(function () {
-			$(this).toggleClass('in').next().slideToggle();
-			$('.panel-heading').not(this).removeClass('in').next().slideUp();
-        });
-
+	$('.panel-heading').click(function () {
+		$(this).toggleClass('in').next().slideToggle();
+		$('.panel-heading').not(this).removeClass('in').next().slideUp();
     });
-
-// let panelItem = document.querySelectorAll('.panel__item');
-// panelItem.onclick = function(e) {
-// 	e.preventDefault();
-// }
+});
