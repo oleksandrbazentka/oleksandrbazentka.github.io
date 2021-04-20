@@ -1,4 +1,5 @@
 let headerBtn = document.querySelector('.header__button');
+let footerBtn = document.querySelector('.footer__button');
 let closePopup = document.querySelector('.popup__close');
 let popupCheck = document.querySelector('.popup__checkbox');
 let submit = document.querySelector('.form__submit');
@@ -6,9 +7,37 @@ let specBtn = document.querySelector('.install__btn');
 let closePopupSpec = document.querySelector('.close__spec');
 let checkboxSpec = document.querySelector('.popup__checkbox-spec');
 let submitSpec = document.querySelector('.submit-spec');
+let closeFooterPopup = document.querySelector('.popup__close-footer');
+let installBtn = document.querySelector('.install__link');
+let calculateBtn = document.querySelector('.calculate__btn'); 
+let closePrice = document.querySelector('.popup__close-price');
+let checkboxPrice = document.querySelector('.popup__checkbox-price');
+let submitPrice = document.querySelector('.submit-price');
+let headerBtnSm = document.querySelector('.header__button-sm');
+let footerBtnSm = document.querySelector('.footer__button-sm');
 
 headerBtn.onclick = function() {
 	document.querySelector('.popup__call-bg').style.display = 'flex';
+}
+
+headerBtnSm.onclick = function() {
+	document.querySelector('.popup__call-bg').style.display = 'flex';
+}
+
+footerBtn.onclick = function() {
+	document.querySelector('.popup__cal-bg-footer').style.display = 'flex';
+}
+
+footerBtnSm.onclick = function() {
+	document.querySelector('.popup__call-bg').style.display = 'flex';
+}
+
+installBtn.onclick = function() {
+	document.querySelector('.popup__price-bg').style.display = 'flex';
+}
+
+calculateBtn.onclick = function() {
+	document.querySelector('.popup__price-bg').style.display = 'flex';
 }
 
 closePopup.onclick = function() {
@@ -17,6 +46,14 @@ closePopup.onclick = function() {
 
 closePopupSpec.onclick = function() {
 	document.querySelector('.popup__spec-bg').style.display = 'none';
+}
+
+closeFooterPopup.onclick = function() {
+	document.querySelector('.popup__call-bg').style.display = 'none';
+}
+
+closePrice.onclick = function() {
+	document.querySelector('.popup__price-bg').style.display = 'none';
 }
 
 specBtn.onclick = function() {
@@ -36,6 +73,14 @@ submitSpec.onclick = function() {
 	return true;
 } else {
 	document.querySelector('.switch-spec').style.boxShadow = '0px 0px 12px 9px rgba(253, 0, 0, 0.48)';
+}
+}
+
+submitPrice.onclick = function() {
+	if (checkboxPrice.getAttribute("type") === "checked") {
+	return true;
+} else {
+	document.querySelector('.switch-price').style.boxShadow = '0px 0px 12px 9px rgba(253, 0, 0, 0.48)';
 }
 }
 
@@ -60,18 +105,22 @@ $('.owl-carousel').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:false,
+            dots: true
         },
         600:{
-            items:3,
+            items:1,
             nav:false
         },
-        1000:{
+        768:{
             items:1,
-            nav:true,
+            nav:false,
             loop:true,
             dots: true,
-    		center: true
+        },
+        1200: {
+        	nav:true,
+        	items:1
         }
     }
 });
