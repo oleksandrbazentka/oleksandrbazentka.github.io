@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 jQuery(document).ready(function(){
-    $('#tel').mask('+ 7 (000) 000-0000', {placeholder: "Телефон"});
+    $('#tel').mask('+7 (000) 000-00-00', {placeholder: "Телефон"});
 });
 
 $('.owl-carousel').owlCarousel({
