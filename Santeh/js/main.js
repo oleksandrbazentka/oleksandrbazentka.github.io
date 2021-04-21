@@ -68,7 +68,7 @@ closePrice.onclick = function() {
 
 specBtn.onclick = function() {
 	document.querySelector('.popup__spec-bg').style.display = 'flex';
-    document.querySelector('html').style.overflowY = 'scroll';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 submit.onclick = function() {
@@ -104,6 +104,13 @@ $(document).ready(function() {
 		openEffect	: 'none',
 		closeEffect	: 'none'
 	});
+    $('.fancybox-media').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        helpers : {
+            media : {}
+        }
+    });
 });
 
 $('.owl-carousel').owlCarousel({
