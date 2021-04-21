@@ -6,9 +6,6 @@
 	<title>
 		Сантех +
 	</title>
-<!-- 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" /> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -49,10 +46,10 @@
 							+7 (843) 253-85-82
 						</a>
 					</li>
-					<button class="header__button btn">
+					<button class="header__button btn popup__button" data-modal="1">
 						Заказать обратный звонок
 					</button>
-					<button class="header__button-sm btn">
+					<button class="header__button-sm popup__button btn" data-modal="1">
 						<img src="img/phone-sm.svg" alt="">
 					</button>
 				</ul>
@@ -77,10 +74,10 @@
 						Правильный монтаж, может сохранить ваш кошелек и нервы, поэтому наши клиенты уже сэкономили на 72% с помощью энергоэффективного отопления
 					</div>
 					<div class="install__btns">
-						<button class="install__link btn">
+						<button class="install__link btn popup__button" data-modal="3">
 							Расчитать стоимость монтажа
 						</button>
-						<button class="install__btn btn">
+						<button class="install__btn btn popup__button" data-modal="2">
 							Вызвать специалиста бесплатно
 						</button>
 					</div>
@@ -90,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup__call-bg popup__cal-bg-footer">
+		<div class="popup__call-bg popup__cal-bg-footer popup-bg" data-modal="1">
 			<div class="popup__call">
 				<button class="popup__close popup__close-footer">
 					<img src="img/close.svg" alt="">
@@ -103,7 +100,7 @@
 				</div>
 				<form action="#" class="form">
 					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
-					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+7 (999) 999-9999">
 					<div class="popup__confidence">
 						<label class="switch">
 					  		<input type="checkbox" checked class="popup__checkbox" required>
@@ -122,9 +119,9 @@
 				</form>
 			</div>
 		</div>
-		<div class="popup__spec-bg">
+		<div class="popup__spec-bg popup-bg" data-modal="2">
 			<div class="popup__spec">
-				<button class="close__spec">
+				<button class="close__spec popup__close">
 					<img src="img/close.svg" alt="">
 				</button>
 				<div class="popup__title">
@@ -135,7 +132,7 @@
 				</div>
 				<form action="#" class="form">
 					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
-					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+7 (999) 999-9999">
 					<div class="popup__confidence">
 						<label class="switch switch-spec">
 					  		<input type="checkbox" checked class="popup__checkbox popup__checkbox-spec" required>
@@ -154,9 +151,9 @@
 				</form>
 			</div>
 		</div>
-		<div class="popup__call-bg popup__price-bg">
+		<div class="popup__call-bg popup__price-bg popup-bg" data-modal="3">
 			<div class="popup__call">
-				<button class="popup__close popup__close-price">
+				<button class="popup__close popup__close-price popup__close">
 					<img src="img/close.svg" alt="">
 				</button>
 				<div class="popup__title">
@@ -167,7 +164,7 @@
 				</div>
 				<form action="#" class="form">
 					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
-					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+7 (999) 999-9999">
 					<div class="popup__confidence">
 						<label class="switch switch-price">
 					  		<input type="checkbox" checked class="popup__checkbox popup__checkbox-price" required>
@@ -297,7 +294,7 @@
 						Поэтому Вы можете получить просчёт, или попробовать посчитать самим, с помощью прайс листа
 					</div>
 					<div class="calculate__btns">
-						<button class="btn calculate__btn">
+						<button class="btn calculate__btn popup__button" data-modal="3">
 							Получить просчёт стоимости
 						</button>
 						<button class="calculate__btn-download btn">
@@ -393,13 +390,13 @@
 				<a data-fancybox="gallery" class="fancybox" href="img/works-5-big.jpg"><img src="img/works-5.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-6-big.jpg"><img src="img/works-6.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-7-big.jpg"><img src="img/works-7.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox fancybox__video" href="img/works-8-big.jpg"><img src="img/works-8.jpg"></a>
+				<a data-fancybox="gallery" class="fancybox fancybox__video" href="https://www.youtube.com/watch?v=U30gw1Mlk-M&list=RDBIODXwL41Uc&index=6"><img src="img/works-8.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-9-big.jpg"><img src="img/works-9.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-10-big.jpg"><img src="img/works-10.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox fancybox__video" href="img/works-11-big.jpg"><img src="img/works-11.jpg"></a>
+				<a data-fancybox="gallery" class="fancybox fancybox__video" href="https://www.youtube.com/watch?v=U30gw1Mlk-M&list=RDBIODXwL41Uc&index=6"><img src="img/works-11.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-12-big.jpg"><img src="img/works-12.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-13-big.jpg"><img src="img/works-13.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox fancybox__video" href="img/works-14-big.jpg"><img src="img/works-14.jpg"></a>
+				<a data-fancybox="gallery" class="fancybox fancybox__video" href="https://www.youtube.com/watch?v=U30gw1Mlk-M&list=RDBIODXwL41Uc&index=6"><img src="img/works-14.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-15-big.jpg"><img src="img/works-15.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-16-big.jpg"><img src="img/works-16.jpg"></a>
 				<a data-fancybox="gallery" class="fancybox" href="img/works-17-big.jpg"><img src="img/works-17.jpg"></a>
@@ -905,10 +902,10 @@
 							+7 (843) 253-85-82
 						</a>
 					</li>
-					<button class="header__button btn footer__button">
+					<button class="header__button btn footer__button popup__button" data-modal="1">
 						Заказать обратный звонок
 					</button>
-					<button class="footer__button-sm btn">
+					<button class="footer__button-sm btn popup__button" data-modal="1">
 						<img src="img/phone-sm.svg" alt="">
 					</button>
 				</ul>
@@ -923,11 +920,6 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
-<!-- 	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
-	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
