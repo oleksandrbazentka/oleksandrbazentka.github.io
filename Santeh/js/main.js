@@ -18,46 +18,57 @@ let footerBtnSm = document.querySelector('.footer__button-sm');
 
 headerBtn.onclick = function() {
 	document.querySelector('.popup__call-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 headerBtnSm.onclick = function() {
 	document.querySelector('.popup__call-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 footerBtn.onclick = function() {
 	document.querySelector('.popup__cal-bg-footer').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 footerBtnSm.onclick = function() {
 	document.querySelector('.popup__call-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 installBtn.onclick = function() {
 	document.querySelector('.popup__price-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 calculateBtn.onclick = function() {
 	document.querySelector('.popup__price-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
 }
 
 closePopup.onclick = function() {
 	document.querySelector('.popup__call-bg').style.display = 'none';
+    document.querySelector('html').style.overflowY = 'scroll';
 }
 
 closePopupSpec.onclick = function() {
 	document.querySelector('.popup__spec-bg').style.display = 'none';
+    document.querySelector('html').style.overflowY = 'scroll';
 }
 
 closeFooterPopup.onclick = function() {
 	document.querySelector('.popup__call-bg').style.display = 'none';
+    document.querySelector('html').style.overflowY = 'scroll';
 }
 
 closePrice.onclick = function() {
 	document.querySelector('.popup__price-bg').style.display = 'none';
+    document.querySelector('html').style.overflowY = 'scroll';
 }
 
 specBtn.onclick = function() {
 	document.querySelector('.popup__spec-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'scroll';
 }
 
 submit.onclick = function() {
