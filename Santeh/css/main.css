@@ -223,7 +223,8 @@ a {
 }
 
 .popup__call-bg,
-.popup__spec-bg {
+.popup__spec-bg,
+.popup__success-bg {
     background: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0px;
@@ -242,7 +243,8 @@ a {
 }
 
 .popup__call,
-.popup__spec {
+.popup__spec,
+.popup__success {
 	background: white;
 	position: relative;
 	display: flex;
@@ -256,13 +258,23 @@ a {
     padding: 0px 28px;
 }
 
+.popup__success {
+	height: 291px;
+	justify-content: center;
+}
+
+.popup__success-bg {
+	display: none;
+}
+
 .popup-bg.active {
    opacity: 1;
    visibility: visible;
 }
 
 .popup__close,
-.close__spec {
+.close__spec,
+.popup__close-success {
 	position: absolute;
 	top: -21px;
 	right: -21px;
@@ -2114,8 +2126,17 @@ input:checked + .slider:before {
 	}
 
 	.popup__close,
-	.close__spec {
+	.close__spec,
+	.popup__close-success {
 	    top: -25px;
 	    right: -1px;
+	}
+
+	.popup__title-success {
+		margin-bottom: 6px;
+	}
+
+	.popup__success {
+		height: 296px;
 	}
 }

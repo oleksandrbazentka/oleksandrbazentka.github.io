@@ -22,6 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
    });
 });
 
+let successPopupBtn = document.querySelector('.works__button-more');
+successPopupBtn.onclick = function() {
+    document.querySelector('.popup__success-bg').style.display = 'flex';
+    document.querySelector('html').style.overflowY = 'hidden';
+}
+
+let closeSuccess = document.querySelector('.popup__close-success');
+closeSuccess.onclick = function() {
+    document.querySelector('html').style.overflowY = 'scroll';
+    document.querySelector('.popup__success-bg').style.display = 'none';
+}
+
 jQuery(document).ready(function(){
     $('#tel').mask('+7 (000) 000-00-00', {placeholder: "Телефон"});
 });
