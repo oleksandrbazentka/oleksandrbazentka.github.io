@@ -36,7 +36,6 @@ window.onload = function() {
     // instead of a settings object
   ]
 });
-}
 
 //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');
@@ -164,3 +163,23 @@ $(function() {
 jQuery(document).ready(function(){
     $('#tel').mask('+7(000) 000 00 00', {placeholder: "+7(___) ___-__-__"});
 });
+
+//E-mail Ajax Send
+  $("form").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      alert("Спасибо!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+
+}
+
