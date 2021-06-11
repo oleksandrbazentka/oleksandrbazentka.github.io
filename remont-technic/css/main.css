@@ -899,7 +899,7 @@ select {
 		max-width: 900px;
 	}
 
-	.responsive img {
+	.responsive picture img {
 	    margin: 0px 20px;
 	}
 
@@ -1179,7 +1179,7 @@ select {
 	    left: 10px;
 	}
 
-	.responsive img {
+	.responsive picture img {
 	    margin: 0px 42px;
 	}
 
@@ -1642,7 +1642,7 @@ select {
 	    color: #F1C95F;
 	}
 
-	.responsive img {
+	.responsive picture img {
 		margin: 0px 70px;
 	}
 
