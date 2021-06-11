@@ -481,8 +481,8 @@ a {
 	margin: 0px auto;
 }
 
-.responsive div img {
-	padding: 0px 21px;
+.responsive img {
+	margin: 0px 21px;
 }
 
 .works__title {
@@ -518,6 +518,7 @@ a {
 .slick-prev {
 	width: 37px;
 	height: 37px;
+	z-index: 100;
 }
 
 .slick-next:hover,
@@ -800,8 +801,8 @@ select {
 		max-width: 900px;
 	}
 
-	.responsive div img {
-	    padding: 0px 20px;
+	.responsive img {
+	    margin: 0px 20px;
 	}
 
 	.works__title {
@@ -1066,9 +1067,10 @@ select {
 	    font-size: 36px;
 	}
 
-	.slick-next, .slick-prev {
+	.slick-next,
+	.slick-prev {
 	    width: 20px;
-	    height: 20px;
+	    height: 24px;
 	}
 
 	.slick-next {
@@ -1079,8 +1081,8 @@ select {
 	    left: 10px;
 	}
 
-	.responsive div img {
-	    padding: 0px 42px;
+	.responsive img {
+	    margin: 0px 42px;
 	}
 
 	.works__block_second {
@@ -1535,6 +1537,15 @@ select {
 	    max-width: 400px;
 	    margin: 0px auto;
 	    display: block;
+	}
+
+	.slick-dots li.slick-active button:before {
+	    opacity: .90;
+	    color: #F1C95F;
+	}
+
+	.responsive img {
+		margin: 0px 70px;
 	}
 
 	.form-section__title {

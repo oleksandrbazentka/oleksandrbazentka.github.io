@@ -11,7 +11,7 @@ window.onload = function() {
       settings: {
         dots: false,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
       }
     },
@@ -19,7 +19,7 @@ window.onload = function() {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         infinite: true,
       }
     },
@@ -28,7 +28,7 @@ window.onload = function() {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true
+        infinite: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
