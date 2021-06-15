@@ -748,7 +748,7 @@ select {
 }
 
 .footer {
-	padding: 25px 0px 25px 0px;
+	padding: 25px 15px 25px 15px;
 	text-align: center;
 	color: white;
 	background: #3ECFCD;
@@ -1519,6 +1519,10 @@ select {
 	    padding: 20px 40px;
 	}
 
+	.card__button {
+	    padding: 15px 70px;
+	}
+
 	.benefits {
 	    padding: 30px 15px 50px;
 	}
@@ -1610,3 +1614,46 @@ select {
 	    width: 100%;
 	}	
 }
+
+@media screen and (max-height: 470px) {
+	.nav-menu {
+	    padding-top: 95px;
+	}
+
+	.nav-item {
+	    margin: 0px auto 28px;
+	}
+}
+
+@media screen and (max-height: 380px) {
+	.nav-item {
+	    margin: 0px auto 20px;
+	}
+}
+
+@media screen and (max-height: 340px) {
+	.nav-item {
+	    margin: 0px auto 15px;
+	}
+
+	.nav-menu {
+	    padding-top: 80px;
+	}
+}
+
+@media screen and (max-height: 290px) {
+	.nav-item {
+	    margin: 0px auto 8px;
+	}
+
+	.nav-item:nth-child(1) {
+		margin: 0px auto 12px;
+	}
+
+	.nav-menu {
+	    padding-top: 70px;
+	}
+}
+
+
+
