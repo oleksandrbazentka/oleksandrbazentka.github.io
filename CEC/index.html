@@ -43,9 +43,9 @@
 						</div>
 						<img src="img/login.svg" alt="">
 					</a>
-					<a href="#tariffs" class="header__button btn">
+					<button class="header__button btn">
 						Обрати пропозицію
-					</a>
+					</button>
 				</ul>
 			</nav>
 			<nav class="navbar">
@@ -91,7 +91,6 @@
 							Контакти
 						</a>
 		            </li>
-
 	            </ul>
 	            <div class="hamburger">
 				    <span class="bar"></span>
@@ -101,6 +100,34 @@
         	</nav>
 		</div>
 	</header>
+
+	<div class="modal__show">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<div class="modal__title">
+						Заповніть, будь ласка, 
+						<br>
+						форму зворотнього зв’язку:
+					</div>
+					<form action="#">
+						<input type="text" class="form__input form__name" placeholder="Введіть свої ім’я та прізвище">
+						<input type="text" class="form__input form__tel" id="tel" placeholder="+380(XX) XXX-XX-XX" required data-mask="+380 (00) 000 00 00">
+						<input type="text" class="form__input form__mail" placeholder="E-mail">
+						<input type="text" class="form__input form__day" placeholder="Споживання в день">
+						<input type="text" class="form__input form__month" placeholder="Споживання в місяць">
+						<textarea name="add-info" class="form__area" id="add-info">Додаткова інформація</textarea>
+						<button class="form__submit" type="submit">
+							Надіслати
+						</button>
+					</form>
+				</div>
+				<button class="modal__close">
+					<img src="img/close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
 	<section class="first" id="first">
 		<div class="wrap">
 			<div class="first__block">
@@ -291,9 +318,9 @@
 						</div>
 					</div>
 					<div class="first__button-wrap">
-						<a href="#tariffs" class="first__button btn">
+						<button class="first__button btn">
 							Обрати пропозицію
-						</a>
+						</button>
 					</div>
 					
 				</div>
@@ -610,9 +637,9 @@
 				Традиції майбутнього вже сьогодні! Дізнайтесь більше про переваги пакетних рішень у наших фахівців.
 			</div>
 			<div class="benefits__button-wrap">
-				<a href="#tariffs" class="benefits__button btn">
+				<button class="benefits__button btn">
 					Обрати пропозицію
-				</a>				
+				</button>				
 			</div>
 			
 		</div>
@@ -684,8 +711,45 @@
 					</div>
 					<div class="panel-collapse">
 						<div class="panel-body">
-							<strong>Lorem</strong>
-							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cumque, perferendis quo vel maxime eos consectetur tenetur qui possimus tempore, cum optio, excepturi aliquam porro non sed unde. Adipisci, autem, fugit!
+							<div class="panel__title">
+								Комерційні пропозиції
+							</div>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Комерційна пропозиція 1
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Комерційна пропозиція 2
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Договір про постачання електричної енергії споживачу
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Заява-приєднання до договору
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -698,8 +762,231 @@
 					</div>
 					<div class="panel-collapse">
 						<div class="panel-body">
-							<strong>Lorem</strong>
-							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cumque, perferendis quo vel maxime eos consectetur tenetur qui possimus tempore, cum optio, excepturi aliquam porro non sed unde. Adipisci, autem, fugit!
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Вінницька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">	
+									Волинська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Дніпропетровська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Донецька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Житомирська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Закарпатська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Запорізька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Івано-Франківська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Київська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Кіровоградська область	
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Луганська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Львівська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Миколаївська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Одеська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Полтавська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Рівненська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Сумська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Тернопільська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Харківська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Херсонська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Хмельницька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Черкаська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Чернівецька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Чернігівська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									м. Київ
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -711,10 +998,132 @@
 						</button>
 					</div>
 					<div class="panel-collapse">
-						<div class="panel-body">
-							<strong>Lorem</strong>
-							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cumque, perferendis quo vel maxime eos consectetur tenetur qui possimus tempore, cum optio, excepturi aliquam porro non sed unde. Adipisci, autem, fugit!
-						</div>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про ринок електричної енергії»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про Національну комісію, що здійснює державне регулювання у сферах енергетики та комунальних послуг»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 307 «Про затвердження Правил ринку»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 308 «Про затвердження Правил ринку «на добу наперед» та внутрішньодобового ринку»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 309 «Про затвердження Кодексу системи передачі»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 310 «Про затвердження Кодексу систем розподілу»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 311 «Про затвердження Кодексу комерційного обліку електричної енергії»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 312 «Про затвердження Правил роздрібного ринку електричної енергії»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 12.06.2018 № 375 «Про затвердження Порядку забезпечення стандартів якості електропостачання та надання компенсацій споживачам за їх недотримання»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 12.06.2018 № 374 Про затвердження форм звітності щодо показників якості електропостачання та інструкцій щодо їх заповнення
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 27.12.2017 № 1469 «Про затвердження Ліцензійних умов провадження господарської діяльності з постачання електричної енергії споживачу»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про звернення громадян»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про особливості доступу до інформації у сферах постачання електричної енергії, природного газу, теплопостачання, централізованого постачання гарячої води, централізованого питного водопостачання та водовідведення»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 12.03.2009 № 299 «Про затвердження Положення про Інформаційно-консультаційний центр по роботі із споживачами електричної енергії»
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="panel">
@@ -726,8 +1135,78 @@
 					</div>
 					<div class="panel-collapse">
 						<div class="panel-body">
-							<strong>Lorem</strong>
-							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cumque, perferendis quo vel maxime eos consectetur tenetur qui possimus tempore, cum optio, excepturi aliquam porro non sed unde. Adipisci, autem, fugit!
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Національна комісія, що здійснює державне регулювання у сфері енергетики та комунальних послуг
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Міністерство енергетики та вугільної промисловості України
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Державна інспекція енергетичного нагляду України
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Постачальник "останньої надії" ДПЗД «Укрінтеренерго»
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Антимонопольний комітет України
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Оператор системи передачі НЕК «УКРЕНЕРГО»
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Державне підприємство «Оператор ринку»	
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Державне підприємство «Гарантований покупець»
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -738,10 +1217,251 @@
 							<img src="img/arr-d-w.svg" alt="">
 						</button>
 					</div>
-					<div class="panel-collapse">
+					<div class="panel-collapse panel-collapse__price">
 						<div class="panel-body">
-							<strong>Lorem</strong>
-							Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Cumque, perferendis quo vel maxime eos consectetur tenetur qui possimus tempore, cum optio, excepturi aliquam porro non sed unde. Adipisci, autem, fugit!
+							<div class="panel-second">
+								<div class="panel-heading-second">
+									<button class="panel__item-second">
+										2019
+										<img src="img/arr-d-w.svg" alt="">
+									</button>
+								</div>
+								<div class="panel-collapse-second">
+									<div class="panel-body-second">
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Липень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Серпень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Вересень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Жовтень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Листопад
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Грудень
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel-second">
+								<div class="panel-heading-second">
+									<button class="panel__item-second">
+										2020 
+										<img src="img/arr-d-w.svg" alt="">
+									</button>
+								</div>
+								<div class="panel-collapse-second">
+									<div class="panel-body-second">
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Січень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Лютий
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Березень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Квітень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Травень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Червень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Липень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Серпень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Вересень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Жовтень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Листопад
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Грудень
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel-second">
+								<div class="panel-heading-second">
+									<button class="panel__item-second">
+										2021
+										<img src="img/arr-d-w.svg" alt="">
+									</button>
+								</div>
+								<div class="panel-collapse-second">
+									<div class="panel-body-second">
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Січень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Лютий
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Березень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Квітень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Травень
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -822,6 +1542,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

@@ -69,9 +69,180 @@ body {
 	font-weight: 500;
 }
 
+.modal__show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    overflow-y: auto;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+.visible {
+  display: block;
+  animation: showBlock 0.5s ease-in-out;
+}
+
+.hidden {
+	display: none;
+	animation: hiddenBlock 0.5s ease-out;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hiddenBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.modal-wrap {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: auto;
+	min-height: calc(100% - 3.5rem);
+}
+
+.modal {
+	background: white;
+	border-radius: 10px;
+	border: none;
+	position: relative;
+	padding: 30px 0px;
+	text-align: center;
+	max-width: 500px;
+	width: 100%;
+	margin: 1.75rem auto;
+}
+
+.modal__close {
+	position: absolute;
+	color: #084C94;
+	font-size: 20px;
+	top: 15px ;
+	right: 15px;
+	background: white;
+	border: none;
+	width: 15px;
+	height: 15px;
+}
+
+.modal__close img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal__cont {
+	max-width: 375px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.modal__title {
+	margin-bottom: 30px;
+	font-weight: 600;
+	font-family: 'Gotham Pro';
+	font-size: 18px;
+	color: black;
+}
+
+.form__input {
+	-webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid rgb(206, 212, 218);
+    color: #495057;
+    padding: 10px 10px 10px 50px;
+    box-shadow: 0px 5px 20px rgb(235 237 247 / 70%);
+}
+
+.form__area {
+	margin-bottom: 10px;
+}
+
+.form__name {
+    background: url(../img/user-form.svg) no-repeat left center;
+    background-position: 10px 5px;
+}
+
+.form__tel {
+    background: url(../img/phon.svg) no-repeat left center;
+    background-position: 10px 5px;
+}
+
+.form__mail {
+    background: url(../img/mail-form.svg) no-repeat left center;
+    background-position: 10px 5px;
+}
+
+.form__day {
+    background: url(../img/clients_count1.svg) no-repeat left center;
+    background-position: 10px 5px;
+}
+
+.form__month {
+    background: url(../img/clients_count_mont.svg) no-repeat left center;
+    background-position: 10px 5px;
+}
+
+.form__input::placeholder,
+.form__area {
+	font-family: 'Montserrat';
+	color: #495057;
+	font-size: 16px;
+}
+
+.form__area {
+	resize: vertical;
+	width: 100%;
+	border: 1px solid rgb(206, 212, 218);
+    color: #495057;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(235 237 247 / 70%);
+    margin-bottom: 30px;
+}
+
+.form__submit {
+	background: #3ECFCD;
+	font-size: 20px;
+	padding: 10px 30px;
+	width: 100%;
+	color: white;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	border: none;
+	border-radius: 20px;
+}
+
 .header {
-	background: #E3F9F9;
-	padding: 20px 0px;
+    background: #E3F9F9;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .wrap {
@@ -124,6 +295,7 @@ body {
 	font-size: 15px;
 	color: #FFFFFF;
 	padding: 15px 22px;
+	border: none;
 }
 
 .navbar {
@@ -232,7 +404,7 @@ select {
 }
 
 .first {
-	padding-top: 107px;
+    padding-top: 187px;
 }
 
 .first__block {
@@ -568,14 +740,16 @@ select {
 	transition: .6s ease-in-out;
 }
 
-.panel {
+.panel,
+.panel-second {
 	margin: 0px auto;
 	max-width: 560px;
 	width: 100%;
 	margin-bottom: 15px;
 }
 
-.panel-heading button {
+.panel-heading button,
+.panel-heading-second button {
 	width: 100%;
 	text-align: left;
 	background: #3ECFCD;
@@ -588,9 +762,16 @@ select {
 	font-weight: 600;
 	letter-spacing: -0.05em;
 	font-family: 'Montserrat';
+	transition: all 0.5s ease;
 }
 
-.panel-heading button img {
+.panel-heading button:hover,
+.panel-heading-second button:hover {
+	background: #45a19f;	
+}
+
+.panel-heading button img,
+.panel-heading-second button img {
     position: absolute;
     right: 27px;
     top: 50%;
@@ -600,25 +781,91 @@ select {
     transition: 0.3s;
 }
 
-.panel-heading.in button::after {
+.panel-heading.in button::after,
+.panel-heading-second.in button::after {
 	transform: rotate(180deg);
 }
 
-.panel-heading.in button img {
+.panel-heading.in button img,
+.panel-heading-second.in button img {
 	transform: rotate(180deg);
 }
 
-.panel-collapse {
- 	display: none;
-	font-size: 14px;
-	line-height: 150%;
-	padding: 15px 30px;
-	color: #000000;
-	border-radius: 0px 0px 10px 10px;
-	font-weight: 500;
+.panel-collapse,
+.panel-collapse-second {
+    display: none;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 15px 30px 0px 15px;
+    color: #000000;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.panel-collapse-second {
+	padding: 15px 30px 15px 15px;
+}
+
+.panel-heading-second button {
+    margin-bottom: 10px;
+}
+
+.panel-second {
+	margin-bottom: 0px;
+}
+
+.panel-collapse__price {
+	padding: 15px 0px;
+}
+
+.panel__content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.panel__content-link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: #084C94;
+	color: white;
+	padding: 10px 40px;
+	border-radius: 10px;
+}
+
+.panel-heading-second button {
+	text-align: center;
+	background: #084C94;
+}
+
+.panel-heading-second button:hover {
+	opacity: 0.8;
+	background: #084C94;
+}
+
+.panel__content img {
+	margin-right: 10px;
+}
+
+.panel__content-text {
 	font-size: 16px;
-	line-height: 150%;
-	color: #000000;
+	margin-left: 20px;
+	color: black;
+	font-weight: bold;
+}
+
+.panel__title {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.panel__content-text_light {
+	font-weight: 400;
 }
 
 .contacts {
@@ -791,7 +1038,7 @@ select {
 	}
 
 	.first {
-	    padding: 90px 15px 0px;
+	    padding: 160px 15px 0px;
 	}
 
 	.first__title {
@@ -945,7 +1192,7 @@ select {
 	}
 
 	.first {
-	    padding: 70px 15px 0px;
+	    padding: 137px 15px 0px;
 	}
 
 	.first__title {
@@ -1190,11 +1437,16 @@ select {
 	}
 
 	.first {
-	    padding: 40px 15px 0px;
+	    padding: 100px 15px 0px;
 	}
 
 	.first__pic-wrap img {
 	    margin-right: 0px;
+	}
+
+	.first__pic-wrap {
+	    position: relative;
+	    z-index: -1;
 	}
 
 	.first__text {
@@ -1402,8 +1654,18 @@ select {
 }
 
 @media screen and (max-width: 576px) {
-	.first__price {
+	.header {
+		position: fixed;
+		width: 100%;
+		z-index: 20;	
+	}
+
+	/*.first__price {
 		display: none;
+	}*/
+
+	.price__result {
+	    text-align: center;
 	}
 
 	.header__logo {
@@ -1416,6 +1678,10 @@ select {
 
 	.first {
 	    padding: 10px 15px 0px;
+	}
+
+	.first__block {
+	    margin-top: 100px;
 	}
 
 	.first__text {
@@ -1597,6 +1863,47 @@ select {
 	    font-size: 15px;
 	}
 
+	.modal__show {
+		padding: 0px 15px;
+	}
+
+	.panel-collapse {
+	    padding: 0px;
+	}
+
+	.panel__title {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.panel__content-link {
+	    padding: 8px 20px;
+	    margin-bottom: 10px;
+	}
+
+	.panel__content-text {
+	    font-size: 14px;
+	    margin-left: 10px;
+	}
+
+	.panel__content {
+	    margin-bottom: 25px;
+	    flex-direction: column;
+	    text-align: center;
+	}
+
+	.panel__item {
+		margin-bottom: 15px;
+	}
+
+	.panel, .panel-second {
+	    margin-bottom: 0px;
+	}
+
+	.panel__content-text {
+		margin-left: 0px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1606,7 +1913,60 @@ select {
 
 	.benefits__cont-pic-wrap {
 	    max-width: 165px;
+	}
+
+	.price__selects-wrap {
+	    flex-direction: column;
 	}	
+
+	.price__select {
+		width: 240px;
+	}
+
+	.price__selects {
+	    margin-right: 0px;
+	    margin-bottom: 20px;
+	}
+
+	.price__selects:nth-child(2) {
+		margin-bottom: 0px;
+	}
+
+	.modal__cont {
+	    padding: 0px 15px;
+	}
+
+	.modal__close {
+    	top: 10px;
+	}
+
+	.form__input,
+	.form__area,
+	.form__input::placeholder {
+	    font-size: 14px;
+	}
+
+	.form__input,
+	.form__area {
+	    padding: 10px 10px 10px 35px;
+	}
+
+	.form__area {
+		padding: 10px;
+	}
+
+	.form__name,
+	.form__tel,
+	.form__mail,
+	.form__day,
+	.form__month {
+	    background-position: 10px 4px;
+	    background-size: 8% 78%;
+	}	
+
+	.form__submit {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 400px) {
