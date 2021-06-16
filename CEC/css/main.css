@@ -69,6 +69,37 @@ body {
 	font-weight: 500;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #FFFFFF;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.8s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 .modal__show {
     position: fixed;
     top: 0;
@@ -261,11 +292,11 @@ body {
 }
 
 .header__links {
-	max-width: 556px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .header__links a,
@@ -517,10 +548,10 @@ select {
 }
 
 .card__cont {
-	text-align: center;
-	background: #E3F9F9;
-	padding: 40px 0px 50px 0px;
-	border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    background: #E3F9F9;
+    padding: 40px 10px 50px 10px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .card__text {
@@ -530,6 +561,7 @@ select {
 	letter-spacing: -0.05em;
 	color: #6C6C6C;
 	padding-bottom: 10px;
+	text-align: left;
 }
 
 .card__text_last{
@@ -718,8 +750,8 @@ select {
 }
 
 .user__accordeon-title {
-	text-align: center;
-	margin: 180px 0px 40px 0px;
+    text-align: center;
+    margin: 100px 0px 40px 0px;
 }
 
 .user__panel {
@@ -1001,6 +1033,61 @@ select {
 	background: #3ECFCD;
 }
 
+/* LOGIN PAGE START */
+
+.header-login-page {
+	position: static;
+}
+
+.login {
+	padding: 8% 0 0;
+}
+
+.login__form {
+	position: relative;
+    z-index: 1;
+    padding: 40px;
+    background: #FFFFFF;
+	display: block;
+	margin: 0 auto 100px;
+	max-width: 400px;
+	width: 100%;
+	border: 1px solid rgb(206, 212, 218);
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+}
+
+.login__form-input {
+	width: 100%;
+	padding: 10px;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid rgb(206, 212, 218);
+	margin-bottom: 15px;
+}
+
+.login__form-input::placeholder {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: black;
+}
+
+.login__button {
+	border: none;
+    padding: 15px;
+    background: #084C94;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* LOGIN PAGE END  */
+
 @media screen and (max-width: 1400px) {
 	.first__pic-wrap img {
 	    width: 645px;
@@ -1018,23 +1105,8 @@ select {
 	    width: 98%;
 	}
 
-	.header__links {
-	    max-width: 482px;
-	    font-size: 14px;
-	}
-	
-	.header__login {
-	    max-width: 62px;
-	    font-size: 14px;
-	}
-
 	.header__login img {
 		width: 35%;
-	}
-	
-	.header__button {
-		font-size: 13px;
-		padding: 15px;
 	}
 
 	.first {
@@ -1110,7 +1182,7 @@ select {
 	}
 
 	.card__cont {
-	    padding: 35px 0px 40px 0px;
+	    padding: 35px 10px 40px 10px;
 	}
 
 	.benefits {
@@ -1144,7 +1216,7 @@ select {
 	}
 
 	.user__accordeon-title {
-		margin: 160px 0px 35px 0px;
+	    margin: 90px 0px 35px 0px;
 	}
 
 	.contacts {
@@ -1158,39 +1230,6 @@ select {
 }
 
 @media screen and (max-width: 992px) {
-	.header__logo {
-	    max-width: 120px;
-	    margin-right: 10px;
-	}
-
-	.header__item img {
-	    width: 100%;
-	}
-
-	.header__links {
-	    max-width: 505px;
-	    font-size: 12px;
-	    width: 100%;
-	    margin: 0px 10px;
-	}
-
-	.header__login img {
-	    width: 32%;
-	}
-
-	.header__login {
-	    max-width: 48px;
-	    font-size: 12px;
-	    margin: 0px 10px;
-	}
-
-	.header__button {
-	    font-size: 12px;
-	    padding: 12px;
-	    max-width: 155px;
-	    width: 100%;
-	}
-
 	.first {
 	    padding: 137px 15px 0px;
 	}
@@ -1310,7 +1349,7 @@ select {
 	}
 
 	.user__accordeon-title {
-	    margin: 130px 0px 30px 0px;
+	    margin-bottom: 30px;
 	}
 
 	.user__item {
@@ -1352,88 +1391,26 @@ select {
 }
 
 @media screen and (max-width: 768px) {
-	.header {
-		padding: 0px;
-	}
-
-	.header__list {
-		display: none;
-	}
-
-	.navbar {
-		display: flex;
-		padding: 20px 15px;
-	}
-
-	.nav-menu {
-		list-style-type: none;
-	    position: fixed;
-	    z-index: 20;
-	    left: -100%;
-	    background: #E3F9F9;
-	    top: 0px;	
-	    display: block;
-	   	padding-top: 115px;
-	    height: 100%;
-	    width: 100%;
-	    text-align: center;
-	    transition: 0.3s;
-	}
-
-    .nav-menu.active {
-	    left: 0;
-	}
-
-    .nav-item {
-       margin: 0px auto 40px;
-    }
-
-    .nav-item a {
-    	font-size: 16px;
-    	font-weight: 600;
-	    color: #6C6C6C;
-	    transition: all 0.5s ease;
-    }
-
-    .nav-item a:hover {
-    	color: #0FBAB8;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        z-index: 21;
-        right: 15px;
-        top: 30px;
-        position: fixed;
-    }
-
-    .overflow {
-    	overflow-y: hidden;
-    }
-
-    .nav-top {
-		position: absolute;
-		top: 20px;
-		left: 15px;
-	}
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
    .header__login {
 	    max-width: 76px;
 	    font-size: 12px;
 	    margin: 0px auto;
+	}
+
+	.header__links {
+	    max-width: 360px;
+	    font-size: 14px;
+	}
+
+	.header__login {
+	    max-width: 64px;
+	    font-size: 14px;
+	    margin: 0px;
+	}
+
+	.header__button {
+		padding: 15px;
+    	font-size: 14px;
 	}
 
 	.first {
@@ -1654,15 +1631,90 @@ select {
 }
 
 @media screen and (max-width: 576px) {
+	.header__list {
+	    display: none;
+	}
+
 	.header {
 		position: fixed;
 		width: 100%;
-		z-index: 20;	
+		z-index: 20;
+		padding: 0px;	
 	}
 
-	/*.first__price {
-		display: none;
-	}*/
+	.header__login {
+		margin: 0px auto;
+	}
+
+	.navbar {
+		display: flex;
+		padding: 20px 15px;
+	}
+
+	.nav-menu {
+		list-style-type: none;
+	    position: fixed;
+	    z-index: 20;
+	    left: -100%;
+	    background: #E3F9F9;
+	    top: 0px;	
+	    display: block;
+	   	padding-top: 115px;
+	    height: 100%;
+	    width: 100%;
+	    text-align: center;
+	    transition: 0.3s;
+	}
+
+    .nav-menu.active {
+	    left: 0;
+	}
+
+    .nav-item {
+       margin: 0px auto 40px;
+    }
+
+    .nav-item a {
+    	font-size: 16px;
+    	font-weight: 600;
+	    color: #6C6C6C;
+	    transition: all 0.5s ease;
+    }
+
+    .nav-item a:hover {
+    	color: #0FBAB8;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 21;
+        right: 15px;
+        top: 30px;
+        position: fixed;
+    }
+
+    .overflow {
+    	overflow-y: hidden;
+    }
+
+    .nav-top {
+		position: absolute;
+		top: 20px;
+		left: 15px;
+	}
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
 	.price__result {
 	    text-align: center;
@@ -1716,7 +1768,7 @@ select {
 	}
 
 	.card__cont {
-	    padding: 20px 0px 40px 0px;
+	    padding: 20px 10px 40px 10px;
 	}
 
 	.card__text {
@@ -1733,7 +1785,7 @@ select {
 	}
 
 	.responsive {
-	    max-width: 270px;
+	    max-width: 366px;
 	    margin: 0px auto 0px;
 	    width: 100%;
 	}
@@ -1904,6 +1956,20 @@ select {
 		margin-left: 0px;
 	}
 
+/* LOGIN PAGE START  */
+
+	.header-login-page {
+	 	position: static;
+	    width: 100%;
+	    padding: 20px 15px;
+	}
+
+	.header__list-login-page {
+		display: flex;
+	}
+
+/* LOGIN PAGE END  */
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1960,12 +2026,49 @@ select {
 	.form__mail,
 	.form__day,
 	.form__month {
-	    background-position: 10px 4px;
+	    background-position: 5px 4px;
 	    background-size: 8% 78%;
 	}	
 
 	.form__submit {
 	    font-size: 18px;
+	}
+
+/* LOGIN PAGE START  */
+	.login {
+	    padding: 10% 15px 0px 15px;
+	}
+
+	.login__form {
+	    padding: 30px;
+	}	
+
+	.login__form-input,
+	.login__form-input::placeholder {
+	    font-size: 14px;
+	}
+
+	.login__button {
+	    padding: 10px 15px;
+	    font-size: 18px;
+	}
+
+	.header-login-page {
+	 	position: static;
+	    width: 100%;
+	    padding: 20px 15px;
+	}
+
+	.header__list-login-page {
+		display: flex;
+	}
+
+/* LOGIN PAGE END  */
+}
+
+@media screen and (max-width: 415px) {
+	.responsive {
+	    max-width: 320px;
 	}
 }
 
@@ -1975,43 +2078,37 @@ select {
 	}	
 }
 
-@media screen and (max-height: 470px) {
-	.nav-menu {
-	    padding-top: 95px;
-	}
-
-	.nav-item {
-	    margin: 0px auto 28px;
+@media screen and (max-width: 370px) {
+	.responsive {
+	    max-width: 300px;
 	}
 }
 
-@media screen and (max-height: 380px) {
-	.nav-item {
-	    margin: 0px auto 20px;
+@media screen and (max-width: 350px) {
+	.responsive {
+	    max-width: 290px;
 	}
 }
 
-@media screen and (max-height: 340px) {
-	.nav-item {
-	    margin: 0px auto 15px;
-	}
-
-	.nav-menu {
-	    padding-top: 80px;
+@media screen and (max-width: 340px) {
+	.responsive {
+	    max-width: 280px;
 	}
 }
 
-@media screen and (max-height: 290px) {
-	.nav-item {
-	    margin: 0px auto 8px;
+@media screen and (max-width: 330px) {
+	.responsive {
+	    max-width: 270px;
 	}
+}
 
-	.nav-item:nth-child(1) {
-		margin: 0px auto 12px;
+@media screen and (max-height: 240px) {
+	.nav-item {
+	    margin: 0px auto 25px;
 	}
 
 	.nav-menu {
-	    padding-top: 70px;
+	    padding-top: 90px;
 	}
 }
 

@@ -4,13 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		Центральна енергетична компанія
+		Центральна Енергетична Компанія
 	</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="preloader">
+	<img class="preloader__image" src="img/logo.svg">
+</div>	
 	<header class="header" id="header">
 		<div class="header__wrap wrap">
 			<nav class="header__block-list">
@@ -21,31 +29,19 @@
 						</a>
 					</div>
 					<div class="header__links">
-						<a href="#about">
-							Про нас
-						</a>
-						<a href="#benefits">
-							Переваги
-						</a>
 						<a href="#tariffs">
 							Підключитись
 						</a>
-						<a href="#info">
-							Інформація
+						<a href="login.html" class="header__login">
+							<div>
+								Вхід
+							</div>
+							<img src="img/login.svg" alt="">
 						</a>
-						<a href="#contacts">
-							Контакти
-						</a>
-					</div>
-					<a href="#" class="header__login">
-						<div>
-							Вхід
-						</div>
-						<img src="img/login.svg" alt="">
-					</a>
 					<button class="header__button btn">
 						Обрати пропозицію
 					</button>
+				</div>
 				</ul>
 			</nav>
 			<nav class="navbar">
@@ -68,27 +64,7 @@
 		            </li>
 		            <li class="nav-item">
 		                <a href="#about">
-							Про нас
-						</a>
-		            </li>
-		            <li class="nav-item">
-		                <a href="#benefits">
-							Переваги
-						</a>
-		            </li>
-		            <li class="nav-item">
-		                <a href="#tariffs">
 							Підключитись
-						</a>
-		            </li>
-		            <li class="nav-item">
-		               	<a href="#info">
-							Інформація
-						</a>
-		            </li>
-		            <li class="nav-item">
-		               	<a href="#contacts">
-							Контакти
 						</a>
 		            </li>
 	            </ul>
@@ -100,7 +76,6 @@
         	</nav>
 		</div>
 	</header>
-
 	<div class="modal__show">
 		<div class="modal-wrap">
 			<div class="modal">
@@ -114,7 +89,6 @@
 						<input type="text" class="form__input form__name" placeholder="Введіть свої ім’я та прізвище">
 						<input type="text" class="form__input form__tel" id="tel" placeholder="+380(XX) XXX-XX-XX" required data-mask="+380 (00) 000 00 00">
 						<input type="text" class="form__input form__mail" placeholder="E-mail">
-						<input type="text" class="form__input form__day" placeholder="Споживання в день">
 						<input type="text" class="form__input form__month" placeholder="Споживання в місяць">
 						<textarea name="add-info" class="form__area" id="add-info">Додаткова інформація</textarea>
 						<button class="form__submit" type="submit">
@@ -139,8 +113,8 @@
 						</span>
 					</h1>
 					<div class="first__subtitle subtitle">
-						Не важливо, якого розміру Ваш бізнес. Всі і кожен має право отримувати якісні послуги з постачання електричної енергії. Непрозорі партнерські відносини, не зрозумілі розрахунки, та рутині процеси з прогнозування споживання — надлишки минулого. Пакетні рішення з постачання та обслуговування — інновація на ринку енергетичних послуг.
-						Одне рішення — безліч можливостей.
+						Не важливо, якого розміру Ваш бізнес. Всі і кожен має право отримувати якісні послуги з постачання електричної енергії. Непрозорі партнерські відносини, не зрозумілі розрахунки, та рутині процеси з прогнозування споживання — надлишки минулого. <br>Пакетні рішення з постачання та обслуговування — інновація на ринку енергетичних послуг.
+						<br>Одне рішення — безліч можливостей.
 					</div>
 					<div class="first__price">
 						<div class="price__text">
@@ -317,12 +291,6 @@
 							</span>
 						</div>
 					</div>
-					<div class="first__button-wrap">
-						<button class="first__button btn">
-							Обрати пропозицію
-						</button>
-					</div>
-					
 				</div>
 				<picture class="first__pic-wrap">
 				  	<source srcset="img/first-img.png" media="(min-width: 768px)"/>
@@ -339,29 +307,29 @@
 			<div class="tariffs__cards">
 				<div class="tariffs__card">
 					<div class="card__title card__tilte_first">
-						до 10 тис кВт * год
+						до 10 тис кВт*год
 						<span>
 							1000 ₴ / міс
 						</span>
 					</div>
 					<div class="card__cont">
 						<div class="card__text">
-							текст
+							✓ 100% покриття небалансів
 						</div>
 						<div class="card__text">
-							текст
+							✓ Деталізовані розрахунки
 						</div>
 						<div class="card__text">
-							текст
+							✓ Щотижневі звіти по споживанню
 						</div>
 						<div class="card__text">
-							текст
+							✓ Особистий кабінет споживача
 						</div>
 						<div class="card__text">
-							текст
+							✓ Персональний менеджер
 						</div>
 						<div class="card__text card__text_last">
-							текст
+							✓ Безкоштовний консалтинг
 						</div>
 						<button class="btn card__button">
 							Обрати
@@ -370,29 +338,29 @@
 				</div>
 				<div class="tariffs__card">
 					<div class="card__title card__title_second">
-						до 10 тис кВт * год
+						від 10 тис до 50 тис кВт*год
 						<span>
-							1000 ₴ / міс
+							2000 ₴ / міс
 						</span>
 					</div>
 					<div class="card__cont">
 						<div class="card__text">
-							текст
+							✓ 100% покриття небалансів
 						</div>
 						<div class="card__text">
-							текст
+							✓ Деталізовані розрахунки
 						</div>
 						<div class="card__text">
-							текст
+							✓ Щотижневі звіти по споживанню
 						</div>
 						<div class="card__text">
-							текст
+							✓ Особистий кабінет споживача
 						</div>
 						<div class="card__text">
-							текст
+							✓ Персональний менеджер
 						</div>
 						<div class="card__text card__text_last">
-							текст
+							✓ Безкоштовний консалтинг
 						</div>
 						<button class="btn card__button">
 							Обрати
@@ -401,29 +369,29 @@
 				</div>
 				<div class="tariffs__card">
 					<div class="card__title card__title_third">
-						до 10 тис кВт * год
+						від 50 тис кВт*год
 						<span>
-							1000 ₴ / міс
+							3000 ₴ / міс
 						</span>
 					</div>
 					<div class="card__cont">
 						<div class="card__text">
-							текст
+							✓ 100% покриття небалансів
 						</div>
 						<div class="card__text">
-							текст
+							✓ Деталізовані розрахунки
 						</div>
 						<div class="card__text">
-							текст
+							✓ Щотижневі звіти по споживанню
 						</div>
 						<div class="card__text">
-							текст
+							✓ Особистий кабінет споживача
 						</div>
 						<div class="card__text">
-							текст
+							✓ Персональний менеджер
 						</div>
 						<div class="card__text card__text_last">
-							текст
+							✓ Безкоштовний консалтинг
 						</div>
 						<button class="btn card__button">
 							Обрати
@@ -434,29 +402,29 @@
 			<div class="responsive">
 				<div class="tariffs__card">
 					<div class="card__title card__tilte_first">
-						до 10 тис кВт * год
+						до 10 тис кВт*год
 						<span>
 							1000 ₴ / міс
 						</span>
 					</div>
 					<div class="card__cont">
 						<div class="card__text">
-							текст
+							✓ 100% покриття небалансів
 						</div>
 						<div class="card__text">
-							текст
+							✓ Деталізовані розрахунки
 						</div>
 						<div class="card__text">
-							текст
+							✓ Щотижневі звіти по споживанню
 						</div>
 						<div class="card__text">
-							текст
+							✓ Особистий кабінет споживача
 						</div>
 						<div class="card__text">
-							текст
+							✓ Персональний менеджер
 						</div>
 						<div class="card__text card__text_last">
-							текст
+							✓ Безкоштовний консалтинг
 						</div>
 						<button class="btn card__button">
 							Обрати
@@ -465,29 +433,29 @@
 				</div>
 				<div class="tariffs__card">
 					<div class="card__title card__title_second">
-						до 10 тис кВт * год
+						від 10 до 50 тис кВт*год
 						<span>
 							1000 ₴ / міс
 						</span>
 					</div>
 					<div class="card__cont">
 						<div class="card__text">
-							текст
+							✓ 100% покриття небалансів
 						</div>
 						<div class="card__text">
-							текст
+							✓ Деталізовані розрахунки
 						</div>
 						<div class="card__text">
-							текст
+							✓ Щотижневі звіти по споживанню
 						</div>
 						<div class="card__text">
-							текст
+							✓ Особистий кабінет споживача
 						</div>
 						<div class="card__text">
-							текст
+							✓ Персональний менеджер
 						</div>
 						<div class="card__text card__text_last">
-							текст
+							✓ Безкоштовний консалтинг
 						</div>
 						<button class="btn card__button">
 							Обрати
@@ -496,29 +464,29 @@
 				</div>
 				<div class="tariffs__card">
 					<div class="card__title card__title_third">
-						до 10 тис кВт * год
+						від 50 тис кВт*год
 						<span>
 							1000 ₴ / міс
 						</span>
 					</div>
 					<div class="card__cont">
 						<div class="card__text">
-							текст
+							✓ 100% покриття небалансів
 						</div>
 						<div class="card__text">
-							текст
+							✓ Деталізовані розрахунки
 						</div>
 						<div class="card__text">
-							текст
+							✓ Щотижневі звіти по споживанню
 						</div>
 						<div class="card__text">
-							текст
+							✓ Особистий кабінет споживача
 						</div>
 						<div class="card__text">
-							текст
+							✓ Персональний менеджер
 						</div>
 						<div class="card__text card__text_last">
-							текст
+							✓ Безкоштовний консалтинг
 						</div>
 						<button class="btn card__button">
 							Обрати
@@ -540,7 +508,7 @@
 				<span>
 					Енергетична компанія «Центральна»  
 				</span>
-				— сучасний і надійний постачальник електричної енергії кінцевому споживачу. Ми частина невеликої промислової групи і вже більше 20 років виготовляємо залізобетонні вироби, проектуємо та будуємо багатоповерхові житлові будинки.
+				— сучасний і надійний постачальник електричної енергії кінцевому споживачу.
 				<div class="margin"></div>
 				Центральна створена бізнесом для бізнесу. На своєму прикладі знаємо і розуміємо, як важливо і складно обрати надійного постачальника електричної енергії.
 				<div class="margin"></div>
@@ -589,7 +557,7 @@
 				</div>
 				<div class="benefits__cont-text">
 					<div class="benefits__cont-text_white">
-						Аналітичні дані
+						Доступ до інформації 24/7
 					</div>
 					<div class="benefits__cont-title">
 						Аналітичні дані
@@ -748,6 +716,36 @@
 								</span>
 								<div class="panel__content-text panel__content-text_light">
 									Заява-приєднання до договору
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+								<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Інструкція про подання звернення
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse">
+						<div class="panel-body">
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Інструкція про подання звернення/скарги/претензії
+								</div>
+							</a>
+								<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Вирішення спорів та Порядок надання споживачами звернень, скарг, претензій, надання повідомлень про загрозу електробезпеці та їх розгляду
 								</div>
 							</a>
 						</div>
@@ -1502,8 +1500,8 @@
 						<div class="questions__subtitle">
 							Зателефонуйте або напишіть нам
 						</div>
-						<a href="tel:0442780741" class="questions-contact__tel">
-							(044) 278 07 41
+						<a href="tel:0445808588" class="questions-contact__tel">
+							(044) 580 85 88
 						</a>
 						<a href="tel:0442780741" class="questions__contact contact__mail">
 							centralna@gmail.com

@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+
 	$('.panel-heading').click(function () {
 		$(this).toggleClass('in').next().slideToggle();
 		$('.panel-heading').not(this).removeClass('in').next().slideUp();
@@ -76,10 +82,16 @@ btnOpenModal.forEach(function(btn) {
  		const modalWindow = document.querySelector('.modal');
 	});
 
+	jQuery(document).ready(function(){
+	    $('#tel').mask('+380 (00) 000 00 00', {placeholder: "+380 (XX) XXX-XX-XX"});
+	});	
 
-
-jQuery(document).ready(function(){
-    $('#tel').mask('+380 (00) 000 00 00', {placeholder: "+380 (XX) XXX-XX-XX"});
-});	
+	const $page = $('html, body');
+	$('a[href*="#"]').click(function() {
+	    $page.animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 400);
+	    return false;
+	});
 
 });
