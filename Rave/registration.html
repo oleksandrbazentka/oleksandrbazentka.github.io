@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Registration
+	</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="registration-file">
+	<header class="header shop-header registration-header" id="header-registration">
+		<div class="shop-wrap registration-header__wrap">
+			<a href="index.html" class="shop-header__logo registration-header__logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+		</div>
+	</header>
+	<section class="sign-up" id="sign-up">
+		<div class="sign-up__wrap">
+			<h2 class="sign-up__title">
+				Welcome to RAVE!
+			</h2>
+			<div class="title-big sign-up__title-big upper">
+				Sign up now
+			</div>
+			<form class="sign-up__form" id="sign-up__form">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Rave your way - registration">
+				<input type="hidden" name="admin_email" value="raves.drivers@gmail.com">
+				<input type="hidden" name="form_subject" value="Форма Регистрации">
+				<!-- END Hidden Required Fields -->
+				<select name="select-box" id="selectId" class="sign-up__form-select">
+				  <option value="Rider" name="select__option">
+				  	Rider
+				  </option>
+				   <option value="Driver" name="select__option">
+				  	Driver 
+				  </option>
+				   <option value="Vendor" name="select__option">
+				  	Vendor
+				  </option>
+				   <option value="Service provider" name="select__option">
+				  	Service provider
+				  </option>
+				</select>
+				<input type="email" class="sign-up__form-input" placeholder="Email address" required>
+				<div class="sign-up__form-inputs-wrap">
+					<input type="text" class="sign-up__form-input sign-up__form-name" placeholder="First name" required>
+					<input type="text" class="sign-up__form-input sign-up__form-name" placeholder="Last name" required>
+				</div>
+				<input type="tel" class="sign-up__form-input" placeholder="Phone number" required>
+				<div class="sign-up__form-inputs-wrap">
+					<input type="text" class="sign-up__form-input sign-up__form-location" placeholder="City" required>
+					<input type="text" class="sign-up__form-input sign-up__form-location" placeholder="Country" required>
+				</div>
+				<div class="sign-up__form-password">
+					<input type="password" id="sign-up__form-password" class="sign-up__form-password-main sign-up__form-input sing-up__passwords" placeholder="Password" name="password" required>
+					<div class="password-control"></div>
+				</div>
+				<div class="sign-up__form-password-test">
+					<input type="password" id="sign-up__form-password" class="sign-up__form-password-test-main sign-up__form-input sing-up__passwords" placeholder="Confirm password" name="password" required>
+					<div class="password-control-two"></div>
+				</div>
+				<input type="checkbox" class="form__check sign-up__form-check" id="sign-up-form__check_first" name="sign-up-form__check_first" value="I agree that RAVE can collect, use and disclose the information provided by me" required>
+				<label for="sign-up-form__check_first">
+					By clicking sign up, I agree that RAVE can collect, use and disclose the information provided by me in accordance with the Privacy Policy and I fully comply with Terms of Service which I have read and understand.
+				</label>
+				<input type="checkbox" class="form__check sign-up__form-check" id="sign-up-form__check_second" name="sign-up-form__check_second" value="I consent to receive calls or SMS messages">
+				<label class="sign-up__form-label_second" for="sign-up-form__check_second">
+					By proceeding, I consent to receive calls or SMS messages including marketing communications from RAVE and its affiliates to the number I provide. I understand that I may opt out by texting “STOP”.
+				</label>
+				<button type="submit" class="sign-up__form-submit">
+					Sign up
+				</button>
+			</form>
+		</div>
+	</section>	
+	<div class="modal__show">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<img src="img/wrong.svg" alt="">
+					<div class="modal__title">
+						Something went wrong
+					</div>
+					<button class="modal__close modal__close-two btn">
+						Try again
+					</button>
+				</div>
+				<button class="modal__close">
+					<img src="img/close.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal__show-done">
+		<div class="modal-wrap-done">
+			<div class="modal-done">
+				<div class="modal__cont">
+					<img src="img/success.svg" alt="">
+					<div class="modal__title">
+						Your have successfully registered!
+					</div>
+					<button class="modal__close modal__close-two btn">
+						Back to main
+					</button>
+				</div>
+				<button class="modal__close">
+					<img src="img/close.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" id="footer">
+		<div class="footer__wrap">
+			<div class="footer__block_first">
+				<a href="index.html" class="footer__item footer__logo">
+					<img src="img/logo-f.svg" alt="">
+				</a>	
+				<div class="footer__soc-media">
+					<div class="footer__soc-media-title">
+						Follow us and keep updated!
+					</div>
+					<div class="soc-media">
+						<a href="https://m.facebook.com/rav.cab.sgp/" class="soc-media__item">
+							<img src="img/facebook.svg" alt="">
+						</a>
+						<a href="https://www.instagram.com/rave_sgp/?utm_medium=copy_link" class="soc-media__item">
+							<img src="img/insta.svg" alt="">
+						</a>
+						<a href="https://www.youtube.com/channel/UC5WWF7xq3EcmZ0Pchkw6xCQ?app=desktop" class="soc-media__item">
+							<img src="img/youtbe.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<a href="mailto:admin@raves.com.sg" class="footer__item footer__mail">
+					admin@raves.com.sg
+				</a>
+				<div class="footer__markets">
+					<a href="#" class="footer__play">
+						<img src="img/app-store.svg" alt="">
+					</a>
+					<a href="#" class="footer__play">
+						<img src="img/play-market.svg" alt="">
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="footer__block_second">
+			<div class="footer__block_second-wrap">
+				<div class="footer__det">
+					<a href="#">
+					Privacy Policy
+					</a>
+					<a href="#">
+						Terms of Service
+					</a>	
+				</div>
+				<div class="footer__copyright read-more-footer__copyright">
+					Copyright © 2021 RAVE. 
+					All rights reserved.
+				</div>	
+				<a href="#header-registration" class="footer__up">
+					<img src="img/up.svg" alt="">
+				</a>
+			</div>		
+		</div>
+	</footer>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
