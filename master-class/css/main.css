@@ -51,10 +51,22 @@ body {
 }
 
 .popup__wrap {
-	display: none;
+    display: flex;
     align-items: center;
     position: relative;
-	height: 100vh;
+    max-width: 896px;
+    width: 100%;
+}
+
+.thanks-section {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    max-width: none;
+    width: 100%;
 }
 
 .back-none {
@@ -261,7 +273,6 @@ a, button {
 }
 
 .popup {
-	max-width: 896px;
 	border-radius: 30px;
 	width: 100%;
 	background: url('../img/bg.png') no-repeat top center;
@@ -322,6 +333,10 @@ a, button {
 
 	.main-section {
 	    margin: 37px 15px;
+	}
+
+	.thanks-section {
+		margin: 0px;
 	}
 
 	.first-block__title {
@@ -402,6 +417,10 @@ a, button {
 	    padding: 30px 20px 0px 20px;
 	}
 
+	.thanks-section {
+		padding: 0px 20px;
+	}
+
 	.first-block__title {
 	    font-size: 38px;
 	    margin-bottom: 15px;
@@ -465,6 +484,10 @@ a, button {
 	    border-radius: 0px;
 	}
 
+	.thanks-section {
+		padding: 0px;
+	}
+
 	.main-section-img {
 	    background: url(../img/bg-col.png) no-repeat top center;
 	    background-size: cover;
@@ -510,10 +533,6 @@ a, button {
 
 	.second-block__cont {
 		text-align: center;
-	}
-
-	.popup__wrap {
-		height: auto;
 	}
 
 	.none-marg {

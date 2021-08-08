@@ -6,9 +6,7 @@ $(function() {
 	      url: "mail.php", //Change
 	      data: th.serialize()
 	    }).done(function() {
-	      $('.popup__wrap').addClass('visible');
-	      $('.main-section').addClass('back-none');
-	      $('.main-section-img').addClass('back-none');
+	      window.location = "/thanks.html";
 	      setTimeout(function() {
 	        // Done Functions
 	        th.trigger("reset");
