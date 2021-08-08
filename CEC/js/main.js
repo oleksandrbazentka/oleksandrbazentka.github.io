@@ -15,6 +15,11 @@ $(document).ready(function () {
 		$('.panel-heading-second').not(this).removeClass('in').next().slideUp();
     });
 
+     $('.panel-heading-third').click(function () {
+		$(this).toggleClass('in').next().slideToggle();
+		$('.panel-heading-third').not(this).removeClass('in').next().slideUp();
+    });
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const html = document.querySelector('html');
@@ -61,7 +66,7 @@ $('.responsive').slick({
   ]
 });
 
-const btnOpenModal = document.querySelectorAll('.btn');
+const btnOpenModal = document.querySelectorAll('.btn__modal');
 btnOpenModal.forEach(function(btn) {
 	btn.addEventListener('click', function(e) {
 		const modal = document.querySelector('.modal__show');
@@ -89,7 +94,7 @@ btnOpenModal.forEach(function(btn) {
 	const $page = $('html, body');
 	$('a[href*="#"]').click(function() {
 	    $page.animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top
+	        scrollTop: $($.attr(this, 'href')).offset().top - 95
 	    }, 400);
 	    return false;
 	});

@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Центральна Енергетична Компанія
+	</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="preloader">
+	<img class="preloader__image" src="img/logo.svg">
+</div>	
+	<header class="header" id="header">
+		<div class="header__wrap wrap">
+			<nav class="header__block-list">
+				<ul class="header__list">
+					<div class="header__logo">
+						<a href="index.html" class="header__item">
+							<img src="img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="header__links">
+						<a href="#tariffs">
+							Підключитись
+						</a>
+						<a href="login.html" class="header__login">
+							<div>
+								Вхід
+							</div>
+							<img src="img/login.svg" alt="">
+						</a>
+					<button class="header__button btn">
+						Обрати пропозицію
+					</button>
+				</div>
+				</ul>
+			</nav>
+			<nav class="navbar">
+	            <a href="#" class="header__logo">
+	            	<img src="img/logo.svg" alt="">
+	            </a>
+	            <ul class="nav-menu">
+	            	<div class="nav-top">
+	            		<a href="index.html" class="header__logo">
+	            			<img src="img/logo.svg" alt="">
+	           			</a>
+	            	</div>
+		            <li class="nav-item">
+		                <a href="#" class="header__login">
+						<div>
+							Вхід
+						</div>
+						<img src="img/login.svg" alt="">
+					</a>
+		            </li>
+		            <li class="nav-item">
+		                <a href="#about">
+							Підключитись
+						</a>
+		            </li>
+	            </ul>
+	            <div class="hamburger">
+				    <span class="bar"></span>
+				    <span class="bar"></span>
+				    <span class="bar"></span>
+			    </div>
+        	</nav>
+		</div>
+	</header>
+	<div class="modal__show">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<div class="modal__title">
+						Заповніть, будь ласка, 
+						<br>
+						форму зворотнього зв’язку:
+					</div>
+					<form action="#">
+						<input type="text" class="form__input form__name" placeholder="Введіть свої ім’я та прізвище">
+						<input type="text" class="form__input form__tel" id="tel" placeholder="+380(XX) XXX-XX-XX" required data-mask="+380 (00) 000 00 00">
+						<input type="text" class="form__input form__mail" placeholder="E-mail">
+						<input type="text" class="form__input form__month" placeholder="Споживання в місяць">
+						<textarea name="add-info" class="form__area" id="add-info">Додаткова інформація</textarea>
+						<button class="form__submit" type="submit">
+							Надіслати
+						</button>
+					</form>
+				</div>
+				<button class="modal__close">
+					<img src="img/close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+	<section class="first" id="first">
+		<div class="wrap">
+			<div class="first__block">
+				<div class="first__text">
+					<h1 class="first__title title">
+						Постачання електроенергії
+						<span>
+							по собівартості
+						</span>
+					</h1>
+					<div class="first__subtitle subtitle">
+						Не важливо, якого розміру Ваш бізнес. Всі і кожен має право отримувати якісні послуги з постачання електричної енергії. Непрозорі партнерські відносини, не зрозумілі розрахунки, та рутині процеси з прогнозування споживання — надлишки минулого. <br>Пакетні рішення з постачання та обслуговування — інновація на ринку енергетичних послуг.
+						<br>Одне рішення — безліч можливостей.
+					</div>
+					<div class="first__price">
+						<div class="price__text">
+							Ми відкрито показуємо ціну закупівлі
+							електроенергії за минулі місяці
+						</div>
+						<div class="price__selects-wrap">
+							<div class="price__selects">
+								<select name="choose-osr" id="choose-osr" class="price__select">
+									<option value="Оберіть ОСР" selected disabled>
+										Оберіть ОСР
+									</option>
+									<option value="УКРЕНЕРГО">
+										УКРЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										"НАФТОГАЗ ТЕПЛО" м.Новояворівськ
+									</option>
+									<option value="УКРЕНЕРГО">
+										"НАФТОГАЗ ТЕПЛО" м. Новий розділ
+									</option>
+									<option value="УКРЕНЕРГО">
+										ДТЕК ДНІПРОВСЬКІ ЕЛЕКТРОМЕРЕЖІ
+									</option>
+									<option value="УКРЕНЕРГО">
+										ДТЕК ДОНЕЦЬКІ ЕЛЕКТРОМЕРЕЖІ
+									</option>
+									<option value="УКРЕНЕРГО">
+										МИКОЛАЇВОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ОДЕСАОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ПРИКАРПАТТЯОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										УКРЗАЛІЗНИЦЯ
+									</option>
+									<option value="УКРЕНЕРГО">
+										ХАРКІВОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ХЕРСОНОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ХМЕЛЬНИЦЬКОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ЧЕРНІВЦІОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ЖИТОМИРОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ТЕРНОПІЛЬОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										РЕГІОНАЛЬНІ ЕЛЕКТРИЧНІ МЕРЕЖІ
+									</option>
+									<option value="УКРЕНЕРГО">
+										АТОМСЕРВІС
+									</option>
+									<option value="УКРЕНЕРГО">
+										МІСЬКІ ЕЛЕКТРИЧНІ МЕРЕЖІ
+									</option>
+									<option value="УКРЕНЕРГО">
+										ВІННИЦЯОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ЗАПОРІЖЖЯОБЛЕНЕРГО
+									</option>
+									<option value="УКРЕНЕРГО">
+										ПОЛТАВАОБЛЕНЕРГО
+									</option>
+									<option value="СУМИОБЛЕНЕРГО">
+										СУМИОБЛЕНЕРГО
+									</option>
+									<option value="ЧЕРКАСИОБЛЕНЕРГО">
+										ЧЕРКАСИОБЛЕНЕРГО
+									</option>
+									<option value="ЧЕРНІГІВОБЛЕНЕРГО">
+										ЧЕРНІГІВОБЛЕНЕРГО
+									</option>
+									<option value="ГАРАНТ ЕНЕРГО М*">
+										ГАРАНТ ЕНЕРГО М*
+									</option>
+									<option value="ГАРАНТ ЕНЕРГО М**">
+										ГАРАНТ ЕНЕРГО М**
+									</option>
+									<option value="ВОЛИНЬОБЛЕНЕРГО">
+										ВОЛИНЬОБЛЕНЕРГО
+									</option>
+									<option value="ДТЕК КИЇВСЬКІ ЕЛЕКТРОМЕРЕЖІ">
+										ДТЕК КИЇВСЬКІ ЕЛЕКТРОМЕРЕЖІ
+									</option>
+									<option value="ДТЕК ПЕМ-ЕНЕРГОВУГІЛЛЯ">
+										ДТЕК ПЕМ-ЕНЕРГОВУГІЛЛЯ
+									</option>
+									<option value="ЗАКАРПАТТЯОБЛЕНЕРГО">
+										ЗАКАРПАТТЯОБЛЕНЕРГО
+									</option>
+									<option value="КИЇВОБЛЕНЕРГО">
+										КИЇВОБЛЕНЕРГО
+									</option>
+									<option value="КІРОВОГРАДОБЛЕНЕРГО">
+										КІРОВОГРАДОБЛЕНЕРГО
+									</option>
+									<option value="ЛЬВІВОБЛЕНЕРГО">
+										ЛЬВІВОБЛЕНЕРГО
+									</option>
+									<option value="ПЕЕМ «ЦЕК»">
+										ПЕЕМ «ЦЕК»
+									</option>
+									<option value="РІВНЕОБЛЕНЕРГО">
+										РІВНЕОБЛЕНЕРГО
+									</option>
+									<option value="ДТЕК ВИСОКОВОЛЬТНІ МЕРЕЖІ">
+										ДТЕК ВИСОКОВОЛЬТНІ МЕРЕЖІ
+									</option>
+									<option value="ЛУГАНСЬКЕ ЕНЕРГЕТИЧНЕ ОБ’ЄДНАННЯ">
+										ЛУГАНСЬКЕ ЕНЕРГЕТИЧНЕ ОБ’ЄДНАННЯ
+									</option>
+								</select>
+							</div>
+							<div class="price__selects">
+								<select name="choose-osr" id="choose-osr" class="price__select price__select_second">
+									<option value="Місяць" selected disabled>
+										Місяць
+									</option>
+									<option value="1">
+										1
+									</option>
+									<option value="2">
+										2
+									</option>
+									<option value="3">
+										3
+									</option>
+									<option value="4">
+										4
+									</option>
+									<option value="5">
+										5
+									</option>
+									<option value="6">
+										6
+									</option>
+									<option value="7">
+										7
+									</option>
+									<option value="8">
+										8
+									</option>
+									<option value="9">
+										9
+									</option>
+									<option value="10">
+										10
+									</option>
+									<option value="11">
+										11
+									</option>
+									<option value="12">
+										12
+									</option>
+								</select>
+							</div>							
+						</div>
+						<div class="price__result">
+							Ціна закупівлі:  
+							<span>
+								1.34 грн
+							</span>
+						</div>
+					</div>
+				</div>
+				<picture class="first__pic-wrap">
+				  	<source srcset="img/first-img.png" media="(min-width: 768px)"/>
+  					<img src="img/first-img-sm.png" alt="">
+				</picture>	
+			</div>
+		</div>
+	</section>
+	<section class="tariffs" id="tariffs">
+		<div class="wrap tariffs__wrap">
+			<h2 class="tariffs__title title-h2">
+				Пакетні тарифи
+			</h2>
+			<div class="tariffs__cards">
+				<div class="tariffs__card">
+					<div class="card__title card__tilte_first">
+						до 10 тис кВт*год
+						<span>
+							1000 ₴ / міс
+						</span>
+					</div>
+					<div class="card__cont">
+						<div class="card__text">
+							✓ 100% покриття небалансів
+						</div>
+						<div class="card__text">
+							✓ Деталізовані розрахунки
+						</div>
+						<div class="card__text">
+							✓ Щотижневі звіти по споживанню
+						</div>
+						<div class="card__text">
+							✓ Особистий кабінет споживача
+						</div>
+						<div class="card__text">
+							✓ Персональний менеджер
+						</div>
+						<div class="card__text card__text_last">
+							✓ Безкоштовний консалтинг
+						</div>
+						<button class="btn card__button">
+							Обрати
+						</button>
+					</div>
+				</div>
+				<div class="tariffs__card">
+					<div class="card__title card__title_second">
+						від 10 тис до 50 тис кВт*год
+						<span>
+							2000 ₴ / міс
+						</span>
+					</div>
+					<div class="card__cont">
+						<div class="card__text">
+							✓ 100% покриття небалансів
+						</div>
+						<div class="card__text">
+							✓ Деталізовані розрахунки
+						</div>
+						<div class="card__text">
+							✓ Щотижневі звіти по споживанню
+						</div>
+						<div class="card__text">
+							✓ Особистий кабінет споживача
+						</div>
+						<div class="card__text">
+							✓ Персональний менеджер
+						</div>
+						<div class="card__text card__text_last">
+							✓ Безкоштовний консалтинг
+						</div>
+						<button class="btn card__button">
+							Обрати
+						</button>
+					</div>
+				</div>
+				<div class="tariffs__card">
+					<div class="card__title card__title_third">
+						від 50 тис кВт*год
+						<span>
+							3000 ₴ / міс
+						</span>
+					</div>
+					<div class="card__cont">
+						<div class="card__text">
+							✓ 100% покриття небалансів
+						</div>
+						<div class="card__text">
+							✓ Деталізовані розрахунки
+						</div>
+						<div class="card__text">
+							✓ Щотижневі звіти по споживанню
+						</div>
+						<div class="card__text">
+							✓ Особистий кабінет споживача
+						</div>
+						<div class="card__text">
+							✓ Персональний менеджер
+						</div>
+						<div class="card__text card__text_last">
+							✓ Безкоштовний консалтинг
+						</div>
+						<button class="btn card__button">
+							Обрати
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="tariffs__card">
+					<div class="card__title card__tilte_first">
+						до 10 тис кВт*год
+						<span>
+							1000 ₴ / міс
+						</span>
+					</div>
+					<div class="card__cont">
+						<div class="card__text">
+							✓ 100% покриття небалансів
+						</div>
+						<div class="card__text">
+							✓ Деталізовані розрахунки
+						</div>
+						<div class="card__text">
+							✓ Щотижневі звіти по споживанню
+						</div>
+						<div class="card__text">
+							✓ Особистий кабінет споживача
+						</div>
+						<div class="card__text">
+							✓ Персональний менеджер
+						</div>
+						<div class="card__text card__text_last">
+							✓ Безкоштовний консалтинг
+						</div>
+						<button class="btn card__button">
+							Обрати
+						</button>
+					</div>
+				</div>
+				<div class="tariffs__card">
+					<div class="card__title card__title_second">
+						від 10 до 50 тис кВт*год
+						<span>
+							1000 ₴ / міс
+						</span>
+					</div>
+					<div class="card__cont">
+						<div class="card__text">
+							✓ 100% покриття небалансів
+						</div>
+						<div class="card__text">
+							✓ Деталізовані розрахунки
+						</div>
+						<div class="card__text">
+							✓ Щотижневі звіти по споживанню
+						</div>
+						<div class="card__text">
+							✓ Особистий кабінет споживача
+						</div>
+						<div class="card__text">
+							✓ Персональний менеджер
+						</div>
+						<div class="card__text card__text_last">
+							✓ Безкоштовний консалтинг
+						</div>
+						<button class="btn card__button">
+							Обрати
+						</button>
+					</div>
+				</div>
+				<div class="tariffs__card">
+					<div class="card__title card__title_third">
+						від 50 тис кВт*год
+						<span>
+							1000 ₴ / міс
+						</span>
+					</div>
+					<div class="card__cont">
+						<div class="card__text">
+							✓ 100% покриття небалансів
+						</div>
+						<div class="card__text">
+							✓ Деталізовані розрахунки
+						</div>
+						<div class="card__text">
+							✓ Щотижневі звіти по споживанню
+						</div>
+						<div class="card__text">
+							✓ Особистий кабінет споживача
+						</div>
+						<div class="card__text">
+							✓ Персональний менеджер
+						</div>
+						<div class="card__text card__text_last">
+							✓ Безкоштовний консалтинг
+						</div>
+						<button class="btn card__button">
+							Обрати
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="about__wrap">
+			<h2 class="about__title title-h2">
+				Про 
+				<span>
+					нас
+				</span>
+			</h2>
+			<div class="about__text">
+				<span>
+					Енергетична компанія «Центральна»  
+				</span>
+				— сучасний і надійний постачальник електричної енергії кінцевому споживачу.
+				<div class="margin"></div>
+				Центральна створена бізнесом для бізнесу. На своєму прикладі знаємо і розуміємо, як важливо і складно обрати надійного постачальника електричної енергії.
+				<div class="margin"></div>
+				<span>
+					Наші принципи
+				</span>
+				— однакові, а головне якісні, умови постачання для всіх і кожного. Ми не розділяємо наших клієнтів на «великих» і «малих», а навпаки надихаємо бізнес наших клієнтів на рух до лідерства.
+				<div class="margin"></div>
+				<span>
+					Наша місія 
+				</span>
+				— створення комфортних умов співпраці в новій моделі роботи енергоринку. Використовуючи передові системи й технології, ми надаємо звіти, статичні та аналітичні дані по споживанню і ціноформуванню. Ви завжди будете впевнені, за що Ви сплачуєте.
+				<div class="margin"></div>
+				<span>
+					Наша мета 
+				</span>
+				— взаємовигідна співпраця. Партнери, як і друзі, перевіряються часом. Ми завжди керуємося потребами підприємств-споживачів, щоб перша угода між нашими сторонами розвивалася у постійну взаємовигідну співпрацю.
+			</div>
+			<img src="img/about-img-sm.png" alt="" class="about__img">
+		</div>
+	</section>
+	<section class="benefits" id="benefits">
+		<div class="wrap">
+			<div class="benefits__title title-h2">
+				Переваги роботи з нами
+			</div>
+			<div class="benefits__cont benefits__cont-variant-first">
+				<div class="benefits__cont-text">
+					<div class="benefits__cont-text_white">
+						Електроенергія по собівартості
+					</div>
+					<div class="benefits__cont-title">
+						Жодних прихованих комісій
+					</div>
+					<div class="benefits__cont-text_default">
+						Ви сплачуєте фіксовану сумму за місячне обслуговування згідно нашого пакетного рішення, яке вже включає в себе всі витрати по роботі на всіх сегментах ринку. Замовляєте необхідну кількість електроенергії для свого бізнесу на наступний місяць — отримуєте її по ринквоій ціні без будь-яких додаткових комісій.
+					</div>
+				</div>
+				<div class="benefits__cont-pic-wrap">
+					<img src="img/benef-1.png" alt="">
+				</div>
+			</div>
+			<div class="benefits__cont benefits__cont-variant-second">
+				<div class="benefits__cont-pic-wrap">
+					<img src="img/benef-2.png" alt="">
+				</div>
+				<div class="benefits__cont-text">
+					<div class="benefits__cont-text_white">
+						Доступ до інформації 24/7
+					</div>
+					<div class="benefits__cont-title">
+						Аналітичні дані
+					</div>
+					<div class="benefits__cont-text_default">
+						Особистий кабінет споживача - прозорість та зручність доступу до необхідної інформації в одному місці: звіти по споживанню, ціна електричної енергії на ринку, діючі тарифи та інша корисна інформація.
+					</div>
+				</div>
+			</div>
+			<div class="benefits__cont benefits__cont-variant-first">
+				<div class="benefits__cont-text">
+					<div class="benefits__cont-text_white">
+						Контроль витрат
+					</div>
+					<div class="benefits__cont-title">
+						Гнучкі розрахунки
+					</div>
+					<div class="benefits__cont-text_default">
+						Погоджуємо з Вами індивідуальний, зручний саме для Вашого бізнесу, графік оплати за спожиту електричну енергію. Використовуйте свої обігові кошти раціонально!
+					</div>
+				</div>
+				<div class="benefits__cont-pic-wrap">
+					<img src="img/benef-3.png" alt="">
+				</div>
+			</div>
+			<div class="benefits__cont benefits__cont-variant-second">
+				<div class="benefits__cont-pic-wrap">
+					<img src="img/benef-4.png" alt="">
+				</div>
+				<div class="benefits__cont-text">
+					<div class="benefits__cont-text_white">
+						Завжди на зв’язку
+					</div>
+					<div class="benefits__cont-title">
+						Маєте питання?
+					</div>
+					<div class="benefits__cont-text_default">
+						Ніяких розмов з автовідповідачами! Наші фахівці завжди на зв'язку та готові надати відповідь на будь-які запитання зручним саме для Вас способ.
+						<div class="margin"></div>
+						Телефона розмова, або будь-який мессенджер - вирішувати Вам.
+					</div>
+				</div>
+			</div>
+			<div class="benefits__text_sm">
+				Традиції майбутнього вже сьогодні! Дізнайтесь більше про переваги пакетних рішень у наших фахівців.
+			</div>
+			<div class="benefits__button-wrap">
+				<button class="benefits__button btn">
+					Обрати пропозицію
+				</button>				
+			</div>
+			
+		</div>
+	</section>
+	<section class="user" id="user">
+		<div class="wrap">
+			<h2 class="user__title title-h2">
+				Як укласти 
+				<span>
+					з нами угоду?	
+				</span>
+			</h2>
+			<div class="user__list">
+				<div class="user__item">
+					<img src="img/ic-1.svg" alt="" class="user__img">
+					<div class="user__text">
+						Оберіть 
+						<span>
+							пакетне рішення
+						</span>
+						згідно Вашого місячного споживання та заповніть форму на сайті
+					</div>
+				</div>
+				<div class="user__item">
+					<img src="img/ic-2.svg" alt="" class="user__img">
+					<div class="user__text">
+						Узгодьте 
+						<span>
+							індивідуальний графік
+						</span>
+						оплати та інші умови
+					</div>
+				</div>
+				<div class="user__item">
+					<img src="img/ic-3.svg" alt="" class="user__img">
+					<div class="user__text">
+						Підпишіть
+						<span>
+							документи
+						</span>
+						<a href="">
+							Проект договору
+							<span>
+								→
+							</span>
+						</a>
+						<a href="">
+							Проект заяви
+							<span>
+								→
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h2 class="user__accordeon-title title-h2">
+				Інформація
+				<span>
+					для споживача
+				</span>
+			</h2>
+			<div class="user__panel">
+				<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Укладення договору про постачання електричної енергії 
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse">
+						<div class="panel-body">
+							<div class="panel__title">
+								Комерційні пропозиції
+							</div>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Комерційна пропозиція 1
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Комерційна пропозиція 2
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Договір про постачання електричної енергії споживачу
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									PDF
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Заява-приєднання до договору
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+								<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Інструкція про подання звернення
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse">
+						<div class="panel-body">
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Інструкція про подання звернення/скарги/претензії
+								</div>
+							</a>
+								<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Вирішення спорів та Порядок надання споживачами звернень, скарг, претензій, надання повідомлень про загрозу електробезпеці та їх розгляду
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Оператори систем розподілу
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse">
+						<div class="panel-body">
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Вінницька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">	
+									Волинська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Дніпропетровська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Донецька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Житомирська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Закарпатська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Запорізька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Івано-Франківська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Київська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Кіровоградська область	
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Луганська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Львівська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Миколаївська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Одеська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Полтавська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Рівненська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Сумська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Тернопільська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Харківська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Херсонська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Хмельницька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Черкаська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Чернівецька область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									Чернігівська область
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text">
+									м. Київ
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Нормативні акти
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse">
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про ринок електричної енергії»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про Національну комісію, що здійснює державне регулювання у сферах енергетики та комунальних послуг»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 307 «Про затвердження Правил ринку»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 308 «Про затвердження Правил ринку «на добу наперед» та внутрішньодобового ринку»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 309 «Про затвердження Кодексу системи передачі»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 310 «Про затвердження Кодексу систем розподілу»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 311 «Про затвердження Кодексу комерційного обліку електричної енергії»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 14.03.2018 № 312 «Про затвердження Правил роздрібного ринку електричної енергії»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 12.06.2018 № 375 «Про затвердження Порядку забезпечення стандартів якості електропостачання та надання компенсацій споживачам за їх недотримання»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 12.06.2018 № 374 Про затвердження форм звітності щодо показників якості електропостачання та інструкцій щодо їх заповнення
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 27.12.2017 № 1469 «Про затвердження Ліцензійних умов провадження господарської діяльності з постачання електричної енергії споживачу»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про звернення громадян»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Закон України «Про особливості доступу до інформації у сферах постачання електричної енергії, природного газу, теплопостачання, централізованого постачання гарячої води, централізованого питного водопостачання та водовідведення»
+							</div>
+						</a>
+						<a href="" class="panel__content">
+							<span class="panel__content-link">
+								<img src="img/download-cloud.svg" alt="">
+								LINK
+							</span>
+							<div class="panel__content-text panel__content-text_light">
+								Постанова НКРЕКП від 12.03.2009 № 299 «Про затвердження Положення про Інформаційно-консультаційний центр по роботі із споживачами електричної енергії»
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Веб-сторінки державних органів
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse">
+						<div class="panel-body">
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Національна комісія, що здійснює державне регулювання у сфері енергетики та комунальних послуг
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Міністерство енергетики та вугільної промисловості України
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Державна інспекція енергетичного нагляду України
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Постачальник "останньої надії" ДПЗД «Укрінтеренерго»
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Антимонопольний комітет України
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Оператор системи передачі НЕК «УКРЕНЕРГО»
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Державне підприємство «Оператор ринку»	
+								</div>
+							</a>
+							<a href="" class="panel__content">
+								<span class="panel__content-link">
+									<img src="img/download-cloud.svg" alt="">
+									LINK
+								</span>
+								<div class="panel__content-text panel__content-text_light">
+									Державне підприємство «Гарантований покупець»
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading">
+						<button class="panel__item">
+							Ціна 1 МВТ * год у оператора ринку
+							<img src="img/arr-d-w.svg" alt="">
+						</button>
+					</div>
+					<div class="panel-collapse panel-collapse__price">
+						<div class="panel-body">
+							<div class="panel-second">
+								<div class="panel-heading-second">
+									<button class="panel__item-second">
+										2019
+										<img src="img/arr-d-w.svg" alt="">
+									</button>
+								</div>
+								<div class="panel-collapse-second">
+									<div class="panel-body-second">
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Липень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Серпень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Вересень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Жовтень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Листопад
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Грудень
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel-second">
+								<div class="panel-heading-second">
+									<button class="panel__item-second">
+										2020 
+										<img src="img/arr-d-w.svg" alt="">
+									</button>
+								</div>
+								<div class="panel-collapse-second">
+									<div class="panel-body-second">
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Січень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Лютий
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Березень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Квітень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Травень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Червень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Липень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Серпень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Вересень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Жовтень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Листопад
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Грудень
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel-second">
+								<div class="panel-heading-second">
+									<button class="panel__item-second">
+										2021
+										<img src="img/arr-d-w.svg" alt="">
+									</button>
+								</div>
+								<div class="panel-collapse-second">
+									<div class="panel-body-second">
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Січень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Лютий
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Березень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Квітень
+											</div>
+										</a>
+										<a href="" class="panel__content">
+											<span class="panel__content-link">
+												<img src="img/download-cloud.svg" alt="">
+												XLS
+											</span>
+											<div class="panel__content-text panel__content-text_light">
+												Травень
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="wrap">
+			<div class="contacts__block">
+				<div class="contacts__cont">
+					<h3 class="contacts__title">
+						Контакти та служба підтримки
+					</h3>
+					<div class="contacts__soc-media">
+						<a href="#" class="soc-media__item">
+							<img src="img/mess.svg" alt="">
+							<div class="soc-media__name">
+								Messenger
+							</div>
+						</a>
+						<a href="#" class="soc-media__item">
+							<img src="img/viber.svg" alt="">
+							<div class="soc-media__name">
+								Viber
+							</div>
+						</a>
+						<a href="#" class="soc-media__item">
+							<img src="img/telegram.svg" alt="">
+							<div class="soc-media__name">
+								Telegram
+							</div>
+						</a>
+					</div>
+					<div class="contacts__questions">
+						<div class="questions__title">
+							Залишились питання?
+						</div>
+						<div class="questions__subtitle">
+							Зателефонуйте або напишіть нам
+						</div>
+						<a href="tel:0445808588" class="questions-contact__tel">
+							(044) 580 85 88
+						</a>
+						<a href="tel:0442780741" class="questions__contact contact__mail">
+							centralna@gmail.com
+						</a>
+						<a href="tel:0442780741" class="questions__contact contact__fb">
+							centralna.energy
+						</a>
+						<a href="tel:0442780741" class="questions__contact contact__in">
+							centralna.energy
+						</a>
+					</div>
+				</div>
+				<div class="contact__map-wrap">
+					<div class="contact__map-block">
+						<iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0275434675846!2d30.565408815614095!3d50.40332427946891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5f45eb98985%3A0xf53dbebcc4d9cb14!2z0YPQuy4g0KHRgtGA0L7QudC40L3QtNGD0YHRgtGA0LjQuCwgNSwg0JrQuNC10LIsIDAxMDEz!5e0!3m2!1sru!2sua!4v1623704163249!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>	
+					</div>
+					<div class="map__text">
+						<span>
+							Адреса:
+						</span> 
+						01013, м. Київ, вул. Будіндустрії 5
+					</div>
+					<div class="map__text">
+						<span>
+							Графік роботи:
+						</span> 
+						Пн-Пт з 09:00 до 17:00 Сб-Нд – вихідний
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="footer__all-rights-reserved">
+			© 2021 ЕК "Центральна". Усі права захищені
+		</div>
+	</footer>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

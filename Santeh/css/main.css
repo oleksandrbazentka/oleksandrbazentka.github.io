@@ -223,13 +223,12 @@ a {
 }
 
 .popup__call-bg,
-.popup__spec-bg,
-.popup__success-bg {
+.popup__spec-bg {
+	display: none;
     background: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0px;
     left: 0px;
-    display: flex;
     z-index: 10;
     justify-content: center;
     align-items: center;
@@ -237,14 +236,8 @@ a {
     height: 100%;
 }
 
-.popup-bg {
-	opacity: 0;
-   	visibility: hidden;
-}
-
 .popup__call,
-.popup__spec,
-.popup__success {
+.popup__spec {
 	background: white;
 	position: relative;
 	display: flex;
@@ -258,23 +251,8 @@ a {
     padding: 0px 28px;
 }
 
-.popup__success {
-	height: 291px;
-	justify-content: center;
-}
-
-.popup__success-bg {
-	display: none;
-}
-
-.popup-bg.active {
-   opacity: 1;
-   visibility: visible;
-}
-
 .popup__close,
-.close__spec,
-.popup__close-success {
+.close__spec {
 	position: absolute;
 	top: -21px;
 	right: -21px;
@@ -359,7 +337,7 @@ a {
     height: 12px;
     width: 12px;
     left: 3px;
-    bottom: 2px;
+    bottom: 2.07px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -576,13 +554,10 @@ input:checked + .slider:before {
 }
 
 .fancybox__wrap {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.fancybox img {
-	width: 100%;
-	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .works__title {
@@ -601,12 +576,6 @@ input:checked + .slider:before {
 	font-size: 24px;
 	line-height: 150%;
 	margin-bottom: 31px;
-}
-
-.fancybox {
-	width: 100%;
-	height: 100%;
-	padding: 5px;
 }
 
 .fancybox__video {
@@ -1023,16 +992,10 @@ input:checked + .slider:before {
 	bottom: -28px;
 }
 
-.map {
-	position: relative;
-    height: 440px;
-}
-
-.map__yandex {
+/*.map__yandex {
 	width: 100%;
 	position: absolute;
-
-}
+}*/
 
 .map__wrap {
 	position: relative;
@@ -1042,16 +1005,14 @@ input:checked + .slider:before {
 }
 
 .map__contacts {
-    position: absolute;
-    left: 50%;
-    top: 72px;
-    margin-left: -638px;
-    background: white;
-    max-width: 407px;
-    width: 100%;
-    height: 271px;
-    padding: 42px 0px 33px 29px;
-    border-radius: 10px;
+	position: absolute;
+	left: 0px;
+	background: white;
+	max-width: 407px;
+	width: 100%;
+	height: 271px;
+	padding: 42px 0px 33px 29px;
+	border-radius: 10px;
 }
 
 .contacts__title {
@@ -1134,8 +1095,7 @@ input:checked + .slider:before {
 	}
 
 	.map__contacts {
-	    margin-left: 0px;
-	    left: 15px;
+	    margin-left: 15px;
 	}
 
 	.fancybox {
@@ -1214,10 +1174,6 @@ input:checked + .slider:before {
 
 	.treatment__text_normal {
 	    font-size: 12px;
-	}
-
-	.fancybox__wrap {
-	    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	.soc-media__item {
@@ -1419,10 +1375,6 @@ input:checked + .slider:before {
 	    min-height: 53px;
 	}
 
-	.fancybox__wrap {
-	    grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-
 	.stage__list {
 	    justify-content: center;
 	}
@@ -1582,7 +1534,12 @@ input:checked + .slider:before {
 	}
 
 	.fancybox__wrap {
-	    grid-template-columns: 1fr 1fr 1fr;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.fancybox {
+	    padding: 5px;
 	}
 
 	.expirience {
@@ -1774,7 +1731,7 @@ input:checked + .slider:before {
 	}
 
 	.price__item {
-	    margin: 0px 0px 41px 0px;
+	    margin: 0px 20px 41px 20px;
 	}
 
 	.services__calculate {
@@ -1844,8 +1801,15 @@ input:checked + .slider:before {
 	    margin-bottom: 29px;
 	}
 
-	.fancybox__wrap {
-	    grid-template-columns: 1fr 1fr;
+	.fancybox {
+	    padding: 5px;
+	    width: 142px;
+	    height: 142px;
+	}
+
+	.fancybox img {
+		widows: 100%;
+		height: 100%;
 	}
 
 	.fancybox__video:after {
@@ -2010,7 +1974,6 @@ input:checked + .slider:before {
 	    padding: 20px 20px 20px 20px;
 	    margin: 0px;
 	    left: 50%;
-	    top: 50px;
 	    margin-left: -148px;
 	}
 
@@ -2126,17 +2089,93 @@ input:checked + .slider:before {
 	}
 
 	.popup__close,
-	.close__spec,
-	.popup__close-success {
+	.close__spec {
 	    top: -25px;
 	    right: -1px;
 	}
+}
 
-	.popup__title-success {
-		margin-bottom: 6px;
-	}
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 440px;
+  margin: 3em 0 2em 0;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('../img/yandex-before-load-marker.png') #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+}
+ 
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 440px;
+  cursor: pointer;
+  background-color: transparent;
+}
 
-	.popup__success {
-		height: 296px;
-	}
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+ 
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+ 
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+ 
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+ 
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+ 
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" integrity="sha512-Ujn3LMQ8mHWqy7EPP32eqGKBhBU8v39JRIfCer4nTZqlsSZIwy5g3Wz9SaZrd6pp3vmjI34yyzguZ2KQ66CLSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
 </head>
 <body>
 <div class="preloader">
@@ -29,18 +31,21 @@
 						</a>
 					</div>
 					<div class="header__links">
-						<a href="#tariffs">
-							Підключитись
+						<a href="#about">
+							Про нас
 						</a>
-						<a href="login.html" class="header__login">
+						<a href="#benefits">
+							Переваги
+						</a>
+						<a href="login-page.html" class="header__login">
 							<div>
 								Вхід
 							</div>
 							<img src="img/login.svg" alt="">
 						</a>
-					<button class="header__button btn">
+					<a href="#tariffs"><button class="header__button btn">
 						Обрати пропозицію
-					</button>
+					</button></a>
 				</div>
 				</ul>
 			</nav>
@@ -64,7 +69,12 @@
 		            </li>
 		            <li class="nav-item">
 		                <a href="#about">
-							Підключитись
+							Про нас
+						</a>
+		            </li>
+					<li class="nav-item">
+		                <a href="#benefits">
+							Переваги
 						</a>
 		            </li>
 	            </ul>
@@ -122,173 +132,125 @@
 							електроенергії за минулі місяці
 						</div>
 						<div class="price__selects-wrap">
-							<div class="price__selects">
-								<select name="choose-osr" id="choose-osr" class="price__select">
+							<div class="price__selects price__selects__osr">
+								<select onchange="updatePrice()" name="choose-osr" id="choose-osr" class="price__select">
 									<option value="Оберіть ОСР" selected disabled>
 										Оберіть ОСР
 									</option>
-									<option value="УКРЕНЕРГО">
-										УКРЕНЕРГО
+									<option value="MGA-02200">
+										ПРАТ «ДТЕК КИЇВСЬКІ ЕЛЕКТРОМЕРЕЖІ»
 									</option>
-									<option value="УКРЕНЕРГО">
-										"НАФТОГАЗ ТЕПЛО" м.Новояворівськ
+									<option value="MGA-03000">
+										ПРАТ «ДТЕК КИЇВСЬКІ РЕГІОНАЛЬНІ ЕЛЕКТРОМЕРЕЖІ»
 									</option>
-									<option value="УКРЕНЕРГО">
-										"НАФТОГАЗ ТЕПЛО" м. Новий розділ
+									<option value="MGA-02000">
+										АТ «СУМИОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ДТЕК ДНІПРОВСЬКІ ЕЛЕКТРОМЕРЕЖІ
+									<option value="MGA-02000">
+										АТ «ЧЕРНІГІВОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ДТЕК ДОНЕЦЬКІ ЕЛЕКТРОМЕРЕЖІ
+									<option value="MGA-02400">
+										АТ «ДТЕК ДНІПРОВСЬКІ ЕЛЕКТРОМЕРЕЖІ»
 									</option>
-									<option value="УКРЕНЕРГО">
-										МИКОЛАЇВОБЛЕНЕРГО
+									<option value="MGA-02500">
+										АТ «МИКОЛАЇВОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ОДЕСАОБЛЕНЕРГО
+									<option value="MGA-01000">
+										АТ «ДТЕК ОДЕСЬКІ ЕЛЕКТРОМЕРЕЖІ»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ПРИКАРПАТТЯОБЛЕНЕРГО
+									<option value="MGA-00800">
+										АТ «ПРИКАРПАТТЯОБЛЕНЕРГО
 									</option>
-									<option value="УКРЕНЕРГО">
-										УКРЗАЛІЗНИЦЯ
+									<option value="MGA-02900">
+										АТ «УКРЗАЛІЗНИЦЯ»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ХАРКІВОБЛЕНЕРГО
+									<option value="MGA-01200">
+										АТ «ХАРКІВОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ХЕРСОНОБЛЕНЕРГО
+									<option value="MGA-01400">
+										АТ «ХЕРСОНОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ХМЕЛЬНИЦЬКОБЛЕНЕРГО
+									<option value="MGA-01800">
+										АТ «ХМЕЛЬНИЦЬКОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ЧЕРНІВЦІОБЛЕНЕРГО
+									<option value="MGA-00300">
+										АТ «ЧЕРНІВЦІОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ЖИТОМИРОБЛЕНЕРГО
+									<option value="MGA-01600">
+										АТ«ЖИТОМИРОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ТЕРНОПІЛЬОБЛЕНЕРГО
+									<option value="MGA-00200">
+										ВАТ «ТЕРНОПІЛЬОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										РЕГІОНАЛЬНІ ЕЛЕКТРИЧНІ МЕРЕЖІ
+									<option value="MGA-00100">
+										АТ «ВІННИЦЯОБЛЕНЕРГО»
 									</option>
-									<option value="УКРЕНЕРГО">
-										АТОМСЕРВІС
+									<option value="MGA-00400">
+										ПАТ «ЗАПОРІЖЖЯОБЛЕНЕРГО
 									</option>
-									<option value="УКРЕНЕРГО">
+									<option value="MGA-01100">
+										ПАТ «ПОЛТАВАОБЛЕНЕРГО»
+									</option>
+									<option value="MGA-01900">
+										ПАТ «ЧЕРКАСИОБЛЕНЕРГО»
+									</option>
+									<option value="MGA-00600">
+										ПРАТ «ВОЛИНЬОБЛЕНЕРГО»
+									</option>
+									<option value="">
+										ПРАТ «ДТЕК ПЕМ-ЕНЕРГОВУГІЛЛЯ»
+									</option>
+									<option value="MGA-00701">
+										ПРАТ «ЗАКАРПАТТЯОБЛЕНЕРГО»
+									</option>
+									<option value="MGA-02100">
+										ПРАТ «КІРОВОГРАДОБЛЕНЕРГО»
+									</option>
+									<option value="MGA-00900">
+										ПРАТ «ЛЬВІВОБЛЕНЕРГО»
+									</option>
+									<option value="MGA-02700">
+										ПРАТ «ПЕЕМ «ЦЕК»
+									</option>
+									<option value="MGA-01500">
+										ПРАТ «РІВНЕОБЛЕНЕРГО»
+									</option>
+									<option value="MGA-00500">
+										АТ «ДТЕК ДОНЕЦЬКІ ЕЛЕКТРОМЕРЕЖІ»
+									</option>
+									<option value="MGA-02600">
+										ТОВ «ДТЕК ВИСОКОВОЛЬТНІ МЕРЕЖІ»
+										<option value="MGA-02800">
+										ДП «РЕГІОНАЛЬНІ ЕЛЕКТРИЧНІ МЕРЕЖІ»
+									</option>
+									<option value="MGA-01700">
+										ДПЕМ ПРАТ «АТОМСЕРВІС»
+									</option>
+									<option value="MGA-03000">
 										МІСЬКІ ЕЛЕКТРИЧНІ МЕРЕЖІ
 									</option>
-									<option value="УКРЕНЕРГО">
-										ВІННИЦЯОБЛЕНЕРГО
 									</option>
-									<option value="УКРЕНЕРГО">
-										ЗАПОРІЖЖЯОБЛЕНЕРГО
+									<option value="MGA-03300">
+										ТОВ «ЛУГАНСЬКЕ ЕНЕРГЕТИЧНЕ ОБ’ЄДНАННЯ»
 									</option>
-									<option value="УКРЕНЕРГО">
-										ПОЛТАВАОБЛЕНЕРГО
+									<option value="MGA-03400">
+										"НАФТОГАЗ ТЕПЛО" м.Новояворівськ
 									</option>
-									<option value="СУМИОБЛЕНЕРГО">
-										СУМИОБЛЕНЕРГО
+									<option value="MGA-03410">
+										"НАФТОГАЗ ТЕПЛО" м. Новий розділ
 									</option>
-									<option value="ЧЕРКАСИОБЛЕНЕРГО">
-										ЧЕРКАСИОБЛЕНЕРГО
-									</option>
-									<option value="ЧЕРНІГІВОБЛЕНЕРГО">
-										ЧЕРНІГІВОБЛЕНЕРГО
-									</option>
-									<option value="ГАРАНТ ЕНЕРГО М*">
-										ГАРАНТ ЕНЕРГО М*
-									</option>
-									<option value="ГАРАНТ ЕНЕРГО М**">
-										ГАРАНТ ЕНЕРГО М**
-									</option>
-									<option value="ВОЛИНЬОБЛЕНЕРГО">
-										ВОЛИНЬОБЛЕНЕРГО
-									</option>
-									<option value="ДТЕК КИЇВСЬКІ ЕЛЕКТРОМЕРЕЖІ">
-										ДТЕК КИЇВСЬКІ ЕЛЕКТРОМЕРЕЖІ
-									</option>
-									<option value="ДТЕК ПЕМ-ЕНЕРГОВУГІЛЛЯ">
-										ДТЕК ПЕМ-ЕНЕРГОВУГІЛЛЯ
-									</option>
-									<option value="ЗАКАРПАТТЯОБЛЕНЕРГО">
-										ЗАКАРПАТТЯОБЛЕНЕРГО
-									</option>
-									<option value="КИЇВОБЛЕНЕРГО">
-										КИЇВОБЛЕНЕРГО
-									</option>
-									<option value="КІРОВОГРАДОБЛЕНЕРГО">
-										КІРОВОГРАДОБЛЕНЕРГО
-									</option>
-									<option value="ЛЬВІВОБЛЕНЕРГО">
-										ЛЬВІВОБЛЕНЕРГО
-									</option>
-									<option value="ПЕЕМ «ЦЕК»">
-										ПЕЕМ «ЦЕК»
-									</option>
-									<option value="РІВНЕОБЛЕНЕРГО">
-										РІВНЕОБЛЕНЕРГО
-									</option>
-									<option value="ДТЕК ВИСОКОВОЛЬТНІ МЕРЕЖІ">
-										ДТЕК ВИСОКОВОЛЬТНІ МЕРЕЖІ
-									</option>
-									<option value="ЛУГАНСЬКЕ ЕНЕРГЕТИЧНЕ ОБ’ЄДНАННЯ">
-										ЛУГАНСЬКЕ ЕНЕРГЕТИЧНЕ ОБ’ЄДНАННЯ
+									<option value="MGA-00000">
+										УКРЕНЕРГО
 									</option>
 								</select>
 							</div>
 							<div class="price__selects">
-								<select name="choose-osr" id="choose-osr" class="price__select price__select_second">
-									<option value="Місяць" selected disabled>
-										Місяць
-									</option>
-									<option value="1">
-										1
-									</option>
-									<option value="2">
-										2
-									</option>
-									<option value="3">
-										3
-									</option>
-									<option value="4">
-										4
-									</option>
-									<option value="5">
-										5
-									</option>
-									<option value="6">
-										6
-									</option>
-									<option value="7">
-										7
-									</option>
-									<option value="8">
-										8
-									</option>
-									<option value="9">
-										9
-									</option>
-									<option value="10">
-										10
-									</option>
-									<option value="11">
-										11
-									</option>
-									<option value="12">
-										12
-									</option>
-								</select>
+								<input type='text' data-min-view="months" data-view="months" data-date-format="MM yyyy" id="datepicker" class="datepicker-here price__select price__select_second" />
 							</div>							
 						</div>
 						<div class="price__result">
 							Ціна закупівлі:  
-							<span>
-								1.34 грн
-							</span>
+							<span id="price__price">0.0 грн</span>
 						</div>
 					</div>
 				</div>
@@ -331,7 +293,7 @@
 						<div class="card__text card__text_last">
 							✓ Безкоштовний консалтинг
 						</div>
-						<button class="btn card__button">
+						<button class="btn card__button btn__modal">
 							Обрати
 						</button>
 					</div>
@@ -362,7 +324,7 @@
 						<div class="card__text card__text_last">
 							✓ Безкоштовний консалтинг
 						</div>
-						<button class="btn card__button">
+						<button class="btn card__button btn__modal">
 							Обрати
 						</button>
 					</div>
@@ -393,7 +355,7 @@
 						<div class="card__text card__text_last">
 							✓ Безкоштовний консалтинг
 						</div>
-						<button class="btn card__button">
+						<button class="btn card__button btn__modal">
 							Обрати
 						</button>
 					</div>
@@ -426,7 +388,7 @@
 						<div class="card__text card__text_last">
 							✓ Безкоштовний консалтинг
 						</div>
-						<button class="btn card__button">
+						<button class="btn card__button btn__modal">
 							Обрати
 						</button>
 					</div>
@@ -457,7 +419,7 @@
 						<div class="card__text card__text_last">
 							✓ Безкоштовний консалтинг
 						</div>
-						<button class="btn card__button">
+						<button class="btn card__button btn__modal">
 							Обрати
 						</button>
 					</div>
@@ -488,11 +450,14 @@
 						<div class="card__text card__text_last">
 							✓ Безкоштовний консалтинг
 						</div>
-						<button class="btn card__button">
+						<button class="btn card__button btn__modal">
 							Обрати
 						</button>
 					</div>
 				</div>
+			</div>
+			<div class="tariffs__text_not-pdv">
+				*Ціни вказані без ПДВ
 			</div>
 		</div>
 	</section>
@@ -605,9 +570,9 @@
 				Традиції майбутнього вже сьогодні! Дізнайтесь більше про переваги пакетних рішень у наших фахівців.
 			</div>
 			<div class="benefits__button-wrap">
-				<button class="benefits__button btn">
+				<a href="#tariffs"><button class="benefits__button btn">
 					Обрати пропозицію
-				</button>				
+				</button></a>	
 			</div>
 			
 		</div>
@@ -682,7 +647,7 @@
 							<div class="panel__title">
 								Комерційні пропозиції
 							</div>
-							<a href="" class="panel__content">
+							<a href="" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									PDF
@@ -691,7 +656,7 @@
 									Комерційна пропозиція 1
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									PDF
@@ -700,7 +665,7 @@
 									Комерційна пропозиція 2
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									PDF
@@ -709,7 +674,7 @@
 									Договір про постачання електричної енергії споживачу
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									PDF
@@ -721,7 +686,7 @@
 						</div>
 					</div>
 				</div>
-								<div class="panel">
+				<div class="panel">
 					<div class="panel-heading">
 						<button class="panel__item">
 							Інструкція про подання звернення
@@ -730,7 +695,7 @@
 					</div>
 					<div class="panel-collapse">
 						<div class="panel-body">
-							<a href="" class="panel__content">
+							<a href="" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -739,7 +704,7 @@
 									Інструкція про подання звернення/скарги/претензії
 								</div>
 							</a>
-								<a href="" class="panel__content">
+								<a href="" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -760,7 +725,7 @@
 					</div>
 					<div class="panel-collapse">
 						<div class="panel-body">
-							<a href="" class="panel__content">
+							<a href="https://voe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -769,7 +734,7 @@
 									Вінницька область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://energy.volyn.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -778,7 +743,7 @@
 									Волинська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.dtek-dnem.com.ua/ru" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -787,7 +752,7 @@
 									Дніпропетровська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.dtek-dem.com.ua/ru" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -796,7 +761,7 @@
 									Донецька область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="http://www.ztoe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -805,7 +770,7 @@
 									Житомирська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://zakarpat.energy/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -814,7 +779,7 @@
 									Закарпатська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.zoe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -823,7 +788,7 @@
 									Запорізька область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.oe.if.ua/uk" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -832,7 +797,7 @@
 									Івано-Франківська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.dtek-krem.com.ua/ua" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -841,7 +806,7 @@
 									Київська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://kiroe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -850,7 +815,7 @@
 									Кіровоградська область	
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.en.lg.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -859,7 +824,7 @@
 									Луганська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.loe.lviv.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -868,7 +833,7 @@
 									Львівська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.energy.mk.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -877,7 +842,7 @@
 									Миколаївська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://oblenergo.odessa.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -886,7 +851,7 @@
 									Одеська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.poe.pl.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -895,7 +860,7 @@
 									Полтавська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.roe.vsei.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -904,7 +869,7 @@
 									Рівненська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.soe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -913,7 +878,7 @@
 									Сумська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.toe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -922,7 +887,7 @@
 									Тернопільська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="http://www.oblenergo.kharkov.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -931,7 +896,7 @@
 									Харківська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://ksoe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -940,7 +905,7 @@
 									Херсонська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://hoe.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -949,7 +914,7 @@
 									Хмельницька область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="http://cherkasyoblenergo.com/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -958,7 +923,7 @@
 									Черкаська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="http://oblenergo.cv.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -967,7 +932,7 @@
 									Чернівецька область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://chernihivoblenergo.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -976,7 +941,7 @@
 									Чернігівська область
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.dtek-kem.com.ua/ua" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -996,7 +961,7 @@
 						</button>
 					</div>
 					<div class="panel-collapse">
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/2019-19#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1005,7 +970,7 @@
 								Закон України «Про ринок електричної енергії»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/1540-19#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1014,7 +979,7 @@
 								Закон України «Про Національну комісію, що здійснює державне регулювання у сферах енергетики та комунальних послуг»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/1540-19#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1023,7 +988,7 @@
 								Постанова НКРЕКП від 14.03.2018 № 307 «Про затвердження Правил ринку»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0308874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1032,7 +997,7 @@
 								Постанова НКРЕКП від 14.03.2018 № 308 «Про затвердження Правил ринку «на добу наперед» та внутрішньодобового ринку»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0309874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1041,7 +1006,7 @@
 								Постанова НКРЕКП від 14.03.2018 № 309 «Про затвердження Кодексу системи передачі»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0310874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1050,7 +1015,7 @@
 								Постанова НКРЕКП від 14.03.2018 № 310 «Про затвердження Кодексу систем розподілу»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0311874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1059,7 +1024,7 @@
 								Постанова НКРЕКП від 14.03.2018 № 311 «Про затвердження Кодексу комерційного обліку електричної енергії»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0312874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1068,7 +1033,7 @@
 								Постанова НКРЕКП від 14.03.2018 № 312 «Про затвердження Правил роздрібного ринку електричної енергії»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0375874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1077,7 +1042,7 @@
 								Постанова НКРЕКП від 12.06.2018 № 375 «Про затвердження Порядку забезпечення стандартів якості електропостачання та надання компенсацій споживачам за їх недотримання»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v0374874-18#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1086,7 +1051,7 @@
 								Постанова НКРЕКП від 12.06.2018 № 374 Про затвердження форм звітності щодо показників якості електропостачання та інструкцій щодо їх заповнення
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/v1469874-17#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1095,7 +1060,7 @@
 								Постанова НКРЕКП від 27.12.2017 № 1469 «Про затвердження Ліцензійних умов провадження господарської діяльності з постачання електричної енергії споживачу»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/393/96-%D0%B2%D1%80#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1104,7 +1069,7 @@
 								Закон України «Про звернення громадян»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/887-19#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1113,7 +1078,7 @@
 								Закон України «Про особливості доступу до інформації у сферах постачання електричної енергії, природного газу, теплопостачання, централізованого постачання гарячої води, централізованого питного водопостачання та водовідведення»
 							</div>
 						</a>
-						<a href="" class="panel__content">
+						<a href="https://zakon.rada.gov.ua/laws/show/z0308-09#Text" class="panel__content" target="_blank">
 							<span class="panel__content-link">
 								<img src="img/download-cloud.svg" alt="">
 								LINK
@@ -1133,7 +1098,7 @@
 					</div>
 					<div class="panel-collapse">
 						<div class="panel-body">
-							<a href="" class="panel__content">
+							<a href="https://www.nerc.gov.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1142,7 +1107,7 @@
 									Національна комісія, що здійснює державне регулювання у сфері енергетики та комунальних послуг
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="http://mpe.kmu.gov.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1151,7 +1116,7 @@
 									Міністерство енергетики та вугільної промисловості України
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://ua.energy/about/struktura/derzhinspekciya/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1160,7 +1125,7 @@
 									Державна інспекція енергетичного нагляду України
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://uie.kiev.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1169,7 +1134,7 @@
 									Постачальник "останньої надії" ДПЗД «Укрінтеренерго»
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://amcu.gov.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1178,7 +1143,7 @@
 									Антимонопольний комітет України
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://ua.energy/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1187,7 +1152,7 @@
 									Оператор системи передачі НЕК «УКРЕНЕРГО»
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.oree.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1196,7 +1161,7 @@
 									Державне підприємство «Оператор ринку»	
 								</div>
 							</a>
-							<a href="" class="panel__content">
+							<a href="https://www.gpee.com.ua/" class="panel__content" target="_blank">
 								<span class="panel__content-link">
 									<img src="img/download-cloud.svg" alt="">
 									LINK
@@ -1226,7 +1191,7 @@
 								</div>
 								<div class="panel-collapse-second">
 									<div class="panel-body-second">
-										<a href="" class="panel__content">
+										<a href="RDN/2019/Price-07-2019.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1235,7 +1200,7 @@
 												Липень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2019/Price-08-2019.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1244,7 +1209,7 @@
 												Серпень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2019/Price-09-2019.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1253,7 +1218,7 @@
 												Вересень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2019/Price-10-2019.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1262,7 +1227,7 @@
 												Жовтень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2019/Price-11-2019.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1271,7 +1236,7 @@
 												Листопад
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2019/Price-12-2019.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1292,7 +1257,7 @@
 								</div>
 								<div class="panel-collapse-second">
 									<div class="panel-body-second">
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-01-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1301,7 +1266,7 @@
 												Січень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-02-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1310,7 +1275,7 @@
 												Лютий
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-03-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1319,7 +1284,7 @@
 												Березень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-04-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1328,7 +1293,7 @@
 												Квітень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-05-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1337,7 +1302,7 @@
 												Травень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-06-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1346,7 +1311,7 @@
 												Червень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-07-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1355,7 +1320,7 @@
 												Липень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-08-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1364,7 +1329,7 @@
 												Серпень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-09-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1373,7 +1338,7 @@
 												Вересень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-10-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1382,7 +1347,7 @@
 												Жовтень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-11-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1391,7 +1356,7 @@
 												Листопад
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2020/Price-12-2020.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1412,7 +1377,7 @@
 								</div>
 								<div class="panel-collapse-second">
 									<div class="panel-body-second">
-										<a href="" class="panel__content">
+										<a href="RDN/2021/Price-01-2021.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1421,7 +1386,7 @@
 												Січень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2021/Price-02-2021.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1430,7 +1395,7 @@
 												Лютий
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2021/Price-03-2021.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1439,7 +1404,7 @@
 												Березень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2021/Price-04-2021.xls" class="panel__content" target="_blank">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1448,7 +1413,7 @@
 												Квітень
 											</div>
 										</a>
-										<a href="" class="panel__content">
+										<a href="RDN/2021/Price-05-2021.xls" class="panel__content" target="">
 											<span class="panel__content-link">
 												<img src="img/download-cloud.svg" alt="">
 												XLS
@@ -1463,6 +1428,30 @@
 						</div>
 					</div>
 				</div>
+				<div class="user__block_second">
+					<h2 class="user__accordeon-title title-h2">
+						Інформація
+						<span>
+							для споживача
+						</span>
+					</h2>
+					<div class="panel-third">
+						<div class="panel-heading-third">
+							<button class="panel__item-third">
+								Веб-сторінки державних органів
+								<img src="img/arr-d-w.svg" alt="">
+							</button>
+						</div>
+						<div class="panel-collapse-third">
+							<div class="panel-body-third">
+								<div class="panel-third-text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Temporibus architecto, voluptatibus unde, vitae non veniam optio facere expedita exercitationem minima natus quia blanditiis est aspernatur placeat magni recusandae iure nesciunt.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>	
 	</section>
@@ -1480,13 +1469,13 @@
 								Messenger
 							</div>
 						</a>
-						<a href="#" class="soc-media__item">
+						<a href="viber://chat?number=+380954952495" class="soc-media__item">
 							<img src="img/viber.svg" alt="">
 							<div class="soc-media__name">
 								Viber
 							</div>
 						</a>
-						<a href="#" class="soc-media__item">
+						<a href="tg://resolve?domain=+380954952495" class="soc-media__item">
 							<img src="img/telegram.svg" alt="">
 							<div class="soc-media__name">
 								Telegram
@@ -1541,7 +1530,48 @@
 	</footer>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/datepicker.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script text="text/javascript">
+		var data = JSON.parse('{"MGA-02000": {"12.2020": 1.43, "1.2021": 1.46, "2.2021": 1.66, "3.2021": 1.36, "4.2021": 1.46, "5.2021": 1.01}, "MGA-02100": {"12.2020": 1.51, "1.2021": 1.44, "2.2021": 1.59, "3.2021": 1.31, "4.2021": 1.45, "5.2021": 0.98}, "MGA-02200": {"12.2020": 1.52, "1.2021": 1.44, "2.2021": 1.65, "3.2021": 1.35, "4.2021": 1.44, "5.2021": 1.0}, "MGA-02300": {"12.2020": 1.54, "1.2021": 1.46, "2.2021": 1.67, "3.2021": 1.37, "4.2021": 1.46, "5.2021": 1.01}, "MGA-02400": {"12.2020": 1.52, "1.2021": 1.44, "2.2021": 1.65, "3.2021": 1.35, "4.2021": 1.45, "5.2021": 1.0}, "MGA-02500": {"12.2020": 1.52, "1.2021": 1.45, "2.2021": 1.65, "3.2021": 1.28, "4.2021": 1.45, "5.2021": 0.97}, "MGA-02600": {"12.2020": 1.45, "1.2021": 1.4, "2.2021": 1.61, "3.2021": 1.31, "4.2021": 1.39, "5.2021": 0.93}, "MGA-02700": {"12.2020": 1.52, "1.2021": 1.44, "2.2021": 1.65, "3.2021": 1.35, "4.2021": 1.45, "5.2021": 0.99}, "MGA-02800": {"12.2020": 1.28, "1.2021": 1.41, "2.2021": 1.61, "3.2021": 1.24, "4.2021": 1.39, "5.2021": 0.93}, "MGA-02900": {"12.2020": 1.46, "1.2021": 1.43, "2.2021": 1.64, "3.2021": 1.34, "4.2021": 1.42, "5.2021": 0.96}, "MGA-03000": {"12.2020": 1.54, "1.2021": 1.46, "2.2021": 1.67, "3.2021": 1.36, "4.2021": 1.45, "5.2021": 1.0}, "MGA-03300": {"12.2020": 1.54, "1.2021": 1.46, "2.2021": 1.67, "3.2021": 1.36, "4.2021": 1.47, "5.2021": 1.01}, "MGA-03400": {"12.2020": 1.43, "1.2021": 1.46, "2.2021": 1.67, "3.2021": 1.32, "4.2021": 1.46, "5.2021": 1.0}, "MGA-03410": {"12.2020": 1.42, "1.2021": 1.48, "2.2021": 1.65, "3.2021": 1.32, "4.2021": 1.46, "5.2021": 1.01}, "MGA-00000": {"12.2020": 1.48, "1.2021": 1.42, "2.2021": 1.65, "3.2021": 1.28, "4.2021": 1.4, "5.2021": 0.93}, "": {"12.2020": 0.0, "1.2021": 0.0, "2.2021": 0.0, "3.2021": 0.0, "4.2021": 0.0, "5.2021": 0.0}, "MGA-00100": {"12.2020": 1.53, "1.2021": 1.45, "2.2021": 1.56, "3.2021": 1.32, "4.2021": 1.46, "5.2021": 0.96}, "MGA-00200": {"12.2020": 1.55, "1.2021": 1.46, "2.2021": 1.6, "3.2021": 1.37, "4.2021": 1.46, "5.2021": 1.0}, "MGA-00300": {"12.2020": 1.53, "1.2021": 1.45, "2.2021": 1.66, "3.2021": 1.36, "4.2021": 1.46, "5.2021": 0.99}, "MGA-00400": {"12.2020": 1.53, "1.2021": 1.45, "2.2021": 1.66, "3.2021": 1.36, "4.2021": 1.46, "5.2021": 1.01}, "MGA-00500": {"12.2020": 1.52, "1.2021": 1.45, "2.2021": 1.66, "3.2021": 1.32, "4.2021": 1.45, "5.2021": 1.0}, "MGA-00600": {"12.2020": 1.55, "1.2021": 1.47, "2.2021": 1.67, "3.2021": 1.37, "4.2021": 1.47, "5.2021": 1.01}, "MGA-00701": {"12.2020": 0.0, "1.2021": 0.06, "2.2021": 0.0, "3.2021": 0.0, "4.2021": 0.04, "5.2021": 0.05}, "MGA-00800": {"12.2020": 1.5, "1.2021": 1.46, "2.2021": 1.67, "3.2021": 1.28, "4.2021": 1.46, "5.2021": 1.01}, "MGA-00900": {"12.2020": 1.54, "1.2021": 1.46, "2.2021": 1.66, "3.2021": 1.36, "4.2021": 1.45, "5.2021": 1.0}, "MGA-01000": {"12.2020": 1.53, "1.2021": 1.45, "2.2021": 1.66, "3.2021": 1.23, "4.2021": 1.46, "5.2021": 1.01}, "MGA-01100": {"12.2020": 1.54, "1.2021": 1.46, "2.2021": 1.62, "3.2021": 1.37, "4.2021": 1.47, "5.2021": 1.02}, "MGA-01200": {"12.2020": 1.49, "1.2021": 1.46, "2.2021": 1.67, "3.2021": 1.37, "4.2021": 1.47, "5.2021": 1.0}, "MGA-01300": {"12.2020": 1.47, "1.2021": 1.41, "2.2021": 1.62, "3.2021": 1.32, "4.2021": 1.4, "5.2021": 0.93}, "MGA-01400": {"12.2020": 1.47, "1.2021": 1.45, "2.2021": 1.59, "3.2021": 1.28, "4.2021": 1.45, "5.2021": 0.96}, "MGA-01500": {"12.2020": 1.51, "1.2021": 1.47, "2.2021": 1.68, "3.2021": 1.38, "4.2021": 1.48, "5.2021": 1.02}, "MGA-01600": {"12.2020": 1.55, "1.2021": 1.47, "2.2021": 1.67, "3.2021": 1.34, "4.2021": 1.47, "5.2021": 1.03}, "MGA-01700": {"12.2020": 1.53, "1.2021": 1.45, "2.2021": 1.66, "3.2021": 1.36, "4.2021": 1.45, "5.2021": 0.99}, "MGA-01800": {"12.2020": 1.54, "1.2021": 1.46, "2.2021": 1.61, "3.2021": 1.29, "4.2021": 1.46, "5.2021": 1.01}, "MGA-01900": {"12.2020": 1.49, "1.2021": 1.45, "2.2021": 1.66, "3.2021": 1.32, "4.2021": 1.46, "5.2021": 1.01}}');
+		function updatePrice(){
+			var osr = $("#choose-osr").val();
+			var dateText = $('#datepicker').val();
+			var months = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+			for(let i = 0; i < months.length; i++){
+				if(dateText.search(months[i]) != -1){
+					dateText = dateText.replace(months[i] + " ", String(i + 1) + ".");
+				}
+			}
+			if(dateText != ""){
+				if(data[osr][dateText] != undefined){
+					$("#price__price").text(data[osr][dateText] + " грн");
+				}
+			}
+		}
+		var maxDate = new Date();
+		maxDate.setMonth(maxDate.getMonth() - 1);
+		var minDate = new Date();
+		minDate.setMonth(minDate.getMonth() - 6);
+		$('#datepicker').datepicker().data('datepicker').selectDate(maxDate);
+		$('#datepicker').datepicker({
+			minDate: minDate,
+			maxDate: maxDate,
+			onSelect: function(dateText) {
+				var osr = $("#choose-osr").val();
+				var months = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+				$(this).change();
+				for(let i = 0; i < months.length; i++){
+					if(dateText.search(months[i]) != -1){
+						dateText = dateText.replace(months[i] + " ", String(i + 1) + ".");
+					}
+				}
+				if(osr != null){
+					$("#price__price").text(data[osr][dateText] + " грн");
+				}
+			}
+		})
+	</script>
 </body>
 </html>

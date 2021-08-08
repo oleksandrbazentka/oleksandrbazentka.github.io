@@ -6,7 +6,9 @@
 	<title>
 		Сантех +
 	</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -46,10 +48,10 @@
 							+7 (843) 253-85-82
 						</a>
 					</li>
-					<button class="header__button btn popup__button" data-modal="1">
+					<button class="header__button btn">
 						Заказать обратный звонок
 					</button>
-					<button class="header__button-sm popup__button btn" data-modal="1">
+					<button class="header__button-sm btn">
 						<img src="img/phone-sm.svg" alt="">
 					</button>
 				</ul>
@@ -74,10 +76,10 @@
 						Правильный монтаж, может сохранить ваш кошелек и нервы, поэтому наши клиенты уже сэкономили на 72% с помощью энергоэффективного отопления
 					</div>
 					<div class="install__btns">
-						<button class="install__link btn popup__button" data-modal="3">
+						<button class="install__link btn">
 							Расчитать стоимость монтажа
 						</button>
-						<button class="install__btn btn popup__button" data-modal="2">
+						<button class="install__btn btn">
 							Вызвать специалиста бесплатно
 						</button>
 					</div>
@@ -87,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup__call-bg popup__cal-bg-footer popup-bg" data-modal="1">
+		<div class="popup__call-bg popup__cal-bg-footer">
 			<div class="popup__call">
 				<button class="popup__close popup__close-footer">
 					<img src="img/close.svg" alt="">
@@ -100,7 +102,7 @@
 				</div>
 				<form action="#" class="form">
 					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
-					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+7 (000) 000-00-00">
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
 					<div class="popup__confidence">
 						<label class="switch">
 					  		<input type="checkbox" checked class="popup__checkbox" required>
@@ -119,9 +121,9 @@
 				</form>
 			</div>
 		</div>
-		<div class="popup__spec-bg popup-bg" data-modal="2">
+		<div class="popup__spec-bg">
 			<div class="popup__spec">
-				<button class="close__spec popup__close">
+				<button class="close__spec">
 					<img src="img/close.svg" alt="">
 				</button>
 				<div class="popup__title">
@@ -132,7 +134,7 @@
 				</div>
 				<form action="#" class="form">
 					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
-					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+7 (000) 000-00-00">
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
 					<div class="popup__confidence">
 						<label class="switch switch-spec">
 					  		<input type="checkbox" checked class="popup__checkbox popup__checkbox-spec" required>
@@ -151,9 +153,9 @@
 				</form>
 			</div>
 		</div>
-		<div class="popup__call-bg popup__price-bg popup-bg" data-modal="3">
+		<div class="popup__call-bg popup__price-bg">
 			<div class="popup__call">
-				<button class="popup__close popup__close-price popup__close">
+				<button class="popup__close popup__close-price">
 					<img src="img/close.svg" alt="">
 				</button>
 				<div class="popup__title">
@@ -164,7 +166,7 @@
 				</div>
 				<form action="#" class="form">
 					<input type="text" class="form__name form__input" placeholder="Введите имя" required>
-					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+7 (000) 000-00-00">
+					<input type="text" class="form__email form__input" id="tel" placeholder="Телефон" required data-mask="+00 (000) 000 00 00">
 					<div class="popup__confidence">
 						<label class="switch switch-price">
 					  		<input type="checkbox" checked class="popup__checkbox popup__checkbox-price" required>
@@ -181,20 +183,6 @@
 						Отправить
 					</button>
 				</form>
-			</div>
-		</div>
-		<div class="popup__call-bg popup__success-bg">
-			<div class="popup__call popup__success">
-				<button class="popup__close-footer popup__close-success">
-					<img src="img/close.svg" alt="">
-				</button>
-				<img src="img/tick.svg" alt="" class="popup__tick">
-				<div class="popup__title popup__title-success">
-					Спасибо за вашу заяку
-				</div>
-				<div class="popup__text">
-					Скоро менеджер с вами свяжется 
-				</div>
 			</div>
 		</div>
 	</header>
@@ -308,7 +296,7 @@
 						Поэтому Вы можете получить просчёт, или попробовать посчитать самим, с помощью прайс листа
 					</div>
 					<div class="calculate__btns">
-						<button class="btn calculate__btn popup__button" data-modal="3">
+						<button class="btn calculate__btn">
 							Получить просчёт стоимости
 						</button>
 						<button class="calculate__btn-download btn">
@@ -397,30 +385,78 @@
 				Наши работы
 			</h2>
 			<div class="fancybox__wrap">
-				<a data-fancybox="gallery" class="fancybox" href="img/works-1-big.jpg"><img src="img/works-1.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-2-big.jpg"><img src="img/works-2.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-3-big.jpg"><img src="img/works-3.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-4-big.jpg"><img src="img/works-4.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-5-big.jpg"><img src="img/works-5.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-6-big.jpg"><img src="img/works-6.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-7-big.jpg"><img src="img/works-7.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox fancybox__video" href="https://www.youtube.com/watch?v=U30gw1Mlk-M&list=RDBIODXwL41Uc&index=6"><img src="img/works-8.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-9-big.jpg"><img src="img/works-9.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-10-big.jpg"><img src="img/works-10.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox fancybox__video" href="https://www.youtube.com/watch?v=U30gw1Mlk-M&list=RDBIODXwL41Uc&index=6"><img src="img/works-11.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-12-big.jpg"><img src="img/works-12.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-13-big.jpg"><img src="img/works-13.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox fancybox__video" href="https://www.youtube.com/watch?v=U30gw1Mlk-M&list=RDBIODXwL41Uc&index=6"><img src="img/works-14.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-15-big.jpg"><img src="img/works-15.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-16-big.jpg"><img src="img/works-16.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-17-big.jpg"><img src="img/works-17.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-18-big.jpg"><img src="img/works-18.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-19-big.jpg"><img src="img/works-19.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-20-big.jpg"><img src="img/works-20.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-21-big.jpg"><img src="img/works-21.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-22-big.jpg"><img src="img/works-22.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-23-big.jpg"><img src="img/works-23.jpg"></a>
-				<a data-fancybox="gallery" class="fancybox" href="img/works-24-big.jpg"><img src="img/works-24.jpg"></a>
+				<a class="fancybox" rel="gallery" href="img/works-1-big.jpg" title="">
+				<img src="img/works-1.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-2-big.jpg" title="">
+				<img src="img/works-2.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-3-big.jpg" title="">
+				<img src="img/works-3.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-4-big.jpg" title="">
+				<img src="img/works-4.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-5-big.jpg" title="">
+				<img src="img/works-5.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-6-big.jpg" title="">
+				<img src="img/works-6.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-7-big.jpg" title="">
+				<img src="img/works-7.jpg" alt="">
+			</a>
+			<a class="fancybox fancybox__video" rel="gallery" href="img/works-8-big.jpg" title="">
+				<img src="img/works-8.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-9-big.jpg" title="">
+				<img src="img/works-9.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-10-big.jpg" title="">
+				<img src="img/works-10.jpg" alt="">
+			</a>
+			<a class="fancybox fancybox__video" rel="gallery" href="img/works-11-big.jpg" title="">
+				<img src="img/works-11.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-12-big.jpg" title="">
+				<img src="img/works-12.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-13-big.jpg" title="">
+				<img src="img/works-13.jpg" alt="">
+			</a>
+			<a class="fancybox fancybox__video" rel="gallery" href="img/works-14-big.jpg" title="">
+				<img src="img/works-14.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-15-big.jpg" title="">
+				<img src="img/works-15.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-16-big.jpg" title="">
+				<img src="img/works-16.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-17-big.jpg" title="">
+				<img src="img/works-17.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-18-big.jpg" title="">
+				<img src="img/works-18.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-19-big.jpg" title="">
+				<img src="img/works-19.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-20-big.jpg" title="">
+				<img src="img/works-20.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-21-big.jpg" title="">
+				<img src="img/works-21.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-22-big.jpg" title="">
+				<img src="img/works-22.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-23-big.jpg" title="">
+				<img src="img/works-23.jpg" alt="">
+			</a>
+			<a class="fancybox" rel="gallery" href="img/works-24-big.jpg" title="">
+				<img src="img/works-24.jpg" alt="">
+			</a>
 			</div>
 			<button class="works__button-more btn">
 				Открыть больше
@@ -850,6 +886,7 @@
 	</section>
 	<section class="map">
 		<iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa455186c71dc407c040b691126ebd9627c257251c2d0a519b2dd5d1a3a9b8c39&amp;source=constructor" width="1193" height="440" frameborder="0"></iframe>
+		<div class="wrap map__wrap">
 			<div class="map__contacts">
 				<div class="contacts__title title">
 					Контакты
@@ -882,6 +919,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<footer class="footer">
 		<div class="wrap">
@@ -916,10 +954,10 @@
 							+7 (843) 253-85-82
 						</a>
 					</li>
-					<button class="header__button btn footer__button popup__button" data-modal="1">
+					<button class="header__button btn footer__button">
 						Заказать обратный звонок
 					</button>
-					<button class="footer__button-sm btn popup__button" data-modal="1">
+					<button class="footer__button-sm btn">
 						<img src="img/phone-sm.svg" alt="">
 					</button>
 				</ul>
@@ -934,7 +972,11 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
 	<script src="js/main.js"></script>

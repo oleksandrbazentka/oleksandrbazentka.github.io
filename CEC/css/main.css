@@ -292,7 +292,7 @@ body {
 }
 
 .header__links {
-    max-width: 450px;
+    max-width: 550px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -414,6 +414,9 @@ body {
 	height: 13px;
 	top: 22px;
 	right: 23px;
+}
+
+.price__selects__osr:after {
 	background: url('../img/arr-d.png') no-repeat right center;
 }
 
@@ -435,7 +438,7 @@ select {
 }
 
 .first {
-    padding-top: 187px;
+    padding-top: 77px;
 }
 
 .first__block {
@@ -482,7 +485,8 @@ select {
 }
 
 .first__pic-wrap {
-	position: relative;
+    position: relative;
+    margin-top: 70px;
 }
 
 .first__pic-wrap img {
@@ -496,7 +500,7 @@ select {
 }
 
 .tariffs {
-	margin: 150px 0px 180px 0px;
+    margin: 150px 0px 60px 0px;
 }
 
 .title-h2 {
@@ -583,10 +587,17 @@ select {
 	background: #0FBAB8;
 }
 
+.tariffs__text_not-pdv {
+	color: #084C94;
+	font-weight: 600;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
 .about {
-	background: url('../img/about-img.png') no-repeat center bottom;
-	background-size: contain;
-	padding-bottom: 88px;
+    background: url(../img/about-img.png) no-repeat center bottom;
+    background-size: 94% 80%;
+    padding-bottom: 88px;
 }
 
 .about__wrap {
@@ -672,8 +683,8 @@ select {
 }
 
 .benefits__cont-pic-wrap {
-	max-width: 360px;
-	width: 100%;
+    max-width: 320px;
+    width: 100%;
 }
 
 .benefits__cont-pic-wrap img {
@@ -773,15 +784,25 @@ select {
 }
 
 .panel,
-.panel-second {
+.panel-second,
+.panel-third {
 	margin: 0px auto;
 	max-width: 560px;
 	width: 100%;
 	margin-bottom: 15px;
 }
 
+.user__block_second {
+	width: 100%;
+}
+
+.panel-third {
+	max-width: 1020px;
+}
+
 .panel-heading button,
-.panel-heading-second button {
+.panel-heading-second button,
+.panel-heading-third button {
 	width: 100%;
 	text-align: left;
 	background: #3ECFCD;
@@ -798,12 +819,14 @@ select {
 }
 
 .panel-heading button:hover,
-.panel-heading-second button:hover {
+.panel-heading-second button:hover,
+.panel-heading-third button:hover {
 	background: #45a19f;	
 }
 
 .panel-heading button img,
-.panel-heading-second button img {
+.panel-heading-second button img,
+.panel-heading-third button img {
     position: absolute;
     right: 27px;
     top: 50%;
@@ -814,17 +837,20 @@ select {
 }
 
 .panel-heading.in button::after,
-.panel-heading-second.in button::after {
+.panel-heading-second.in button::after,
+.panel-heading-third.in button::after {
 	transform: rotate(180deg);
 }
 
 .panel-heading.in button img,
-.panel-heading-second.in button img {
+.panel-heading-second.in button img,
+.panel-heading-third.in button img {
 	transform: rotate(180deg);
 }
 
 .panel-collapse,
-.panel-collapse-second {
+.panel-collapse-second,
+.panel-collapse-third {
     display: none;
     font-size: 14px;
     line-height: 150%;
@@ -1110,7 +1136,7 @@ select {
 	}
 
 	.first {
-	    padding: 160px 15px 0px;
+	    padding: 77px 15px 0px;
 	}
 
 	.first__title {
@@ -1139,6 +1165,7 @@ select {
 
 	.first__pic-wrap {
 	    max-width: 515px;
+	    margin-top: 0px;
 	}
 
 	.price__selects-wrap {
@@ -1155,7 +1182,7 @@ select {
 	}
 
 	.tariffs {
-	    margin: 130px 0px 160px 0px;
+	    margin: 130px 0px 60px 0px;
 	    padding: 0px 15px;
 	}
 
@@ -1183,6 +1210,10 @@ select {
 
 	.card__cont {
 	    padding: 35px 10px 40px 10px;
+	}
+
+	.benefits__cont-pic-wrap {
+	    max-width: 300px;
 	}
 
 	.benefits {
@@ -1231,7 +1262,7 @@ select {
 
 @media screen and (max-width: 992px) {
 	.first {
-	    padding: 137px 15px 0px;
+	    padding: 87px 15px 0px;
 	}
 
 	.first__title {
@@ -1275,7 +1306,7 @@ select {
 	}
 
 	.tariffs {
-	    margin: 100px 0px 130px 0px;
+	    margin: 100px 0px 60px 0px;
 	}
 
 	.tariffs__cards {
@@ -1299,6 +1330,16 @@ select {
 	    margin-bottom: 40px;
 	}
 
+	.tariffs__text_not-pdv {
+	    text-align: center;
+	    font-size: 15px;
+	}
+
+	.about {
+	    background: url(../img/about-img.png) no-repeat center bottom;
+	    background-size: contain;
+	}
+
 	.about__title {
 	    margin-bottom: 20px;
 	}
@@ -1320,7 +1361,7 @@ select {
 	}
 
 	.benefits__cont-pic-wrap {
-	    max-width: 310px;
+	    max-width: 260px;
 	}
 
 	.benefits__cont {
@@ -1398,19 +1439,20 @@ select {
 	}
 
 	.header__links {
-	    max-width: 360px;
-	    font-size: 14px;
+	    max-width: 380px;
+	    font-size: 13px;
+	    margin-left: 10px;
 	}
 
 	.header__login {
-	    max-width: 64px;
-	    font-size: 14px;
+	    max-width: 55px;
+	    font-size: 13px;
 	    margin: 0px;
 	}
 
 	.header__button {
 		padding: 15px;
-    	font-size: 14px;
+    	font-size: 13px;
 	}
 
 	.first {
@@ -1462,7 +1504,7 @@ select {
 	}
 
 	.tariffs {
-	    margin: 70px 0px 100px 0px;
+	    margin: 70px 0px 60px 0px;
 	}
 
 	.tariffs__title {
@@ -1500,6 +1542,14 @@ select {
 	  	color: #E3F9F9;
 	}
 
+	.tariffs__text_not-pdv {
+	    margin-top: 0px;
+	}
+
+	.slick-dots {
+	    bottom: -13px;
+	}
+
 	.about__wrap {
 	    max-width: none;
 	    padding: 0px 15px;
@@ -1518,6 +1568,10 @@ select {
 	    display: block;
 	    margin: 15px auto 0px;
 	    width: 60%;
+	}
+
+	.benefits__cont-pic-wrap {
+	    max-width: 240px;
 	}
 
 	.benefits {
@@ -1794,8 +1848,12 @@ select {
 	    bottom: -41px;
 	}
 
+	.tariffs__text_not-pdv {
+	    margin-top: 50px;
+	}
+
 	.tariffs {
-	    margin: 80px 0px 111px;
+	    margin: 80px 0px 60px;
 	}
 
 	.title-h2 {

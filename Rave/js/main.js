@@ -1,4 +1,9 @@
 window.addEventListener('load', function() {
+	document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+	  document.body.classList.add('loaded');
+	  document.body.classList.remove('loaded_hiding');
+  }, 800);
 	let indexHtml = document.querySelector('.index-file');
 	let shopHtml = document.querySelector('.shop-file');
 	let signUpFile = document.querySelector('.registration-file');
@@ -13,13 +18,7 @@ window.addEventListener('load', function() {
 		});
 	}
 	if(indexHtml) {
-			/* INDEX.HTML START */
-			$('a[href*="#"]').click(function() {
-		    $page.animate({
-		        scrollTop: $($.attr(this, 'href')).offset().top - 100
-		    }, 500);
-		    return false;
-		});
+		/* INDEX.HTML START */
 		$('.fade').slick({
 			infinite: true,
 			speed: 500,
@@ -117,6 +116,13 @@ window.addEventListener('load', function() {
 			}
 		}
 
+		$('a[href*="#"]').click(function() {
+		    $page.animate({
+		         scrollTop: $($.attr(this, 'href')).offset().top - 100
+		    }, 500);
+		     return false;
+		 });
+
 		//E-mail Ajax Send
 	  $("form").submit(function() { //Change
 	    var th = $(this);
@@ -190,7 +196,9 @@ if(shopHtml) {
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  arrows: false,
-		  dots: true
+		  dots: true,
+		  autoplay: true,
+		  autoplaySpeed: 5000,
 	});
 	}
 	/* READ-MORE.HTML END */
@@ -219,7 +227,7 @@ if(shopHtml) {
 	      data: th.serialize()
 	    }).done(function() {
 	      $('.modal-show-done').addClass('visible');
-	      $('.modal-show-done').removeClass('visible');
+	      $('.modal-show-done').removeClass('hidden');
 	      $('html').css('overflow-y', 'hidden')
 	      setTimeout(function() {
 	        // Done Functions
@@ -279,6 +287,27 @@ if(shopHtml) {
 			
 		}
 	});
+
+		let signUpInputs = document.querySelectorAll('.sign-up__form-input');
+		for(let i = 0; i < signUpInputs.length; i++) {
+			let inputs = signUpInputs[i];
+				inputs.addEventListener('focusin', colorOrange);
+				inputs.addEventListener('focusout', colorOrangeOff);
+			}
+
+		function colorOrange() {
+			// if(!(this.classList.contains('orange'))) {
+			// 	this.classList.add('orange');
+			// } else {
+			// 	this.classList.remove('orange');
+			// }
+
+			this.classList.add('orange');
+		};
+
+		function colorOrangeOff() {
+			this.classList.remove('orange');
+		}
 
 		for(i = 0; i < passwords.length; i++) {
 			let passes = passwords[i];
