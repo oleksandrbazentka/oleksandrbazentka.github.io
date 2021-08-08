@@ -270,6 +270,11 @@ a, button {
 	font-size: 16px;
 	border: none;
 	margin-bottom: 0px;
+	transition: all 0.6s ease;
+}
+
+.btn:hover {
+	background: #f77e7e;
 }
 
 .popup {
