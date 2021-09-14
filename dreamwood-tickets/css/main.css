@@ -193,7 +193,7 @@ a:hover {
 
 .tickets__cloud_top {
     position: absolute;
-    top: 160px;
+    top: 400px;
     right: 0px;
     z-index: -1;
 }
@@ -201,7 +201,7 @@ a:hover {
 .tickets__cloud_bottom {
     position: absolute;
     z-index: -1;
-    top: 685px;
+    top: 1000px;
     left: 0px;
 }
 
@@ -230,6 +230,27 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.holiday__wrap {
+    margin: 0px 15px;
+}
+
+.tickets__holiday {
+    font-size: 33px;
+    font-weight: 500;
+    color: #201D1D;
+    margin: 40px auto 160px auto;
+    padding: 25px 58px;
+    max-width: 1180px;
+    text-align: center;
+    background: #80D755;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+
+.tickets__holiday span {
+    font-weight: 900;
 }
 
 .tickets__cont-text {
@@ -319,6 +340,19 @@ a:hover {
 }
 
 @media screen and (max-width: 1220px) {
+    .tickets__holiday {
+        margin: 40px auto 120px auto;
+        font-size: 30px;
+    }
+
+    .tickets__cloud_top {
+        top: 428px;
+    }
+
+    .tickets__cloud_bottom {
+        top: 1000px;
+    }
+
     .header__list-links {
         max-width: 670px;
     }
@@ -329,6 +363,7 @@ a:hover {
 
     .tickets__wrap {
         padding: 0px 15px;
+        justify-content: space-around;
     }
 
     .tickets__block {
@@ -405,6 +440,10 @@ a:hover {
         padding-top: 80px;
     }
 
+    .tickets__holiday {
+        margin: 40px auto 100px auto;
+    }
+
     .tickets__title {
         font-size: 36px;
         margin-bottom: 30px;
@@ -433,11 +472,11 @@ a:hover {
     }
 
     .tickets__cloud_top {
-        top: 115px;
+        top: 366px;
     }
 
     .tickets__cloud_bottom {
-        top: 625px;
+        top: 845px;
     }
 }
 
@@ -446,6 +485,11 @@ a:hover {
         flex-direction: column;
         align-items: center;
         margin: 0px auto;
+    }
+
+    .tickets__holiday {
+        margin: 25px auto 80px auto;
+        font-size: 18px;
     }
 
     .tickets__block {
@@ -478,12 +522,25 @@ a:hover {
         justify-content: flex-start;
     }
 
+    .tickets__cloud_top {
+        top: 325px;
+    }
+
     .tickets__cloud_bottom {
-        top: 1298px;
+        top: 1510px;
     }
 }   
 
 @media screen and (max-width: 576px) {
+    .tickets__cloud_top {
+        top: 320px;
+    }
+
+    .tickets__cloud_bottom {
+        top: auto;
+        bottom: 270px;
+    }
+
     .tickets__cont-text {
         font-size: 18px;
     }
@@ -550,9 +607,22 @@ a:hover {
         width: 90px;
     }
 
+    .tickets__cloud_top {
+        top: 350px;
+    }
+
     .tickets__cloud_bottom {
         top: auto;
         bottom: 240px;
+    }
+
+    .footer__list {
+        min-height: 48px;
+    }
+
+    .footer__item {
+        font-size: 10px;
+        margin: 0px 8px;
     }
 }
 
