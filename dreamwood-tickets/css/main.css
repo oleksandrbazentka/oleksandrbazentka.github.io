@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/Gerbera.eot');
+    src: local('Gerbera'), local('Gerbera'),
+        url('../fonts/Gerbera.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gerbera.woff2') format('woff2'),
+        url('../fonts/Gerbera.woff') format('woff'),
+        url('../fonts/Gerbera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/Gerbera-Light.eot');
+    src: local('Gerbera Light'), local('Gerbera-Light'),
+        url('../fonts/Gerbera-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gerbera-Light.woff2') format('woff2'),
+        url('../fonts/Gerbera-Light.woff') format('woff'),
+        url('../fonts/Gerbera-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/Gerbera-Black.eot');
+    src: local('Gerbera Black'), local('Gerbera-Black'),
+        url('../fonts/Gerbera-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gerbera-Black.woff2') format('woff2'),
+        url('../fonts/Gerbera-Black.woff') format('woff'),
+        url('../fonts/Gerbera-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/Gerbera-Bold.eot');
+    src: local('Gerbera Bold'), local('Gerbera-Bold'),
+        url('../fonts/Gerbera-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gerbera-Bold.woff2') format('woff2'),
+        url('../fonts/Gerbera-Bold.woff') format('woff'),
+        url('../fonts/Gerbera-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/Gerbera-Medium.eot');
+    src: local('Gerbera Medium'), local('Gerbera-Medium'),
+        url('../fonts/Gerbera-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gerbera-Medium.woff2') format('woff2'),
+        url('../fonts/Gerbera-Medium.woff') format('woff'),
+        url('../fonts/Gerbera-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+
+body {
+    background: #A6E2E8;
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Gerbera';    
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+html.html-overflow-y-hide {
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;
+}
+
+.hamburger-btn {
+    background: #515253;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    z-index: 11;
+    right: 15px;
+}
+
+.hamburger-btn__img {
+    background: url('../img/ham.svg') no-repeat top center;
+    display: block;
+    width: 10px;
+    height: 8px;
+}
+
+.hamburger-btn__img.ham-img-active {
+    background: url(../img/cross.png) no-repeat top center;
+    background-size: 100% 100%;
+    display: block;
+    width: 10px;
+    height: 8px;
+}
+
+.hamburger-list {
+    background: #80D755;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin: 0px;
+    transform: translateY(-100%);
+    top: 0px;
+    transition: transform 0.7s ease;
+}
+
+.hamburger-list.ham-active {
+    transform: translateY(0);
+}
+
+.hamburger__item {
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 25px;
+}
+
+.header-back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    max-height: 700px;
+    min-height: 650px;
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0px auto;
+}
+
+.header__list {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 0px 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__list-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 773px;
+    width: 100%;
+}
+
+.header__item {
+    font-size: 24px;
+    color: rgba(32, 29, 29, 0.8);
+}
+
+.tickets {
+    padding-top: 105px;
+    color: #201D1D;
+    position: relative;
+}
+
+.tickets__cloud_top {
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    z-index: -1;
+}
+
+.tickets__cloud_bottom {
+    position: absolute;
+    z-index: -1;
+    top: 685px;
+    left: 0px;
+}
+
+.tickets__title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.tickets__cont {
+    background: #80D755;
+    box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.13);
+    border-radius: 50px;
+    padding: 66px 13px;
+    display: block;
+}
+
+.tickets__block {
+    max-width: 551px;
+    text-align: center;
+    width: 100%;
+}
+
+.tickets__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tickets__cont-text {
+    max-width: 463px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px auto;
+}
+
+.tickets__cont-text:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+}
+
+.tickets__cont_second {
+    padding: 54px 44px;
+}
+
+.tickets__cont-desc {
+    font-size: 10px;
+    color: rgba(32, 29, 29, 0.8);
+    margin-top: 5px;
+    text-align: left;
+}
+
+.tickets__cont-text-wrap {
+    margin-bottom: 30px;
+}
+
+.tickets__cont-text-wrap:last-child {
+    margin-bottom: 0px;
+}
+
+.tickets__cont {
+    min-height: 640px;
+}
+
+.tickets__img_bottom {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.tickets__img_bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    background: #36383A;
+    padding: 47px 0px;
+    margin-top: -5px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list {
+    max-width: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-height: 71px;
+    align-content: space-between;
+}
+
+.footer__item {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 1220px) {
+    .header__list-links {
+        max-width: 670px;
+    }
+
+    .header__item {
+        font-size: 20px;
+    }
+
+    .tickets__wrap {
+        padding: 0px 15px;
+    }
+
+    .tickets__block {
+        max-width: 460px;
+    }
+
+    .tickets__cont img {
+        width: 100%;
+    }
+
+    .tickets__title {
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+
+    .tickets__cont-text {
+        font-size: 18px;
+    }
+
+    .tickets__cont-text-wrap {
+        margin-bottom: 20px;
+    }
+
+    .tickets__cont-text-wrap:last-child {
+        margin-bottom: 0px;
+    }
+
+    .tickets__cont {
+        min-height: 571px;
+    }
+
+    .tickets__cont {
+        padding: 75px 13px;
+    }
+
+    .tickets__cont_second {
+        padding: 54px 44px;
+    }
+
+    .tickets__cloud_top,
+    .tickets__cloud_bottom {
+        width: 200px;
+    }
+
+    .footer {
+        padding: 47px 15px;
+    }
+
+    .footer__item {
+        font-size: 16px;
+    }
+
+    .footer__list {
+        max-width: 560px;
+        min-height: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header__item {
+        font-size: 18px;
+    }
+
+    .header__list-links {
+        max-width: 585px;
+    }
+
+    .header-back {
+        max-height: 540px;
+        min-height: 540px;
+    }
+
+    .tickets {
+        padding-top: 80px;
+    }
+
+    .tickets__title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .tickets__cont {
+        padding: 50px 13px;
+        min-height: auto;        
+    }
+
+    .tickets__cont_second {
+        padding: 45px 24px;
+    }
+
+    .tickets__cont-text {
+        font-size: 16px;
+    }
+
+    .tickets__block {
+        max-width: 460px;
+        margin-right: 15px;
+    }
+
+    .tickets__block:last-child {
+        margin-right: 0px;
+    }
+
+    .tickets__cloud_top {
+        top: 115px;
+    }
+
+    .tickets__cloud_bottom {
+        top: 625px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tickets__wrap {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .tickets__block {
+        max-width: 460px;
+        margin-right: 0px;
+        margin-bottom: 90px;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .header__list-links {
+        max-width: 585px;
+        display: none;
+    }
+
+    .header-back {
+        max-height: 350px;
+        min-height: 350px;
+    }
+
+    .footer__nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer__list {
+        margin-top: 20px;
+        justify-content: flex-start;
+    }
+
+    .tickets__cloud_bottom {
+        top: 1298px;
+    }
+}   
+
+@media screen and (max-width: 576px) {
+    .tickets__cont-text {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .footer__item {
+        font-size: 12px;
+    }
+
+    .footer__list {
+        max-width: 498px;
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hamburger-list {
+        padding: 35px;
+    }
+
+    .header__list {
+        padding: 10px 15px 0px 15px;
+    }
+
+    .header__logo {
+        width: 55px;
+    }
+
+    .header__logo img {
+        width: 100%;
+    }
+
+    .header-back {
+        max-height: 185px;
+        min-height: 185px;
+    }
+
+    .tickets {
+        padding-top: 60px;
+    }
+
+    .tickets__title {
+        margin-bottom: 25px;
+    }
+
+    .tickets__cont {
+        padding: 75px 25px;
+        min-height: auto;
+    }
+
+    .tickets__cont_second {
+        padding: 35px 30px;
+    } 
+
+    .tickets__cont-text_bold {
+        margin-right: 15px;
+        text-align: left;
+    }  
+
+    .tickets__cont-text_price {
+        width: 90px;
+    }
+
+    .tickets__cloud_bottom {
+        top: auto;
+        bottom: 240px;
+    }
+}
+
+
+
+
+
