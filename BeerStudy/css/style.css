@@ -390,15 +390,7 @@ main {
     background: url('../img/teacher-black-1.jpg') no-repeat top center;
 }
 
-.teachers__img_first:hover {
-    background: url('../img/teacher-black-1.jpg') no-repeat top center;
-}
-
 .teachers__img_second {
-    background: url('../img/teacher-black-2.jpg') no-repeat top center;
-}
-
-.teachers__img_second:hover {
     background: url('../img/teacher-black-2.jpg') no-repeat top center;
 }
 
@@ -406,20 +398,24 @@ main {
     background: url('../img/teacher-black-3.jpg') no-repeat top center;
 }
 
-/*.teachers__img_third:hover {
-    background: url('../img/teacher-norm-3.jpg') no-repeat top center;
-}*/
-
 .teachers__img_fourth {
     background: url('../img/teacher-black-4.jpg') no-repeat top center;
 }
 
-.teachers__img_fourth:hover {
-    background: url('../img/teacher-black-4.jpg') no-repeat top center;
+.hover-img-first {
+    background: url('../img/teacher-black-1.jpg') no-repeat top center;
+}
+
+.hover-img-second {
+    background: url('../img/teacher-black-2.jpg') no-repeat top center; 
 }
 
 .hover-img-third {
    background: url('../img/teacher-norm-3.jpg') no-repeat top center; 
+}
+
+.hover-img-fourth {
+   background: url('../img/teacher-black-4.jpg') no-repeat top center;
 }
 
 .teachers__img {
