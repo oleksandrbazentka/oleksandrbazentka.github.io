@@ -18,6 +18,15 @@ window.addEventListener('load', function() {
 	    html.classList.toggle('overflow');
 	}
 
+	// hover для картинки
+	$(".teachers__img_third").hover(
+	    function(){
+	        $(this).addClass("hover-img-third");
+	    },
+	    function(){
+	        $(this).removeClass("hover-img-third");
+    });
+
 	// Спойлер (dropdown)
 	let linkDropDown = document.querySelector('.link-dropdown');
 	linkDropDown.addEventListener('click', function(e) {

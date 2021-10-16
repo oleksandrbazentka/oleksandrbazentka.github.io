@@ -406,9 +406,9 @@ main {
     background: url('../img/teacher-black-3.jpg') no-repeat top center;
 }
 
-.teachers__img_third:hover {
+/*.teachers__img_third:hover {
     background: url('../img/teacher-norm-3.jpg') no-repeat top center;
-}
+}*/
 
 .teachers__img_fourth {
     background: url('../img/teacher-black-4.jpg') no-repeat top center;
@@ -416,6 +416,10 @@ main {
 
 .teachers__img_fourth:hover {
     background: url('../img/teacher-black-4.jpg') no-repeat top center;
+}
+
+.hover-img-third {
+   background: url('../img/teacher-norm-3.jpg') no-repeat top center; 
 }
 
 .teachers__img {
