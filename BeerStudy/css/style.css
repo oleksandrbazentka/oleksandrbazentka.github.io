@@ -1887,11 +1887,13 @@ section.sm-banner {
 
     .additionally__item {
         min-height: 220px;
+        padding-top: 65px;
+        justify-content: normal;
     }
 
     .additionally__item-num {
         font-size: 30px;
-        margin: 30px 0 15px 0;
+        margin: 0 0 15px 0;
     }
 
     .additionally__item-title {
@@ -1911,7 +1913,7 @@ section.sm-banner {
     }
 
     .additionally__item:hover .additionally__item-num {
-        margin-top: -2px;
+        margin-top: 0;
     }
 
     .questions__img-wrap {
@@ -2422,8 +2424,14 @@ section.sm-banner {
         margin-bottom: 30px;
     }
 
+    .additionally__item {
+        min-height: 220px;
+        padding-top: 0;
+        justify-content: center;
+    }
+
     .additionally__item:hover .additionally__item-num {
-        margin-top: 14px;
+        margin-top: -15px;
     }
 
     .panel-collapse {
