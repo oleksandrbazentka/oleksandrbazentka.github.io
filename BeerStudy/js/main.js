@@ -18,58 +18,6 @@ window.addEventListener('load', function() {
 	    html.classList.toggle('overflow');
 	}
 
-    // hover для картинки
-	$(".teachers__img_first").hover(
-	    function(){
-	        $(this).addClass("hover-img-first");
-	    },
-	    function(){
-	        $(this).removeClass("hover-img-first");
-    });
-
-    // hover для картинки
-	$(".teachers__img_second").hover(
-	    function(){
-	        $(this).addClass("hover-img-second");
-	    },
-	    function(){
-	        $(this).removeClass("hover-img-second");
-    });
-
- 	// hover для картинки
-	$(".teachers__img_third").hover(
-	    function(){
-	        $(this).addClass("hover-img-third");
-	    },
-	    function(){
-	        $(this).removeClass("hover-img-third");
-    });   
-
-    // hover для картинки
-	$(".teachers__img_fourth").hover(
-	    function(){
-	        $(this).addClass("hover-img-fourth");
-	    },
-	    function(){
-	        $(this).removeClass("hover-img-fourth");
-    });
-
-	// Спойлер (dropdown)
-	let linkDropDown = document.querySelector('.link-dropdown');
-	linkDropDown.addEventListener('click', function(e) {
-		e.preventDefault();
-		let dropDown = document.querySelector('.dropdown');
-		dropDown.classList.toggle('dropdown-active');
-	});
-
-	// Спойлер на телефонах, планшетах (dropdown-sm)
-	let linkDropDownSm = document.querySelector('.link-dropdown-sm');
-	linkDropDownSm.addEventListener('click', function(e) {
-		e.preventDefault();
-		let dropDownSm = document.querySelector('.dropdown-sm');
-		dropDownSm.classList.toggle('dropdown-active');
-	});
-
 	if(htmlDoc.classList.contains('all-courses-html')) {
 		// Переменные для кнопок чтобы переключать табы
 		let switchFirst = document.querySelector('.switch-first');
