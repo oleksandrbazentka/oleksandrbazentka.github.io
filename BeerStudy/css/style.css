@@ -1771,6 +1771,10 @@ section.sm-banner {
         margin-right: 10px;
     }
 
+    .link-dropdown {
+        font-size: 14px;
+    }
+
     .burder span:nth-child(1) {
         width: 24px;
     }
@@ -1784,7 +1788,7 @@ section.sm-banner {
     }
 
     .menu__main-list li a {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .header_top_content {
