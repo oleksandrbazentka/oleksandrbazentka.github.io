@@ -960,7 +960,7 @@ h3 {
 
 	.nav__links {
 	    max-width: none;
-	    justify-content: right;
+	    justify-content: flex-end;
 	}
 
 	.video {
