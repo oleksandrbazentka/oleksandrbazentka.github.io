@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 	// Нажатие на кнопку - открытие расписания
 	$('.table__arrow').click(function () {
 		$(this).toggleClass('in').next().slideToggle();
-		$('.line-none').toggleClass('line-active');
+		$('.table__img-none').toggleClass('table__img-active');
 		$('.table__arrow').not(this).removeClass('in').next().slideUp();
     });
 

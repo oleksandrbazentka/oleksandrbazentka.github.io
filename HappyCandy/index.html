@@ -17,24 +17,28 @@
 					<ul class="nav__list d-flex justify-content-beetween align-items-center">
 						<li class="nav__logo">
 							<a href="index.html" class="nav__item">
-								<img src="img/logo.png" alt="">
+								<img src="img/logo.svg" alt="">
 							</a>
 						</li>
 						<li class="nav__links d-flex justify-content-beetween align-items-center">
 							<a href="#history" class="nav__item">
-								О вечеринке
+								Главная
 							</a>
 							<a href="#section-cards" class="nav__item">
-								Чем угощают?
+								О вечеринке
 							</a>
 							<a href="#timetable" class="nav__item">
-								Расписание
+								Угощения
 							</a>
-							<a href="#form-section" class="nav__item nav__item_blue">
-								Попасть на вечеринку
+							<a href="#form-section" class="nav__item">
+								Программа
 							</a>
 						</li>
-						
+						<li class="nav__tel">
+							<a href="tel:88005504326">
+								8 800 550 43 26
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -42,7 +46,7 @@
 		<!-- HEADER END -->	
 		<!-- HEADER-TOP START -->
 		<section class="header-top">
-			<div class="header-top__wrap wrap d-flex justify-content-beetween align-items-center">
+			<div class="header-top__wrap d-flex">
 				<div class="header-top__text text-center">
 					<h1 class="header-top__title">
 						Happy
@@ -56,306 +60,356 @@
 						</span>
 					</h1>
 					<div class="header-top__subtitle">
-						ВТОРНИК, 31 ОКТЯБРЯ
+						31 ОКТЯБРЯ, 19:00
+						<span>
+							MRIYA RESORT & SPA
+						</span>
 					</div>
 					<div class="header-top__desc">
 						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу.
 					</div>
+					<a href="#" class="header-top__btn">
+						Купить билет
+					</a>
+					<div class="header-top__soc-media d-flex justify-content-beetween align-items-center">
+						<a href="header-top__inst header-top__soc-media-item">
+							<img src="img/insta-head.svg" alt="">
+						</a>
+						<a href="header-top__soc-media-item">
+							<img src="img/face-head.svg" alt="">
+						</a>
+						<a href="header-top__soc-media-item">
+							<img src="img/vk-head.svg" alt="">
+						</a>
+					</div>
 				</div>
 				<picture class="header-top__img-wrap">
-					<source srcset="img/girl.webp" type="image/webp">
-				  	<source srcset="img/girl.png" type="image/jpeg"> 
-				  	<img src="img/girl.png" alt="">
+					<source srcset="img/girl.webp" type="image/webp" media="(min-width: 768px)">
+					<source srcset="img/girl.png" type="image/png" media="(min-width: 768px)">
+					<source srcset="img/girl-sm.webp" type="image/webp"> 	
+				  	<source srcset="img/girl-sm.png" type="image/png">
+				  	<img src="img/girl.png" alt="" media="(min-width: 768px)">
 				</picture>
 			</div>
 		</section>
 	</div>	
 		<!-- HEADER-TOP END -->
-		<!-- VIDEO START -->
-		<section class="video">
-			<h2 class="video__title text-center">
-				Заголовок
-			</h2>
-			<div class="video__subtitle subtitle">
-				Подзаголовок
-			</div>
-			<iframe src="https://www.youtube.com/embed/l8d9PIhCxVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__play"></iframe>
-		</section>
-		<!-- VIDEO END -->
-		<!-- HISTORY START -->
-		<section class="history" id="history">
-			<div class="wrap history__wrap d-flex">
-				<div class="history__cont">
-					<h3 class="history__title">
+		<!-- INFO START -->
+		<section class="info">
+			<div class="wrap info__wrap d-flex justify-content-beetween align-items-center">
+				<img src="img/in-sm-3.svg" alt="" class="info__img-sm-first sm-img">
+				<img src="img/in-sm-5.svg" alt="" class="info__img-sm-second sm-img">
+				<img src="img/in-sm-6.svg" alt="" class="info__img-sm-third sm-img">
+				<img src="img/in-sm-1.svg" alt="" class="sm-imgs__img_first sm-img">
+				<img src="img/in-sm-2.svg" alt="" class="sm-imgs__img_second sm-img">
+				<img src="img/in-sm-4.svg" alt="" class="sm-imgs__img_third sm-img">
+				<picture class="info__img-block">
+					<source srcset="img/info-img.webp" type="image/webp">
+  					<source srcset="img/info-img.jpg" type="image/jpeg">
+					<img src="img/info-img.jpg" alt="">  						
+				</picture>	
+				<div class="info__text-block">
+					<h3 class="info__title color-pink">
 						Волшебный новый год для самых маленьких
 					</h3>
-					<div class="history__desc text">
+					<div class="info__desc text">
 						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти на.
 					</div>
-				</div>	
+					<a href="#" class="info__btn pink-btn btn">
+						Купить билет на вечеринку
+					</a>
+				</div>
 			</div>
+			<div class="info__bottom-img"></div>
 		</section>
-		<!-- HISTORY END -->
+		<!-- INFO END -->
+		<!-- BIG-IMG START -->
+		<section class="big-img">
+			<img src="img/big-img.png" alt="" class="video">
+		</section>
+		<!-- BIG-IMG END -->
 		<!-- SECTION-CARDS START -->
 		<section class="section-cards" id="section-cards">
 			<div class="section-cards__wrap wrap">
-				<h2 class="section-cards__title text-center">
-					Заголовок
-				</h2>
-				<div class="section-cards__subtitle subtitle">
-					Подзаголовок
-				</div>
 				<div class="section-cards__block d-flex">
-					<div class="card__block card__block_first">
-						<div class="card__title text-center">
-							Мороженное
-						</div>
-						<div class="card">
-							<div class="card__cont">
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
+					<div class="two-cards__wrap">
+						<div class="card__block card__block_first">
+							<div class="card__title text-center">
+								Мороженное
 							</div>
-						</div>						
+							<div class="card">
+								<div class="card__cont">
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+						<div class="card__block card__block_second card-last">
+							<div class="card__title text-center">
+								Печенье
+							</div>
+							<div class="card">
+								<div class="card__cont">
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
 					</div>
-					<div class="card__block card__block_second">
-						<div class="card__title text-center">
-							Торты
-						</div>
-						<div class="card">
-							<div class="card__cont">
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
+					<h2 class="section-title">
+						Меню
+					</h2>
+					<div class="two-cards__wrap">
+						<div class="card__block card__block_third">
+							<div class="card__title text-center">
+								Торты
 							</div>
-						</div>						
-					</div>
-					<div class="card__block card__block_third">
-						<div class="card__title text-center">
-							Лимонады
+							<div class="card">
+								<div class="card__cont">
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+								</div>
+							</div>						
 						</div>
-						<div class="card">
-							<div class="card__cont">
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
-								<div class="card__text">
-									<div class="card__cont-name">
-										Банановое и карамелью
-									</div>
-									<div class="card__cont-desc">
-										<span>
-											Состав:
-										</span>
-										банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
-									</div>
-								</div>
+						<div class="card__block card__block_fourth card-last">
+							<div class="card__title text-center">
+								Напитки
 							</div>
-						</div>						
+							<div class="card">
+								<div class="card__cont">
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+									<div class="card__text">
+										<div class="card__cont-name">
+											Банановое и карамелью
+										</div>
+										<div class="card__cont-desc">
+											<span>
+												Состав:
+											</span>
+											банановое мороженное, карамельный топинг, посыпка, сахарная пудра.
+										</div>
+									</div>
+								</div>
+							</div>					
+						</div>
 					</div>
 				</div>
+				<div class="btn-wrap d-flex">
+					<a href="#" class="section-cards__btn pink-btn btn">
+						Купить билет на вечеринку
+					</a>
+				</div>
+				
 			</div>
 		</section>
 		<!-- SECTION-CARDS END -->
 		<!-- WAITING START -->
-		<section class="waiting" id="waiting">
-			<h2 class="waiting__title text-center">
-				Что вас ждет?
-			</h2>
-			<div class="waiting__subtitle subtitle">	
-				Подзаголовок
-			</div>
-			<div class="waiting__block waiting__block_first">
-				<div class="waiting__cont-wrap wrap waiting__block_var-1 d-flex justify-content-beetween align-items-center">
-					<picture class="waiting__img-wrap">
-						<source srcset="img/volsh-new-year.webp" type="image/webp">
-				  		<source srcset="img/volsh-new-year.jpg" type="image/jpeg"> 
-						<img src="img/volsh-new-year.jpg" alt="">
-					</picture>
-					<div class="waiting__text">
-						<h3 class="waiting__text-title white">
-							Волшебный новый год
-						</h3>
-						<div class="waiting__text-desc text">
-							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+		<section class="waiting back-pink">
+			<img src="img/wait-sm-1.svg" alt="" class="waiting__img_first waiting__img">
+			<img src="img/wait-sm-2.svg" alt="" class="waiting__img_second waiting__img">
+			<div class="wrap waiting__wrap">
+				<h2 class="waiting__title">
+					Что вас ждет?
+				</h2>
+				<div class="waiting__block d-flex justify-content-beetween">
+					<div class="waiting__cont d-flex">
+						<picture class="waiting__img-wrap waiting__img-wrap_first">
+							<source srcset="img/wait-img-1.webp" type="image/webp">
+  							<source srcset="img/wait-img-1.jpg" type="image/jpeg"> 
+  							<img src="img/wait-img-1.jpg" alt="">
+						</picture>
+						<div class="waiting__text">
+							<h3 class="waiting__text-title color-wh">
+								Волшебный новый год
+							</h3>
+							<div class="waiting__text-desc">
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах.
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="waiting__block waiting__block_second">
-				<img src="img/new-back-1.png" alt="" class="waiting__block-back">
-				<div class="waiting__cont-wrap wrap waiting__block_var-2 d-flex justify-content-beetween align-items-center">
-					<div class="waiting__text">
-						<h3 class="waiting__text-title pink">
-							Волшебный новый год
-						</h3>
-						<div class="waiting__text-desc text">
-							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+					<img src="img/waiting-cont-bg-1.svg" alt="" class="waiting__cont-bg_first">
+					<div class="waiting__cont d-flex waiting__cont_second">
+						<div class="waiting__text">
+							<h3 class="waiting__text-title color-pink">
+								Волшебный новый год
+							</h3>
+							<div class="waiting__text-desc waiting__text-desc_var-2">
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах.
+							</div>
+						</div>
+						<picture class="waiting__img-wrap waiting__img-wrap_second">
+							<source srcset="img/wait-img-2.webp" type="image/webp">
+  							<source srcset="img/wait-img-2.png" type="image/png"> 
+  							<img src="img/wait-img-2.jpg" alt="">
+						</picture>
+					</div>
+					<img src="img/waiting-cont-bg-2.svg" alt="" class="waiting__cont-bg_second">
+					<div class="waiting__cont d-flex">
+						<img src="img/wait-sm-3.svg" alt="" class="waiting__cont-img-abs_first waiting__img">
+						<picture class="waiting__img-wrap waiting__img-wrap_third">
+							<source srcset="img/wait-img-3.webp" type="image/webp">
+  							<source srcset="img/wait-img-3.png" type="image/png">
+							<img src="img/wait-img-3.png" alt="">  							 
+						</picture>
+						<div class="waiting__text">
+							<h3 class="waiting__text-title color-pink">
+								Волшебный новый год
+							</h3>
+							<div class="waiting__text-desc">
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах.
+							</div>
 						</div>
 					</div>
-					<picture class="waiting__img-wrap">
-						<source srcset="img/volsh-new-year-2.webp" type="image/webp">
-				  		<source srcset="img/volsh-new-year-2.jpg" type="image/jpeg"> 
-						<img src="img/volsh-new-year-2.jpg" alt="">
-					</picture>
-				</div>
-			</div>
-			<div class="waiting__block waiting__block_third">
-				<div class="waiting__cont-wrap wrap waiting__block_var-1 d-flex justify-content-beetween align-items-center">
-					<picture class="waiting__img-wrap">
-						<source srcset="img/volsh-new-year-3.webp" type="image/webp">
-				  		<source srcset="img/volsh-new-year-3.jpg" type="image/jpeg"> 
-						<img src="img/volsh-new-year-3.jpg" alt="">
-					</picture>
-					<div class="waiting__text">
-						<h3 class="waiting__text-title white">
-							Волшебный новый год
-						</h3>
-						<div class="waiting__text-desc text">
-							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+					<img src="img/wait-sm-4.svg" alt="" class="waiting__cont-img-abs_second waiting__img">
+					<div class="waiting__cont d-flex waiting__cont_fourth">
+						<div class="waiting__text">
+							<h3 class="waiting__text-title color-wh">
+								Волшебный новый год
+							</h3>
+							<div class="waiting__text-desc waiting__text-desc_var-2">
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах.
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="waiting__block waiting__block_fourth">
-				<img src="img/new-back-2.png" alt="" class="waiting__block-back waiting__block_fourth-back">
-				<div class="waiting__cont-wrap wrap waiting__block_var-2 d-flex justify-content-beetween align-items-center waiting__cont-wrap_fourth">
-					<div class="waiting__text">
-						<h3 class="waiting__text-title pink">
-							Волшебный новый год
-						</h3>
-						<div class="waiting__text-desc text">
-							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
-						</div>
-					</div>
-					<picture class="waiting__img-wrap">
-						<source srcset="img/volsh-new-year-4.webp" type="image/webp">
-				  		<source srcset="img/volsh-new-year-4.jpg" type="image/jpeg"> 
-						<img src="img/volsh-new-year-4.jpg" alt="">
-					</picture>
-				</div>
+						<picture class="waiting__img-wrap waiting__img-wrap_fourth">
+							<source srcset="img/wait-img-4.webp" type="image/webp">
+  							<source srcset="img/wait-img-4.png" type="image/png">
+							<img src="img/wait-img-4.png" alt="">
+						</picture>						
+					</div>					
+				</div>	
 			</div>
 		</section>
 		<!-- WAITING END -->
 		<!-- TIMETABLE START -->
 		<section class="timetable" id="timetable">
+			<img src="img/timetable-4.svg" alt="" class="table__img table__img_4">
+			<!-- КАРТИНКИ ИЗ СКРЫТОГО БЛОКА START-->
+			<img src="img/timetable-5.svg" alt="" class="table__img table__img_5  table__img-none">
+			<img src="img/timetable-6.svg" alt="" class="table__img table__img_6  table__img-none">
+			<img src="img/timetable-7.svg" alt="" class="table__img table__img_7  table__img-none">
+			<!-- КАРТИНКИ ИЗ СКРЫТОГО БЛОКА END-->
 			<div class="timetable__wrap wrap">
-				<h2 class="timetable__title text-center">
+				<h2 class="timetable__title text-center color-wh">
 					Раписание
 				</h2>
+				<img src="img/timetable-3.svg" alt="" class="table__img table__img_3">
 				<div class="table">
+					<img src="img/timetable-1.svg" alt="" class="table__img table__img_1">
+					<img src="img/timetable-2.svg" alt="" class="table__img table__img_2">
 					<div class="table__item d-flex">
 						<div class="table__time">
 							11:00-11:30
@@ -396,17 +450,71 @@
 								Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
 							</div>
 						</div>
-						<div class="line line-none"></div>		
+						<div class="line"></div>	
 					</div>
-
 					<!-- КНОПКА ОТКРЫВАЮЩАЯ ТЕКСТ -->
 					<button class="table__arrow">
 						<img src="img/arrow-down.svg" alt="">
 					</button>
 					<!-- КНОПКА ОТКРЫВАЮЩАЯ ТЕКСТ -->
-
 					<!-- ТЕКСТ КОТОРЫЙ ПОЯВЛЯЕТСЯ ПРИ КЛИКЕ НА КНОПКУ -->
 					<div class="items-none">
+						<div class="table__item item-none d-flex table__item_third">
+							<div class="table__time">
+								11:00-11:30
+							</div>
+							<div class="table__text">
+								<div class="table__text-title">
+									Знакомство
+								</div>
+								<div class="table__text-desc">
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+								</div>
+							</div>
+							<div class="line"></div>		
+						</div>
+						<div class="table__item item-none d-flex table__item_third">
+							<div class="table__time">
+								11:00-11:30
+							</div>
+							<div class="table__text">
+								<div class="table__text-title">
+									Знакомство
+								</div>
+								<div class="table__text-desc">
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+								</div>
+							</div>
+							<div class="line"></div>		
+						</div>
+						<div class="table__item item-none d-flex table__item_third">
+							<div class="table__time">
+								11:00-11:30
+							</div>
+							<div class="table__text">
+								<div class="table__text-title">
+									Знакомство
+								</div>
+								<div class="table__text-desc">
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+								</div>
+							</div>
+							<div class="line"></div>		
+						</div>
+						<div class="table__item item-none d-flex table__item_third">
+							<div class="table__time">
+								11:00-11:30
+							</div>
+							<div class="table__text">
+								<div class="table__text-title">
+									Знакомство
+								</div>
+								<div class="table__text-desc">
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+								</div>
+							</div>
+							<div class="line"></div>		
+						</div>
 						<div class="table__item item-none d-flex table__item_third">
 							<div class="table__time">
 								11:00-11:30
@@ -451,6 +559,11 @@
 					</div>
 					<!-- ТЕКСТ КОТОРЫЙ ПОЯВЛЯЕТСЯ ПРИ КЛИКЕ НА КНОПКУ -->
 				</div>
+				<div class="btn-wrap d-flex justify-content-beetween">
+					<a href="#" class="timetable__btn">
+						Скачать программу вечеринки
+					</a>
+				</div>
 			</div>
 		</section>
 		<!-- TIMETABLE END -->
@@ -472,14 +585,30 @@
 						</div>	
 						<input type="text" placeholder="Ваше имя" class="form__input">
 						<input type="tel" placeholder="Ваш телефон" class="form__input" data-mask="+0 (000) 000 00 00" id="tel">
-						<button type="submit" class="btn form__btn">
-							Стать участником
-						</button>
+						<div class="form-btn__wrap d-flex">
+							<button type="submit" class="btn pink-btn form__btn">
+								Стать участником
+							</button>
+						</div>
 						<a href="tel:88005504326" class="form__tel">
 							8 800 550 43 26
 						</a>
 						<div class="form__loc">
-							Адрес: Ялта, с.Оползневое, ул.Генерала Острякова, д.9
+							<span>
+								Адрес:
+							</span>
+							 Ялта, с.Оползневое, ул.Генерала Острякова, д.9
+						</div>
+						<div class="form__soc-media d-flex justify-content-beetween align-items-center">
+							<a href="#">
+								<img src="img/form-soc-1.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/form-soc-2.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/form-soc-3.svg" alt="">
+							</a>
 						</div>	
 					</form>
 				</div>
