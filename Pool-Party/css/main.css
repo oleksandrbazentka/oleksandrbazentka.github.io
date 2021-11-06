@@ -154,7 +154,7 @@ h1 {
 .first__text {
 	margin-top: 273px;
 	position: relative;
-	z-index: 3;
+	z-index: 4;
 }
 
 .img-wrap-sm {
@@ -216,8 +216,8 @@ h1 {
 
 .video {
 	width: 100%;
-	z-index: 1;
 	position: relative;
+	z-index: 3;
 }
 
 .video__play {
@@ -375,7 +375,7 @@ h2 {
     top: -479px;
     left: -239px;
     width: 935px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .wait__text_second {
@@ -1039,6 +1039,10 @@ h2 {
 
 	.first__img {
 		display: none;
+	}
+
+	.first__text {
+	    z-index: 0;
 	}
 
 	.first__img-block {
