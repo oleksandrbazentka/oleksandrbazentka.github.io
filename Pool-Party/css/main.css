@@ -153,6 +153,8 @@ h1 {
 
 .first__text {
 	margin-top: 273px;
+	position: relative;
+	z-index: 3;
 }
 
 .img-wrap-sm {
