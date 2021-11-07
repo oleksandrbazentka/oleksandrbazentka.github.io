@@ -144,7 +144,7 @@ h1 {
     width: 1000px;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 .first__img-block img {
@@ -654,6 +654,10 @@ h2 {
 	.footer__img_left {
 	    top: -260px;
 	    width: 400px;
+	}
+
+	.first__img-block {
+		z-index: 2;
 	}
 }
 
