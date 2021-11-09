@@ -18,12 +18,34 @@
 		<header class="header" id="header">
 			<nav class="header__nav header__wrap">
 				<ul class="nav__list d-flex justify-between align-items-center">
-					<a href="#" class="list__item item-logo">
+					<div class="list__cont_first d-flex justify-between align-items-center">
+						<a href="#" class="list__item item-logo">
+							<img src="img/mriya.svg" alt="">
+						</a>
+						<a href="#wait" class="list__item list-link">
+							О мероприятии
+						</a>
+						<a href="#timetable" class="list__item list-link">
+							Программа
+						</a>
+						<a href="#footer" class="list__item list-link">
+							Контакты
+						</a>
+					</div>
+					<div class="list__cont_second align-items-center d-flex justify-between">
+						<a href="#" class="list__item logo-dream">
+							<img src="img/dream-big.svg" alt="">
+						</a>
+						<a href="tel:88005504326" class="list__tel">
+							8 800 550 43 26
+						</a>
+						<button class="button-back d-flex">
+							<img src="img/back-arr.svg" alt="">
+						</button>
+					</div>
+					<a href="#" class="logo-dream-none">
 						<img src="img/logo.png" alt="">
-					</a>
-					<button class="list__btn_burger d-flex">
-						<img src="img/burger-ticks.svg" alt="">
-					</button>
+					</a>		
 				</ul>
 			</nav>
 		</header>
@@ -32,6 +54,9 @@
 		<div class="first">
 			<div class="header__wrap">
 				<div class="first__text">
+					<div class="first__sm color-yellow">
+						Хей, 2022!
+					</div>
 					<h1 class="first__title">
 						Совершеннолетним 
 						<span class="color-yellow">
@@ -61,7 +86,7 @@
 	</section>
 	<!-- VIDEO END -->
 	<!-- WAIT START -->
-	<section class="wait">
+	<section class="wait" id="wait">
 		<img src="img/green-top.png" alt="" class="wait__img-top">
 		<div class="wrap">
 			<div class="wait__block_first d-flex justify-between align-items-center">
@@ -161,7 +186,7 @@
 	</section>
 	<!-- WAIT END -->
 	<!-- TIMETABLE START -->
-	<section class="timetable">
+	<section class="timetable" id="timetable">
 		<img src="img/timetable-bg-y.png" alt="" class="timetable__bg">
 		<div class="timetable__wrap wrap">
 				<div class="table">

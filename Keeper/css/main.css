@@ -594,28 +594,69 @@ h2 {
 
 .review__block {
     position: relative;
+    max-width: 600px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.single-item .slick-dots {
+   top: -50px;
+   bottom: auto;
+}
+
+.single-item li.slick-active button:before  {
+    opacity: 1;
+    color: #266B0C;
+    padding: 0;
+    border: 1px solid #266B0C;
+    border-radius: 50%;
+    }
+
+.single-item .slick-dots li {
+    width: 15px;
+    height: 15px;
+    margin: 0px 14px;
+    padding: 0;
+}  
+
+.single-item .slick-dots li {
+    font-size: 0;
+    line-height: 0;
+    width: 14px;
+    height: 14px;
+    padding: 0px;
+    color: #266B0C;
+}
+
+.single-item li button:before {
+    font-size: 7px;
+    line-height: 18px;
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    color: #266B0C;
 }
 
 .review__det_right {
-    top: -45px;
+    top: 1px;
     right: 50%;
-    width: 150px;
+    width: 120px;
     position: absolute;
-    margin-right: -461px;
+    margin-right: -325px;
     z-index: 2;
 }
 
 .review__det_left {
     position: absolute;
-    top: -19px;
+    top: 0px;
     left: 50%;
-    width: 150px;
-    margin-left: -466px;
+    width: 120px;
+    margin-left: -325px;
     z-index: 2;
 }
 
 .review__cont {
-    padding: 90px 70px;
+    padding: 50px;
     z-index: 1;
     background: #FFFFFF;
     color: #284637;
@@ -631,7 +672,6 @@ h2 {
 }
 
 .review__cont-desc {
-    max-width: 264px;
     width: 100%;
     font-family: 'Gerbera', sans-serif, 'Arial';
     line-height: 140%;  
@@ -647,7 +687,6 @@ h2 {
 
 .review__img-wrap {
     width: 100%;
-    max-width: 432px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     display: flex;
 }
@@ -1119,7 +1158,7 @@ form {
     }
 
     .review__cont {
-        padding: 80px 60px;
+        padding: 40px;
     }
 
     .review__cont-title {
@@ -1410,7 +1449,6 @@ form {
     }
 
     .review__cont-desc {
-        max-width: 300px;
         padding-bottom: 45px;
         font-size: 16px;
     }
@@ -1420,9 +1458,9 @@ form {
     }
 
     .review__det_right {
-        top: -20px;    
+        top: 0px;
         width: 100px;
-        right: -26px;
+        right: -21px;
         margin-right: auto;
     }
 
@@ -1431,12 +1469,6 @@ form {
         left: -29px;
         width: 100px;
         margin-left: auto;
-    }
-
-    .review__block {
-        max-width: 739px;
-        margin: 0 auto;
-        width: 100%;
     }
 
     .ticket {
@@ -1615,7 +1647,8 @@ form {
         bottom: auto;
     }
 
-    .slick-dots li.slick-active button:before {
+    .slick-dots li.slick-active button:before,
+    .single-item li.slick-active button:before  {
         opacity: 1;
         color: #266B0C;
         padding: 0;
@@ -1623,14 +1656,16 @@ form {
         border-radius: 50%;
     }
 
-    .slick-dots li {
+    .slick-dots li,
+    .single-item .slick-dots li {
         width: 15px;
         height: 15px;
         margin: 0px 14px;
         padding: 0;
     }  
 
-    .slick-dots li button {
+    .slick-dots li button,
+    .single-item .slick-dots li {
         font-size: 0;
         line-height: 0;
         width: 14px;
@@ -1702,7 +1737,7 @@ form {
     }
 
     .review__block {
-        max-width: 546px;
+        max-width: 500px;
     }
 
     .review__cont {
@@ -1715,7 +1750,6 @@ form {
     }
 
     .review__cont-desc {
-        max-width: 300px;
         padding-bottom: 30px;
         font-size: 14px;
     }
@@ -1731,7 +1765,7 @@ form {
     }
 
     .review__det_right {
-        top: -21px;
+        top: 1px;
         width: 70px;
         right: -17px;
     }
@@ -2014,13 +2048,17 @@ form {
         display: none;
     }
 
+    .review__wrap {
+        margin-top: 55px;
+    }
+
     .review {
         margin-bottom: 40px;
         padding: 100px 15px 0 15px;
     }
 
     .review__block {
-        max-width: 290px;
+        max-width: 260px;
     }
 
     .review__cont {
@@ -2043,15 +2081,15 @@ form {
     }
 
     .review__det_left {
-        left: -13px;
-        width: 50px;
-        top: -5px;
+        left: -9px;
+        width: 40px;
+        top: 0px;
     }
 
     .review__det_right {
-        top: -12px;
-        width: 50px;
-        right: -13px;
+        top: 1px;
+        width: 40px;
+        right: -8px;
     }
 
     .header__text .btn-wrap {

@@ -34,4 +34,8 @@ $(document).ready(function(){
 	    // instead of a settings object
 	  ]
 	});
+	$('.single-item').slick({
+		infinite: true,
+		dots: true
+	});
 });
