@@ -1,0 +1,771 @@
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+* {
+	font-family: 'Roboto', sans-serif, 'Arial';
+}
+
+body {
+	font-weight: normal;
+}
+
+html {
+	font-size: 16px;	
+}
+
+a, button {
+	cursor: pointer;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+.color-grey:hover {
+	color: #4D4948;
+}
+
+/*INDEX.HTML START*/
+.header {
+	background: #2EAEEE;
+	color: #FFFFFF;
+}
+
+ul, li, ol, nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-navbar {
+	padding: 3px 0;
+}
+
+.header-navbar-nav {
+	max-width: 189px;
+	width: 100%;
+}
+
+.main-bg {
+	background: #F5F5F5;
+}
+
+.nav-item-link {
+	width: 35px;
+	height: 35px;
+	border: 1px solid #E5E5E5;
+	border-radius: 3px;
+}
+
+.nav-link-city {
+	font-size: 1.25rem;
+	border: none;
+	border-radius: 0;
+	height: auto;
+}
+
+.nav-link-text {
+	color: #FFFFFF;
+	margin-left: 7px;
+}
+
+.nav-link-city {
+	max-width: 94px;
+	width: 100%;
+}
+
+.choose__row_first {
+	padding-top: 10px;
+}
+
+.choose__links-item {
+	border: 1px solid #B4B4B4;
+	border-radius: 8px;
+	padding: 10px 7px;
+	font-size: 0.875rem;
+	line-height: 16px;
+	color: #7D7D7D;
+	margin-right: 12px;
+	margin-bottom: 10px;
+}
+
+.choose__links-item:last-child {
+	margin-right: 0;
+}
+
+.choose__row_second {
+	background: #FFFFFF;
+}
+
+.nav-link-appstore,
+.nav-link-playmarket {
+	padding: 7px;
+}
+
+.choose__row_second {
+	padding: 9px 0;
+	font-size: 0.75rem;
+	color: #7D7D7D;
+}
+
+.choose {
+	background: #F5F5F5;
+}
+
+.choose__block {
+	padding: 29px 0 26px 0;
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.color-grey {
+	color: #4D4948;
+}
+
+.color-grey-light {
+	color: #7D7D7D;
+}
+
+.choose__link-wrap {
+	max-width: 258px;
+	width: 100%;
+	margin-bottom: 11px;
+}
+
+.choose__link-wrap_last {
+	margin-bottom: 0;
+}
+
+.choose__link {
+	padding: 15px 20px;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	font-size: 1rem;
+}
+
+.choose__link img {
+	margin-right: 12px;
+}
+
+.choose__link-desc {
+	font-size: 0.625rem;
+	margin-top: 11px;
+}
+
+.choose__block_second {
+	padding: 40px 0;
+}
+
+.choose__block_third {
+	padding: 40px 0;
+}
+
+.choose__cont_third {
+	margin-bottom: 30px;
+}
+
+.soc-media {
+	background: #F5F5F5;
+}
+
+.soc-media__item {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+}
+
+.soc-media__cont {
+	max-width: 311px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.soc-media__text {
+	margin-top: 5px;
+	font-size: 0.688rem;
+	color: #4D4948;
+}
+
+.soc-media__block {
+	padding: 35px 0 30px 0;
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.soc-media__block_third {
+	background: #E5E5E5;
+	border-bottom: 0;
+	padding: 18px 0 25px 0;
+}
+
+.soc-media__title {
+	font-size: 0.875rem;
+	color: #4D4948;
+	margin-bottom: 20px;
+}
+
+.soc-media__cont_third {
+	max-width: 345px;
+	width: 100%;
+}
+
+.soc-media__download {
+	max-width: 160px;
+	width: 100%;
+}
+
+.footer {
+	color: #FFFFFF;
+	background: #2EAEEE;
+	font-size: 0.875rem;
+	padding: 15px 0;
+}
+
+.footer a {
+	color: #FFFFFF;
+	font-size: 0.875rem;
+}
+
+.footer__links {
+	width: 100%;
+	margin-bottom: 17px;
+}
+
+.footer__link {
+	border: 1px solid #FFFFFF;
+	padding: 5px 12px;
+	min-height: 35px;
+	margin-right: 15px;
+}
+
+.footer__link:last-child {
+	margin-right: 0;
+}
+
+.footer__link img {
+	margin-right: 10px;
+}
+
+.footer__stick {
+	margin: 0 15px;
+	display: inline;
+}
+
+.footer__location {
+	margin: 15px 0;
+}
+
+.footer__personal {
+	margin-bottom: 15px;
+}
+
+.footer__personal a {
+	text-decoration: underline;
+}
+
+.footer__nav a {
+	margin-bottom: 15px;
+	text-decoration: underline;
+}
+
+.footer__download a {
+	text-decoration: underline;
+}
+/*INDEX.HTML END*/
+
+/*COUNTRIES.HTML START*/
+
+.countries {
+	padding-bottom: 30px;
+}
+
+.main-item-wrap {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.countries__list {
+	margin-top: 30px;
+}
+
+.countries__letter {
+	font-size: 24px;
+	left: 13px;
+	top: 14px;
+	position: absolute;
+}
+
+.stick {
+	margin: 0 8px;
+}
+
+.main-item {
+	max-width: 288px;
+	width: 100%;
+	padding: 14px 0 14px 40px;
+	font-size: 1.375rem;
+	background: #FFFFFF;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto 30px;
+	transition: box-shadow 0.3s ease;
+}
+
+.main-item:hover {
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+}
+
+.visa-off {
+	font-size: 0.688rem;
+	color: #EBA627;
+	margin-left: 9px;
+}
+
+.visa-on {
+	font-size: 0.688rem;
+	color: #04CE00;
+	margin-left: 9px;
+}
+
+/*COUNTRIES.HTML END*/
+
+/*TURKEY.HTML START*/
+.bg-gr-wh {
+	background: #F5F5F5;
+}  
+
+.country__img-wrap {
+	width: 100%;
+}
+
+.country__img-wrap img {
+	width: 100%;
+}
+
+.country__weather {
+	margin: 11px 0 29px 0;
+}
+
+.temperature__img {
+	margin-right: 4px;
+}
+
+.weather__name {
+	margin-right: 20px;
+	font-size: 1.5rem;
+	color: #4D4948;
+}
+
+.weather__temperature {
+	margin-right: 8px;
+}
+
+.temperature__deg {
+	font-size: 1.125rem;
+	color: #EBA627;
+}
+
+.deg-blue {
+	color: #56BBED;
+}
+
+.country__item {
+	padding: 14px 10px;
+}
+
+.bg-yellow {
+	background: #FEDC00;
+}
+
+.country__item_yellow {
+	border: 1px solid #7D7D7D;
+}
+
+.country__block {
+	border-bottom: 4px solid #E5E5E5;
+	padding-bottom: 7px;
+}
+
+.country__block_second {
+	border-bottom: 0;
+	padding: 35px 0 50px 0;
+}
+
+.country__link {
+	font-size: 1.25rem;
+	color: #0093DD;	
+	margin-bottom: 7px;
+	display: block;
+}
+
+.country__links {
+	max-width: 301px;
+	width: 100%;
+	margin: -6px auto 44px auto;
+}
+
+.country__more {
+	max-width: 314px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.more__link {
+	padding: 15px 20px 15px 12px;
+	font-size: 1.125rem;
+	color: #4D4948;
+	background: #FFFFFF;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.more__link-img-wrap {
+	margin-right: 14px;
+}
+
+.more__link_none-img {
+	padding-left: 52px;
+}
+/*TURKEY.HTML END*/
+
+/*TRAVEL-TO-TURKEY.HTML START*/
+.travel__title {
+	font-size: 1.5rem;
+	margin-bottom: 9px;
+}
+
+.travel {
+	background: #FFFFFF;
+}
+
+.travel__nav {
+	padding: 18px 0 5px 0;
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.travel__link {
+	margin-bottom: 7px;
+	font-size: 1.25rem;
+	color: #4D4948;
+	display: block;
+}
+
+.travel__link-wrap {
+	padding: 15px 0;
+}
+
+.travel__desc {
+	color: #000000;
+	padding: 33px 0;
+}
+
+.br {
+	margin-bottom: 25px;
+}
+
+.travel-text-img-bottom {
+	margin-bottom: 20px;
+}
+
+.travel__desc-title {
+	font-size: 1.375rem;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.travel__desc-text {
+	line-height: 130%;
+	font-size: 1.25rem;
+}
+
+.travel__desc-img-wrap {
+	width: 100%;
+	margin: 34px 0 15px 0;
+}
+
+.travel__desc-img-wrap img {
+	border-radius: 5px;
+}
+
+.travel__desc-img-wrap_second {
+	margin-top: 0;
+}
+
+.travel__desc-title_third {
+	margin-top: 17px;
+}
+
+.travel__desc_text-bold {
+	font-weight: bold;
+}
+
+.travel__desc-title-in {
+	margin-bottom: 8px;
+	display: inline;
+}
+
+.travel__desc-title-last {
+	margin-top: 24px;
+}
+
+.travel__btns {
+	max-width: 322px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.travel__btn {
+	font-size: 1.125rem;
+	color: #4D4948;
+	padding: 10px 20px;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	border-radius: 10px;
+	margin: 45px 0 40px 0;
+}
+
+.travel__prev {
+	pointer-events: none;
+	color: #D6D6D6;
+}
+
+.travel__items-wrap {
+	border-top: 4px solid #DEDEDD;
+	border-bottom: 4px solid #DEDEDD;
+	padding: 40px 0 10px 0;
+}
+
+.travel__comments {
+	padding: 20px 0 70px 0;
+}
+
+.comments__text {
+	font-size: 1.375rem;
+}
+
+/*TRAVEL-TO-TURKEY.HTML END*/
+
+@media screen and (max-width: 420px) {
+/*INDEX.HTML START*/	
+	.nav-item-soc-media {
+		display: none;
+	}
+
+	.header-navbar-nav {
+	    max-width: none;
+	    width: auto;
+	}
+
+	.nav__logo {
+		max-width: 180px;
+	}
+
+	.soc-media__download {
+		margin-right: 15px;
+	}
+
+	.soc-media__download:last-child {
+		margin-right: 0;
+	}
+
+	.footer__link-text {
+		font-size: 0.75rem;
+	}
+
+	.footer__link img {
+		width: 15px;
+	}
+
+	.footer__link {
+		margin-right: 5px;
+	}
+/*INDEX.HTML END*/	
+
+/*COUNTRIES.HTML START*/
+	.main-item {
+	    max-width: 230px;
+	    padding: 14px 0 14px 20px;
+	    font-size: 1.2rem;
+	}
+
+	.main-item-wrap {
+	    max-width: 305px;
+	}
+
+	.countries__letter {
+	    font-size: 20px;
+	    left: 5px;
+	    top: 14px;
+	}
+
+	.visa-off {
+	    margin-left: 5px;
+	}
+/*COUNTRIES.HTML END*/
+
+/*TURKEY.HTML START*/
+	.country__item {
+		padding: 14px 10px;
+		font-size: 1.1rem;
+	}
+
+	.more__link {
+		font-size: 1rem;
+	}
+/*TURKEY.HTML END*/
+}
+
+@media screen and (min-width: 576px) {
+/*INDEX.HTML START*/	
+	html {
+		font-size: 18px;
+	}
+
+	.choose__link {
+		font-size: 0.9rem;
+	}
+
+	.choose__link-wrap {
+		max-width: 290px;
+	}
+/*INDEX.HTML END*/
+
+/*COUNTRIES.HTML START*/
+	.main-item {
+	    max-width: 320px;
+	}
+
+	.countries__letter {
+	    font-size: 24px;
+	    left: 0;
+	}
+/*COUNTRIES.HTML END*/	
+
+/*TURKEY.HTML START*/
+	.country__item,
+	.country__links,
+	.country__more {
+		max-width: 360px;
+	}
+/*TURKEY.HTML END*/
+}
+
+@media screen and (min-width: 768px) {
+/*INDEX.HTML START*/		
+	html {
+		font-size: 20px;
+	}
+
+	.choose__link {
+	    font-size: 0.75rem;
+	    min-height: 82px;
+	}
+
+	.nav-link-city {
+	    max-width: none;
+	}
+
+	.header-navbar-nav {
+	    max-width: 220px;
+	}
+
+	.soc-media__cont {
+	    max-width: 400px;
+	}
+/*INDEX.HTML END*/
+
+/*COUNTRIES.HTML START*/
+	.main-item {
+	    max-width: 380px;
+	}
+
+	.main-item-wrap {
+	    max-width: 480px;
+	}
+
+	.countries__letter {
+	    font-size: 26px;
+	    top: 17px;
+	}
+/*COUNTRIES.HTML END*/
+
+/*TURKEY.HTML START*/
+	.country__item,
+	.country__links,
+	.country__more {
+		max-width: 380px;
+	}
+/*TURKEY.HTML END*/		
+}
+
+@media screen and (min-width: 992px) {
+/*INDEX.HTML START*/
+	.choose__link {
+	    font-size: 0.95rem;
+	    min-height: 82px;
+	}
+/*INDEX.HTML END*/	
+}
+
+@media screen and (min-width: 1200px) {
+/*INDEX.HTML START*/
+	.choose__link-wrap {
+	    max-width: none;
+	}
+	
+	html {
+		font-size: 22px;
+	}
+
+	.choose__link {
+		font-size: 1rem;
+	}
+/*INDEX.HTML END*/	
+
+/*COUNTRIES.HTML START*/
+	.main-item {
+	    max-width: 420px;
+	}
+
+	.main-item-wrap {
+	    max-width: 520px;
+	}
+
+	.countries__letter {
+	    font-size: 28px;
+	    top: 17px;
+	}
+/*COUNTRIES.HTML END*/
+
+/*TURKEY.HTML START*/
+	.country__item,
+	.country__links,
+	.country__more {
+		max-width: 420px;
+	}
+/*TURKEY.HTML END*/	
+}
+
+
+

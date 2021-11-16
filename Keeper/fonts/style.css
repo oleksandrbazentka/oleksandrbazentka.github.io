@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Gerbera';
-    src: local('Gerbera Regular'), local('Gerbera-Regular'),
-        url('Gerbera.woff2') format('woff2'),
-        url('Gerbera.woff') format('woff'),
-        url('Gerbera.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }

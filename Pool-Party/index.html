@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:description" content="Отвязный новогодний рейв в бассейне! Скучно не будет: DJ сеты, VR игры, авторские коктейли и много других развлечений для подростков от 12 до 18 лет">
 	<title>
-		Pool Party
+		Новогодний рейв в бассейне в Mriya Resort & SPA
 	</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -68,9 +69,9 @@
 					</div>
 					<div class="first__btn-wrap">
 						<img src="img/btn-1-back.svg" alt="" class="first__btn-back">
-						<a href="#" class="btn first__btn">
+						<button class="btn first__btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
 							Попасть на тусовку
-						</a>
+						</button>
 						<img src="img/arrow-d.svg" alt="" class="first__img_arrow">
 					</div>
 				</div>
@@ -80,9 +81,9 @@
 	</div>
 	<!-- VIDEO START -->
 	<section class="video" id="video">
-		<div class="video__play">
-			<img src="img/video.jpg" alt="">
-		</div>
+		<video class="video__play" controls autoplay="autoplay" muted="muted" loop="loop">
+			<source src="video/video-1.mp4" type="video/mp4">
+		</video>
 	</section>
 	<!-- VIDEO END -->
 	<!-- WAIT START -->
@@ -93,9 +94,9 @@
 				<h2 class="wait__title">
 					Что вас ждет?
 				</h2>
-				<a href="#" class="btn wait__btn">
+				<button class="btn wait__btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
 					Купить билет
-				</a>
+				</button>
 			</div>
 			<div class="wait__cont d-flex justify-between align-items-center">
 				<div class="wait__img-wrap">
@@ -105,14 +106,14 @@
 					<img src="img/wait-sm-1.jpg" alt="" class="wait__img">
 				</div>
 				<div class="wait__text wait__text_first">
-					<img src="img/wait-bg-green-1.png" alt="" class="text-bg">
+					<img src="img/wait-bg-green-1.png" alt="" class="text-bg text-bg-first">
 					<div class="wait__text-title wait__text-title_var-1">
 						Интерактивы в бассейне
 					</div>
 					<div class="wait__text-desc">
 						Водное поло, плавание на скорость, викторины и конкурсы — артисты Mriya Resort & SPA не дадут скучать в ожидании полуночи.
 					</div>
-					<a href="#" class="wait__text-download">
+					<a href="program.pdf" class="wait__text-download">
 						Скачать программу
 					</a>
 				</div>
@@ -130,7 +131,7 @@
 						Как Новый год встретишь — так и проведешь. Встреть его в роли звезды легендарных YouTube шоу*, в которых станешь главным героем.
 
 					</div>
-					<a href="#" class="wait__text-download download__var_second">
+					<a href="program.pdf" class="wait__text-download download__var_second">
 						Скачать программу
 					</a>
 				</div>
@@ -158,7 +159,7 @@
 					<div class="wait__text-desc">
 						Граффити — новый тренд мирового искусства. В западных странах уличная живопись вышла за рамки надписей на заборах и стала по-настоящему духом поколения. Путь к тому, чтобы стать новым Бэнкси начинается здесь.
 					</div>
-					<a href="#" class="wait__text-download">
+					<a href="program.pdf" class="wait__text-download">
 						Скачать программу
 					</a>
 				</div>
@@ -171,7 +172,7 @@
 					<div class="wait__text-desc desc__var_second">
 						Подзабытый легендарный жанр танца под агрессивный бит, сочетающий в себе стояние на руках и голове, невероятную пластику и ритм, западающий в сердца всем зрителям.
 					</div>
-					<a href="#" class="wait__text-download download__var_second">
+					<a href="program.pdf" class="wait__text-download download__var_second">
 						Скачать программу
 					</a>
 				</div>
@@ -192,9 +193,9 @@
 				<div class="table">
 					<div class="table__block-wrap d-flex justify-between align-items-center">
 						<img src="img/table-btn-back.png" alt="" class="table__btn-back">
-						<a href="#" class="table__block-btn btn">
+						<button class="table__block-btn btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
 							Купить билет
-						</a>
+						</button>
 						<h2 class="table__block-title text-center">
 							Программа
 						</h2>
@@ -364,23 +365,39 @@
 	<footer class="footer" id="footer">
 		<img src="img/colo.png" alt="" class="footer__img_left">
 		<img src="img/footer-blue.png" alt="" class="footer__bg">
-		<form action="#" class="footer__form">
+		<form class="footer__form">
 			<h2 class="form__title">
-				Заголовок
+				Остались вопросы?
 			</h2>
 			<div class="form__subtitle">
-				Подзаголовок
+				У нас есть ответы!
 			</div>
 			<div class="form__inputs">
-				<input type="text" class="form__input" placeholder="Ваше телефон" data-mask="+0 (000) 000 00 00" id="tel">
-				<input type="text" class="form__input" placeholder="Ваше имя">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Новогодний рейв в бассейне в Mriya Resort & SPA">
+				<input type="hidden" name="admin_email" value="mrs.b2b@mriyaresort.com">
+				<input type="hidden" name="form_subject" value="Форма с Pool-Party">
+				<!-- END Hidden Required Fields -->
+				<input type="text" name="Ваш телефон" required class="form__input" placeholder="Ваше телефон" data-mask="+0 (000) 000 00 00" id="tel">
+				<input type="text" name="Ваше имя" required class="form__input" placeholder="Ваше имя">
 			</div>
-			<button class="form__submit btn">
+			<button class="form__submit btn" type="submit">
 				Оставить заявку
 			</button>
 			<a href="tel:88005504326" class="form__tel">
 				8 800 550 43 26
 			</a>
+			<div class="footer__soc-media">
+				<a href="https://instagram.com/dreamwoodpark" class="soc-media__item">
+					<img src="img/inst.svg" alt="">
+				</a>
+				<a href="https://facebook.com/dreamwoodpark" class="soc-media__item">
+					<img src="img/face.svg" alt="">
+				</a>
+				<a href="https://vk.com/dreamwoodpark" class="soc-media__item">
+					<img src="img/vk.svg" alt="">
+				</a>
+			</div>
 			<div class="form__loc">
 				Ялта, с.Оползневое, ул.Генерала Острякова, д.9
 			</div>
