@@ -99,7 +99,6 @@ $(document).ready(function(){
 	  });
 
 	  // РАССАДКА
-
 	let locationTitle = document.querySelector('.location__title');
 	locationTitle.addEventListener('click', function() {
 		let locationImg = document.querySelector('#locationImg');
@@ -113,4 +112,27 @@ $(document).ready(function(){
 	    locationImg.className = className;
 	    return false;
 	});
+
+	//МОДАЛЬНОЕ ОКНО
+		const html = document.querySelector('html');
+		const modalWindow = document.querySelector('.modal');
+		const modal = document.querySelector('.modal__show');
+		setTimeout(function() {
+		   modal.classList.add('visible');
+		   html.style.overflowY = 'hidden';
+		}, 3000); 
+
+		const modalClose = document.querySelector('.modal__close');
+		modalClose.addEventListener('click', function(event) {
+			modal.classList.add('hidden');
+			modal.classList.remove('visible');
+	 		html.style.overflowY = 'scroll';
+		});
+
+		const modalBtn = document.querySelector('.modal-btn');
+		modalBtn.addEventListener('click', function(event) {
+			modal.classList.add('hidden');
+			modal.classList.remove('visible');
+	 		html.style.overflowY = 'scroll';
+		});
 });

@@ -42,4 +42,31 @@ window.addEventListener('load', function() {
 	    });
 	    return false;
 	  });
+
+	  //МОДАЛЬНОЕ ОКНО
+		const html = document.querySelector('html');
+		const modalWindow = document.querySelector('.modal');
+		const modal = document.querySelector('.modal__show');
+		const modalOpen = document.querySelector('.modal-open');
+
+		modalOpen.addEventListener('click', function(event) {
+			modal.classList.add('visible');
+			modal.classList.remove('hidden');
+	 		html.style.overflowY = 'hidden';
+		});
+
+
+		const modalClose = document.querySelector('.modal__close');
+		modalClose.addEventListener('click', function(event) {
+			modal.classList.add('hidden');
+			modal.classList.remove('visible');
+	 		html.style.overflowY = 'scroll';
+		});
+
+		const modalBtn = document.querySelector('.modal-btn');
+		modalBtn.addEventListener('click', function(event) {
+			modal.classList.add('hidden');
+			modal.classList.remove('visible');
+	 		html.style.overflowY = 'scroll';
+		});
 });

@@ -73,10 +73,41 @@
 			</div>	
 		</header>
 		<picture>
-			<source srcset="img/keeper-1.webp" type="image/webp" class="header__img_keeper">
-  			<source srcset="img/keeper-1.png" type="image/png" class="header__img_keeper"> 
-  			<img src="img/keeper-1.png" alt="" class="header__img_keeper">
+			<source srcset="img/keeper-1.webp" type="image/webp" class="header__img_keeper" media="(min-width: 576px)"> 
+			<source srcset="img/keeper-1.png" type="image/png" class="header__img_keeper" media="(min-width: 576px)">
+			<source srcset="img/keeper-1-sm.webp" type="image/webp" class="header__img_keeper img-sm">
+  			<source srcset="img/keeper-1-sm.png" type="image/png" class="header__img_keeper img-sm"> 	
+  			<img src="img/keeper-1.png" alt="" class="header__img_keeper" media="(min-width: 576px)">
+  			<img src="img/keeper-1-sm.png" alt="" class="header__img_keeper img-sm">
 		</picture>
+	</div>
+	<div class="modal__show">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<div class="modal__title">
+						Эпидемиологические ограничения
+					</div>
+				</div>
+				<div class="modal__text">
+					В связи с мерами по противодействию распространению коронавируса,
+					Правительство Республики Крым может запретить ночные мероприятия в
+					Новогоднюю ночь. Мы оставляем за собой право перенести начало программы
+					на более раннее время.
+				</div>
+				<div class="modal__text">
+					Доступ на празднование Нового года для совершеннолетних гостей
+					производится только при наличии QR кода о вакцинации или о QR кода о
+					перенесенном заболевании
+				</div>
+				<button class="modal-btn">
+					Я принимаю
+				</button>
+				<button class="modal__close">
+					<img src="img/close.png" alt="">
+				</button>
+			</div>
+		</div>
 	</div>
 	<section class="video" id="video">
 		<video class="video__play" id="bgvid" autoplay="autoplay" muted="muted" loop="loop">

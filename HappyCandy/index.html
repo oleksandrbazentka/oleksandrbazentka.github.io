@@ -69,7 +69,7 @@
 					<div class="header-top__desc">
 						Конфетная фея Клубничка вместе с помощниками устроит вечеринку, которую невозможно не посетить. Вкуснейшие угощения, мастер-классы, анимационная программа: Вас и Вашего ребёнка ждёт незабываемый праздник.
 					</div>
-					<button class="header-top__btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '246973', type: 'event' }) }])">
+					<button class="header-top__btn modal-open">
 						Купить билет
 					</button>
 					<div class="header-top__soc-media d-flex justify-content-beetween align-items-center">
@@ -93,6 +93,34 @@
 				</picture>
 			</div>
 		</section>
+	</div>
+	<div class="modal__show">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<div class="modal__title">
+						Эпидемиологические ограничения
+					</div>
+				</div>
+				<div class="modal__text">
+					В связи с мерами по противодействию распространению коронавируса,
+					Правительство Республики Крым может запретить ночные мероприятия в
+					Новогоднюю ночь. Мы оставляем за собой право перенести начало программы
+					на более раннее время.
+				</div>
+				<div class="modal__text">
+					Доступ на празднование Нового года для совершеннолетних гостей
+					производится только при наличии QR кода о вакцинации или о QR кода о
+					перенесенном заболевании
+				</div>
+				<button class="modal-btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '246973', type: 'event' }) }])">
+					Я принимаю
+				</button>
+				<button class="modal__close">
+					<img src="img/close.png" alt="">
+				</button>
+			</div>
+		</div>
 	</div>	
 		<!-- HEADER-TOP END -->
 		<!-- BIG-IMG START -->

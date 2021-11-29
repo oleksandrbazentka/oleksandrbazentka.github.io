@@ -33,10 +33,6 @@
 	font-style: normal;
 }
 
-/*html, body {
-	overflow-x: hidden;
-}
-*/
 body {
 	font-size: 20px;
 	font-weight: 300;
@@ -62,6 +58,117 @@ img {
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', sans-serif, 'Arial';
+}
+
+.modal__show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    overflow-y: auto;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+.visible {
+  display: block;
+  animation: showBlock 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+    animation: hiddenBlock 0.5s ease-out;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hiddenBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.modal-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: auto;
+    min-height: calc(100% - 3.5rem);
+}
+
+.modal {
+    background: white;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    max-width: 750px;
+    width: 100%;
+    margin: 1.75rem auto;
+    color: #000000;
+    font-weight: 400;
+}
+
+.modal__close {
+    position: absolute;
+    color: #084C94;
+    font-size: 20px;
+    top: 15px ;
+    right: 15px;
+    background: white;
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+
+.modal__close img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal__text {
+    font-size: 24px;
+    line-height: 153.5%;
+    margin-bottom: 15px;
+}
+
+.modal-btn {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 24px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    background-color: #681A91;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal__cont {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 46px;
 }
 
 .logo-dream-none {
@@ -1253,6 +1360,18 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+	.modal__title {
+        font-size: 34px;
+    }
+
+    .modal__text {
+        font-size: 20px;
+    }
+
+    .modal-btn {
+        font-size: 20px;
+    }
+
 	.first__img-block {
 	    width: 375px;
 	    top: -500px;
@@ -1573,6 +1692,27 @@ h2 {
 }
 
 @media screen and (max-width: 576px) {
+	.modal__title {
+        font-size: 24px;
+    }
+
+    .modal__cont {
+        margin-bottom: 25px;
+    }
+
+    .modal__text {
+        font-size: 16px;
+    }
+
+    .modal {
+        padding: 30px 15px;
+    }
+
+    .modal-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
 	.header__nav {
 	    padding-top: 15px;
 	}
