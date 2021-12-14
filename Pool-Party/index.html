@@ -69,7 +69,7 @@
 						производится только при наличии QR кода о вакцинации или о QR кода о
 						перенесенном заболевании
 					</div>
-					<button class="modal-btn">
+					<button class="modal-btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
 						Я принимаю
 					</button>
 					<button class="modal__close">
@@ -97,7 +97,7 @@
 					</div>
 					<div class="first__btn-wrap">
 						<img src="img/btn-1-back.svg" alt="" class="first__btn-back">
-						<button class="btn first__btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
+						<button class="btn first__btn modal-open">
 							Попасть на тусовку
 						</button>
 						<img src="img/arrow-d.svg" alt="" class="first__img_arrow">
@@ -122,7 +122,7 @@
 				<h2 class="wait__title">
 					Что вас ждет?
 				</h2>
-				<button class="btn wait__btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
+				<button class="btn wait__btn modal-open">
 					Купить билет
 				</button>
 			</div>
@@ -221,7 +221,7 @@
 				<div class="table">
 					<div class="table__block-wrap d-flex justify-between align-items-center">
 						<img src="img/table-btn-back.png" alt="" class="table__btn-back">
-						<button class="table__block-btn btn" onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: '251328', type: 'event' }) }])">
+						<button class="table__block-btn btn modal-open">
 							Купить билет
 						</button>
 						<h2 class="table__block-title text-center">

@@ -117,10 +117,15 @@ $(document).ready(function(){
 		const html = document.querySelector('html');
 		const modalWindow = document.querySelector('.modal');
 		const modal = document.querySelector('.modal__show');
-		setTimeout(function() {
-		   modal.classList.add('visible');
-		   html.style.overflowY = 'hidden';
-		}, 3000); 
+		const modalOpen = document.querySelectorAll('.modal-open');
+
+		for(let i = 0; i < modalOpen.length; i++) {
+			modalOpen[i].addEventListener('click', function() {
+				modal.classList.add('visible');
+				modal.classList.remove('hidden');
+	 			html.style.overflowY = 'hidden';	
+			});
+		};
 
 		const modalClose = document.querySelector('.modal__close');
 		modalClose.addEventListener('click', function(event) {

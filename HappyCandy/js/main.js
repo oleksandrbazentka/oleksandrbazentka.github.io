@@ -47,14 +47,15 @@ window.addEventListener('load', function() {
 		const html = document.querySelector('html');
 		const modalWindow = document.querySelector('.modal');
 		const modal = document.querySelector('.modal__show');
-		const modalOpen = document.querySelector('.modal-open');
+		const modalOpen = document.querySelectorAll('.modal-open');
 
-		modalOpen.addEventListener('click', function(event) {
-			modal.classList.add('visible');
-			modal.classList.remove('hidden');
-	 		html.style.overflowY = 'hidden';
-		});
-
+		for(let i = 0; i < modalOpen.length; i++) {
+			modalOpen[i].addEventListener('click', function(event) {
+				modal.classList.add('visible');
+				modal.classList.remove('hidden');
+	 			html.style.overflowY = 'hidden';
+			});
+		};
 
 		const modalClose = document.querySelector('.modal__close');
 		modalClose.addEventListener('click', function(event) {
