@@ -1293,4 +1293,16 @@ h1, h2, h3, h4, h5, h6 {
 	.btn-none {
 	    margin-top: 30px;
 	}
+
+	.modal {
+	    margin-left: 15px;
+	    margin-right: 15px;
+	}
+
+	.modal__close {
+	    top: -35px;
+	    right: 0px;
+	    width: 24px;
+	    height: 24px;
+	}
 }
