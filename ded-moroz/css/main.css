@@ -193,12 +193,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-	font-size: 1.875rem;
-	color: #FFFFFF;
-	padding: 16px 44px 22px;
-	background: linear-gradient(180deg, #FEC326 0%, #B4822C 100%);
-	box-shadow: 0px 7px 0px #AC6700;
-	border-radius: 15px;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: 14px 30px 20px;
+    background: linear-gradient(
+	180deg, #FEC326 0%, #B4822C 100%);
+    box-shadow: 0px 7px 0px #ac6700;
+    border-radius: 15px;
 }
 
 .dream {
@@ -455,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contacts__block {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
 }
@@ -548,23 +549,51 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.modal__show {
+.modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
+    left: 50%;
+    top: 50%;    
+    z-index: 10;
+    background: url('../img/popup-back.png') no-repeat top center;
+	background-color: #ffffff;
+	background-size: 100% 100%;
+    border: none;
+    border-radius: 40px;
+    width: 100%;   
+    max-width: 650px;
+    padding: 15px 40px 15px 0;
     display: none;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    outline: 0;
-    overflow-y: auto;
-    justify-content: center;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.40);
+    justify-content: space-between;
+	align-items: center;
+    transform: translate(-50%, -50%) scale(0);
 }
 
-.visible {
+.modal.modal-active {
+  z-index: 100;
+  pointer-events: auto;
+  display: flex;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+.overlay.over-active {
+  opacity: 1;
+  z-index: 9;
+  pointer-events: all;
+}
+
+/*.visible {
   display: block;
   animation: showBlock 0.5s ease-in-out;
 }
@@ -572,7 +601,7 @@ h1, h2, h3, h4, h5, h6 {
 .hidden {
 	display: none;
 	animation: hiddenBlock 0.5s ease-out;
-}
+}*/
 
 @keyframes showBlock {
   0% {
@@ -592,39 +621,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.modal-wrap {
-	display: flex;
-	align-items: center;
-	position: relative;
-	width: auto;
-	min-height: calc(100% - 3.5rem);
-}
-
-.modal {
-    background: url('../img/popup-back.png') no-repeat top center;
-    background-color: #ffffff;
-    background-size: 100% 100%;
-    border-radius: 40px;
-    border: none;
-    position: relative;
-    padding: 30px 60px 30px 0;
-    max-width: 1200px;
-    width: 100%;
-    margin: 5.75rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .modal__close {
     position: absolute;
-    top: -65px;
-    right: -65px;
+    top: 20px;
+    right: 20px;
     border: none;
-    width: 48px;
+    width: 20px;
     cursor: pointer;
-    height: 48px;
-  	background: transparent;
+    height: 20px;
+    background: transparent;
 }
 
 .modal__close img {
@@ -633,14 +638,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal__text {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	line-height: 180%;
+	font-size: 1rem;
+}
+
+.modal__text:last-child {
+	margin-bottom: 0;
 }
 
 .modal__img-wrap {
-    max-width: 496px;
+    max-width: 300px;
     width: 100%;
-    margin: 0 80px 0 -45px;
+    margin: 0 40px 0 -45px;
 }
 
 .modal__img-wrap img {
@@ -668,24 +678,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.btn-wrap {
 		margin-top: 40px;
-	}
-}
-
-@media screen and (max-width: 1400px) {
-	.modal {
-	    margin-left: 65px;
-	    margin-right: 65px;
-	}
-
-	.modal__close {
-		position: absolute;
-	    top: -40px;
-	    right: -40px;
-	    border: none;
-	    width: 40px;
-	    cursor: pointer;
-	    height: 40px;
-	    background: transparent;
 	}
 }
 
@@ -758,6 +750,10 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: 55px;
 	}
 
+	.btn {
+		padding: 14px 25px 20px;
+	}
+
 	.contacts {
 	    padding: 0 15px;
 	}
@@ -771,12 +767,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.modal__img-wrap {
-	    max-width: 400px;
-	    margin: 0 40px 0 0px;
-	}
-
-	.modal {
-		padding: 30px;
+	    max-width: 250px;
 	}
 }
 
@@ -802,10 +793,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.header {
 	    margin-bottom: 120px;
-	}
-
-	.btn {
-	    padding: 13px 35px 19px;
 	}
 
 	.dream__subtitle {
@@ -893,29 +880,24 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.modal {
-	    padding: 60px 20px;
+	    max-width: 550px;
+	    padding: 15px 30px 15px 0;
 	}
 
 	.modal__img-wrap {
-	    max-width: 250px;
+	    max-width: 220px;
 	    margin-right: 20px;
-	}
-
-	.modal__text {
-		margin-bottom: 20px;
-	}
-
-	.modal__close {
-	    top: -30px;
-	    right: -30px;
-	    width: 30px;
-	    height: 30px;
+	    margin: 0 20px 0 -30px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 10px;
+	}
+
+	.btn {
+	    padding: 12px 25px 15px;
 	}
 
 	.nav__item-tel {
@@ -973,6 +955,10 @@ h1, h2, h3, h4, h5, h6 {
 	.dream__mail {
 	    max-width: 450px;
 	    margin: 0 auto 40px;
+	}
+
+	.first__btn {
+		display: block;
 	}
 
 	.dream__content {
@@ -1070,12 +1056,14 @@ h1, h2, h3, h4, h5, h6 {
 		background: url('../img/popup-back-sm.png') no-repeat top center / cover;
 		background-color: #FFFFFF;
 		flex-direction: column;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		max-width: 300px;
+		padding: 15px 15px 30px 15px;
 	}
 
 	.modal__img-wrap {
-		margin-bottom: 50px;
+	    margin: 0;
+	    margin-bottom: 20px;
+	    max-width: 190px;
 	}
 
 	.modal__content {
@@ -1084,7 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	.modal__text {
 		text-align: left;
-		margin-bottom: 40px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -1197,20 +1185,18 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 30px;
 		width: 100%;
 		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 	.first__btns {
 		flex-direction: column;
-		max-width: 300px;
+		max-width: 180px;
 		margin: 0 auto;
 	}
 
 	.first__btn:last-child {
 		margin-bottom: 0;
-	}
-
-	.btn {
-	    padding: 18px 35px 22px;
 	}
 
 	.dream__block {
@@ -1295,14 +1281,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.modal {
-	    margin-left: 15px;
-	    margin-right: 15px;
+	    padding: 10px 12px 25px 12px;
 	}
 
-	.modal__close {
-	    top: -35px;
-	    right: 0px;
-	    width: 24px;
-	    height: 24px;
+	.modal__img-wrap {
+	    max-width: 170px;
 	}
 }
