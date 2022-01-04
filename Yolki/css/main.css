@@ -311,6 +311,11 @@ img {
     left: 370px;
 }
 
+.about__img_abs-jan-5 {
+	width: 580px;
+    top: -400px;	
+}
+
 .about__img_year {
 	width: 166px;
 }
@@ -384,6 +389,11 @@ img {
 .programm__item img {
     width: 75px;
     height: 75px;
+}
+
+.btn-wrap-red {
+	margin: 120px auto 0;
+	text-align: center;
 }
 
 .gallery {
@@ -707,6 +717,12 @@ img {
 	    left: 370px;
 	}
 
+	.about__img_abs-jan-5 {
+	    width: 509px;
+	    top: -335px;
+	    left: 370px;
+	}
+
 	.programm {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -903,10 +919,20 @@ img {
 	    left: 320px;
 	}
 
+	.about__img_abs-jan-5 {
+		width: 380px;
+    	top: -247px;
+    	left: 320px;
+	}
+
 	.programm__title {
 	    margin-right: 20px;
 	    font-size: 1.4rem;
 	    max-width: 120px;
+	}
+
+	.btn-wrap-red {
+		margin-top: 100px;
 	}
 
 	.programm__list {
@@ -1124,6 +1150,12 @@ img {
 	    left: 95px;
 	}
 
+	.about__img_abs-jan-5 {
+		width: 307px;
+    	top: -292px;
+    	left: 130px;
+	}
+
 	.programm__block {
 	    flex-direction: column;
 	}
@@ -1152,6 +1184,10 @@ img {
 
 	.programm__list {
 	    flex-direction: column;
+	}
+
+	.btn-wrap-red {
+		margin-top: 80px;
 	}
 
 	.gallery {
@@ -1319,9 +1355,19 @@ img {
 	    left: 52px;
 	}
 
+	.about__img_abs-jan-5 {
+	    width: 260px;
+	    top: -254px;
+	    left: 72px;
+	}
+
 	.programm__item img {
 	    width: 45px;
 	    height: 45px;
+	}
+
+	.btn-wrap-red {
+		margin-top: 60px;
 	}
 
 	.gallery {
