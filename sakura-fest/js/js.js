@@ -134,7 +134,10 @@ let htmlDoc = document.querySelector('html');
 burgerBtn.onclick = function() {
 	document.querySelector('.b8-b1').style.position = 'relative';
 	document.querySelector('.b8-b1').style.zIndex = '-1';
+	document.querySelector('.b9-back').style.position = 'relative';
+	document.querySelector('.b9-back').style.zIndex = '-1';
 	document.querySelector('.telegramim_button').style.zIndex = '-1';
+	document.querySelector('.link__programme').style.zIndex = '-1';
 	htmlDoc.style.overflowY = 'hidden';
 }
 
@@ -142,6 +145,9 @@ burgerClose.onclick = function() {
 	document.querySelector('.b8-b1').style.position = 'relative';
 	document.querySelector('.b8-b1').style.zIndex = '2';
 	document.querySelector('.telegramim_button').style.zIndex = '9999999';
+	document.querySelector('.b9-back').style.position = 'static';
+	document.querySelector('.b9-back').style.zIndex = 'auto';
+	document.querySelector('.link__programme').style.zIndex = '99';
 	htmlDoc.style.overflowY = 'scroll';
 }	
 
@@ -150,12 +156,92 @@ for(let i = 0; i < pageLink.length; i++) {
 	pageLink[i].addEventListener('click', function() {
 		document.querySelector('.b8-b1').style.position = 'relative';
 		document.querySelector('.b8-b1').style.zIndex = '2';
+		document.querySelector('.b9-back').style.position = 'static';
+		document.querySelector('.b9-back').style.zIndex = 'auto';
 		document.querySelector('.telegramim_button').style.zIndex = '9999999';
+		document.querySelector('.link__programme').style.zIndex = '99';
 		htmlDoc.style.overflowY = 'scroll';
 		menu.classList.remove('header-menu__active');
 		burgerItem.style.visibility = 'visible';
 	});
 }
+
+let tematicBlock = document.querySelectorAll('.tematic__cont-block');
+for(let i = 0; i < tematicBlock.length; i++) {
+	tematicBlock[i].addEventListener('mouseenter', function(e) {
+		let target = e.target;
+		let backGreen = target.childNodes[1];
+		backGreen.classList.add('none-green');
+	});
+	tematicBlock[i].addEventListener('mouseleave', function(e) {
+		let target = e.target;
+		let backGreen = target.childNodes[1];
+		backGreen.classList.remove('none-green');
+	});
+};
+
+var $tabs = function (target) {
+var
+  _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
+  _eventTabsShow,
+  _showTab = function (tabsLinkTarget) {
+    var tabsPaneTarget, tabsLinkActive, tabsPaneShow;
+    tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
+    tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
+    tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tab-show');
+    // если следующая вкладка равна активной, то завершаем работу
+    if (tabsLinkTarget === tabsLinkActive) {
+      return;
+    }
+    // удаляем классы у текущих активных элементов
+    if (tabsLinkActive !== null) {
+      tabsLinkActive.classList.remove('tabs__link_active');
+    }
+    if (tabsPaneShow !== null) {
+      tabsPaneShow.classList.remove('tab-show');
+    }
+    // добавляем классы к элементам (в завимости от выбранной вкладки)
+    tabsLinkTarget.classList.add('tabs__link_active');
+    tabsPaneTarget.classList.add('tab-show');
+    document.dispatchEvent(_eventTabsShow);
+  },
+  _switchTabTo = function (tabsLinkIndex) {
+    var tabsLinks = _elemTabs.querySelectorAll('.tab-link');
+    if (tabsLinks.length > 0) {
+      if (tabsLinkIndex > tabsLinks.length) {
+        tabsLinkIndex = tabsLinks.length;
+      } else if (tabsLinkIndex < 1) {
+        tabsLinkIndex = 1;
+      }
+      _showTab(tabsLinks[tabsLinkIndex - 1]);
+    }
+  };
+
+_eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
+
+_elemTabs.addEventListener('click', function (e) {
+  var tabsLinkTarget = e.target;
+  // завершаем выполнение функции, если кликнули не по ссылке
+  if (!tabsLinkTarget.classList.contains('tab-link')) {
+    return;
+  }
+  // отменяем стандартное действие
+  e.preventDefault();
+  _showTab(tabsLinkTarget);
+});
+
+return {
+  showTab: function (target) {
+    _showTab(target);
+  },
+  switchTabTo: function (index) {
+    _switchTabTo(index);
+  }
+}
+
+};
+
+$tabs('.tabs');
 
 
 $(document).ready(function () {
