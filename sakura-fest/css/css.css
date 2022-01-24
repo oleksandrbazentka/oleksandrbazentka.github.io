@@ -877,6 +877,11 @@ table {
 .b6__title-span_second a {
 	color: #FFFFFF;
 	text-decoration: underline;
+	transition: all .3s ease-in-out;
+}
+
+.b6__title-span_second a:hover {
+	color: #0C594B;
 }
 
 .variant__title {
@@ -1294,6 +1299,11 @@ table {
 	line-height: 115%;
 	color: #FF6462;
 	text-decoration: underline;
+	transition: all .3s ease-in-out;
+}
+
+.b7-download:hover {
+	color: #FFFFFF;
 }
 
 .b-h {
@@ -2383,23 +2393,23 @@ table {
 	    left: 0;
     	top: -50px;
 	    animation-name: rotation;
-	    animation-duration: 5s;
+	    animation-duration: 10s;
 	    animation-iteration-count: infinite;
 	    animation-timing-function: linear;
 	    -webkit-animation-name: rotation;
-	    -webkit-animation-duration: 5s;
+	    -webkit-animation-duration: 10s;
 	    -webkit-animation-iteration-count: infinite;
 	    -webkit-animation-timing-function: linear;
 	    -moz-animation-name: rotation;
-	    -moz-animation-duration: 5s;
+	    -moz-animation-duration: 10s;
 	    -moz-animation-iteration-count: infinite;
 	    -moz-animation-timing-function: linear;
 	    -o-animation-name: rotation;
-	    -o-animation-duration: 5s;
+	    -o-animation-duration: 10s;
 	    -o-animation-iteration-count: infinite;
 	    -o-animation-timing-function: linear;
 	    animation-name: rotation;
-	    animation-duration: 5s;
+	    animation-duration: 10s;
 	    animation-iteration-count: infinite;
 	    animation-timing-function: linear;
 	}
