@@ -6,6 +6,7 @@
 	<title>
 		Astrology
 	</title>
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,38 +20,85 @@
 					</a>
 					<div class="list__cont">
 						<li class="list__item">
-							<a href="#">
+							<a href="#for-you">
 								Для кого
 							</a>
 						</li>
 						<li class="list__item">
-							<a href="#">
+							<a href="#result">
 								Результаты
 							</a>
 						</li>
 						<li class="list__item">
-							<a href="#">
+							<a href="#advantages">
 								О курсе
 							</a>
 						</li>
 						<li class="list__item">
-							<a href="#">
+							<a href="#about">
 								О преподавателе
 							</a>
 						</li>
 						<li class="list__item">
-							<a href="#">
+							<a href="#programm">
 								Программа
 							</a>
 						</li>
 						<li class="list__item">
-							<a href="#">
+							<a href="#reviews">
 								Отзывы
 							</a>
 						</li>
 					</div>
 				</ul>
 			</nav>
+			<nav class="navbar">
+	            <a href="#" class="header__logo">
+	            	<img src="img/logo.svg" alt="">
+	            </a>
+	            <ul class="nav-menu">
+	            	<div class="nav-top">
+	            		<a href="index.html" class="header__logo logo-burger">
+	            			<img src="img/logo.svg" alt="">
+	           			</a>
+	            	</div>
+		            <li class="list__item">
+							<a href="#for-you">
+								Для кого
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#result">
+								Результаты
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#advantages">
+								О курсе
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#about">
+								О преподавателе
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#programm">
+								Программа
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#reviews">
+								Отзывы
+							</a>
+						</li>
+	            </ul>
+	            <div class="hamburger">
+				    <span class="bar"></span>
+				    <span class="bar"></span>
+				    <span class="bar"></span>
+			    </div>
+        	</nav>
 		</header>
 		<section class="first-section">
 			<div class="first-section__block">
@@ -92,11 +140,83 @@
 						</div>
 					</div>
 				</div>
-				<button class="first-section__btn btn">
+				<button class="first-section__btn btn btn-course">
 					Получить программу
 				</button>
 			</div>
 		</section>
+	</div>
+	<div class="modal__show">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<div class="modal__title">
+						Регистрация
+						<br>
+						на бесплатный вебинар
+					</div>
+					<div class="modal__text">
+						<span>
+							вводный урок к курсу
+						</span>
+						13 февраля в 15:00		
+					</div>
+					<form action="#" class="modal__form">
+						<input type="text" class="form__input form__name" placeholder="Имя">
+						<input type="email" class="form__input form__mail" placeholder="E-mail">
+						<input type="tel" class="form__input form__tel" placeholder="Телефон" required>
+						<div class="checkbox">
+						    <input class="custom-checkbox" type="checkbox" id="terms-1" name="terms-1" value="я согласен на обработку персональных данных">
+						    <label for="terms-1">
+						    	я согласен на обработку персональных данных
+						    </label>
+						  </div>
+						<button class="form__submit btn" type="submit">
+							зарегистрироваться
+						</button>
+					</form>
+				</div>
+				<button class="modal__close">
+					<img src="img/popup-close.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal__show modal__show_second">
+		<div class="modal-wrap">
+			<div class="modal">
+				<div class="modal__cont">
+					<div class="modal__title">
+						Здесь вас ждет
+						<br>
+						приятный бонус
+					</div>
+					<div class="modal__text modal__text_second">
+						<span>
+							15% скидка
+						</span>
+						на ранее бронирование курса		
+					</div>
+					<form action="#" class="modal__form">
+						<input type="text" class="form__input form__name" placeholder="Имя">
+						<input type="email" class="form__input form__mail" placeholder="E-mail">
+						<input type="tel" class="form__input form__tel" placeholder="Телефон" required>
+						<div class="checkbox">
+						    <input class="custom-checkbox" type="checkbox" id="terms-2" name="terms-2" value="я согласен на обработку персональных данных">
+						    <label for="terms-2">
+						    	я согласен на обработку персональных данных
+						    </label>
+						  </div>
+						<button class="form__submit btn" type="submit">
+							зарегистрироваться
+						</button>
+					</form>
+				</div>
+				<button class="modal__close">
+					<img src="img/popup-close.svg" alt="">
+				</button>
+			</div>
+		</div>
 	</div>
 	<section class="for-you" id="for-you">
 		<h2 class="for-you__title">
@@ -105,17 +225,17 @@
 		<div class="for-you__block">
 			<div class="for-you__cont">
 				<div class="for-you__text">
-					<div class="for-you__circle"></div>
+					<div class="for-you__circle circle-1"></div>
 					Хотите отыскать настоящего себя, узнать свои возможности 
 					и распутать клубок сомнений
 				</div>
 				<div class="for-you__text">
-					<div class="for-you__circle"></div>
+					<div class="for-you__circle circle-3"></div>
 					Хотите систематизировать знания 
 					и научиться составлять собственные трактовки
 				</div>
 				<div class="for-you__text">
-					<div class="for-you__circle"></div>
+					<div class="for-you__circle circle-5"></div>
 					Ищете «навигатор» для решения жизненных проблем
 				</div>
 			</div>
@@ -126,41 +246,41 @@
 			</div>
 			<div class="for-you__cont for-you__cont_second">
 				<div class="for-you__text">
-					<div class="for-you__circle"></div>
+					<div class="for-you__circle circle-2"></div>
 					Вы затерялись в обилии астрологической информации
 				</div>
 				<div class="for-you__text">
-					<div class="for-you__circle"></div>
+					<div class="for-you__circle circle-4"></div>
 					Мечтаете сделать астрологию своей профессией
 				</div>
 				<div class="for-you__text">
-					<div class="for-you__circle"></div>
+					<div class="for-you__circle circle-6"></div>
 					Стремитесь стать проводником для окружающих
 				</div>
 			</div>
 		</div>
 	</section>	
 	<section class="result" id="result">
-		<h2 class="result__title">
+		<h2 class="result__title" data-aos="fade-right">
 			Что вы получите в результате курса
 		</h2>
 		<div class="wrap result__wrap">
 			<div class="result__sentence-wrap">
-				<a href="#" class="result__sentence">
+				<a href="" class="result__sentence btn__modal">
 					<img src="img/circle-letter.png" alt="" class="sentence__letter">
 					<span class="sentence__text">
 						Записаться 
 						на бесплатный
 						вебинар
 					</span>	
-					<img src="img/circle-border.svg" alt="" class="sentence__text-border">		
+					<img src="img/circle-border.svg" alt="" class="sentence__text-border">	
 				</a>
 				<button class="btn-close">
 					<img src="img/close.svg" alt="">
 				</button>
 			</div>
 			<div class="result__block">
-				<div class="result__item">
+				<div class="result__item" data-aos="zoom-in">
 					<div class="result__item-cont">
 						<div class="result__item-text result__item-text_big">
 							Вы начнете понимать
@@ -171,7 +291,7 @@
 					</div>
 					<img src="img/have-1.svg" alt="" class="result__item-img">
 				</div>
-				<div class="result__item">
+				<div class="result__item" data-aos="zoom-in">
 					<div class="result__item-cont">
 						<div class="result__item-text result__item-text_big">
 							Систематизируете 
@@ -182,7 +302,7 @@
 					</div>
 					<img src="img/have-2.svg" alt="" class="result__item-img">
 				</div>
-				<div class="result__item">
+				<div class="result__item" data-aos="zoom-in">
 					<div class="result__item-cont">
 						<div class="result__item-text result__item-text_big">
 							Обретете 
@@ -193,7 +313,7 @@
 					</div>
 					<img src="img/have-3.svg" alt="" class="result__item-img">
 				</div>
-				<div class="result__item">
+				<div class="result__item" data-aos="zoom-in">
 					<div class="result__item-cont">
 						<div class="result__item-text result__item-text_big">
 							Сможете применять 
@@ -204,7 +324,7 @@
 					</div>
 					<img src="img/have-4.svg" alt="" class="result__item-img">
 				</div>
-				<div class="result__item">
+				<div class="result__item" data-aos="zoom-in">
 					<div class="result__item-cont">
 						<div class="result__item-text result__item-text_big">
 							Улучшите отношения 
@@ -215,7 +335,7 @@
 					</div>
 					<img src="img/have-5.svg" alt="" class="result__item-img">
 				</div>
-				<div class="result__item">
+				<div class="result__item" data-aos="zoom-in">
 					<div class="result__item-cont">
 						<div class="result__item-text result__item-text_big">
 							Найдете ответы 
@@ -230,11 +350,11 @@
 		</div>
 	</section>
 	<section class="advantages" id="advantages">
-		<h2 class="advantages__title">
+		<h2 class="advantages__title" data-aos="fade-right">
 			Преимущества курса
 		</h2>
 		<div class="advantages__block">
-			<div class="advantages__cont">
+			<div class="advantages__cont" data-aos="fade-up">
 				<div class="advantages__text">
 					<div class="advantages__text-big">
 						Обучение до результата
@@ -253,7 +373,7 @@
 					</div>				
 				</div>
 			</div>
-			<div class="advantages__cont">
+			<div class="advantages__cont" data-aos="fade-up">
 				<div class="advantages__text">
 					<div class="advantages__text-big">
 						Много практики
@@ -272,7 +392,7 @@
 					</div>				
 				</div>
 			</div>
-			<div class="advantages__cont">
+			<div class="advantages__cont" data-aos="fade-up">
 				<div class="advantages__text">
 					<div class="advantages__text-big">
 						Авторские методические материалы
@@ -293,14 +413,89 @@
 				</div>
 			</div>
 		</div>
-		<img src="img/adv-bg.png" alt="" class="advantages__bg">
+		<div class="advantages__slider" data-aos="fade-up">
+			<div class="advantages__slide">
+				<div class="advantages__text">
+					<div class="advantages__text-big">
+						Обучение до результата
+					</div>
+					<div class="advantages__text-sm">
+						Четко выстроенная система обучения,
+						от простого к сложному, гарантирует обретение навыка анализа гороскопа. Проверено шестью потоками!
+					</div>				
+				</div>
+				<div class="advantages__text">
+					<div class="advantages__text-big">
+						Фокус на практический опыт
+					</div>
+					<div class="advantages__text-sm">
+						30% теории и 70% практики. Только работающие алгоритмы. Без лишней воды. Движемся от знаний к навыкам.
+					</div>				
+				</div>
+			</div>
+			<div class="advantages__slide">
+				<div class="advantages__text">
+					<div class="advantages__text-big">
+						Формируем астрологическое мышление
+					</div>
+					<div class="advantages__text-sm">
+						Учимся думать на астрологическом языке и составлять собственные трактовки.
+					</div>				
+				</div>
+				<div class="advantages__text">
+					<div class="advantages__text-big">
+						Много практики
+					</div>
+					<div class="advantages__text-sm">
+						Практические задания каждую неделю. Тренируемся на картах студентов и картах близких, постепенно усложняем анализ - работаем с каратами незнакомых людей.
+						Проверка кураторами
+						и лично преподавателем.
+					</div>				
+				</div>
+			</div>
+			<div class="advantages__slide">
+				<div class="advantages__text">
+					<div class="advantages__text-big">
+						Авторские методические материалы
+					</div>
+					<div class="advantages__text-sm">
+						Практические алгоритмы анализа, подробные методические пособия к каждому уроку, возможность сохранения уроков и материалов 
+						для личного пользования.
+					</div>				
+				</div>
+				<div class="advantages__text">
+					<div class="advantages__text-big">
+						Живой формат
+					</div>
+					<div class="advantages__text-sm">
+						Живые онлайн уроки. Возможность посмотреть урок в записи в удобное время, доступ 
+						к обсуждению вопросов с преподавателем 24/7, чат с единомышленниками и атмосфера поддержки.
+					</div>				
+				</div>
+			</div>
+		</div>
+		<picture>
+			<source srcset="img/adv-bg.webp" type="image/webp" class="advantages__bg">
+			<source srcset="img/adv-bg.png" type="image/png" class="advantages__bg"> 
+			<img src="img/adv-bg.png" alt="" class="advantages__bg">
+		</picture>
+		<picture>
+			<source srcset="img/adv-bg-tablet.webp" type="image/webp" cclass="advantages__bg_tablet">
+			<source srcset="img/adv-bg-tablet.png" type="image/png" class="advantages__bg_tablet"> 
+			<img src="img/adv-bg-tablet.png" alt="" class="advantages__bg_tablet">
+		</picture>
+		<picture>
+			<source srcset="img/adv-bg-sm.webp" type="image/webp" class="advantages__bg_sm">
+			<source srcset="img/adv-bg-sm.png" type="image/png" class="advantages__bg_sm"> 
+			<img src="img/adv-bg-sm.png" alt="" class="advantages__bg_sm">
+		</picture>	
 	</section>	
 	<section class="about" id="about">
 		<div class="about__block">
 			<div class="about__img-wrap"></div>
 			<div class="about__block_second">
-				<div class="about__cont">
-					<h2 class="about__title">
+				<div class="about__cont" data-aos="fade-up">
+					<h2 class="about__title" data-aos="fade-right">
 						О преподавателе
 					</h2>
 					<div class="about__author">
@@ -310,7 +505,7 @@
 						Дипломированный астролог
 					</div>
 				</div>
-				<div class="about__purpose">
+				<div class="about__purpose" data-aos="fade-up">
 					<div class="purpose__text">
 						<span>
 							Моя цель
@@ -330,7 +525,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="about__expirience">
+				<div class="about__expirience" data-aos="fade-up">
 					<div class="expirience__item">
 						<div class="expirience__num">
 							12 
@@ -358,7 +553,7 @@
 							300
 						</div>
 						<div class="expirience__text">
-							<span>
+							<span class="exp-plus">
 								+ 
 							</span> 
 							учеников
@@ -380,12 +575,12 @@
 		</div>
 	</section>	
 	<section class="programm" id="programm">
-		<h2 class="programm__title">
+		<h2 class="programm__title" data-aos="fade-right">
 			Программа курса
 		</h2>
 		<div class="wrap programm__wrap">
 			<div class="programm__block">
-				<a href="#" class="programm__item">
+				<a href="#" class="programm__item" data-aos="fade-up">
 					<span class="programm__item-num">
 						1 Блок
 					</span>
@@ -397,7 +592,7 @@
 					</span>
 					<img src="img/program-1.png" alt="" class="programm__item-img">
 				</a>
-				<a href="#" class="programm__item">
+				<a href="#" class="programm__item" data-aos="fade-up">
 					<span class="programm__item-num">
 						2 Блок
 					</span>
@@ -409,7 +604,7 @@
 					</span>
 					<img src="img/program-2.png" alt="" class="programm__item-img">
 				</a>
-				<a href="#" class="programm__item">
+				<a href="#" class="programm__item" data-aos="fade-up">
 					<span class="programm__item-num">
 						3 Блок
 					</span>
@@ -423,11 +618,11 @@
 				</a>
 			</div>
 			<div class="programm__time">
-				<h2 class="time__title">
+				<h2 class="time__title" data-aos="fade-right">
 					Длительность 
 					и стоимость курса
 				</h2>
-				<div class="time__block">
+				<div class="time__block" data-aos="fade-up">
 					<div class="time__item">
 						<div class="time__num">
 							7 
@@ -464,14 +659,14 @@
 						</div>
 					</div>
 				</div>
-				<button class="time__btn btn">
+				<button class="time__btn btn btn-course">
 					Хочу на курс
 				</button>			
 			</div>			
 		</div>
 	</section>
 	<section class="video-section">
-		<div class="video-section__wrap">
+		<div class="video-section__wrap" data-aos="fade-right">
 		    <video class="video-section__play" controls>
 		        <source src="video/video_func_edit.mp4" type="video/mp4">
 		    </video>
@@ -569,41 +764,15 @@
 						</a>
 					</div>
 				</div>
-				<div class="slider__slide">
-					<img src="img/kav.svg" alt="" class="slide__img">
-					<div class="slider__text">
-						“Хочу сказать, что более понятного объяснения астрологии я еще никогда не слышала, действительно появилось понимание от куда и что берется и уже ...”
-					</div>
-					<div class="slider__author">
-						Алёна Никитина
-					</div>
-					<div class="btn-wrap">
-						<a href="#" class="slider__btn">
-							Читать дальше
-						</a>
-					</div>
-				</div>
-				<div class="slider__slide">
-					<img src="img/kav.svg" alt="" class="slide__img">
-					<div class="slider__text">
-						“Хочу сказать, что более понятного объяснения астрологии я еще никогда не слышала, действительно появилось понимание от куда и что берется и уже ...”
-					</div>
-					<div class="slider__author">
-						Алёна Никитина
-					</div>
-					<div class="btn-wrap">
-						<a href="#" class="slider__btn">
-							Читать дальше
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>	
 	<section class="certificate" id="certificate">
 		<div class="wrap certificate__wrap">
-			<div class="certificate__block">
-				<img src="img/certificate.jpg" alt="" class="certificate__img">
+			<div class="certificate__block" data-aos="fade-up">
+				<div class="certificate__img-wrap">
+					<img src="img/certificate.jpg" alt="" class="certificate__img">
+				</div>			
 				<div class="certificate__cont">
 					<div class="certificate__text">
 						После обучения и сдачи итогового теста
@@ -611,7 +780,7 @@
 							выдается сертификат школы
 						</span>
 					</div>
-					<button class="btn certificate__btn">
+					<button class="btn certificate__btn btn-course">
 						Присоединиться к курсу
 					</button>
 				</div>	
@@ -620,7 +789,7 @@
 	</section>
 	<section class="contact" id="contact">
 		<div class="contact__block">
-			<h2 class="contact__title">
+			<h2 class="contact__title" data-aos="fade-right">
 				Остались вопросы?
 				<br>
 				Свяжитесь с нами
@@ -647,6 +816,7 @@
 		</a>
 	</footer>								
 	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="slick/slick.min.js"></script>		
 	<script src="js/ScrollMagic.min.js"></script>
 	<script src="js/debug.addIndicators.min.js"></script>	
