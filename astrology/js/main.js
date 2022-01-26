@@ -1,5 +1,4 @@
 window.addEventListener('load', function() {
-
 	// ЗАКРЫТИЕ КРУГЛОГО ПОПАПА
 	const circleClose = document.querySelector('.btn-close');
 	circleClose.addEventListener('click', () => {
@@ -125,14 +124,14 @@ window.addEventListener('load', function() {
 	// СЛАЙДЕР
 	$('.responsive').slick({
 	  dots: true,
-	  infinite: false,
+	  infinite: true,
 	  speed: 300,
 	  arrows: false,
 	  slidesToShow: 2,
 	  slidesToScroll: 2,
 	  responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 769,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -157,4 +156,32 @@ window.addEventListener('load', function() {
 	// АНИМАЦИИ
 	AOS.init();
 	//
+
+	// DROPDOWN
+	const dropdownBtn = document.querySelector('.btn-dropdown');
+	dropdownBtn.addEventListener('click', dropdownFunc);
+	function dropdownFunc() {
+		let dropdownImg = document.querySelector('.btn-dropdown img');
+		let items = document.querySelectorAll('.result__item-drop');
+		for(let i = 0; i < items.length; i++) {
+			let item = items[i];
+			if(item.style.display == 'none'){
+		  	item.style.display = "flex";
+		  	dropdownImg.style.transform = 'rotate(180deg)';
+		  } else{
+		  	item.style.display = "none";
+		  	dropdownImg.style.transform = 'rotate(0deg)';
+		  }
+		}
+	};
+
+	dropdownFunc();
+
+	if(window.innerWidth > 992) {
+		let items = document.querySelectorAll('.result__item-drop');
+		for(let i = 0; i < items.length; i++) {
+			items[i].removeAttribute('style');
+		}
+	}
+
 });
