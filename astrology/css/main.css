@@ -1218,7 +1218,6 @@ h2 {
 
 .slick-dots li {
 	border: 1px solid #4434FB;
-    filter: drop-shadow(0px 33px 80px rgba(68, 52, 251, 0.0601852)) drop-shadow(0px 21.3889px 46.8519px rgba(68, 52, 251, 0.0981481)) drop-shadow(0px 12.7111px 25.4815px rgba(68, 52, 251, 0.125)) drop-shadow(0px 6.6px 13px rgba(68, 52, 251, 0.151852)) drop-shadow(0px 2.68889px 6.51852px rgba(68, 52, 251, 0.189815)) drop-shadow(0px 0.611111px 3.14815px rgba(68, 52, 251, 0.25));
     border-radius: 40px;
     width: 68px;
     height: 12px;
