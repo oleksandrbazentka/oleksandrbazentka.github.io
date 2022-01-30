@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+img {
+    pointer-events: none;
+}
+
 body {
     font-size: 22px;
     font-family: 'Gerbera', sans-serif, 'Arial';    

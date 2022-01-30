@@ -1,4 +1,12 @@
 window.addEventListener('load', function() {
+	let $page = $('html, body');
+	$('a[href*="#"]').click(function() {
+	    $page.animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top + 220
+	    }, 400);
+	    return false;
+	});
+
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		margin:20,
