@@ -57,9 +57,6 @@
 body {
 	font-family: 'Montserrat', sans-serif, 'Arial';
 	font-weight: normal;
-}
-
-body {
 	background: #080426;
 }
 
@@ -263,6 +260,7 @@ h2 {
 	position: relative;
 	width: auto;
 	min-height: calc(100% - 3.5rem);
+	padding: 0 15px;
 }
 
 .modal {
@@ -298,22 +296,22 @@ h2 {
 .modal__title {
 	font-family: 'Cormorant SC', sans-serif, 'Arial';
 	font-weight: 500;
-	font-size: 2.5rem;
+	font-size: 40px;
 	text-align: center;
 	color: #251B8D;
 	margin-bottom: 25px;
 }
 
 .modal__text {
-	background: url('../img/popup-img-2.png') no-repeat top center / cover;
-	width: 100%;
-	padding: 64px 37px 60px 37px;
-	font-family: Montserrat;
-	font-size: 2.125rem;
-	text-align: center;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	line-height: 140%;
+    background: url(../img/popup-img-2.png) no-repeat top center / cover;
+    width: 100%;
+    padding: 64px 37px 60px 37px;
+    font-family: Montserrat;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 140%;
 }
 
 .modal__text_second {
@@ -327,9 +325,10 @@ h2 {
 }
 
 .modal__text_second span {
-	font-size: 4.5rem;
-	font-weight: 500;
-	margin-bottom: 15px;
+    font-size: 72px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .modal__text_second {
@@ -338,7 +337,7 @@ h2 {
 
 .modal__form {
 	margin-top: 30px;
-	padding: 0 37px;
+	padding: 0 40px;
 }
 
 .form__input {
@@ -349,17 +348,17 @@ h2 {
     font-family: 'Montserrat', sans-serif, 'Arial';
     font-weight: 500;
     width: 100%;
-    font-size: 1.125rem;
+    font-size: 18px;
     border: none;
     color: #251A9A;
-    padding: 17px 28px;
+    padding: 15px 28px;
 }
 
 .form__input::placeholder {
 	font-family: 'Montserrat';
 	color: #251A9A;
 	font-weight: 500;
-	font-size: 1.125rem;
+	font-size: 18px;
 }
 
 .form__submit {
@@ -379,7 +378,7 @@ h2 {
 	display: flex;
 	align-items: center;
 	user-select: none;
-	font-size: 0.875rem;
+	font-size: 14px;
 	cursor: pointer;
 	color: #251B8D;
 }
@@ -1156,6 +1155,10 @@ h2 {
 	margin: 0 10px;
 }
 
+.br {
+	margin-bottom: 25px;
+}
+
 .slider__text {
 	max-width: 520px;
 	width: 100%;
@@ -1506,21 +1509,6 @@ h2 {
 	.footer {
 	    padding: 100px 0 140px 0;
 	}
-
-	.modal {
-	    padding: 40px 0px 40px;
-	}
-
-	.modal__close {
-	    top: 40px;
-	    right: 20px;
-	    width: 36px;
-	    height: 36px;
-	}
-
-	.modal__text {
-	    padding: 50px 30px;
-	}
 }
 
 @media screen and (max-width: 992px) {
@@ -1529,12 +1517,8 @@ h2 {
 	}
 
 	.for-you__title {
-	    padding-top: 55px;
-	}
-
-	.for-you__title {
 	    margin-bottom: 50px;
-	    padding-top: 10px;
+	    padding-top: 60px;
 	}
 
 	.list__cont {
@@ -1543,7 +1527,7 @@ h2 {
 	}
 
 	.first-section {
-	    padding-top: 200px;
+	    padding-top: 265px;
 	}
 
 	.first-section__subtitle {
@@ -1571,11 +1555,15 @@ h2 {
 	}
 
 	.date__text-cont {
-	    font-size: 18px;
+	    font-size: 24px;
 	}
 
 	.date-text-cont_second {
-	    font-size: 16px;
+	    font-size: 18px;
+	}
+
+	.header-container {
+	    padding-bottom: 40px;
 	}
 
 	.for-you {
@@ -1591,7 +1579,7 @@ h2 {
 	}
 
 	.for-you__text {
-	    font-size: 16px;
+	    font-size: 18px;
 	}
 
 	h2 {
@@ -1656,7 +1644,31 @@ h2 {
 	}
 
 	.advantages__title {
-	    margin-bottom: 70px;
+	    margin-bottom: 50px;
+	}
+
+	.advantages__text-big {
+	    font-size: 24px;
+	}
+
+	.advantages__text-sm {
+	    font-size: 18px;
+	}
+
+	.about__author {
+	    font-size: 54px;
+	}
+
+	.about__profession {
+	    font-size: 26px;
+	}
+
+	.purpose__text {
+	    font-size: 18px;
+	}
+
+	.insta__text {
+	    font-size: 18px;
 	}
 
 	.result__title {
@@ -1731,19 +1743,25 @@ h2 {
 	}
 
 	.programm__item-title {
-	    max-width: 200px;
-	    margin: 30px auto 10px auto;
-	    padding-bottom: 15px;
+	    max-width: 260px;
+	    margin: 40px 15px 15px 15px;
+	    padding-bottom: 23px;
+	    font-size: 28px;
+	}
+
+	.programm__item-text {
+	    font-size: 18px;
 	}
 
 	.programm__item {
-	    min-height: 320px;
+	    min-height: 410px;
 	}
 
 	.programm__item-num {
-	    width: 80px;
-	    height: 80px;
-	    margin: -33px auto 0px;
+	    width: 90px;
+	    height: 92px;
+	    margin: -38px auto 0px;
+	    font-size: 18px;
 	}
 
 	.programm__title {
@@ -1780,14 +1798,24 @@ h2 {
 
 	.slider__slide {
 	    padding: 25px;
+	    min-height: 400px;
+	}
+
+	.slider__text {
+	    font-size: 18px;
 	}
 
 	.slider__btn {
-	    padding: 18px 45px;
+	    padding: 25px 50px;
+	    font-size: 18px;
+	}
+
+	.slider__author {
+		font-size: 29px;
 	}
 
 	.reviews {
-	    padding-bottom: 200px;
+	    padding-bottom: 210px;
 	}
 
 	.certificate__img-wrap {
@@ -1795,11 +1823,35 @@ h2 {
 	}
 
 	.certificate__text {
-	    margin-bottom: 40px;
+	    margin-bottom: 50px;
+	    font-size: 24px;
+	}
+
+	.certificate__text span {
+	    font-size: 24px;
+	    font-weight: 500;
 	}
 
 	.time__title {
-	    margin: 0 auto 40px;
+	    margin: 0px auto 50px;
+	}
+
+	.time__num {
+	    margin-right: 8px;
+	    font-size: 54px;
+	}
+
+	.time__text span {
+	    font-size: 24px;
+	}
+
+	.time__text {
+	    font-size: 18px;
+	}
+
+	.time__text .time__plus {
+	    font-size: 48px;
+	    margin-bottom: 5px;
 	}
 
 	.certificate__btn {
@@ -1814,6 +1866,10 @@ h2 {
 @media screen and (max-width: 768px) {
 	.header__nav {
 	    display: none;
+	}
+
+	.first-section {
+	    padding-top: 270px;
 	}
 
 	.header__logo {
@@ -1855,11 +1911,6 @@ h2 {
 	    left: 0;
 	    overflow-y: scroll;
 	}
-
-/*	.scrollmagic-pin-spacer {
-	    width: 60px;
-	    height: 66px;
-	}*/
 
     .nav-item {
        margin: 0px auto 40px;
@@ -1950,12 +2001,24 @@ h2 {
 	}
 
 	.first-section__subtitle {
-	    margin-bottom: 15px;
+	    margin-bottom: 20px;
 	}
 
 	.first-section__title {
 	    max-width: 640px;
-	    font-size: 52px;
+	    font-size: 58px;
+	}
+
+	.first-section__block {
+		padding: 0 15px;
+	}
+
+	.date__text-cont {
+	    font-size: 24px;
+	}
+
+	.date-text-cont_second {
+	    font-size: 18px;
 	}
 
 	.first-section__title:after {
@@ -1986,6 +2049,7 @@ h2 {
 
 	.for-you__title {
 	    padding-top: 55px;
+	    margin-bottom: 70px;
 	}
 
 	.for-you__cont_second {
@@ -2104,7 +2168,7 @@ h2 {
 	}
 
 	.advantages__text-big {
-	    margin-bottom: 10px;
+	    margin-bottom: 15px;
 	    font-size: 2.4rem;
 	}
 
@@ -2179,20 +2243,26 @@ h2 {
 	}
 
 	.expirience__num {
-	    font-size: 68px;
+	    font-size: 80px;
+	    margin-right: 8px;
 	}
 
 	.expirience__text {
-		font-size: 16px;
+		font-size: 18px;
+	}
+
+	.expirience__item:nth-child(1),
+	.expirience__item:nth-child(2) {
+	    margin-bottom: 30px;
 	}
 
 	.expirience__item {
-	    max-width: 249px;
+	    max-width: 255px;
 	    margin-bottom: 30px;
 	}
 
 	.expirience__text span {
-	    font-size: 22px;
+	    font-size: 24px;
 	}
 
 	.about__expirience {
@@ -2346,7 +2416,7 @@ h2 {
 	} 
 
 	.footer {
-	    padding: 100px 0;
+	    padding: 100px 0 260px;
 	}
 
 	.scrollmagic-pin-spacer {
@@ -2355,6 +2425,37 @@ h2 {
 }
 
 @media screen and (max-width: 576px) {
+	.modal__title {
+		font-size: 24px;
+	}
+
+	.modal {
+	    padding: 20px 0px 20px;
+	}
+
+	.modal__text_second span {
+	    font-size: 36px;
+	    margin-bottom: 10px;
+	    text-transform: uppercase;
+	}
+
+	.modal__text {
+	    font-size: 18px;
+	    padding: 35px 15px;
+	}
+
+	.modal__close {
+	    top: 8px;
+	    right: 8px;
+	    width: 30px;
+	    height: 30px;
+	}
+
+	.modal__form {
+	    margin-top: 20px;
+	    padding: 0 20px;
+	}
+
 	.first-section__subtitle {
 	    margin-bottom: 10px;
 	    font-size: 1.8rem;
@@ -2370,12 +2471,12 @@ h2 {
 	    font-size: 3.1rem;
 	}
 
-	.date-text-cont_second {
-	    font-size: 14px;
-	}
-
 	.date__text-cont {
 	    font-size: 16px;
+	}
+
+	.date-text-cont_second {
+	    font-size: 14px;
 	}
 
 	.date__num {
@@ -2414,8 +2515,9 @@ h2 {
 	}
 
 	.btn {
-	    padding: 25px 70px;
+	    padding: 25px;
 	    font-size: 1.8rem;
+	    min-width: 328px;
 	}
 
 	.for-you__text {
@@ -2442,7 +2544,7 @@ h2 {
 
 	.for-you__title {
 	    margin-bottom: 10px;
-	    padding-top: 30px;
+	    padding-top: 10px;
 	}
 
 	h2 {
@@ -2469,7 +2571,7 @@ h2 {
 	}
 
 	.result__item-text_big {
-	    font-size: 22px;
+	    font-size: 20px;
 	}
 
 	.result__item-cont {
@@ -2505,6 +2607,7 @@ h2 {
 
 	.expirience__text span {
 	    font-size: 16px;
+	    font-weight: 500;
 	}
 
 	.expirience__text {
@@ -2513,6 +2616,11 @@ h2 {
 
 	.expirience__num {
 	    font-size: 60px;
+	    margin-right: 8px;
+	}
+
+	.expirience__text_sm {
+		width: 190px;
 	}
 
 	.expirience__item:nth-child(1) {
@@ -2521,6 +2629,20 @@ h2 {
 
 	.expirience__item:last-child {
 		border-bottom: none;
+		order: 3;
+	}
+
+	.expirience__item:nth-child(3) {
+		order: 4;
+	}
+
+	.expirience__item:nth-child(3) .expirience__text .expirience__text_sm {
+		width: auto;
+	}
+
+	.expirience__text .exp-plus {
+	    font-size: 72px;
+	    margin-bottom: 11px;
 	}
 
 	.about__img-wrap {
@@ -2532,7 +2654,7 @@ h2 {
 	}
 
 	.time__block {
-	    max-width: 222px;
+	    max-width: 210px;
 	    flex-direction: column;
 	    align-items: flex-start;
 	}
@@ -2573,12 +2695,24 @@ h2 {
 	}
 
 	.custom-checkbox+label {
-	    font-size: 1rem;
+	    font-size: 14px;
+		text-align: left;	    
 	}
 
-	.form__input,
-	.form__input::placeholder {
-		font-size: 1.4rem;
+	.custom-checkbox+label::before {
+		margin-right: 8px;
+	}
+
+	.checkbox {
+	    margin-bottom: 15px;
+	}
+
+	.form__input, .form__input::placeholder {
+	    font-size: 18px;
+	}
+
+	.form__input {
+		padding: 15px 28px;
 	}
 
 	.result__item-drop {
@@ -2611,7 +2745,7 @@ h2 {
 	}
 
 	.slick-prev {
-	    bottom: -170px;
+	    bottom: -110px;
 	    left: 50%;
 	    width: 40px;
 	    height: 20px;
@@ -2619,7 +2753,7 @@ h2 {
 	}
 
 	.slick-next {
-	    bottom: -170px;
+	    bottom: -110px;
 	    right: 50%;
 	    width: 40px;
 	    height: 20px;
@@ -2627,7 +2761,7 @@ h2 {
 	}
 
 	.advantages {
-	    padding: 80px 15px 220px 15px;
+	    padding: 80px 15px 160px 15px;
 	}
 
 	.about__author {
@@ -2656,11 +2790,11 @@ h2 {
 	}
 
 	.about__purpose {
-	    padding: 28px 15px 24px 15px;
+	    padding: 30px 15px;
 	}
 
 	.programm {
-	    padding: 100px 15px 125px;
+	    padding: 100px 15px;
 	}
 
 	.programm__item-num {
@@ -2692,11 +2826,11 @@ h2 {
 	}
 
 	.time__text span {
-	    font-size: 18px;
+	    font-size: 24px;
 	}
 
 	.time__text {
-    	font-size: 16px;
+	    font-size: 18px;
 	}
 
 	.time__num {
@@ -2729,16 +2863,19 @@ h2 {
 	}
 
 	.reviews {
-	    padding-bottom: 102px;
+	    padding-bottom: 100px;
 	}
 
 	.certificate__text {
-	    font-size: 16px;
+	    font-size: 18px;
 	    margin-bottom: 50px;
+	    text-align: left;
 	}
 
 	.certificate__text span {
 	    font-size: 18px;
+	    display: inline;
+	    font-weight: 500;
 	}
 
 	.contact {
@@ -2757,23 +2894,61 @@ h2 {
 	    padding: 120px 0 70px;
 	}
 
+	.advantages__text {
+	    text-align: left;
+	}
+
 	.result__item-drop {
 		display: flex !important;
+	}
+
+	.slick-prev {
+	    left: 15px;
+	    margin-left: 0;
+	}
+
+	.slick-next {
+	    right: 15px;
+	    margin-right: 0;
+	}
+
+	.time__text .time__plus {
+	    font-size: 48px;
+	    margin-bottom: 3px;
+	}
+
+	.slider__slide {
+	    padding: 30px 16px 110px;
+	}
+
+	.slider__btn {
+	    max-width: 296px;
+	    padding: 25px 10px;
+	    font-size: 17px;
+	    width: 100%;
 	}
 }
 
 @media screen and (max-width: 480px) {
+	.programm__item-img {
+	    height: 215px;
+	}
+
+	.programm__item {
+	    min-height: 435px;
+	}
+}
+
+@media screen and (max-width: 360px) {
 	.btn {
-		font-size: 16px;
-	    padding: 20px 30px;
+	    padding: 25px 10px;
+	    min-width: auto;
+	    max-width: 300px;
+	    width: 100%;
 	}
 
-	.first-section {
-	    padding-top: 160px;
-	}
-
-	.first-section {
-	    padding: 160px 15px 0 15px;
+	.slider__slide {
+	    min-height: auto;
 	}
 
 	.first-section__title {
@@ -2800,16 +2975,6 @@ h2 {
 
 	.for-you__img {
 	    width: 50px;
-	}
-
-	.slick-prev {
-	    left: 15px;
-	    margin-left: 0;
-	}
-
-	.slick-next {
-	    right: 15px;
-	    margin-right: 0;
 	}
 
 	.advantages__text-big {	   
@@ -2851,13 +3016,11 @@ h2 {
 	}
 
 	.programm__item {
-	    min-height: 430px;
-	}
+	    min-height: 400px;
+	} 
 
-	.slider__btn {
-	    padding: 25px 40px;
-	    font-size: 17px;
+	.programm__item-img {
+	    height: auto;
 	}
-    
 }
 

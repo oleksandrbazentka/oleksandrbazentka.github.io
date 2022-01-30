@@ -147,6 +147,18 @@ window.addEventListener('load', function() {
 	});
 	//
 
+	const sliderBtns = document.querySelectorAll('.slider__btn');
+	sliderBtns.forEach((element) => {
+		element.addEventListener('click', function(e) {
+			e.preventDefault();
+			if(element.textContent == 'Читать дальше') {
+				element.textContent = 'Скрыть';
+			}	else {
+				element.textContent = 'Читать дальше';
+			}
+		});
+	}); 
+
 	// СЛАЙДЕР НА ТЕЛЕФОНЕ
 	$('.advantages__slider').slick({
 		infinite: false
@@ -154,7 +166,9 @@ window.addEventListener('load', function() {
 	//
 
 	// АНИМАЦИИ
-	AOS.init();
+	AOS.init({
+	  disable: 'mobile'
+	});
 	//
 
 	// DROPDOWN
@@ -184,4 +198,10 @@ window.addEventListener('load', function() {
 		}
 	}
 
+	$(".slider__text").readMore({
+    readMoreLabel: "Читать дальше",
+    readLessLabel: "Скрыть",
+    lines: 3,
+  });
+	
 });
