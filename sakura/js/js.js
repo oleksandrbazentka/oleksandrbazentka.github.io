@@ -318,12 +318,12 @@ $(document).ready(function () {
 		$('.panel-heading').not(this).removeClass('in').next().slideUp();
   });
 
-  let btnBuy = document.querySelectorAll('.hr-bn');
-  for(let i = 0; i < btnBuy.length; i++) {
-  	btnBuy[i].addEventListener('click', function(e) {
-  		e.preventDefault();
-  	});
-  }
+  // let btnBuy = document.querySelectorAll('.hr-bn');
+  // for(let i = 0; i < btnBuy.length; i++) {
+  // 	btnBuy[i].addEventListener('click', function(e) {
+  // 		e.preventDefault();
+  // 	});
+  // }
 
 	// ЯНДЕКС АФИША (БИЛЕТЫ)
   /* Настройка */
