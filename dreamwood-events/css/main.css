@@ -267,6 +267,7 @@ footer {
 
 .month {
     font-size: 32px;
+    display: inline;
 }
 
 .love__wrap {
@@ -298,7 +299,7 @@ footer {
     max-width: 301px;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 10px;
 }
 
 .love__programm,
@@ -896,6 +897,91 @@ footer {
     margin-bottom: 0;
 }
 
+.cont-block>input[type="radio"] {
+    display: none;
+}
+
+.cont-block>a {
+    /* скрыть контент по умолчанию */
+    display: none;
+}
+
+.cont-block>label {
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    border: 3px solid transparent;
+    padding: 10px 13px;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+    font-family: 'Gerbera', sans-serif, 'Arial';
+    margin-right: 7px;
+    font-size: 32px;
+    line-height: 32px;
+    border: none;
+    background: transparent;
+}
+
+.cont-block>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.love__block>input[type="radio"]:checked+label {
+    border: 3px solid #F46161;
+}
+
+.weekend__block>input[type="radio"]:checked+label {
+    border: 3px solid #BDE2F1;
+}
+
+.eat__block>input[type="radio"]:checked+label {
+    border: 3px solid #FCC302;
+}
+
+.sweet__block>input[type="radio"]:checked+label {
+    border: 3px solid #F46161;
+}
+
+.sweet__btn {
+    color: #000000;
+    background: #F78484;
+    border: 2px solid #000000;
+}
+
+.sweet__btn:hover {
+    color: #F78484;
+    background: #000000;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#love-btn-1:checked~#love-1,
+#love-btn-2:checked~#love-2,
+#love-btn-3:checked~#love-3,
+#love-btn-4:checked~#love-4 {
+  display: table;
+}
+
+#weekend-btn-1:checked~#weekend-1,
+#weekend-btn-2:checked~#weekend-2,
+#weekend-btn-3:checked~#weekend-3,
+#weekend-btn-4:checked~#weekend-4 {
+    display: table;
+}
+
+#eat-btn-1:checked~#eat-1,
+#eat-btn-2:checked~#eat-2 {
+    display: table;
+}
+
+#sweet-btn-1:checked~#sweet-1,
+#sweet-btn-2:checked~#sweet-2,
+#sweet-btn-3:checked~#sweet-3,
+#sweet-btn-4:checked~#sweet-4 {
+    display: table;
+}
+
 @media screen and (min-width: 1450px) {
     .header__img_waves {
         width: 735px;
@@ -907,8 +993,6 @@ footer {
         top: 226px;
         left: 85px;
     }
-
-
 }
 
 @media screen and (min-width: 1800px) {
@@ -1022,6 +1106,7 @@ footer {
 
     .programm {
         max-width: 270px;
+        top: 11px;
     }
 
     .month {
@@ -1271,6 +1356,11 @@ footer {
         margin-bottom: 40px;
         font-size: 28px;
     }
+
+    .cont-block>label {
+        padding: 8px 13px;
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1323,6 +1413,7 @@ footer {
 
     .programm {
         position: static;
+        margin-top: 10px;
     }
 
     .love__text {
@@ -1764,6 +1855,7 @@ footer {
 
     .programm {
         max-width: 500px;
+        margin-top: 0;
     }
 
     .weekend__img_plant {
@@ -2001,6 +2093,11 @@ footer {
 
     .z-index-low {
         z-index: 9;
+    }
+
+    .cont-block>label {
+        padding: 6px 13px;
+        font-size: 24px;
     }
 }
 
@@ -2343,6 +2440,23 @@ footer {
         width: 154px;
     }
 
+    .cont-block>label {
+        padding: 0px 0px;
+        font-size: 14px;
+        width: 25px;
+        line-height: 25px;
+    }
+
+    .eat__block>input[type="radio"]:checked+label,
+    .sweet__block>input[type="radio"]:checked+label,
+    .weekend__block>input[type="radio"]:checked+label,
+    .love__block>input[type="radio"]:checked+label {
+        border-width: 1px;
+    }
+
+    .btn {
+        border-width: 1px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -2350,9 +2464,4 @@ footer {
         right: 40px;
         top: 201px;
     }
-
-
 }
-
-// картинки великы в png форматы зробити
-
