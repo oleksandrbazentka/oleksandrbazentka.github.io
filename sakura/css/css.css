@@ -100,6 +100,7 @@ table {
 .btn-hover-white:hover {
 	background-color: white;
 	color: #7D6162;
+	text-decoration: none;
 }
 
 .bn-hover-green {
@@ -276,10 +277,10 @@ table {
 	color:#fff;
 	padding:91px 0 100px;
 }
-.fr1{
-	display:flex;
-	justify-content:space-between;
-	align-items:flex-end;
+.fr1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .fr1-b {
@@ -1059,6 +1060,7 @@ table {
 	border-radius: 10px;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
+	display: inline-block;
 }
 
 .button__buy_green {
@@ -1260,6 +1262,7 @@ table {
 	color:#fff;
 	position: relative;
 	font-size: 24px;
+	margin-top: 330px;
 }
 
 .c1-for-b7 {
@@ -1342,7 +1345,7 @@ table {
   	padding: 16px 30px 16px 58px;
   	font-size: 24px;
 	color: #0C594B;
-  	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  	transition: all .3s ease-in-out;
   	cursor: pointer;
   	position: relative;
   	border-radius: 10px 10px 0 0;
@@ -1439,6 +1442,7 @@ table {
     font-size: 196px;
     color: #FFFFFF;
     margin-bottom: 60px;
+    padding: 0 15px;
 }
 
 .b7-content-ticket-btn {
@@ -1575,10 +1579,6 @@ table {
 	height: 20px;
 }
 
-.b8-bn:hover {
-	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-}
-
 .b8-b1 {
     max-width: none;
     position: relative;
@@ -1678,6 +1678,7 @@ table {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .hr-a{
 	color:#fff;
@@ -1690,7 +1691,9 @@ table {
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
+    background: transparent;
     padding: 11px 50px;
+    font-family: 'gp', sans-serif, 'Arial';
 }
 .hr-bn1{
 	display:none;
@@ -3462,9 +3465,9 @@ table {
 	}
 
 	.tab-link {
-	    padding: 16px 20px 16px 40px;
-		font-size: 18px;
-		top: 2px;
+	    padding: 16px 18px 16px 34px;
+	    font-size: 18px;
+	    top: 2px;
 	}
 
 	.tabs-link-first:after,
@@ -4322,6 +4325,7 @@ table {
 
 	.hr-w-wrap {
 	    margin: 50px 0 21px 0;
+	    max-width: 449px;
 	}
 
 	.hr-bn {
@@ -4476,6 +4480,9 @@ table {
 	    height: 380px;
 	}
 
+	.b7 {
+		margin-top: 300px;
+	}
 	
 	.b7-bn-c{
 		padding: 8px 0px 40px;
@@ -5105,7 +5112,6 @@ table {
 
 	.cnn {
 	    padding: 16px 18px;
-	    max-width: 360px;
 	    height: 80px;
 	}
 
@@ -5138,6 +5144,10 @@ table {
 	.hr-a1_1 {
 	    padding: 5px 9px 17px;
 	    background-size: 26px 26px;
+	}
+
+	.hr-b4 {
+		max-width: 360px;
 	}
 
 	.hr-a1 {
@@ -5197,6 +5207,10 @@ table {
 
 	.b8 {
 	    padding: 70px 0 0;
+	}
+
+	.b7 {
+		margin-top: 250px;
 	}
 
 	.b7-img-big {
@@ -5320,6 +5334,14 @@ table {
 
 	.tabs-links .link-red {
 		border: 1px solid #FF6462;
+	}
+
+	.tab-link:nth-child(3) {
+		border-left: 0;
+	}
+
+	.tab-link:nth-child(4) {
+		border-right: 0;
 	}
 
 	.b7-content-wrap {
@@ -5675,7 +5697,7 @@ table {
 	    margin-left: auto;
 	    margin-right: 0;
 	    display: inline-block;
-	    padding: 15px 50px;
+	    padding: 10px 35px;
 	}
 
 	.header-menu__close-line:first-child {
@@ -5713,22 +5735,22 @@ table {
 	    background: white;
 	}
 
-.burger__line_first {
-    top: 0px;
-}
+	.burger__line_first {
+	    top: 0px;
+	}
 
-.burger__line_second {
-    top: 50%;
-    transform: translateY(-50%);
-}
+	.burger__line_second {
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
 
-.burger__line_third {
-    bottom: 0px;
-}
+	.burger__line_third {
+	    bottom: 0px;
+	}
 
- .header-menu__active {
-    transform: translateX(0);
-  }
+	.header-menu__active {
+	    transform: translateX(0);
+	}
 
 	.b9 {
 		background:none;
@@ -5804,7 +5826,7 @@ table {
 		font-size:20px;
 	}
 	.hr-w {
-	    font-size: 26px;
+	    font-size: 22px;
 	}
 	.hr-w1 {
 	    font-size: 13px;
@@ -5829,9 +5851,10 @@ table {
 		position:relative;
 		z-index:5;
 	}
-	.hr-a{
-		font-size:22px;
-		line-height: 22px;
+
+	.hr-a {
+	    font-size: 14px;
+	    line-height: 14px;
 	}
 
 	.hr-logo-f{
@@ -5978,6 +6001,10 @@ table {
 
 	.b8 {
 	    position: static;
+	}
+
+	.b7 {
+		margin-top: 150px;
 	}
 
 	.b7-h-c1 {
@@ -7002,9 +7029,6 @@ table {
 
 	.c1-for-b6 {
 	    padding: 0px;
-	    border: 1px solid #0C594B;
-	    border-right: none;
-	    border-left: none;
 	}
 
 	.b6 {
@@ -7109,6 +7133,8 @@ table {
 
 	.b6-b-1 {
 		border-radius: 0px;
+		border-left: 0;
+		border-right: 0;
 	}
 
 	.b6__special-wrap {
