@@ -58,6 +58,5 @@ window.addEventListener('load', function() {
         }, 400);
         return false;
     });
-
 });
 	
