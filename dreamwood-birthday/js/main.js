@@ -1,14 +1,9 @@
 window.addEventListener('load', function() {
 	// ФУНКЦИОНАЛ ДЛЯ ВИДЕО
     $('.video__main-wrap video').parent().click(function () {
-        if($(this).children(".video__main-wrap video").get(0).paused){
-            $(this).children(".video__main-wrap video").get(0).play();
-            $(this).children('.video__back').fadeOut();
-            $(this).children(".video__btn-play").fadeOut();
-        }else{
-            $(this).children(".video__btn-play").fadeIn();
-            $(this).children('.video__back').fadeIn();
-        }	
+        $(this).children(".video__main-wrap video").get(0).play();
+        $(this).children('.video__back').fadeOut();
+        $(this).children(".video__btn-play").fadeOut();
     });
 
   //1 СЛАЙДЕР
