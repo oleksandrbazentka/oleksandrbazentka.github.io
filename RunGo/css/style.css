@@ -426,6 +426,14 @@ a, a:hover {
     right: 0;
 }
 
+.soc-media__numbers a {
+	transition: all .3s ease-in-out;
+}
+
+.soc-media__numbers a:hover {
+	opacity: 0.75;
+}
+
 @media screen and (max-width: 1880px) {
 	h2 {
 	    font-size: 62px;
