@@ -7,15 +7,6 @@
 	    url("../fonts/Mukta-Bold.ttf") format("truetype");
 }
 
-@font-face {
-	font-family: "Mukta";
-	font-style: normal;
-	font-weight: bold;
-	font-display: swap;
-	src: local("Mukta"),
-	    url("../fonts/Mukta-ExtraBold.ttf") format("truetype");
-}
-
 body {
   font-family: 'Mukta', 'Arial', sans-serif;
   font-weight: 600;
